@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody rb;
     public float impulsejump;
     public bool isjump;
-
+    public Animator an;
 
     public void Start()
     {
@@ -47,8 +47,17 @@ public class PlayerController : MonoBehaviour
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
+        if (v > 0.1)
+        {
+            an.SetBool("moving", true);
+            transform.position += transform.forward * v * speed * Time.deltaTime;
+        }
+        if (v == 0)
+        {
+            an.SetBool("moving", false);
+        }
 
-        transform.position += transform.forward * v * speed * Time.deltaTime;
+       
         transform.Rotate(Vector3.up * h * speedRotate * Time.deltaTime);
 
         if (isjump)
