@@ -5461,7 +5461,7 @@ MonoBehaviour:
   PositionsPlatforms:
   - {fileID: 1909915974}
   - {fileID: 772800803}
-  PlatformSpeed: 2
+  PlatformSpeed: 1.5
 --- !u!4 &1626439728
 Transform:
   m_ObjectHideFlags: 0
