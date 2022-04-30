@@ -1,32 +1,12 @@
 fileFormatVersion: 2
-guid: 54b3b20cfc17caf42b15647f1b30edcc
+guid: fc498956871f8da4a889c0009afb6735
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
       74: -203655887218126122
     second: mixamo.com
-  externalObjects:
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch39_1001_Diffuse
-    second: {fileID: 2800000, guid: 512c06759e7f6fc4c825840e0f458c11, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch39_1001_Glossiness
-    second: {fileID: 2800000, guid: 9d50b1244e3ab164cb230671b08dabe9, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch39_1001_Normal
-    second: {fileID: 2800000, guid: ee912712e213dcc458bab167d6cff820, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch39_1001_Specular
-    second: {fileID: 2800000, guid: 2417204cd4dff1c47a9e6b18578cd3b6, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -39,28 +19,50 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Bone length in
-      copied configuration does not match position in animation file:\n\t'mixamorig:LeftUpLeg'
-      : position error = 33.915337 mm\n\t'mixamorig:LeftLeg' : position error = 9.655615
-      mm\n\t'mixamorig:LeftFoot' : position error = 25.800932 mm\n\t'mixamorig:LeftToeBase'
-      : position error = 6.262788 mm\n\t'mixamorig:RightUpLeg' : position error =
-      36.051254 mm\n\t'mixamorig:RightLeg' : position error = 9.191813 mm\n\t'mixamorig:RightFoot'
-      : position error = 25.792866 mm\n\t'mixamorig:RightToeBase' : position error
-      = 5.230976 mm\n"
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: mixamo.com
+      takeName: mixamo.com
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 31
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []

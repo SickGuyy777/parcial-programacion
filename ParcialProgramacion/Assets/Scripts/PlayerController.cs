@@ -47,17 +47,18 @@ public class PlayerController : MonoBehaviour
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
-        if (v > 0.1)
-        {
-            an.SetBool("moving", true);
-            transform.position += transform.forward * v * speed * Time.deltaTime;
-        }
-        if (v == 0)
-        {
-            an.SetBool("moving", false);
-        }
+        //if (v > 0.1)
+        //{
+        //    an.SetBool("moving", true);
+        transform.position += transform.forward * v * speed * Time.deltaTime;
+        an.SetFloat("Blend",v);
+        //}
+        //if (v == 0)
+        //{
+        //    an.SetBool("moving", false);
+        //}
 
-       
+
         transform.Rotate(Vector3.up * h * speedRotate * Time.deltaTime);
 
         if (isjump)
@@ -65,8 +66,13 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 rb.AddForce(Vector3.up * impulsejump, ForceMode.Impulse);
+                an.SetBool("jumping",true);
 
             }
+        }
+        else
+        {
+            an.SetBool("jumping", false);
         }
 
 

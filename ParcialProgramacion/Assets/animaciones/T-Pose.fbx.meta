@@ -1,32 +1,12 @@
 fileFormatVersion: 2
-guid: 54b3b20cfc17caf42b15647f1b30edcc
+guid: ac4b12b92e8b34040a1fd18d5a092ffb
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
       74: -203655887218126122
     second: mixamo.com
-  externalObjects:
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch39_1001_Diffuse
-    second: {fileID: 2800000, guid: 512c06759e7f6fc4c825840e0f458c11, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch39_1001_Glossiness
-    second: {fileID: 2800000, guid: 9d50b1244e3ab164cb230671b08dabe9, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch39_1001_Normal
-    second: {fileID: 2800000, guid: ee912712e213dcc458bab167d6cff820, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch39_1001_Specular
-    second: {fileID: 2800000, guid: 2417204cd4dff1c47a9e6b18578cd3b6, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -38,22 +18,16 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Bone length in
-      copied configuration does not match position in animation file:\n\t'mixamorig:LeftUpLeg'
-      : position error = 33.915337 mm\n\t'mixamorig:LeftLeg' : position error = 9.655615
-      mm\n\t'mixamorig:LeftFoot' : position error = 25.800932 mm\n\t'mixamorig:LeftToeBase'
-      : position error = 6.262788 mm\n\t'mixamorig:RightUpLeg' : position error =
-      36.051254 mm\n\t'mixamorig:RightLeg' : position error = 9.191813 mm\n\t'mixamorig:RightFoot'
-      : position error = 25.792866 mm\n\t'mixamorig:RightToeBase' : position error
-      = 5.230976 mm\n"
+    rigImportErrors: "Invalid copied Avatar Rig Configuration:\n\tNo human bone found.
+      Ensure both rig type match\n"
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -866,11 +840,11 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: ac4b12b92e8b34040a1fd18d5a092ffb, type: 3}
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
-  avatarSetup: 2
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   additionalBone: 0
   userData: 
