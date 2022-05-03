@@ -5,19 +5,20 @@ using UnityEngine;
 public class empty : MonoBehaviour
 {
     public float basehealth;
-    private float _currentHealth;
+    public float CurrentHealth;
 
     private void Start()
     {
-        _currentHealth = basehealth;
+        basehealth = CurrentHealth;
     }
 
-    public virtual void Damage(float damage)
+    public virtual void Damage(float dmg)
     {
-        _currentHealth -= damage;
-        if(_currentHealth <= 0 )
+        CurrentHealth -= dmg;
+        if(CurrentHealth <= 0 )
         {
             Debug.Log("El jugador murio");
+
         }
     }
 }
