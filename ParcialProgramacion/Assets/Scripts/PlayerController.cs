@@ -13,6 +13,8 @@ public class PlayerController : empty
     public bool isjump;
     public Animator an;
 
+    public int coinsCollected;
+
     public void Start()
     {
 
@@ -54,7 +56,13 @@ public class PlayerController : empty
       
     }
 
-
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Coin"))
+        {
+            coinsCollected++;
+        }
+    }
 
 
 }

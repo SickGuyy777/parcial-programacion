@@ -6,8 +6,9 @@ using UnityEngine.SceneManagement;
 public class Ganaste : MonoBehaviour
 {
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
         SceneManager.LoadScene("Meta");
+
     }
 }
