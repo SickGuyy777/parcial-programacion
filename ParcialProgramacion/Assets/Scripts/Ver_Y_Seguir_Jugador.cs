@@ -16,11 +16,11 @@ public class Ver_Y_Seguir_Jugador : MonoBehaviour
     void Update()
     {
 
-        detectoalgo = Physics.CheckSphere(transform.position, detector, layerdeljugador);//esto crea una esfera invisible que va a chequear quienes entran y salen de la misma
-        enemigodetectado = Physics.CheckSphere(transform.position, persecucion, layerdeljugador);//lo unico diferente que hice fue crear otra area de vision
+        detectoalgo = Physics.CheckSphere(transform.position, detector, layerdeljugador);
+        enemigodetectado = Physics.CheckSphere(transform.position, persecucion, layerdeljugador);
         if (detectoalgo == true)
         {
-            transform.LookAt(jugador);//esto hace que la vista del enemigo siga mi posicion mientras este dentro del area de deteccion
+            transform.LookAt(jugador);
 
             if (detectoalgo == true && enemigodetectado == true)
             {
@@ -37,9 +37,9 @@ public class Ver_Y_Seguir_Jugador : MonoBehaviour
 
     public void OnDrawGizmos()
     {
-        Gizmos.color = Color.yellow;//con esto elijo el color de la capsula de vision
+        Gizmos.color = Color.yellow;
 
-        Gizmos.DrawWireSphere(transform.position, detector);//esto dibuja la esfera de deteccion del jugador para que la puedas ver en pantalla (el gizmo)
+        Gizmos.DrawWireSphere(transform.position, detector);
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, persecucion);
 

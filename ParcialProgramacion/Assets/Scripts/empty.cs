@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class empty : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class empty : MonoBehaviour
         CurrentHealth -= dmg;
         if(CurrentHealth <= 0 )
         {
-            Debug.Log("El jugador murio");
+            SceneManager.LoadScene("Perdiste");
 
         }
     }
