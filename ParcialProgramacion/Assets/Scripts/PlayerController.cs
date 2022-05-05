@@ -12,8 +12,8 @@ public class PlayerController : empty
     public float impulsejump;
     public bool isjump;
     public Animator an;
-
     public int coinsCollected;
+
 
     public void Start()
     {

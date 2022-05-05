@@ -8,9 +8,10 @@ public class empty : MonoBehaviour
     public float basehealth;
     public float CurrentHealth;
 
-    private void Start()
+
+    private void Awake()
     {
-        basehealth = CurrentHealth;
+        CurrentHealth = basehealth;
     }
 
     public virtual void Damage(float dmg)
@@ -22,4 +23,6 @@ public class empty : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
         }
     }
+
+
 }
