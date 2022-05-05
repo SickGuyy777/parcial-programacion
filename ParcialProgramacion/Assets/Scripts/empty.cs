@@ -19,7 +19,7 @@ public class empty : MonoBehaviour
         if(CurrentHealth <= 0 )
         {
             SceneManager.LoadScene("Perdiste");
-
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 }
