@@ -13,7 +13,7 @@ public class PlayerController : empty
     public bool isjump;
     public Animator an;
     public int coinsCollected;
-
+    public int fuerzadetrampolin;
 
     public void Start()
     {
@@ -64,5 +64,11 @@ public class PlayerController : empty
         }
     }
 
-
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Trampolin"))
+        {
+            rb.velocity = Vector2.up * fuerzadetrampolin;
+        }
+    }
 }
