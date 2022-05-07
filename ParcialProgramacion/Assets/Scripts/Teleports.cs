@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Teleports : MonoBehaviour
 {
-    public Transform Targuet;
-    public GameObject Player;
+    public Transform targuet;
+    public GameObject player;
     private void OnTriggerEnter(Collider other)
     {
-        Player.transform.position = Targuet.transform.position;
+        player.transform.position = targuet.transform.position;
     }
 }

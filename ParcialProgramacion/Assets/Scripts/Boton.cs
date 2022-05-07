@@ -4,41 +4,41 @@ using UnityEngine;
 
 public class Boton : MonoBehaviour
 {
-    public Animator Button;
-    public float TiempoInicial;
-    float _CurrentTime;
-    float _MinTime=0;
-    public GameObject ObjetActive;
-    bool _Tiempo = false;
+    public Animator button;
+    public float tiempoInicial;
+    float _currentTime;
+    float _minTime=0;
+    public GameObject objetActive;
+    bool _tiempo = false;
     void Start()
     {
-        Button.SetBool("Toco", false);
-        ObjetActive.gameObject.SetActive(false);
-        _CurrentTime = TiempoInicial;
+        button.SetBool("Toco", false);
+        objetActive.gameObject.SetActive(false);
+        _currentTime = tiempoInicial;
     }
 
     private void Update()
     {
-        if (_Tiempo == true)
+        if (_tiempo == true)
         {
-            Button.SetBool("Toco", true);
-            ObjetActive.gameObject.SetActive(true);
+            button.SetBool("Toco", true);
+            objetActive.gameObject.SetActive(true);
 
-            _CurrentTime -= Time.deltaTime;
-            Debug.Log(_CurrentTime);
+            _currentTime -= Time.deltaTime;
+            Debug.Log(_currentTime);
             
-            if (_CurrentTime <= _MinTime)
+            if (_currentTime <= _minTime)
             {
-                _Tiempo = false;
-                _CurrentTime = TiempoInicial;
-                Button.SetBool("Toco", false);
-                ObjetActive.gameObject.SetActive(false);
+                _tiempo = false;
+                _currentTime = tiempoInicial;
+                button.SetBool("Toco", false);
+                objetActive.gameObject.SetActive(false);
             }
         }
     }
     private void OnCollisionEnter(Collision collision)
     {
-        _Tiempo = true;
+        _tiempo = true;
     }
 
 

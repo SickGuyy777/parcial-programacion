@@ -6,12 +6,12 @@ using UnityEngine.UI;
 public class UI_Healthbar : empty
 {
     public new int basehealth;
-    public new int CurrentHealth;
-    public Image ColorVida;
+    public new int currentHealth;
+    public Image colorvida;
 
     public void RevisarVida()
     {
-        ColorVida.fillAmount = basehealth / CurrentHealth;
+        colorvida.fillAmount = basehealth / currentHealth;
     }
 
     //public Image ColorVida;

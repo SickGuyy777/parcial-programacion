@@ -414,9 +414,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8ccca719ae731e45961d772b9a263ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Button: {fileID: 15743889}
-  TiempoInicial: 5
-  ObjetActive: {fileID: 1442741000}
+  button: {fileID: 15743889}
+  tiempoInicial: 0
+  objetActive: {fileID: 166853754}
 --- !u!136 &15743891
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5533,6 +5533,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 3096990006528454993, guid: daa9fc0c855cc124d874c6ca41d9a93f, type: 3}
   timer: 0
   maxTimer: 2
+  sonidobala: {fileID: 4959585452587911208, guid: 60541e9c0e06dcc43bf9f15741884fc9, type: 3}
 --- !u!4 &601992052
 Transform:
   m_ObjectHideFlags: 0
@@ -6729,6 +6730,133 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.9555511, y: 4.0172834, z: 3.9510784}
   m_Center: {x: -2.0110168, y: 3.987059, z: -1.9884996}
+--- !u!1 &741462659
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 741462661}
+  - component: {fileID: 741462660}
+  m_Layer: 0
+  m_Name: walking-on-gravel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &741462660
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741462659}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: cdcf26b7b831fb442aeacd628b3a1da3, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &741462661
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741462659}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 90
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &749836190 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0c8f9c248f1507d409d756510266a4b3, type: 3}
@@ -8208,9 +8336,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8ccca719ae731e45961d772b9a263ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Button: {fileID: 966796879}
-  TiempoInicial: 7
-  ObjetActive: {fileID: 1819275431}
+  button: {fileID: 0}
+  tiempoInicial: 0
+  objetActive: {fileID: 0}
 --- !u!136 &966796881
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11771,11 +11899,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dd7e956b2e215d4aba8356af5dc618e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RbPLatform: {fileID: 1810171128}
-  PositionsPlatforms:
-  - {fileID: 1188884921}
-  - {fileID: 117091593}
-  PlatformSpeed: 3
+  RbPLatform: {fileID: 0}
+  positionsPlatforms: []
+  platformSpeed: 0
 --- !u!4 &1285130244
 Transform:
   m_ObjectHideFlags: 0
@@ -12424,8 +12550,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ceb0d01630d9c844828a6dd7e326baa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Targuet: {fileID: 1974810762}
-  Player: {fileID: 1566275955}
+  targuet: {fileID: 0}
+  player: {fileID: 0}
 --- !u!23 &1358714986
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13829,9 +13955,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8ccca719ae731e45961d772b9a263ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Button: {fileID: 1530162863}
-  TiempoInicial: 7
-  ObjetActive: {fileID: 1442741000}
+  button: {fileID: 0}
+  tiempoInicial: 0
+  objetActive: {fileID: 0}
 --- !u!136 &1530162865
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -14143,7 +14269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basehealth: 10
-  CurrentHealth: 0
+  currentHealth: 0
   health_bar: {fileID: 0}
   speed: 2
   speedRotate: 150
@@ -14153,6 +14279,7 @@ MonoBehaviour:
   an: {fileID: 1566275956}
   coinsCollected: 0
   fuerzadetrampolin: 10
+  sonidosalto: {fileID: 2652318818911694479, guid: 9149908ad109969458cfbe8f925d20f6, type: 3}
 --- !u!1 &1573257680
 GameObject:
   m_ObjectHideFlags: 0
@@ -14668,10 +14795,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RbPLatform: {fileID: 203849402}
-  PositionsPlatforms:
+  positionsPlatforms:
   - {fileID: 1909915974}
   - {fileID: 772800803}
-  PlatformSpeed: 3
+  platformSpeed: 1
 --- !u!4 &1626439728
 Transform:
   m_ObjectHideFlags: 0
@@ -15797,6 +15924,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 3096990006528454993, guid: daa9fc0c855cc124d874c6ca41d9a93f, type: 3}
   timer: 0
   maxTimer: 2
+  sonidobala: {fileID: 0}
 --- !u!4 &1778219904
 Transform:
   m_ObjectHideFlags: 0
@@ -17774,9 +17902,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8ccca719ae731e45961d772b9a263ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Button: {fileID: 1949987310}
-  TiempoInicial: 5
-  ObjetActive: {fileID: 1442741000}
+  button: {fileID: 1530162863}
+  tiempoInicial: 0
+  objetActive: {fileID: 505545058}
 --- !u!136 &1949987312
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -18824,8 +18952,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ceb0d01630d9c844828a6dd7e326baa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Targuet: {fileID: 1697453976}
-  Player: {fileID: 1566275955}
+  targuet: {fileID: 0}
+  player: {fileID: 0}
 --- !u!23 &2012384395
 MeshRenderer:
   m_ObjectHideFlags: 0

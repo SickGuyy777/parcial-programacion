@@ -5,11 +5,11 @@ using UnityEngine;
 public class Plataformas_Moviles : MonoBehaviour
 {
     public Rigidbody RbPLatform;
-    public Transform [] PositionsPlatforms;
-    public float PlatformSpeed;
+    public Transform [] positionsPlatforms;
+    public float platformSpeed;
 
-    private int _ActualPosition=0;
-    private int _NextPosition=1;
+    private int _actualPosition;
+    private int _nextPosition=1;
     
     // Update is called once per frame
     void Update()
@@ -18,15 +18,15 @@ public class Plataformas_Moviles : MonoBehaviour
     }
     void _Movment()
     {
-        RbPLatform.MovePosition(Vector3.MoveTowards(RbPLatform.position, PositionsPlatforms[_NextPosition].position, PlatformSpeed * Time.deltaTime));
+        RbPLatform.MovePosition(Vector3.MoveTowards(RbPLatform.position, positionsPlatforms[_nextPosition].position, platformSpeed * Time.deltaTime));
 
-        if(Vector3.Distance(RbPLatform.position, PositionsPlatforms[_NextPosition].position) <=0 )
+        if(Vector3.Distance(RbPLatform.position, positionsPlatforms[_nextPosition].position) <=0 )
         {
-            _ActualPosition = _NextPosition;
-            _NextPosition++;
-            if(_NextPosition > PositionsPlatforms.Length - 1)
+            _actualPosition = _nextPosition;
+            _nextPosition++;
+            if(_nextPosition > positionsPlatforms.Length - 1)
             {
-                _NextPosition = 0;
+                _nextPosition = 0;
             }
         }
     }

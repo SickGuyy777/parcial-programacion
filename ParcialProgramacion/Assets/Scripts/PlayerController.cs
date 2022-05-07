@@ -14,6 +14,7 @@ public class PlayerController : empty
     public Animator an;
     public int coinsCollected;
     public int fuerzadetrampolin;
+    public GameObject sonidosalto;
 
     public void Start()
     {
@@ -34,7 +35,7 @@ public class PlayerController : empty
         transform.position += transform.forward * v * speed * Time.deltaTime;
         an.SetFloat("Blend",v);
 
-
+       
 
         transform.Rotate(Vector3.up * h * speedRotate * Time.deltaTime);
 
@@ -44,7 +45,7 @@ public class PlayerController : empty
             {
                 rb.AddForce(Vector3.up * impulsejump, ForceMode.Impulse);
                 an.SetBool("jumping",true);
-
+                Instantiate(sonidosalto);
             }
         }
         else
