@@ -17,7 +17,7 @@ public class empty : MonoBehaviour
     public virtual void DamageForPlayer(int dmg)
     {
         CurrentHealth -= dmg;
-        health_bar.UpdateHealth(CurrentHealth, basehealth);
+        //health_bar.UpdateHealth(CurrentHealth, basehealth);
         if(CurrentHealth <= 0 )
         {
             SceneManager.LoadScene("Perdiste");
