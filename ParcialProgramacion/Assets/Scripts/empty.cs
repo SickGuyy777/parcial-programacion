@@ -24,6 +24,4 @@ public class empty : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
         }
     }
-
-
 }
