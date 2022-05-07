@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Pinchos : MonoBehaviour
 {
-    public float damage;
+    public int damage;
     
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.GetComponent<empty>() != null)
         {
-            other.gameObject.GetComponent<empty>().Damage(damage);
+            other.gameObject.GetComponent<empty>().DamageForPlayer(damage);
         }
     }
 }

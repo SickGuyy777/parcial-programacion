@@ -5,18 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class empty : MonoBehaviour
 {
-    public float basehealth;
-    public float CurrentHealth;
-
+    public int basehealth;
+    public int CurrentHealth;
+    public UI_Healthbar health_bar;
 
     private void Awake()
     {
         CurrentHealth = basehealth;
     }
 
-    public virtual void Damage(float dmg)
+    public virtual void DamageForPlayer(int dmg)
     {
         CurrentHealth -= dmg;
+        health_bar.UpdateHealth(CurrentHealth, basehealth);
         if(CurrentHealth <= 0 )
         {
             SceneManager.LoadScene("Perdiste");
