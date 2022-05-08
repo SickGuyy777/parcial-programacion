@@ -16,6 +16,7 @@ public class PlayerController : empty
     public Rigidbody rb;
     public Animator an;
     public GameObject sonidosalto;
+    public GameObject sonidoespada;
     public GameObject pies;
     public ManagementPoints ScriptMoneda;
 
@@ -76,9 +77,9 @@ public class PlayerController : empty
             {
                 
                 an.SetBool("Ataco", true);
-              
+                Instantiate(sonidoespada);
 
-            }
+        }
             else
             {
              an.SetBool("Ataco", false);
@@ -121,6 +122,7 @@ public class PlayerController : empty
         {
             speed = 0;
             an.SetBool("Muerto", true);
+            
         }
     }
 
