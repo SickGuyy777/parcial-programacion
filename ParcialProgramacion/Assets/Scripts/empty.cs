@@ -18,7 +18,7 @@ public class empty : MonoBehaviour
     public virtual void DamageForPlayer(int dmg)
     {
         currentHealth -= dmg;
-        //health_bar.UpdateHealth(CurrentHealth, basehealth);
+        //health_bar.UpdateHealth(currentHealth, basehealth);
         if (currentHealth <= 0)
         {
 
