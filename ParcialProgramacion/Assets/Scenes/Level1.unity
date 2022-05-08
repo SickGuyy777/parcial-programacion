@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -415,8 +415,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 15743889}
-  tiempoInicial: 0
-  objetActive: {fileID: 166853754}
+  tiempoInicial: 7
+  objetActive: {fileID: 1442741000}
 --- !u!136 &15743891
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8336,9 +8336,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8ccca719ae731e45961d772b9a263ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 0}
+  button: {fileID: 966796879}
   tiempoInicial: 0
-  objetActive: {fileID: 0}
+  objetActive: {fileID: 1819275431}
 --- !u!136 &966796881
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -11899,9 +11899,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dd7e956b2e215d4aba8356af5dc618e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RbPLatform: {fileID: 0}
-  positionsPlatforms: []
-  platformSpeed: 0
+  RbPLatform: {fileID: 1810171128}
+  positionsPlatforms:
+  - {fileID: 1188884921}
+  - {fileID: 117091593}
+  platformSpeed: 1
 --- !u!4 &1285130244
 Transform:
   m_ObjectHideFlags: 0
@@ -13955,9 +13957,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8ccca719ae731e45961d772b9a263ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 0}
-  tiempoInicial: 0
-  objetActive: {fileID: 0}
+  button: {fileID: 1530162863}
+  tiempoInicial: 10
+  objetActive: {fileID: 1819275431}
 --- !u!136 &1530162865
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -17903,8 +17905,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1530162863}
-  tiempoInicial: 0
-  objetActive: {fileID: 505545058}
+  tiempoInicial: 7
+  objetActive: {fileID: 1442741000}
 --- !u!136 &1949987312
 CapsuleCollider:
   m_ObjectHideFlags: 0

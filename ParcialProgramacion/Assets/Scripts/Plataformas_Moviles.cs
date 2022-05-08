@@ -8,7 +8,7 @@ public class Plataformas_Moviles : MonoBehaviour
     public Transform [] positionsPlatforms;
     public float platformSpeed;
 
-    private int _actualPosition;
+    private int _actualPosition=0;
     private int _nextPosition=1;
     
     // Update is called once per frame
