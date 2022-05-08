@@ -9,15 +9,15 @@ public class PlayerController : empty
 
     public float speed;
     public float speedRotate;
-    public Rigidbody rb;
+    public int fuerzadetrampolin;
     public float impulsejump;
     public bool isjump;
-    public Animator an;
-    public int fuerzadetrampolin;
-    public GameObject sonidosalto;
     public bool EstoyAtacando;
+    public Rigidbody rb;
+    public Animator an;
+    public GameObject sonidosalto;
+    public GameObject pies;
     public ManagementPoints ScriptMoneda;
-
 
 
     public void Start()
@@ -34,48 +34,59 @@ public class PlayerController : empty
     void Update()
     {
 
+        movimiento();
+
+        
+    }
+    
+    public void movimiento()
+    {
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
-        transform.position += transform.forward * v * speed * Time.deltaTime;
-        an.SetFloat("Blend",v);
-        
-       
+            transform.position += transform.forward * v * speed * Time.deltaTime;
+            an.SetFloat("Blend", v);
 
-        transform.Rotate(Vector3.up * h * speedRotate * Time.deltaTime);
 
-        if (isjump)
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
+
+            transform.Rotate(Vector3.up * h * speedRotate * Time.deltaTime);
+
+            if (isjump)
             {
-                rb.AddForce(Vector3.up * impulsejump, ForceMode.Impulse);
-                an.SetBool("salto", true);
-                Instantiate(sonidosalto);
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    rb.AddForce(Vector3.up * impulsejump, ForceMode.Impulse);
+                    an.SetBool("salto", true);
+                    Instantiate(sonidosalto);
+                }
+                else
+                {
+                    an.SetBool("TocoPiso", true);
+                }
+
+
             }
             else
             {
-                an.SetBool("TocoPiso", true);
+                cayendo();
             }
-            
 
-        }
-        else
-        {
-            cayendo();
-        }
 
-        
- 
-        if(Input.GetKeyDown(KeyCode.R))
-        {
-         an.SetBool("Ataco", true);
-        }
-        else
-        {
-         an.SetBool("Ataco", false);
-        }
-        
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                
+                an.SetBool("Ataco", true);
+              
+
+            }
+            else
+            {
+             an.SetBool("Ataco", false);
+            }
+
+
     }
+
 
     private void OnTriggerEnter(Collider other) //composicion
     {
@@ -113,5 +124,8 @@ public class PlayerController : empty
         }
     }
 
-
+    public void SonidoPies()
+    {
+        Instantiate(pies);
+    }
 }

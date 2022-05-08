@@ -417,6 +417,7 @@ MonoBehaviour:
   button: {fileID: 15743889}
   tiempoInicial: 7
   objetActive: {fileID: 1442741000}
+  sonidoBoton: {fileID: 325080733070449271, guid: 4658d8f945f0c38409db0cea3d90e0af, type: 3}
 --- !u!136 &15743891
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -494,7 +495,7 @@ GameObject:
   - component: {fileID: 26461387}
   - component: {fileID: 26461386}
   - component: {fileID: 26461390}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemigo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -528,9 +529,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93f410aad9ef4664ba751ba3ed123161, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basehealth: 0
+  basehealth: 5
   currentHealth: 0
-  health_bar: {fileID: 0}
   jugador: {fileID: 170325792}
   movespeed: 1
   detector: 2.12
@@ -746,6 +746,7 @@ GameObject:
   - component: {fileID: 96223254}
   - component: {fileID: 96223253}
   - component: {fileID: 96223252}
+  - component: {fileID: 96223255}
   m_Layer: 3
   m_Name: espada
   m_TagString: Untagged
@@ -760,13 +761,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 96223250}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.4, y: 0.131, z: 0.0194}
+  m_LocalRotation: {x: -0.005576807, y: -0.18424116, z: 0.07332119, w: 0.9801266}
+  m_LocalPosition: {x: -0.3391, y: 0.0801, z: -0.088}
   m_LocalScale: {x: 1, y: 0.04005612, z: 0.021328703}
   m_Children: []
   m_Father: {fileID: 604213757}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.922, y: -21.225, z: 8.384}
 --- !u!65 &96223252
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -829,6 +830,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 96223250}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &96223255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96223250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 3
 --- !u!1001 &97796660
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1619,7 +1633,7 @@ GameObject:
   - component: {fileID: 163878074}
   - component: {fileID: 163878073}
   - component: {fileID: 163878072}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ojos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3621,7 +3635,7 @@ GameObject:
   - component: {fileID: 364288011}
   - component: {fileID: 364288010}
   - component: {fileID: 364288009}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemigo (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3671,9 +3685,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93f410aad9ef4664ba751ba3ed123161, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basehealth: 0
+  basehealth: 5
   currentHealth: 0
-  health_bar: {fileID: 0}
   jugador: {fileID: 170325792}
   movespeed: 1
   detector: 2.12
@@ -4129,7 +4142,7 @@ GameObject:
   - component: {fileID: 398633614}
   - component: {fileID: 398633613}
   - component: {fileID: 398633612}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ojos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8888,6 +8901,7 @@ MonoBehaviour:
   button: {fileID: 966796879}
   tiempoInicial: 0
   objetActive: {fileID: 1819275431}
+  sonidoBoton: {fileID: 325080733070449271, guid: 4658d8f945f0c38409db0cea3d90e0af, type: 3}
 --- !u!136 &966796881
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10343,7 +10357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54b3b20cfc17caf42b15647f1b30edcc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19
+      value: -4.69
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54b3b20cfc17caf42b15647f1b30edcc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10351,7 +10365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54b3b20cfc17caf42b15647f1b30edcc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8
+      value: 6.61
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54b3b20cfc17caf42b15647f1b30edcc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10957,7 +10971,7 @@ GameObject:
   - component: {fileID: 1118905867}
   - component: {fileID: 1118905866}
   - component: {fileID: 1118905865}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemigo (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11007,9 +11021,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93f410aad9ef4664ba751ba3ed123161, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basehealth: 0
+  basehealth: 5
   currentHealth: 0
-  health_bar: {fileID: 0}
   jugador: {fileID: 170325792}
   movespeed: 1
   detector: 2.12
@@ -11422,7 +11435,7 @@ GameObject:
   - component: {fileID: 1147498185}
   - component: {fileID: 1147498184}
   - component: {fileID: 1147498183}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ojos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13109,8 +13122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ceb0d01630d9c844828a6dd7e326baa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targuet: {fileID: 0}
-  player: {fileID: 0}
+  targuet: {fileID: 1097483671}
+  player: {fileID: 1974810761}
 --- !u!23 &1358714986
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14516,6 +14529,7 @@ MonoBehaviour:
   button: {fileID: 1530162863}
   tiempoInicial: 10
   objetActive: {fileID: 1819275431}
+  sonidoBoton: {fileID: 325080733070449271, guid: 4658d8f945f0c38409db0cea3d90e0af, type: 3}
 --- !u!136 &1530162865
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -14824,13 +14838,14 @@ MonoBehaviour:
   health_bar: {fileID: 0}
   speed: 2
   speedRotate: 150
-  rb: {fileID: 1566275958}
+  fuerzadetrampolin: 10
   impulsejump: 4
   isjump: 0
-  an: {fileID: 1566275956}
-  fuerzadetrampolin: 10
-  sonidosalto: {fileID: 2652318818911694479, guid: 9149908ad109969458cfbe8f925d20f6, type: 3}
   EstoyAtacando: 0
+  rb: {fileID: 1566275958}
+  an: {fileID: 1566275956}
+  sonidosalto: {fileID: 2652318818911694479, guid: 9149908ad109969458cfbe8f925d20f6, type: 3}
+  pies: {fileID: 0}
   ScriptMoneda: {fileID: 1566275960}
 --- !u!114 &1566275960
 MonoBehaviour:
@@ -18544,6 +18559,7 @@ MonoBehaviour:
   button: {fileID: 1530162863}
   tiempoInicial: 7
   objetActive: {fileID: 1442741000}
+  sonidoBoton: {fileID: 325080733070449271, guid: 4658d8f945f0c38409db0cea3d90e0af, type: 3}
 --- !u!136 &1949987312
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -19597,8 +19613,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ceb0d01630d9c844828a6dd7e326baa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targuet: {fileID: 0}
-  player: {fileID: 0}
+  targuet: {fileID: 1697453976}
+  player: {fileID: 1566275955}
 --- !u!23 &2012384395
 MeshRenderer:
   m_ObjectHideFlags: 0

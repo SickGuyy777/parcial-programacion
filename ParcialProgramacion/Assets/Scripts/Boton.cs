@@ -10,6 +10,7 @@ public class Boton : MonoBehaviour
     float _minTime=0;
     public GameObject objetActive;
     bool _tiempo = false;
+    public GameObject sonidoBoton;
     void Start()
     {
         button.SetBool("Toco", false);
@@ -39,6 +40,7 @@ public class Boton : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         _tiempo = true;
+        Instantiate(sonidoBoton);
     }
 
 
