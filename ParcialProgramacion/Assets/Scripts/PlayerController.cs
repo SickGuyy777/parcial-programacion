@@ -13,6 +13,7 @@ public class PlayerController : empty
     public float impulsejump;
     public bool isjump;
     public bool EstoyAtacando;
+
     public Rigidbody rb;
     public Animator an;
     public GameObject sonidosalto;
@@ -20,26 +21,25 @@ public class PlayerController : empty
     public GameObject pies;
     public ManagementPoints ScriptMoneda;
 
-
     public void Start()
     {
-
-        Dead();
         isjump = false;
         Cursor.lockState = CursorLockMode.Locked;
         EstoyAtacando = false;
-        
+        timer = maxTimer;
     }
-
 
     void Update()
     {
-
+        Dead();
         movimiento();
 
-        
+        if (currentHealth <= 0)
+        {
+            timer -= 1 * Time.deltaTime;
+        }
     }
-    
+
     public void movimiento()
     {
         float h = Input.GetAxis("Horizontal");
@@ -47,8 +47,6 @@ public class PlayerController : empty
 
             transform.position += transform.forward * v * speed * Time.deltaTime;
             an.SetFloat("Blend", v);
-
-
 
             transform.Rotate(Vector3.up * h * speedRotate * Time.deltaTime);
 
@@ -64,41 +62,30 @@ public class PlayerController : empty
                 {
                     an.SetBool("TocoPiso", true);
                 }
-
-
             }
             else
             {
                 cayendo();
             }
 
-
             if (Input.GetKeyDown(KeyCode.E))
             {
-                
                 an.SetBool("Ataco", true);
                 Instantiate(sonidoespada);
-
-        }
+            }
             else
             {
              an.SetBool("Ataco", false);
             }
-
-
     }
-
 
     private void OnTriggerEnter(Collider other) //composicion
     {
         if (other.CompareTag("Coin"))
         {
             ScriptMoneda.Add(1);
-
         }
     }
-
-    
 
     private void OnCollisionEnter(Collision other)
     {
@@ -110,19 +97,16 @@ public class PlayerController : empty
 
     private void cayendo()
     {
-
         an.SetBool("salto", false);
         an.SetBool("TocoPiso", false);
-      
     }
 
     private void Dead()
     {
-        if(currentHealth<=0)
+        if(currentHealth <= 0)
         {
             speed = 0;
             an.SetBool("Muerto", true);
-            
         }
     }
 

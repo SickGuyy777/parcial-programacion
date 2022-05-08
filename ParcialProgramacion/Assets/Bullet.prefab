@@ -109,14 +109,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcc90fc8d7936f54598bfa6bd4ebf977, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basehealth: 0
-  CurrentHealth: 0
-  health_bar: {fileID: 0}
   speed: 1
-  target: {fileID: 0}
+  damage: 2
   timer: 0
   maxTimer: 4
-  damage: 2
 --- !u!54 &-7427555107571354269
 Rigidbody:
   m_ObjectHideFlags: 0

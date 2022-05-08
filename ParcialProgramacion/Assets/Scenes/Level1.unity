@@ -7863,6 +7863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6017e8faa26ee41be8355cc87328d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slider: {fileID: 814366599}
 --- !u!114 &814366599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7909,7 +7910,7 @@ MonoBehaviour:
   m_Direction: 0
   m_MinValue: 0
   m_MaxValue: 10
-  m_WholeNumbers: 1
+  m_WholeNumbers: 0
   m_Value: 10
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9418,10 +9419,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1023547185}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
+  m_Script: {fileID: 11500000, guid: 532b0e9452dd9854b8b1cae63659a4ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1000
 --- !u!1001 &1025485390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10363,7 +10363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54b3b20cfc17caf42b15647f1b30edcc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.69
+      value: -5.19
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54b3b20cfc17caf42b15647f1b30edcc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10371,7 +10371,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54b3b20cfc17caf42b15647f1b30edcc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.61
+      value: 6.43
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54b3b20cfc17caf42b15647f1b30edcc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14800,7 +14800,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basehealth: 10
   currentHealth: 0
-  health_bar: {fileID: 0}
+  healthBar: {fileID: 814366598}
+  timer: 0
+  maxTimer: 2.5
+  isDead: 0
   speed: 2
   speedRotate: 150
   fuerzadetrampolin: 10
@@ -16639,6 +16642,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 88
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1781476393 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 253195ecfb124a94bb008cc4be6f4dd4, type: 3}
+  m_PrefabInstance: {fileID: 1839278123}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1781476397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781476393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 532b0e9452dd9854b8b1cae63659a4ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1785132880
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17239,10 +17259,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1839278125}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
+  m_Script: {fileID: 11500000, guid: 532b0e9452dd9854b8b1cae63659a4ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1000
 --- !u!1001 &1842592900
 PrefabInstance:
   m_ObjectHideFlags: 0
