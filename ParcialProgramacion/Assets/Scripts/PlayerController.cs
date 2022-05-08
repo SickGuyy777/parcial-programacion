@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
+
 public class PlayerController : empty
 {
 
@@ -15,14 +16,17 @@ public class PlayerController : empty
     public int coinsCollected;
     public int fuerzadetrampolin;
     public GameObject sonidosalto;
+    public bool EstoyAtacando;
+
+
 
     public void Start()
     {
 
-
+        Dead();
         isjump = false;
         Cursor.lockState = CursorLockMode.Locked;
-
+        EstoyAtacando = false;
     }
 
 
@@ -34,7 +38,7 @@ public class PlayerController : empty
 
         transform.position += transform.forward * v * speed * Time.deltaTime;
         an.SetFloat("Blend",v);
-
+        
        
 
         transform.Rotate(Vector3.up * h * speedRotate * Time.deltaTime);
@@ -44,17 +48,33 @@ public class PlayerController : empty
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 rb.AddForce(Vector3.up * impulsejump, ForceMode.Impulse);
-                an.SetBool("jumping",true);
+                an.SetBool("salto", true);
                 Instantiate(sonidosalto);
             }
+            else
+            {
+                an.SetBool("TocoPiso", true);
+            }
+            
+
         }
         else
         {
-            an.SetBool("jumping", false);
+            cayendo();
         }
 
+        
+ 
+            if(Input.GetKeyDown(KeyCode.R))
+            {
 
-      
+                an.SetBool("Ataco", true);
+            }
+            else
+            {
+            an.SetBool("Ataco", false);
+            }
+        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -65,6 +85,8 @@ public class PlayerController : empty
         }
     }
 
+    
+
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Trampolin"))
@@ -72,4 +94,23 @@ public class PlayerController : empty
             rb.velocity = Vector2.up * fuerzadetrampolin;
         }
     }
+
+    private void cayendo()
+    {
+
+        an.SetBool("salto", false);
+        an.SetBool("TocoPiso", false);
+      
+    }
+
+    private void Dead()
+    {
+        if(currentHealth<=0)
+        {
+            speed = 0;
+            an.SetBool("Muerto", true);
+        }
+    }
+
+
 }
