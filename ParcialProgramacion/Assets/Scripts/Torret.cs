@@ -31,7 +31,7 @@ public class Torret : MonoBehaviour
                 if (timer <= 0)
                 {
                     GameObject projectileInstance = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-                Instantiate(sonidobala);
+                 Instantiate(sonidobala);
                     timer = maxTimer;
                 }
             }

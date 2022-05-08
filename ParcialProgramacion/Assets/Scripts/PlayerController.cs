@@ -13,10 +13,10 @@ public class PlayerController : empty
     public float impulsejump;
     public bool isjump;
     public Animator an;
-    public int coinsCollected;
     public int fuerzadetrampolin;
     public GameObject sonidosalto;
     public bool EstoyAtacando;
+    public ManagementPoints ScriptMoneda;
 
 
 
@@ -27,6 +27,7 @@ public class PlayerController : empty
         isjump = false;
         Cursor.lockState = CursorLockMode.Locked;
         EstoyAtacando = false;
+        
     }
 
 
@@ -65,23 +66,23 @@ public class PlayerController : empty
 
         
  
-            if(Input.GetKeyDown(KeyCode.R))
-            {
-
-                an.SetBool("Ataco", true);
-            }
-            else
-            {
-            an.SetBool("Ataco", false);
-            }
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+         an.SetBool("Ataco", true);
+        }
+        else
+        {
+         an.SetBool("Ataco", false);
+        }
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other) //composicion
     {
         if (other.CompareTag("Coin"))
         {
-            coinsCollected++;
+            ScriptMoneda.Add(1);
+
         }
     }
 

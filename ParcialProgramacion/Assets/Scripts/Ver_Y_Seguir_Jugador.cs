@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ver_Y_Seguir_Jugador : MonoBehaviour
+public class Ver_Y_Seguir_Jugador : empty
 {
     public Transform jugador;
     public float movespeed;

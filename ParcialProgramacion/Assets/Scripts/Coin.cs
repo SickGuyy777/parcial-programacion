@@ -9,7 +9,7 @@ public class Coin : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
     }
 }
