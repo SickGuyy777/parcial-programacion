@@ -6,7 +6,6 @@ public class Controles_comp
 {
     Movement_comp _movement;
     int _salto;
-   
 
 
     public Controles_comp(Movement_comp m, int salto)
@@ -39,4 +38,6 @@ public class Controles_comp
         
 
     }
+
+    
 }
