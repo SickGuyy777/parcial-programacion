@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2cf13dd85ea59c4dad7aa80e4b221c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1566275959}
 --- !u!65 &10033988
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10206,11 +10206,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54b3b20cfc17caf42b15647f1b30edcc, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.59
+      value: 0.5899999
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54b3b20cfc17caf42b15647f1b30edcc, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.59
+      value: 0.59000003
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54b3b20cfc17caf42b15647f1b30edcc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12863,8 +12863,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1383200256}
   m_LocalRotation: {x: 0.12541564, y: -0, z: -0, w: 0.9921043}
-  m_LocalPosition: {x: -0.09713739, y: 2.034378, z: -2.5408847}
-  m_LocalScale: {x: 1.6949153, y: 1.634938, z: 1.8348631}
+  m_LocalPosition: {x: -0.0971681, y: 2.0343933, z: -2.5408857}
+  m_LocalScale: {x: 1.6949153, y: 1.6349381, z: 1.834863}
   m_Children: []
   m_Father: {fileID: 1097483671}
   m_RootOrder: 4
@@ -14585,8 +14585,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9a43759391339c4d99866fb491564f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SonidoMoneda: {fileID: 0}
-  scoretext: {fileID: 0}
+  SonidoMoneda: {fileID: 8841276650890323244, guid: 03a3f12a9961a1e43b8d83fa7dc8ef2c, type: 3}
+  scoretext: {fileID: 281774159}
 --- !u!114 &1566275961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14602,7 +14602,7 @@ MonoBehaviour:
   speed: 2
   forceJump: 4
   rb: {fileID: 1566275958}
-  isjump: 0
+  salto: 0
 --- !u!1 &1573257680
 GameObject:
   m_ObjectHideFlags: 0

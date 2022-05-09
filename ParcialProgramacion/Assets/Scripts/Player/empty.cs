@@ -43,6 +43,7 @@ public class empty :MonoBehaviour
     {
         if(currentHealth<10)
         {
+            healthBar.SetHealth(currentHealth);
             currentHealth += curarse;
 
         }
