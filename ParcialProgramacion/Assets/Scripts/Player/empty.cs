@@ -19,10 +19,13 @@ public class empty :MonoBehaviour
         currentHealth = basehealth;
     }
 
+
+
     public virtual void DamageForPlayer(float dmg)
     {
         currentHealth -= dmg;
         healthBar.SetHealth(currentHealth);
+        Curacion(2);
 
         if (currentHealth <= 0)
         {

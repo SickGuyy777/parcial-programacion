@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class Logica_De_Pies : MonoBehaviour
 {
-    public PlayerController player;
+
+   public PlayerController player ;
+
+
 
     private void OnTriggerStay(Collider other)
     {
-        player.isjump = true;
+        player.isjump =true;
     }
-
 
 
     private void OnTriggerExit(Collider other)
     {
-        player.isjump = false;
+        player.isjump =false;
     }
 }

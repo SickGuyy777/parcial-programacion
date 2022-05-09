@@ -38,7 +38,7 @@ public class PlayerController : empty
 
         if (currentHealth <= 0)
         {
-            timer -= 1 * Time.deltaTime;
+            timer -=Time.deltaTime;
         }
     }
 

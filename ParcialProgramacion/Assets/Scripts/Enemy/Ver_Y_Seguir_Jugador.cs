@@ -11,6 +11,7 @@ public class Ver_Y_Seguir_Jugador : empty_Enemy
     public LayerMask layerdeljugador;
     public bool detectoalgo;
     public bool enemigodetectado;
+    public Animator animaciones;
 
 
     void Update()
@@ -20,19 +21,44 @@ public class Ver_Y_Seguir_Jugador : empty_Enemy
         enemigodetectado = Physics.CheckSphere(transform.position, persecucion, layerdeljugador);
         if (detectoalgo == true)
         {
+           
             transform.LookAt(jugador);
 
             if (detectoalgo == true && enemigodetectado == true)
             {
+                
                 var _Distancia = Vector3.Distance(jugador.position, transform.position);
-                if(_Distancia > 0.7)
+                animaciones.SetBool("corro", true);
+
+                if (_Distancia > 0.79)
                 {
-                    transform.position = Vector3.MoveTowards(transform.position, new Vector3(jugador.position.x, transform.position.y, jugador.position.z), movespeed * Time.deltaTime);//esto hace que me siga
+                    transform.position = Vector3.MoveTowards(transform.position, new Vector3(jugador.position.x, transform.position.y, jugador.position.z), movespeed * Time.deltaTime);
+                    if(_Distancia <=0.79)
+                    {
+                        animaciones.SetBool("ataco", true);
+                    }
+
+                    
+
                 }
                  
             }
+            else
+            {
+                animaciones.SetBool("corro", false);
+            }
         }
 
+        Dead();
+    }
+
+    public void Dead()
+    {
+        if(currentHealth<=0)
+        {
+            
+            animaciones.SetBool("Muerto", true); 
+        }
     }
 
     public void OnDrawGizmos()
