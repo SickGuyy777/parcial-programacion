@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class empty : MonoBehaviour
+public class empty :MonoBehaviour
 {
     public float basehealth = 10;
     public float currentHealth;
@@ -33,6 +33,15 @@ public class empty : MonoBehaviour
                 SceneManager.LoadScene("Perdiste");
                 Cursor.lockState = CursorLockMode.None;
             } 
+        }
+    }
+
+    public void Curacion(float curarse)
+    {
+        if(currentHealth<10)
+        {
+            currentHealth += curarse;
+
         }
     }
 }

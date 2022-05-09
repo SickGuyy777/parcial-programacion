@@ -4,6 +4,7 @@ using UnityEngine;
 
 
 
+
 public class PlayerController : empty
 {
 
@@ -20,6 +21,7 @@ public class PlayerController : empty
     public GameObject sonidoespada;
     public GameObject pies;
     public ManagementPoints ScriptMoneda;
+    public empty stats;
 
     public void Start()
     {
@@ -79,13 +81,25 @@ public class PlayerController : empty
             }
     }
 
-    private void OnTriggerEnter(Collider other) //composicion
+    private void OnTriggerEnter(Collider other) 
     {
         if (other.CompareTag("Coin"))
         {
             ScriptMoneda.Add(1);
         }
+
+        if(currentHealth<10)
+        {
+            if (other.CompareTag("Curacion"))
+            {
+                stats.Curacion(2);
+            }
+        }
+
+
     }
+
+
 
     private void OnCollisionEnter(Collision other)
     {

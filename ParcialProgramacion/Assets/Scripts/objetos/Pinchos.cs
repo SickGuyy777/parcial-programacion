@@ -8,7 +8,7 @@ public class Pinchos : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.GetComponent<empty>() != null)
+        if(other.gameObject.GetComponent<PlayerController>() != null)
         {
             other.gameObject.GetComponent<empty>().DamageForPlayer(damage);
         }
