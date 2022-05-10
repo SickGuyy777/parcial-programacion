@@ -19,6 +19,7 @@ public class PlayerController : empty
     public Animator an;
     public GameObject sonidosalto;
     public GameObject sonidoespada;
+    public GameObject sonidotrampolin;
     public GameObject pies;
     public ManagementPoints ScriptMoneda;
 
@@ -97,6 +98,7 @@ public class PlayerController : empty
         if (other.gameObject.CompareTag("Trampolin"))
         {
             rb.velocity = Vector2.up * fuerzadetrampolin;
+            Instantiate(sonidotrampolin);
         }
     }
 

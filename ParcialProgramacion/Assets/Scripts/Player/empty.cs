@@ -8,6 +8,7 @@ public class empty :MonoBehaviour
     public float basehealth = 10;
     public float currentHealth;
     public HealthBar healthBar;
+    public GameObject sonidodolor;
 
     public float timer;
     public float maxTimer;
@@ -17,6 +18,7 @@ public class empty :MonoBehaviour
 
     private void Awake()
     {
+        
         currentHealth = basehealth;
         timer = maxTimer;
     }
@@ -26,7 +28,8 @@ public class empty :MonoBehaviour
     {
         currentHealth -= dmg;
         healthBar.SetHealth(currentHealth);
-   
+        Instantiate(sonidodolor);
+
 
         if (currentHealth <= 0)
         {

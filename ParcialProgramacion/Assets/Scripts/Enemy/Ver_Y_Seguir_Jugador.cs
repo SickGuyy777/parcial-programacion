@@ -69,11 +69,12 @@ public class Ver_Y_Seguir_Jugador : empty_Enemy
 
     public void Dead()
     {
-        if(currentHealth < 0)
+        if(currentHealth <= 0)
         {
-            enemigos_derrotados++;
-            Instantiate(sonido_muerte);
+
             animaciones.SetBool("Muerto", true);
+            Instantiate(sonido_muerte);
+            enemigos_derrotados++;
             
         }
     }

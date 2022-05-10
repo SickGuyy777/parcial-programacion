@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10307,7 +10307,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54b3b20cfc17caf42b15647f1b30edcc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.43
+      value: -111
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54b3b20cfc17caf42b15647f1b30edcc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10315,7 +10315,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54b3b20cfc17caf42b15647f1b30edcc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.64
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 54b3b20cfc17caf42b15647f1b30edcc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14651,6 +14651,7 @@ MonoBehaviour:
   basehealth: 10
   currentHealth: 0
   healthBar: {fileID: 814366598}
+  sonidodolor: {fileID: 7036148378600076235, guid: 36cfb9258ed27d14d870958e9669939c, type: 3}
   timer: 0
   maxTimer: 2.5
   curarse: 2
@@ -14665,6 +14666,7 @@ MonoBehaviour:
   an: {fileID: 1566275956}
   sonidosalto: {fileID: 2652318818911694479, guid: 9149908ad109969458cfbe8f925d20f6, type: 3}
   sonidoespada: {fileID: 8196463048153412428, guid: 66491c27a19e16b4a87ecf4a819530e0, type: 3}
+  sonidotrampolin: {fileID: 4800036971956377060, guid: 3c267ae305b7ab9448fa4063eec3a29e, type: 3}
   pies: {fileID: 3274768857609321642, guid: 163b5955d67185e4ead7274f24e26021, type: 3}
   ScriptMoneda: {fileID: 1566275960}
 --- !u!114 &1566275960
@@ -16481,7 +16483,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 3096990006528454993, guid: daa9fc0c855cc124d874c6ca41d9a93f, type: 3}
   timer: 0
   maxTimer: 2
-  sonidobala: {fileID: 0}
+  sonidobala: {fileID: 4959585452587911208, guid: 60541e9c0e06dcc43bf9f15741884fc9, type: 3}
 --- !u!4 &1778219904
 Transform:
   m_ObjectHideFlags: 0
