@@ -36,10 +36,10 @@ public class PlayerController : empty
         Dead();
         movimiento();
 
-        if (currentHealth <= 0)
+        /*if (isDead == true)
         {
             timer -= Time.deltaTime;
-        }
+        }*/
     }
 
     public void movimiento()
@@ -108,7 +108,7 @@ public class PlayerController : empty
 
     private void Dead()
     {
-        if(currentHealth <=0)
+        if(currentHealth <= 0)
         {
             speed = 0;
             speedRotate = 0;

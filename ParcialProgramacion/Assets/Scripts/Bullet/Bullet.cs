@@ -32,6 +32,4 @@ public class Bullet : emptyBullet
             Destroy(this.gameObject);
         }
     }
-
-    
 }

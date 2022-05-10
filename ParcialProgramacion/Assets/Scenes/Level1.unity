@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14572,7 +14572,6 @@ MonoBehaviour:
   sonidoespada: {fileID: 8196463048153412428, guid: 66491c27a19e16b4a87ecf4a819530e0, type: 3}
   pies: {fileID: 3274768857609321642, guid: 163b5955d67185e4ead7274f24e26021, type: 3}
   ScriptMoneda: {fileID: 1566275960}
-  stats: {fileID: 1566275959}
 --- !u!114 &1566275960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16801,7 +16800,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812598022}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 15.41, y: 1.78, z: 2.29}
+  m_LocalPosition: {x: 15.41, y: 1.66, z: 2.29}
   m_LocalScale: {x: 0.21000005, y: 0.21000005, z: 0.21}
   m_Children: []
   m_Father: {fileID: 0}
@@ -18660,7 +18659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
+  damage: 1
 --- !u!1 &1953861015
 GameObject:
   m_ObjectHideFlags: 0

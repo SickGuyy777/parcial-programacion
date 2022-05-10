@@ -33,15 +33,18 @@ public class Ver_Y_Seguir_Jugador : empty_Enemy
                 if (_Distancia > 0.79)
                 {
                     transform.position = Vector3.MoveTowards(transform.position, new Vector3(jugador.position.x, transform.position.y, jugador.position.z), movespeed * Time.deltaTime);
-                    if(_Distancia <=0.79)
-                    {
-                        animaciones.SetBool("ataco", true);
-                    }
-
-                    
-
                 }
-                 
+
+                if (_Distancia <= 0.79)
+                {
+                    animaciones.SetBool("ataco", true);
+                }
+
+                else
+                {
+                    animaciones.SetBool("ataco", false);
+                }
+
             }
             else
             {

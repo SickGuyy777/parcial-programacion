@@ -11,6 +11,7 @@ public class empty :MonoBehaviour
 
     public float timer;
     public float maxTimer;
+    public float curarse = 2;
 
     public bool isDead = false;
 
@@ -21,8 +22,6 @@ public class empty :MonoBehaviour
     }
 
 
-
-
     public virtual void DamageForPlayer(float dmg)
     {
         currentHealth -= dmg;
@@ -31,23 +30,28 @@ public class empty :MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            isDead = true;
-
-            if (timer <= 0)
-            {
+            //isDead = true;
                 SceneManager.LoadScene("Perdiste");
                 Cursor.lockState = CursorLockMode.None;
-            } 
         }
     }
 
-    public void Curacion(float curarse)
+    /*public void Curacion(float curarse)
     {
-        if(currentHealth<basehealth)
-        {
-            healthBar.SetHealth(currentHealth);
-            currentHealth += curarse;
+        
+    }*/
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            if (currentHealth <= 8)
+            {
+                healthBar.SetHealth(currentHealth);
+                currentHealth += curarse;
+
+                //Destroy(this.gameObject);
+            }
         }
     }
 }
