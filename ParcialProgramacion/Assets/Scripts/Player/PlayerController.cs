@@ -21,14 +21,14 @@ public class PlayerController : empty
     public GameObject sonidoespada;
     public GameObject pies;
     public ManagementPoints ScriptMoneda;
-    public empty stats;
+
 
     public void Start()
     {
         isjump = false;
         Cursor.lockState = CursorLockMode.Locked;
         EstoyAtacando = false;
-        timer = maxTimer;
+       
     }
 
     void Update()
@@ -38,7 +38,7 @@ public class PlayerController : empty
 
         if (currentHealth <= 0)
         {
-            timer -=Time.deltaTime;
+            timer -= Time.deltaTime;
         }
     }
 
@@ -73,7 +73,7 @@ public class PlayerController : empty
             if (Input.GetKeyDown(KeyCode.E))
             {
                 an.SetBool("Ataco", true);
-                Instantiate(sonidoespada);
+                
             }
             else
             {
@@ -87,15 +87,6 @@ public class PlayerController : empty
         {
             ScriptMoneda.Add(1);
         }
-
-        if(currentHealth<10)
-        {
-            if (other.CompareTag("Curacion"))
-            {
-                stats.Curacion(2);
-            }
-        }
-
 
     }
 
@@ -117,9 +108,10 @@ public class PlayerController : empty
 
     private void Dead()
     {
-        if(currentHealth <= 0)
+        if(currentHealth <=0)
         {
             speed = 0;
+            speedRotate = 0;
             an.SetBool("Muerto", true);
         }
     }
@@ -127,5 +119,10 @@ public class PlayerController : empty
     public void SonidoPies()
     {
         Instantiate(pies);
+    }
+
+    public void SonidoEspada()
+    {
+        Instantiate(sonidoespada);
     }
 }

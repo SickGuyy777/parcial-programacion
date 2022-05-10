@@ -17,7 +17,9 @@ public class empty :MonoBehaviour
     private void Awake()
     {
         currentHealth = basehealth;
+        timer = maxTimer;
     }
+
 
 
 
@@ -25,7 +27,7 @@ public class empty :MonoBehaviour
     {
         currentHealth -= dmg;
         healthBar.SetHealth(currentHealth);
-        Curacion(2);
+   
 
         if (currentHealth <= 0)
         {
@@ -41,7 +43,7 @@ public class empty :MonoBehaviour
 
     public void Curacion(float curarse)
     {
-        if(currentHealth<10)
+        if(currentHealth<basehealth)
         {
             healthBar.SetHealth(currentHealth);
             currentHealth += curarse;

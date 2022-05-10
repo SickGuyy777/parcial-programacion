@@ -28,7 +28,7 @@ public class Ver_Y_Seguir_Jugador : empty_Enemy
             {
                 
                 var _Distancia = Vector3.Distance(jugador.position, transform.position);
-                animaciones.SetBool("corro", true);
+                //animaciones.SetBool("corro", true);
 
                 if (_Distancia > 0.79)
                 {
@@ -45,7 +45,7 @@ public class Ver_Y_Seguir_Jugador : empty_Enemy
             }
             else
             {
-                animaciones.SetBool("corro", false);
+                //animaciones.SetBool("corro", false);
             }
         }
 
