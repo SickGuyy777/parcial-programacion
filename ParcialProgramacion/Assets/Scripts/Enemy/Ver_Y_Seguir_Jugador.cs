@@ -12,6 +12,10 @@ public class Ver_Y_Seguir_Jugador : empty_Enemy
     public bool detectoalgo;
     public bool enemigodetectado;
     public Animator animaciones;
+    public int enemigos_derrotados=0;
+    public int MaxEnemigos_derrotados;
+    public GameObject bloqueodenivel;
+    public GameObject sonido_muerte;
 
 
     void Update()
@@ -28,39 +32,49 @@ public class Ver_Y_Seguir_Jugador : empty_Enemy
             {
                 
                 var _Distancia = Vector3.Distance(jugador.position, transform.position);
-                //animaciones.SetBool("corro", true);
+                animaciones.SetBool("corro", true);
 
                 if (_Distancia > 0.79)
                 {
                     transform.position = Vector3.MoveTowards(transform.position, new Vector3(jugador.position.x, transform.position.y, jugador.position.z), movespeed * Time.deltaTime);
-                }
+                    if (_Distancia <= 0.79)
+                    {
+                        
+                    }
 
-                if (_Distancia <= 0.79)
+                }
+                else
                 {
+
                     animaciones.SetBool("ataco", true);
                 }
 
-                else
-                {
-                    animaciones.SetBool("ataco", false);
-                }
+
+
+
 
             }
             else
             {
-                //animaciones.SetBool("corro", false);
+                animaciones.SetBool("corro", false);
             }
         }
 
+        if(enemigos_derrotados==MaxEnemigos_derrotados)
+        {
+            Destroy(bloqueodenivel);
+        }
         Dead();
     }
 
     public void Dead()
     {
-        if(currentHealth<=0)
+        if(currentHealth < 0)
         {
+            enemigos_derrotados++;
+            Instantiate(sonido_muerte);
+            animaciones.SetBool("Muerto", true);
             
-            animaciones.SetBool("Muerto", true); 
         }
     }
 

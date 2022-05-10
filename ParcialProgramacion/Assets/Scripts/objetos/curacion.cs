@@ -4,13 +4,21 @@ using UnityEngine;
 
 public class curacion : MonoBehaviour
 {
-    
+    public int potenciaDeCuracion;
     private void OnTriggerEnter(Collider other)
     {
         
         if (other.CompareTag("Player"))
         {
-            Destroy(this.gameObject);
+            empty hithealth = other.GetComponent<empty>();
+            if(hithealth !=null)
+            {
+               if(hithealth.Curacion(potenciaDeCuracion) == true)
+               {
+                    Destroy(this.gameObject);
+                }
+            }
+            
         }
     }
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 32aea986d9e677f43b03a07ae987a09a
+guid: 7e5e1977a31fe3441ae1c2e505261a29
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
@@ -497,13 +497,13 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: T-Pose(Clone)
+    - name: T-Pose enemy(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamorig:Hips
-      parentName: T-Pose(Clone)
+      parentName: T-Pose enemy(Clone)
       position: {x: 0.00000247641, y: 0.9534753, z: 0.0048324326}
       rotation: {x: -0.000000025465264, y: 0.00000043771817, z: -0.0000097081365, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -839,7 +839,7 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: ac4b12b92e8b34040a1fd18d5a092ffb, type: 3}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: dbdf21d4c9843a748a21a7a530d65abd, type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1

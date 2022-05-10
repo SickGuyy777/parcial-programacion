@@ -36,22 +36,30 @@ public class empty :MonoBehaviour
         }
     }
 
-    /*public void Curacion(float curarse)
+    public bool Curacion(float curarse)
     {
-        
-    }*/
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
+        if (curarse > 0 || currentHealth <= 0 || currentHealth == basehealth)
         {
-            if (currentHealth <= 8)
+
+            currentHealth += curarse;
+
+            if (currentHealth > basehealth)
+            {
+                currentHealth = basehealth;
+            }
+
+            if (healthBar != null)
             {
                 healthBar.SetHealth(currentHealth);
-                currentHealth += curarse;
-
-                //Destroy(this.gameObject);
             }
+            return true;
         }
+        else
+        {
+            return false;
+        }
+        
     }
+
+
 }
