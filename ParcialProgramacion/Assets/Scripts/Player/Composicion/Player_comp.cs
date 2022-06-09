@@ -25,4 +25,10 @@ public class Player_comp : MonoBehaviour
         _control.ArtificialUpdate();
         
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        other.GetComponent<Boton>()?.Touch();
+        
+    }
 }
