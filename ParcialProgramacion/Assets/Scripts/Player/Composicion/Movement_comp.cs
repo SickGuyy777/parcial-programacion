@@ -7,7 +7,7 @@ public class Movement_comp
     float _speed;
     float _forceJump;
     Rigidbody _rb;
-    Transform _transform;
+    public Transform _transform;
 
     public Movement_comp(float speed, float fj, Rigidbody rb, Transform t)
     {

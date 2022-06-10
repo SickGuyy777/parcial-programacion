@@ -7,9 +7,11 @@ public class Torret : MonoBehaviour
     public Transform target;
     public LayerMask layers;
     public GameObject bulletPrefab;
+    public GameObject bulletinstance;
     public float timer;
     public float maxTimer;
     public GameObject sonidobala;
+    
 
     private void Start()
     {
@@ -30,8 +32,10 @@ public class Torret : MonoBehaviour
 
                 if (timer <= 0)
                 {
-                    GameObject projectileInstance = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-                 Instantiate(sonidobala);
+                    bulletinstance = Instantiate(bulletPrefab, transform.position, transform.rotation); /*Quaternion.identity*/
+
+
+                    Instantiate(sonidobala);
                     timer = maxTimer;
                 }
             }
