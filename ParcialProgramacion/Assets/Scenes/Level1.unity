@@ -13491,6 +13491,8 @@ MonoBehaviour:
   forceJump: 2
   rb: {fileID: 1179598009}
   salto: 0
+  vel: 5
+  velx: 20
 --- !u!114 &1179598006
 MonoBehaviour:
   m_ObjectHideFlags: 0

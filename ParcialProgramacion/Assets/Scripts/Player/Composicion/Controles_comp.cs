@@ -10,12 +10,15 @@ public class Controles_comp
     public float sensitivecam;
     public float limitrotatr;
     public float rotateXcam;
-    public Controles_comp(Movement_comp m, int salto)
+    public Controles_comp(Movement_comp m, int salto, float vel, float velx, Transform camera)
     {
         _movement = m;
         _salto = salto;
-       
-        
+        sensitivecam = vel;
+        limitrotatr = velx;
+        rotateXcam = velx;
+        Camera = camera;
+
     }
 
     public void ArtificialUpdate()
@@ -40,7 +43,7 @@ public class Controles_comp
 
         
         Camera.localEulerAngles = new Vector3(rotateXcam, Camera.localEulerAngles.y, Camera.localEulerAngles.z);
-        _movement._transform.Rotate(0, Input.GetAxis("Mouse X"), sensitivecam, 0);
+        _movement._transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivecam, 0);
         
         
     }
