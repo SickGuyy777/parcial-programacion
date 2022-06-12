@@ -29,6 +29,7 @@ public class Plataforma_Seve_Noseve : MonoBehaviour
 
             if (_currentTime <= _minTime)
             {
+                objetActive.SetActive(false);
                 _tiempo = false;
                 _currentTime = tiempoInicial;
                 buttom.Animationbutton.SetBool("Toco",false);

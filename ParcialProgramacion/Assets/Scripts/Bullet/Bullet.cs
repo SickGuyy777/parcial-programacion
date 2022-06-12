@@ -7,9 +7,11 @@ public class Bullet : emptyBullet
 
     private Rigidbody _bulletRB;
     private Transform _target;
+    public GameObject Explosion, objbullet;
 
     public float timer;
     public float maxTimer;
+    private string nameTag = "Wall";
 
     private void Start()
     {
@@ -31,5 +33,19 @@ public class Bullet : emptyBullet
         {
             Destroy(this.gameObject);
         }
+    }
+
+    private void OnCollisionEnter(Collision pared)
+    {
+        if(pared.gameObject.tag == nameTag)
+        {
+            Exploto();
+        }
+    }
+
+    private void Exploto()
+    {
+        Destroy(objbullet);
+        Instantiate(Explosion, transform.position, transform.rotation);
     }
 }
