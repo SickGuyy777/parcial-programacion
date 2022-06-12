@@ -13493,6 +13493,8 @@ MonoBehaviour:
   salto: 0
   vel: 5
   velx: 20
+  camera: {fileID: 1632076390}
+  anim: {fileID: 1179598007}
 --- !u!114 &1179598006
 MonoBehaviour:
   m_ObjectHideFlags: 0
