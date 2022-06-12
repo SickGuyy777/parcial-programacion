@@ -7,6 +7,7 @@ TagManager:
   - Coin
   - Trampolin
   - Curacion
+  - Wall
   layers:
   - Default
   - TransparentFX

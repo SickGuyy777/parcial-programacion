@@ -16,7 +16,7 @@ public class curacion : MonoBehaviour
                if(hithealth.Curacion(potenciaDeCuracion) == true)
                {
                     Destroy(this.gameObject);
-                }
+               }
             }
             
         }
