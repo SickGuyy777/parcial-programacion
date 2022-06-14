@@ -14,12 +14,13 @@ public class Player_comp : MonoBehaviour
     public Animator anim;
     Movement_comp _movement;
     Controles_comp _control;
-
+    public bool isjump = false;
+    public AudioSource pies;
 
     private void Start()
     {
-        _movement = new Movement_comp(speed, forceJump, rb, transform, anim);
-        _control = new Controles_comp(_movement, salto, vel,velx, camera);
+        _movement = new Movement_comp(speed, forceJump, rb, transform, anim,isjump, pies);
+        _control = new Controles_comp(_movement, salto, vel,velx, camera,anim);
         
     }
 

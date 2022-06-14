@@ -5,12 +5,15 @@ using UnityEngine;
 public class Controles_comp
 {
     Movement_comp _movement;
+    public Animator animacion;
     public int _salto;
     public Transform Camera;
     public float sensitivecam;
     public float limitrotatr;
     public float rotateXcam;
-    public Controles_comp(Movement_comp m, int salto, float vel, float velx, Transform camera)
+    
+
+    public Controles_comp(Movement_comp m, int salto, float vel, float velx, Transform camera, Animator anim )
     {
         _movement = m;
         _salto = salto;
@@ -18,6 +21,8 @@ public class Controles_comp
         limitrotatr = velx;
         rotateXcam = velx;
         Camera = camera;
+        animacion = anim;
+        
 
     }
 
@@ -32,11 +37,18 @@ public class Controles_comp
             _movement.Move(v, h);
         }
 
-      
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-                _movement.Jump();    
-        }
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+
+                _movement.Jump();
+            }
+            else
+            {
+                animacion.SetBool("TocoPiso", true);
+            }
+
+
 
         rotateXcam += -Input.GetAxis("Mouse Y");
         rotateXcam = Mathf.Clamp(rotateXcam, -limitrotatr, limitrotatr);
@@ -48,5 +60,5 @@ public class Controles_comp
         
     }
 
-    
+
 }

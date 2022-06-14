@@ -5,9 +5,9 @@ using UnityEngine;
 public class Torret : MonoBehaviour
 {
     public Transform target;
+    public float speedRot;
     public LayerMask layers;
-    public GameObject bulletPrefab;
-    public GameObject bulletinstance;
+    public GameObject balainicio, balaprefab;
     public float timer;
     public float maxTimer;
     public GameObject sonidobala;
@@ -21,24 +21,28 @@ public class Torret : MonoBehaviour
 
     void Update()
     {
+
         var dir = target.position - transform.position;
+
         var distance = Vector3.Distance(transform.position, target.position);
-        
-            if (!Physics.Raycast(transform.position, dir, distance, layers))
+
+        if (!Physics.Raycast(transform.position, dir, distance, layers))
+        {
+            var lerpDir = Vector3.Lerp(transform.forward, dir, Time.deltaTime * speedRot);
+            transform.forward = lerpDir;
+            timer -= Time.deltaTime;
+
+            if (timer <= 0)
             {
-                transform.forward = dir;
+                GameObject balatemporal = Instantiate(balaprefab, balainicio.transform.position, balainicio.transform.rotation);
 
-                timer -= 1 * Time.deltaTime;
-
-                if (timer <= 0)
-                {
-                    bulletinstance = Instantiate(bulletPrefab, transform.position, transform.rotation); /*Quaternion.identity*/
-
-
-                    Instantiate(sonidobala);
-                    timer = maxTimer;
-                }
+                Instantiate(sonidobala);
+                timer = maxTimer;
             }
+        }
+
+
+
     }
 }
 

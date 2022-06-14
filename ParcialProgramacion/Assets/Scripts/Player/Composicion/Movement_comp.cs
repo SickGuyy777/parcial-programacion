@@ -9,14 +9,17 @@ public class Movement_comp
     Rigidbody _rb;
     public Transform _transform;
     private Animator _anim;
-
-    public Movement_comp(float speed, float fj, Rigidbody rb, Transform t, Animator anim)
+    public bool isjump;
+    public AudioSource pies;
+    public Movement_comp(float speed, float fj, Rigidbody rb, Transform t, Animator anim, bool estoySaltando, AudioSource sonidoPies)
     {
         _speed = speed;
         _forceJump = fj;
         _rb = rb;
         _transform = t;
         _anim = anim;
+        isjump = estoySaltando;
+        pies = sonidoPies;
     }
 
     public void Move(float vertical, float horizontal)
@@ -25,13 +28,32 @@ public class Movement_comp
         dir += _transform.right * horizontal;
 
         _transform.position += dir * _speed * Time.deltaTime;
-
+        _anim.SetFloat("Blend", vertical);
         
     }
 
     public void Jump()
     {
-        _rb.AddForce(Vector3.up * _forceJump, ForceMode.Impulse);
+        if (isjump)
+        {
+            _rb.AddForce(Vector3.up * _forceJump, ForceMode.Impulse);
+            _anim.SetBool("salto", true);
+        }
+        else
+        {
+            Iamfalling();
+        }
 
+    }
+
+    public void Iamfalling()
+    {
+        _anim.SetBool("TocoPiso", false);
+        _anim.SetBool("salto", false);
+    }
+
+    public void SonidoPies()
+    {
+        pies.Play();
     }
 }

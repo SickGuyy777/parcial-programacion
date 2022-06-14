@@ -5,8 +5,7 @@ using UnityEngine;
 public class Bullet : emptyBullet
 {
 
-    private Rigidbody _bulletRB;
-    private Transform _target;
+    
     public GameObject Explosion, objbullet;
 
     public float timer;
@@ -15,19 +14,16 @@ public class Bullet : emptyBullet
 
     private void Start()
     {
-        _bulletRB = GetComponent<Rigidbody>();
-
-        _target = GameObject.Find("ShootingPoint").transform;
-
-        var dir = _target.position - transform.position;
-        _bulletRB.AddForce(dir * speed, ForceMode.Impulse);
-
+        //_target = GameObject.Find("ShootingPoint").transform;
         timer = maxTimer;
+        
     }
 
     void Update()
     {
-        timer -= 1 * Time.deltaTime;
+        Rigidbody _bulletRB = GetComponent<Rigidbody>();
+        _bulletRB.AddForce(transform.forward * speed);
+        timer -= Time.deltaTime;
 
         if (timer <= 0)
         {

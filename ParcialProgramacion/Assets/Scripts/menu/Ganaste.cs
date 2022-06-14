@@ -8,7 +8,7 @@ public class Ganaste : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        SceneManager.LoadScene("Meta");
+        SceneManager.LoadScene("Level2");
 
     }
 }
