@@ -13771,7 +13771,7 @@ MonoBehaviour:
   speed: 3
   forceJump: 2
   rb: {fileID: 1179598009}
-  salto: 0
+  salto: 5
   vel: 5
   velx: 20
   camera: {fileID: 1632076390}

@@ -9,8 +9,9 @@ public class Movement_comp
     Rigidbody _rb;
     public Transform _transform;
     private Animator _anim;
-    public bool isjump;
+    private bool isjump;
     public AudioSource pies;
+
     public Movement_comp(float speed, float fj, Rigidbody rb, Transform t, Animator anim, bool estoySaltando, AudioSource sonidoPies)
     {
         _speed = speed;
@@ -39,11 +40,6 @@ public class Movement_comp
             _rb.AddForce(Vector3.up * _forceJump, ForceMode.Impulse);
             _anim.SetBool("salto", true);
         }
-        else
-        {
-            Iamfalling();
-        }
-
     }
 
     public void Iamfalling()
@@ -55,5 +51,15 @@ public class Movement_comp
     public void SonidoPies()
     {
         pies.Play();
+    }
+
+    public bool True()
+    {
+        return isjump = true;
+    }
+
+    public bool False()
+    {
+        return isjump = false;
     }
 }

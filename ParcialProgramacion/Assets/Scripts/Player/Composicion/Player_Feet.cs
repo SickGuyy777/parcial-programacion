@@ -7,12 +7,13 @@ public class Player_Feet : MonoBehaviour
     public Player_comp player;
     private void OnTriggerStay(Collider other)
     {
-        player.isjump = true;
+        player._movement.True();
+        player.anim.SetBool("TocoPiso", true);
+        player._movement.Iamfalling();
     }
-
 
     private void OnTriggerExit(Collider other)
     {
-        player.isjump = false;
+        player._movement.False();
     }
 }

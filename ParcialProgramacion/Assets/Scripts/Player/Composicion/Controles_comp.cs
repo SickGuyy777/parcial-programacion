@@ -40,7 +40,6 @@ public class Controles_comp
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
-
                 _movement.Jump();
             }
             else
