@@ -6,7 +6,10 @@ public class Bullet : emptyBullet
 {
 
     
-    public GameObject Explosion, objbullet;
+    public GameObject  objbullet;
+    public ParticleSystem Explosion;
+
+    public bool once = true;
 
     public float timer;
     public float maxTimer;
@@ -33,9 +36,15 @@ public class Bullet : emptyBullet
 
     private void OnCollisionEnter(Collision pared)
     {
-        if(pared.gameObject.tag == nameTag)
+        if(pared.gameObject.tag == nameTag && once)
         {
+            var em = Explosion.emission;
+            var dur = Explosion.duration;
+            em.enabled = true;
+            // Explosion.Play();
+            once= false;
             Exploto();
+            em.enabled = false;
         }
     }
 
@@ -43,5 +52,6 @@ public class Bullet : emptyBullet
     {
         Destroy(objbullet);
         Instantiate(Explosion, transform.position, transform.rotation);
+        
     }
 }

@@ -48,8 +48,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   damage: 2
-  Explosion: {fileID: 7478427794076589000}
   objbullet: {fileID: 7705363704120006538}
+  Explosion: {fileID: 8199542935267704264, guid: 2af73d8f17f2db741ba91ae631bbf743, type: 3}
   timer: 0
   maxTimer: 5
 --- !u!54 &5528102017839536327
@@ -213,11 +213,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2af73d8f17f2db741ba91ae631bbf743, type: 3}
---- !u!1 &7478427794076589000 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3949813894146737333, guid: 2af73d8f17f2db741ba91ae631bbf743, type: 3}
-  m_PrefabInstance: {fileID: 5843482894904008573}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7389232069061790436 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4004803777189729689, guid: 2af73d8f17f2db741ba91ae631bbf743, type: 3}
