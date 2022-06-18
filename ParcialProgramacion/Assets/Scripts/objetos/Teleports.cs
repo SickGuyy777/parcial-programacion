@@ -9,6 +9,10 @@ public class Teleports : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        player.transform.position = targuet.transform.position;
+        if(other.CompareTag("Player"))
+        {
+            player.transform.position = targuet.transform.position;
+        }
+        
     }
 }

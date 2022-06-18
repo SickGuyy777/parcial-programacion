@@ -13,11 +13,11 @@ public class Bullet : emptyBullet
 
     public float timer;
     public float maxTimer;
-    private string nameTag = "Wall";
-
+    private string nameTag1 = "Wall";
+    private string nameTag2 = "Player";
     private void Start()
     {
-        //_target = GameObject.Find("ShootingPoint").transform;
+
         timer = maxTimer;
         
     }
@@ -34,14 +34,13 @@ public class Bullet : emptyBullet
         }
     }
 
-    private void OnCollisionEnter(Collision pared)
+    private void OnCollisionEnter(Collision objeto)
     {
-        if(pared.gameObject.tag == nameTag && once)
+        if(objeto.gameObject.tag == nameTag1 && once || objeto.gameObject.tag == nameTag2)
         {
             var em = Explosion.emission;
             var dur = Explosion.duration;
             em.enabled = true;
-            // Explosion.Play();
             once= false;
             Exploto();
             em.enabled = false;

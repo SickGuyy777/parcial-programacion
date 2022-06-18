@@ -10,7 +10,7 @@ public class Plataforma_Seve_Noseve : MonoBehaviour
     float _minTime = 0;
     public float tiempoInicial;
     public bool _tiempo = false;
-    public void Start()//suscribo al controlador de las plataformas y desde aca hago el cotador para que se active y desactive segun el tiempo que me guste a mi
+    public void Start()//suscribo al controlador de las plataformas y desde aca hago el contador para que se active y desactive segun el tiempo que me guste a mi
     {
         _currentTime = tiempoInicial;
         objetActive.SetActive(false);
@@ -22,17 +22,24 @@ public class Plataforma_Seve_Noseve : MonoBehaviour
     }
     private void Update()
     {
-        if (_tiempo == true)
+        if (_tiempo)
         {
             _currentTime -= Time.deltaTime;
             Debug.Log(_currentTime);
-
-            if (_currentTime <= _minTime)
+            buttom.Animationbutton.SetBool("Toco", true);
+            if (_currentTime<4)
             {
-                objetActive.SetActive(false);
-                _tiempo = false;
-                _currentTime = tiempoInicial;
-                buttom.Animationbutton.SetBool("Toco",false);
+                buttom.Animationbutton.SetBool("pocotiempo", true);
+                if(_currentTime <= _minTime)
+                {
+                    buttom.count = 0;
+                    objetActive.SetActive(false);
+                    _tiempo = false;
+                    _currentTime = tiempoInicial;
+                    buttom.Animationbutton.SetBool("pocotiempo", false);
+                    buttom.Animationbutton.SetBool("Toco", false);
+                }
+
             }
         }
     }

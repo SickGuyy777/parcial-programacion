@@ -16,6 +16,7 @@ public class Ver_Y_Seguir_Jugador : empty_Enemy
     public int MaxEnemigos_derrotados;
     public GameObject bloqueodenivel;
     public GameObject sonido_muerte;
+    public GameObject player;
 
 
     void Update()
@@ -23,7 +24,7 @@ public class Ver_Y_Seguir_Jugador : empty_Enemy
 
         detectoalgo = Physics.CheckSphere(transform.position, detector, layerdeljugador);
         enemigodetectado = Physics.CheckSphere(transform.position, persecucion, layerdeljugador);
-        if (detectoalgo == true)
+        if (detectoalgo == true && player.CompareTag("Player"))
         {
            
             transform.LookAt(jugador);

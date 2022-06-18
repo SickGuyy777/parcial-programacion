@@ -46,10 +46,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcc90fc8d7936f54598bfa6bd4ebf977, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 15
   damage: 2
   objbullet: {fileID: 7705363704120006538}
   Explosion: {fileID: 8199542935267704264, guid: 2af73d8f17f2db741ba91ae631bbf743, type: 3}
+  once: 1
   timer: 0
   maxTimer: 5
 --- !u!54 &5528102017839536327

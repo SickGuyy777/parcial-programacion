@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player_comp : MonoBehaviour
 {
+    public int fuerzadetrampolin;
     public float speed;
     public float forceJump;
     public Rigidbody rb;
@@ -14,6 +15,7 @@ public class Player_comp : MonoBehaviour
     public Animator anim;
     public Movement_comp _movement;
     Controles_comp _control;
+    public GameObject sonidotrampolin;
     public bool isjump;
     public AudioSource pies;
 
@@ -34,5 +36,14 @@ public class Player_comp : MonoBehaviour
     {
         other.GetComponent<Boton>()?.Touch();
         
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.CompareTag("Trampolin"))
+        {
+            rb.velocity = Vector2.up * fuerzadetrampolin;
+            Instantiate(sonidotrampolin);
+        }
     }
 }

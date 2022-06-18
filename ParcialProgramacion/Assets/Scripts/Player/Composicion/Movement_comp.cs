@@ -42,6 +42,11 @@ public class Movement_comp
         }
     }
 
+    public void attack()
+    {
+        _anim.SetBool("Ataco", true);
+    }
+
     public void Iamfalling()
     {
         _anim.SetBool("TocoPiso", false);

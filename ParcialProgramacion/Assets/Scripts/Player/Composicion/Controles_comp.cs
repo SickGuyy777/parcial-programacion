@@ -47,7 +47,14 @@ public class Controles_comp
                 animacion.SetBool("TocoPiso", true);
             }
 
-
+            if(Input.GetKeyDown(KeyCode.E))
+            {
+               _movement.attack();
+            }
+            else
+            {
+              animacion.SetBool("Ataco", false);
+            }
 
         rotateXcam += -Input.GetAxis("Mouse Y");
         rotateXcam = Mathf.Clamp(rotateXcam, -limitrotatr, limitrotatr);
