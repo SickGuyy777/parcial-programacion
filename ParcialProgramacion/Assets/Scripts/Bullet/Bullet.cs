@@ -20,6 +20,7 @@ public class Bullet : emptyBullet
 
         timer = maxTimer;
         
+        
     }
 
     void Update()

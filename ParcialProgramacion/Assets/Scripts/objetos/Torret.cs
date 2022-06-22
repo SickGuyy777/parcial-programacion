@@ -11,11 +11,13 @@ public class Torret : MonoBehaviour
     public float timer;
     public float maxTimer;
     public GameObject sonidobala;
+    [SerializeField] ParticleSystem humo;
     
 
     private void Start()
     {
         timer = maxTimer;
+        
     }
 
 
@@ -28,21 +30,31 @@ public class Torret : MonoBehaviour
 
         if (!Physics.Raycast(transform.position, dir, distance, layers))
         {
-            var lerpDir = Vector3.Lerp(transform.forward, dir, Time.deltaTime * speedRot);
+            Disparo();
+
+        }
+
+
+
+    }
+
+    protected virtual void Disparo()
+    {
+        var dir = target.position - transform.position;
+        var lerpDir = Vector3.Lerp(transform.forward, dir, Time.deltaTime * speedRot);
             transform.forward = lerpDir;
             timer -= Time.deltaTime;
 
             if (timer <= 0)
             {
+                
                 GameObject balatemporal = Instantiate(balaprefab, balainicio.transform.position, balainicio.transform.rotation);
-
+                Instantiate(humo,balainicio.transform.position, transform.rotation);
                 Instantiate(sonidobala);
+                
+                
                 timer = maxTimer;
             }
-        }
-
-
-
     }
 }
 
