@@ -707,7 +707,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 27262337}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
@@ -1256,7 +1256,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 114616459}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
@@ -1919,7 +1919,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 178700152}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
@@ -2689,7 +2689,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 197309592}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
@@ -3003,7 +3003,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 221699127}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
@@ -3870,6 +3870,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basehealth: 5
   currentHealth: 0
+  healthBar: {fileID: 0}
+  sonidodolor: {fileID: 0}
+  timer: 0
+  maxTimer: 0
+  curarse: 2
+  isDead: 0
   jugador: {fileID: 1097483671}
   movespeed: 1
   detector: 3.69
@@ -6433,7 +6439,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 522415360}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
@@ -6769,7 +6775,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 546056645}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
@@ -12150,7 +12156,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 597827268}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
@@ -13126,7 +13132,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 669844951}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
@@ -13373,7 +13379,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 716269375}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
@@ -13728,7 +13734,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 749836190}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
@@ -14436,7 +14442,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 794994251}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
@@ -15808,7 +15814,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 945755741}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
@@ -17291,7 +17297,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1060565303}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
@@ -17604,6 +17610,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basehealth: 5
   currentHealth: 0
+  healthBar: {fileID: 0}
+  sonidodolor: {fileID: 0}
+  timer: 0
+  maxTimer: 0
+  curarse: 2
+  isDead: 0
   jugador: {fileID: 1097483671}
   movespeed: 1
   detector: 3.69
@@ -18223,7 +18235,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1104820503}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
@@ -19208,6 +19220,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d272adea91f6fb49a769056ec58c70f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  basehealth: 10
+  currentHealth: 0
+  healthBar: {fileID: 0}
+  sonidodolor: {fileID: 0}
+  timer: 0
+  maxTimer: 0
+  curarse: 2
+  isDead: 0
   fuerzadetrampolin: 10
   speed: 3
   forceJump: 4
@@ -19800,7 +19820,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1246876482}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
@@ -21487,7 +21507,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1418565579}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
@@ -22538,7 +22558,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1519101498}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
@@ -24342,6 +24362,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basehealth: 5
   currentHealth: 0
+  healthBar: {fileID: 0}
+  sonidodolor: {fileID: 0}
+  timer: 0
+  maxTimer: 0
+  curarse: 2
+  isDead: 0
   jugador: {fileID: 1097483671}
   movespeed: 1
   detector: 3.69
@@ -24595,7 +24621,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1696871380}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
@@ -25308,7 +25334,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1788339834}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
@@ -25546,7 +25572,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1795665547}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
@@ -27443,10 +27469,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1951960939}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 2
 --- !u!1 &1953861015
 GameObject:
   m_ObjectHideFlags: 0
@@ -34403,7 +34429,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2133826506}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43030b723ce46d441b6f1bcbd753c6fc, type: 3}
+  m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
