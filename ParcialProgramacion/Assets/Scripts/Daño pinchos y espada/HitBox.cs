@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class espada : MonoBehaviour
+public class HitBox : MonoBehaviour
 {
-    public int damage;
+    [SerializeField] private int damage;
 
     private void OnTriggerEnter(Collider other)
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class empty :MonoBehaviour
+public abstract class empty :MonoBehaviour   
 {
     public float basehealth = 10;
     public float currentHealth;
@@ -16,9 +16,8 @@ public class empty :MonoBehaviour
 
     public bool isDead = false;
 
-    private void Awake()
+    public virtual void Awake()
     {
-        
         currentHealth = basehealth;
         timer = maxTimer;
     }
@@ -39,7 +38,7 @@ public class empty :MonoBehaviour
         }
     }
 
-    public bool Curacion(float curarse)
+    public virtual bool Curacion(float curarse)
     {
         if (curarse > 0 || currentHealth <= 0 || currentHealth == basehealth)
         {

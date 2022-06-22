@@ -5,7 +5,7 @@ using UnityEngine;
 public class emptyBullet : MonoBehaviour
 {
     public float speed;
-    public int damage;
+    private int damage = 2;
 
     private void OnTriggerEnter(Collider other)
     {

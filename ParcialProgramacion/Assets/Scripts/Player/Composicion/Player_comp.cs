@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player_comp : MonoBehaviour
+public class Player_comp : empty
 {
     public int fuerzadetrampolin;
     public float speed;

@@ -2,28 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class empty_Enemy : MonoBehaviour
+public class empty_Enemy : empty
 {
-    public int basehealth;
-    public int currentHealth;
-
-
-    private void Awake()
+    public override void DamageForPlayer(float dmg)
     {
-        currentHealth = basehealth;
-
-    }
-
-    public virtual void DamageForPlayer(int dmg)
-    {
-        currentHealth -= dmg;
-
-        if (currentHealth <= 0)
-        {
-
-
-
-        }
-
+        base.DamageForPlayer(dmg);
     }
 }
