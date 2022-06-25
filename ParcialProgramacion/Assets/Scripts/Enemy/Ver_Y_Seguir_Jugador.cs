@@ -42,18 +42,11 @@ public class Ver_Y_Seguir_Jugador : empty_Enemy
                     {
                         
                     }
-
                 }
                 else
                 {
-
                     animaciones.SetBool("ataco", true);
                 }
-
-
-
-
-
             }
             else
             {
@@ -72,21 +65,17 @@ public class Ver_Y_Seguir_Jugador : empty_Enemy
     {
         if(currentHealth <= 0)
         {
-
             animaciones.SetBool("Muerto", true);
             Instantiate(sonido_muerte);
             enemigos_derrotados++;
-            
         }
     }
 
     public void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
-
         Gizmos.DrawWireSphere(transform.position, detector);
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, persecucion);
-
     }
 }
