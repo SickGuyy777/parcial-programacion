@@ -5358,6 +5358,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7529754050248040283, guid: 1f5361a0e5cca9e428fca3b421cb234f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -7390553078449643939, guid: 1f5361a0e5cca9e428fca3b421cb234f, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -5417,6 +5421,10 @@ PrefabInstance:
     - target: {fileID: -4058369339399317032, guid: 1f5361a0e5cca9e428fca3b421cb234f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 10.706707
+      objectReference: {fileID: 0}
+    - target: {fileID: -2764278779522907072, guid: 1f5361a0e5cca9e428fca3b421cb234f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -955271079213393053, guid: 1f5361a0e5cca9e428fca3b421cb234f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -25627,7 +25635,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1701141036
 RectTransform:
   m_ObjectHideFlags: 0
