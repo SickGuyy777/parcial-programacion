@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player_comp : empty
 {
@@ -19,6 +20,9 @@ public class Player_comp : empty
     public bool isjump;
     public AudioSource pies;
 
+    public GameObject scoreText;
+    public static int score;
+
     private void Start()
     {
         _movement = new Movement_comp(speed, forceJump, rb, transform, anim, isjump, pies);
@@ -29,13 +33,15 @@ public class Player_comp : empty
     private void Update()
     {
         _control.ArtificialUpdate();
-        
+
+        scoreText.GetComponent<Text>().text = "" + score;
+
     }
 
     private void OnTriggerEnter(Collider other)
     {
         other.GetComponent<Boton>()?.Touch();
-        
+
     }
 
     private void OnCollisionEnter(Collision other)
