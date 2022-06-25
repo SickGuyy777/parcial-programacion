@@ -10,6 +10,12 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Level1");
     }
 
+    public void ResetGame()
+    {
+        Player_comp.score = 0;
+        SceneManager.LoadScene("Level1");
+    }
+
     public void QuitGame()
     {
         Application.Quit();
