@@ -11,7 +11,10 @@ public class Teleports : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
+            
             player.transform.position = targuet.transform.position;
+            
+            player.transform.Rotate(new Vector3 (0f, 180f, 0f));
         }
         
     }

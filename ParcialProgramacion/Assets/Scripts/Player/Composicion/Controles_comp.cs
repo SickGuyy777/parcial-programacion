@@ -11,9 +11,12 @@ public class Controles_comp
     public float sensitivecam;
     public float limitrotatr;
     public float rotateXcam;
+
+    public AudioSource sonidoespada;
+    
     
 
-    public Controles_comp(Movement_comp m, int salto, float vel, float velx, Transform camera, Animator anim )
+    public Controles_comp(Movement_comp m, int salto, float vel, float velx, Transform camera, Animator anim, AudioSource sonidopies )
     {
         _movement = m;
         _salto = salto;
@@ -50,6 +53,7 @@ public class Controles_comp
             if(Input.GetKeyDown(KeyCode.E))
             {
                _movement.attack();
+               
             }
             else
             {

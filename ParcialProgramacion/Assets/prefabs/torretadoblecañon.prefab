@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 584731628983594387}
   - component: {fileID: 584731628983594386}
+  - component: {fileID: 1003160635}
+  - component: {fileID: 1003160634}
   m_Layer: 0
   m_Name: "torretadobleca\xF1on"
   m_TagString: Untagged
@@ -43,7 +45,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584731628983594384}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c019edf55f77d6642a8c6294e934910d, type: 3}
   m_Name: 
@@ -52,7 +54,7 @@ MonoBehaviour:
   speedRot: 5
   layers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   balainicio: {fileID: 584731630529096862}
   balaprefab: {fileID: 1497575257721926404, guid: 77efb8afaed50c14f87a73d9ea487788, type: 3}
   timer: 0
@@ -62,6 +64,45 @@ MonoBehaviour:
   balainicio2: {fileID: 584731630185300843}
   balaprefab2: {fileID: 1497575257721926404, guid: 77efb8afaed50c14f87a73d9ea487788, type: 3}
   humo2: {fileID: 6351779859756278498, guid: 732005eeb532f474898f0f8fb8f7400e, type: 3}
+--- !u!54 &1003160635
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584731628983594384}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 14
+  m_CollisionDetection: 0
+--- !u!114 &1003160634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584731628983594384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b3c47c6c0657bf4f9f63de1914dce66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  speedRot: 5
+  layers:
+    serializedVersion: 2
+    m_Bits: 0
+  balainicio: {fileID: 584731630529096862}
+  balaprefab: {fileID: 1497575257721926404, guid: 77efb8afaed50c14f87a73d9ea487788, type: 3}
+  timer: 0
+  maxTimer: 1.5
+  sonidobala: {fileID: 4959585452587911208, guid: 60541e9c0e06dcc43bf9f15741884fc9, type: 3}
+  humo: {fileID: 6351779859756278498, guid: 732005eeb532f474898f0f8fb8f7400e, type: 3}
 --- !u!1 &584731630185300843
 GameObject:
   m_ObjectHideFlags: 0

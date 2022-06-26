@@ -15,10 +15,12 @@ public class Player_comp : empty
     public Transform camera;
     public Animator anim;
     public Movement_comp _movement;
-    Controles_comp _control;
+    public Controles_comp _control;
     public GameObject sonidotrampolin;
     public bool isjump;
     public AudioSource pies;
+
+    public AudioSource sonidoespada;
 
     public GameObject scoreText;
     public static int score;
@@ -26,7 +28,7 @@ public class Player_comp : empty
     private void Start()
     {
         _movement = new Movement_comp(speed, forceJump, rb, transform, anim, isjump, pies);
-        _control = new Controles_comp(_movement, salto, vel,velx, camera,anim);
+        _control = new Controles_comp(_movement, salto, vel,velx, camera,anim, sonidoespada);
         
     }
 
