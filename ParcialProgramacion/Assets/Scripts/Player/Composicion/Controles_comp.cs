@@ -13,8 +13,6 @@ public class Controles_comp
     public float rotateXcam;
 
     public AudioSource sonidoespada;
-    
-    
 
     public Controles_comp(Movement_comp m, int salto, float vel, float velx, Transform camera, Animator anim, AudioSource sonidopies )
     {
@@ -25,8 +23,6 @@ public class Controles_comp
         rotateXcam = velx;
         Camera = camera;
         animacion = anim;
-        
-
     }
 
     public void ArtificialUpdate()
@@ -39,7 +35,6 @@ public class Controles_comp
         {
             _movement.Move(v, h);
         }
-
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -62,13 +57,9 @@ public class Controles_comp
 
         rotateXcam += -Input.GetAxis("Mouse Y");
         rotateXcam = Mathf.Clamp(rotateXcam, -limitrotatr, limitrotatr);
-
-        
+       
         Camera.localEulerAngles = new Vector3(rotateXcam, Camera.localEulerAngles.y, Camera.localEulerAngles.z);
         _movement._transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivecam, 0);
-        
-        
+    
     }
-
-
 }
