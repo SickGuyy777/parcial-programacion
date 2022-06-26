@@ -13,7 +13,7 @@ public class Player_comp : empty
     public int salto;
     public float vel;
     public float velx;
-    public Transform camera;
+    public new Transform camera; 
     public Animator anim;
     public Movement_comp _movement;
     public Controles_comp _control;
