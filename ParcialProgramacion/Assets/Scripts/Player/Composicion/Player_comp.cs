@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player_comp : empty
 {
@@ -22,8 +23,12 @@ public class Player_comp : empty
 
     public AudioSource sonidoespada;
 
+    [Space]
     public GameObject scoreText;
     public static int score;
+
+    [Space]
+    private int pinchosDamage = 1;
 
     private void Start()
     {
@@ -38,12 +43,16 @@ public class Player_comp : empty
 
         scoreText.GetComponent<Text>().text = "" + score;
 
+        if (currentHealth <= 0)
+        {
+            SceneManager.LoadScene("Perdiste");
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         other.GetComponent<Boton>()?.Touch();
-
     }
 
     private void OnCollisionEnter(Collision other)
@@ -53,5 +62,18 @@ public class Player_comp : empty
             rb.velocity = Vector2.up * fuerzadetrampolin;
             Instantiate(sonidotrampolin);
         }
+
+        if (other.gameObject.CompareTag("Pinchos"))
+        {
+            DamageUI(1);
+            currentHealth -= pinchosDamage;
+        }
+    }
+
+    public void DamageUI(float value)
+    {
+        currentHealth -= value;
+        healthBar.fillAmount -= 0.10f;
+        Instantiate(sonidodolor);
     }
 }

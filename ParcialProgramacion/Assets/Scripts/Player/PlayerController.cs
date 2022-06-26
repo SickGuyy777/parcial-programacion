@@ -23,7 +23,6 @@ public class PlayerController : empty
     public GameObject pies;
     public ManagementPoints ScriptMoneda;
 
-
     public void Start()
     {
         isjump = false;

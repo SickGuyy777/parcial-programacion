@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public abstract class empty :MonoBehaviour   
 {
     public float basehealth = 10;
     public float currentHealth;
-    public HealthBar healthBar;
+    public Image healthBar;
     public GameObject sonidodolor;
 
     public float timer;
@@ -22,27 +23,25 @@ public abstract class empty :MonoBehaviour
         timer = maxTimer;
     }
 
-
     public virtual void DamageForPlayer(float dmg)
     {
         currentHealth -= dmg;
-        healthBar.SetHealth(currentHealth);
+        healthBar.fillAmount -= 0.10f;
         Instantiate(sonidodolor);
-
 
         if (currentHealth <= 0)
         {
-            //isDead = true;
-                SceneManager.LoadScene("Perdiste");
-                Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene("Perdiste");
+            Cursor.lockState = CursorLockMode.None;
         }
+
+        //lo copie y pegue en Player_comp
     }
 
     public virtual bool Curacion(float curarse)
     {
         if (curarse > 0 || currentHealth <= 0 || currentHealth == basehealth)
         {
-
             currentHealth += curarse;
 
             if (currentHealth > basehealth)
@@ -52,7 +51,7 @@ public abstract class empty :MonoBehaviour
 
             if (healthBar != null)
             {
-                healthBar.SetHealth(currentHealth);
+                healthBar.fillAmount = currentHealth;
             }
             return true;
         }
@@ -60,8 +59,6 @@ public abstract class empty :MonoBehaviour
         {
             return false;
         }
-        
     }
-
 
 }

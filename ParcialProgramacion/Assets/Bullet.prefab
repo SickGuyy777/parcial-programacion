@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -7427555107571354269}
   m_Layer: 7
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Pinchos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,7 +110,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  damage: 2
+  objbullet: {fileID: 0}
+  Explosion: {fileID: 0}
+  once: 1
   timer: 0
   maxTimer: 4
 --- !u!54 &-7427555107571354269
