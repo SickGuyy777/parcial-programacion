@@ -10,8 +10,6 @@ public class Plataformas_Moviles : MonoBehaviour
 
     private int _actualPosition=0;
     private int _nextPosition=1;
-    
-    // Update is called once per frame
     void Update()
     {
         _Movment(); 
