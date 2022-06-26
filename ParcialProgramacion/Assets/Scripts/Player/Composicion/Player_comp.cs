@@ -27,8 +27,7 @@ public class Player_comp : empty
     public GameObject scoreText;
     public static int score;
 
-    [Space]
-    private int pinchosDamage = 1;
+    public int pinchosDamage; 
 
     private void Start()
     {

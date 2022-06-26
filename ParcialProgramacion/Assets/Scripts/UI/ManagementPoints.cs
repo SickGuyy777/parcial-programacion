@@ -9,11 +9,9 @@ public class ManagementPoints : MonoBehaviour
     public GameObject SonidoMoneda;
     public Text scoretext;
     public void Add(int Puntos)
-    {
-        
+    {       
         _recolectado += Puntos;
         Instantiate(SonidoMoneda);
         scoretext.text = "X" + _recolectado;
-
     }
 }

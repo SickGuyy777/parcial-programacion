@@ -8,8 +8,6 @@ public class TwoCAnyonTorret : Torret
 
     [SerializeField] ParticleSystem humo2;
 
-    
-
     protected override void Disparo()
     {
     
@@ -27,22 +25,11 @@ public class TwoCAnyonTorret : Torret
             GameObject balatemporal = Instantiate(balaprefab2, balainicio2.transform.position, balainicio.transform.rotation);
             Instantiate(humo2,balainicio2.transform.position, balainicio2.transform.rotation);
             Instantiate(sonidobala);
-            
-            
+             
             timer = maxTimer;
         }
 
-           
-
-
-            
-            
-
-        
     }
-
-
-
 }
     
 

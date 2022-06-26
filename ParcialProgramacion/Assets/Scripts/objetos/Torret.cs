@@ -13,21 +13,13 @@ public class Torret : MonoBehaviour
     public GameObject sonidobala;
     [SerializeField] ParticleSystem humo;
 
-    
-
-    
-    
-
     private void Start()
     {
-        timer = maxTimer;
-        
+        timer = maxTimer;       
     }
-
 
     void Update()
     {
-
         var dir = target.position - transform.position;
 
         var distance = Vector3.Distance(transform.position, target.position);
@@ -35,11 +27,7 @@ public class Torret : MonoBehaviour
         if (!Physics.Raycast(transform.position, dir, distance, layers) )
         {
             Disparo();
-
         }
-
-
-
     }
 
     protected virtual void Disparo()
@@ -56,11 +44,8 @@ public class Torret : MonoBehaviour
                 Instantiate(humo, balainicio.transform.position, balainicio.transform.rotation);
                 Instantiate(sonidobala);
                 
-                
                 timer = maxTimer;
-            }
-
-        
+            }        
     }
 }
 

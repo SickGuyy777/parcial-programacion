@@ -17,10 +17,7 @@ public class Bullet : emptyBullet
     private string nameTag2 = "Player";
     private void Start()
     {
-
         timer = maxTimer;
-        
-        
     }
 
     void Update()
