@@ -30829,7 +30829,7 @@ MonoBehaviour:
   MaxEnemigos_derrotados: 1
   bloqueodenivel: {fileID: 334904141}
   sonido_muerte: {fileID: 137951217926593015, guid: 4c691bbe355bd9c4fb68f7b2c7657e06, type: 3}
-  player: {fileID: 0}
+  player: {fileID: 919132148525884429}
 --- !u!95 &1664564804
 Animator:
   serializedVersion: 3
