@@ -11,7 +11,7 @@ public abstract class empty :MonoBehaviour
     public float currentHealth;
     public Image healthBar;
     public GameObject sonidodolor;
-
+    private float minhealth=9;
     public float timer;
     public float maxTimer;
     public float curarse = 2;
@@ -30,18 +30,12 @@ public abstract class empty :MonoBehaviour
         healthBar.fillAmount -= 0.10f;
         Instantiate(sonidodolor);
 
-        if (currentHealth <= 0)
-        {
-            SceneManager.LoadScene("Perdiste");
-            Cursor.lockState = CursorLockMode.None;
-        }
 
-        //lo copie y pegue en Player_comp
     }
 
     public virtual bool Curacion(float curarse)
     {
-        if (curarse > 0 || currentHealth != basehealth)
+        if (currentHealth<minhealth)//poner si currenthealth es<minhealth
         {
             currentHealth += curarse;
 

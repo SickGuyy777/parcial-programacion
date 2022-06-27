@@ -21,7 +21,7 @@ public class Player_comp : empty
     public GameObject sonidotrampolin;
     public bool isjump;
     public AudioSource pies;
-
+    public bool dead=false;
     public AudioSource sonidoespada;
 
     [Space]
@@ -42,18 +42,24 @@ public class Player_comp : empty
         _control.ArtificialUpdate();
 
         scoreText.GetComponent<Text>().text = "" + score;
-
-        if (currentHealth <= 0)
-        {
-            timer -= 1 * Time.deltaTime;
-            anim.SetBool("Muerto", true);
-            if(timer<=0)
+        if(currentHealth != currentHealth)
+         {
+            anim.SetBool("dmgrec", true); //por el momento hace algo raro la idea es que si recive daño haga esta animacion
+            if (currentHealth <= 0)
             {
-                SceneManager.LoadScene("Perdiste");
-                Cursor.lockState = CursorLockMode.None;
-            }
+                speed = 0; salto = 0;
+                dead = true;
+                anim.SetBool("Muerto", true);
+                if (timer <= 0)
+                {
 
+                    SceneManager.LoadScene("Perdiste");
+                    Cursor.lockState = CursorLockMode.None;
+                }
+
+            }
         }
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -77,5 +83,14 @@ public class Player_comp : empty
         currentHealth -= value;
         healthBar.fillAmount -= 0.10f;
         Instantiate(sonidodolor);
+    }
+
+    public void activetimer()
+    {
+      if(dead==true)
+      {
+            timer -= Time.deltaTime;
+      }
+        
     }
 }
