@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Player_comp : empty
 {
+    //composicion hecha por Lautaro Romero
     public int fuerzadetrampolin;
     public float speed;
     public float forceJump;

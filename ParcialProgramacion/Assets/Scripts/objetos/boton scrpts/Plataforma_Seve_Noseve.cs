@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Plataforma_Seve_Noseve : MonoBehaviour
 {
+    //codigo creado por Lautaro Romero
     public GameObject objetActive;
     public Boton buttom;
     float _currentTime;

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
+    //codigo creado por Benja Tevez
     public Image fillBar;
     public int health;
 
@@ -15,7 +16,5 @@ public class HealthBar : MonoBehaviour
         health -= value;
 
         fillBar.fillAmount = health / 100;
-
-        //if (health )
     }
 }

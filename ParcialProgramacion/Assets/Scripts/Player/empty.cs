@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public abstract class empty :MonoBehaviour   
 {
+    //Codigo de empty creado por Benja Tevez, Lautaro Romero y Nahuel Stagno
     public float basehealth = 10;
     public float currentHealth;
     public Image healthBar;
@@ -40,7 +41,7 @@ public abstract class empty :MonoBehaviour
 
     public virtual bool Curacion(float curarse)
     {
-        if (curarse > 0 || currentHealth <= 0 || currentHealth == basehealth)
+        if (curarse > 0 || currentHealth != basehealth)
         {
             currentHealth += curarse;
 

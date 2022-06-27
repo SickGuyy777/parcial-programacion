@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Movement_comp
 {
+    //composicion hecha por Lautaro Romero
     float _speed;
     float _forceJump;
     Rigidbody _rb;

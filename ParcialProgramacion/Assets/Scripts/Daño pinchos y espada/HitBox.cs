@@ -5,12 +5,12 @@ using UnityEngine;
 public class HitBox : MonoBehaviour
 {
     [SerializeField] private int damage;
-
+    //codigo base creado por Lautaro Romero y modificado por Nahuel Stagno, Benja Tevez
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<Ver_Y_Seguir_Jugador>() != null)
+        if (other.gameObject.GetComponent<empty>() != null)
         {
-            other.gameObject.GetComponent<empty_Enemy>().DamageForPlayer(damage);
+            other.gameObject.GetComponent<empty>().DamageForPlayer(damage);
         }
     }
 }

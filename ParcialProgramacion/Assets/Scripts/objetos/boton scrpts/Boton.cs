@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Boton : MonoBehaviour
 {
+    //codigo creado por Lautaro Romero
     public Plataforma_Seve_Noseve platforms;
     public ManagmentSoundButtom sonido;
     public Animator Animationbutton;

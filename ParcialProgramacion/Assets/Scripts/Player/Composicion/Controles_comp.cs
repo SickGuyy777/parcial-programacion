@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Controles_comp
 {
+    //composicion hecha por Lautaro Romero
     Movement_comp _movement;
     public Animator animacion;
     public int _salto;

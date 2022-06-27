@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Torret : MonoBehaviour
 {
+    //codigo crado por Nahuel Stagno y Benja Tevez, Modificado por Lautaro Romero Y logrado de instanciado de particulas por Agustin Ludovico
     public Transform target;
     public float speedRot;
     public LayerMask layers;
