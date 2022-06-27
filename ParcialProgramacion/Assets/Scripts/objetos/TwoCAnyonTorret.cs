@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//codigo creado por Agustin Ludovico
 public class TwoCAnyonTorret : Torret 
 {
     public GameObject balainicio2, balaprefab2;
