@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 public class Ganaste : MonoBehaviour
 {
 
+    public string nextScene;
+
     private void OnCollisionEnter(Collision collision)
     {
-        SceneManager.LoadScene("Level2");
-
+        SceneManager.LoadScene(nextScene);
     }
 }

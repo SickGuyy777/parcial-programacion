@@ -2848,7 +2848,7 @@ GameObject:
   - component: {fileID: 221699129}
   m_Layer: 11
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Pinchos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19797,7 +19797,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6621047111321693700, guid: 49e6402196bcbfb4583490a5c7c1ca54, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.82
+      value: 9.55
       objectReference: {fileID: 0}
     - target: {fileID: 6621047111321693700, guid: 49e6402196bcbfb4583490a5c7c1ca54, type: 3}
       propertyPath: m_LocalPosition.y
@@ -19805,7 +19805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6621047111321693700, guid: 49e6402196bcbfb4583490a5c7c1ca54, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.29
+      value: 3.6
       objectReference: {fileID: 0}
     - target: {fileID: 6621047111321693700, guid: 49e6402196bcbfb4583490a5c7c1ca54, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20659,6 +20659,11 @@ Transform:
   m_Father: {fileID: 1252592709}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1291898999 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3229649829773031229, guid: 49e6402196bcbfb4583490a5c7c1ca54, type: 3}
+  m_PrefabInstance: {fileID: 1221302713}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1292153564
 GameObject:
   m_ObjectHideFlags: 0
@@ -21682,7 +21687,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targuet: {fileID: 1974810762}
-  player: {fileID: 919132148525884429}
 --- !u!23 &1358714986
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22582,7 +22586,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targuet: {fileID: 1860080003}
-  player: {fileID: 919132148525884429}
 --- !u!23 &1468329733
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24648,7 +24651,7 @@ MonoBehaviour:
   positionsPlatforms:
   - {fileID: 1909915974}
   - {fileID: 772800803}
-  platformSpeed: 1
+  platformSpeed: 5
 --- !u!4 &1626439728
 Transform:
   m_ObjectHideFlags: 0
@@ -25196,7 +25199,7 @@ MonoBehaviour:
   maxTimer: 0
   curarse: 2
   isDead: 0
-  jugador: {fileID: 543450652181184183}
+  jugador: {fileID: 1291898999}
   movespeed: 1
   detector: 3.69
   persecucion: 2.34
@@ -26140,6 +26143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc3d7da819025d40a9517b4462e63ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextScene: Level2
 --- !u!65 &1775174235
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34446,7 +34450,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targuet: {fileID: 1697453976}
-  player: {fileID: 919132148525884429}
 --- !u!23 &2012384395
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35948,7 +35951,7 @@ PrefabInstance:
     - target: {fileID: 804724435870142228, guid: 01827534880d1e54a9445eebc04acd28, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 1946119148}
+      objectReference: {fileID: 1291898999}
     - target: {fileID: 804724435870142229, guid: 01827534880d1e54a9445eebc04acd28, type: 3}
       propertyPath: m_Name
       value: torreta (2)

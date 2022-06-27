@@ -5,17 +5,14 @@ using UnityEngine;
 public class Teleports : MonoBehaviour
 {
     public Transform targuet;
-    public GameObject player;
     
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
         {
+            other.transform.position = targuet.transform.position;
             
-            player.transform.position = targuet.transform.position;
-            
-            player.transform.Rotate(new Vector3 (0f, 180f, 0f));
+            other.transform.Rotate(new Vector3 (0f, 180f, 0f));
         }
-        
     }
 }
