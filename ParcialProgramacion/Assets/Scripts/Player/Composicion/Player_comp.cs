@@ -45,8 +45,14 @@ public class Player_comp : empty
 
         if (currentHealth <= 0)
         {
-            SceneManager.LoadScene("Perdiste");
-            Cursor.lockState = CursorLockMode.None;
+            timer -= 1 * Time.deltaTime;
+            anim.SetBool("Muerto", true);
+            if(timer<=0)
+            {
+                SceneManager.LoadScene("Perdiste");
+                Cursor.lockState = CursorLockMode.None;
+            }
+
         }
     }
 
@@ -63,11 +69,7 @@ public class Player_comp : empty
             Instantiate(sonidotrampolin);
         }
 
-        if (other.gameObject.CompareTag("Pinchos"))
-        {
-            DamageUI(1);
-            currentHealth -= pinchosDamage;
-        }
+
     }
 
     public void DamageUI(float value)

@@ -30,8 +30,8 @@ public class Movement_comp
         dir += _transform.right * horizontal;
 
         _transform.position += dir * _speed * Time.deltaTime;
-        _anim.SetFloat("Blend", vertical);
-        
+        _anim.SetFloat("Y", vertical);
+        _anim.SetFloat("X", horizontal);
     }
 
     public void Jump()

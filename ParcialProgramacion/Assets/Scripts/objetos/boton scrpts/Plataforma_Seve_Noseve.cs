@@ -25,6 +25,7 @@ public class Plataforma_Seve_Noseve : MonoBehaviour
     {
         if (_tiempo)
         {
+            Debug.Log(_currentTime);
             _currentTime -= Time.deltaTime;
             Debug.Log(_currentTime);
             buttom.Animationbutton.SetBool("Toco", true);
