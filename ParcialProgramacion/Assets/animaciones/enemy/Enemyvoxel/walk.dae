@@ -1,0 +1,2119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <created>2022-06-27T06:01:05Z</created>
+    <modified>2022-06-27T06:01:05Z</modified>
+    <revision>1.0</revision>
+  </asset>
+  <library_images>
+    <image id="pecho(1)-diffuse-tex" name="pecho(1)-diffuse-tex">
+      <init_from>walk_res/pecho(1)_diffuse.png</init_from>
+    </image>
+    <image id="pecho(1)-emissive-tex" name="pecho(1)-emissive-tex">
+      <init_from>walk_res/pecho(1)_emissive.png</init_from>
+    </image>
+    <image id="brazoderecho(1)-diffuse-tex" name="brazoderecho(1)-diffuse-tex">
+      <init_from>walk_res/brazoderecho(1)_diffuse.png</init_from>
+    </image>
+    <image id="brazoderecho(1)-emissive-tex" name="brazoderecho(1)-emissive-tex">
+      <init_from>walk_res/brazoderecho(1)_emissive.png</init_from>
+    </image>
+    <image id="antebrazoderecho(1)-diffuse-tex" name="antebrazoderecho(1)-diffuse-tex">
+      <init_from>walk_res/antebrazoderecho(1)_diffuse.png</init_from>
+    </image>
+    <image id="antebrazoderecho(1)-emissive-tex" name="antebrazoderecho(1)-emissive-tex">
+      <init_from>walk_res/antebrazoderecho(1)_emissive.png</init_from>
+    </image>
+    <image id="brazoizquierdo(1)-diffuse-tex" name="brazoizquierdo(1)-diffuse-tex">
+      <init_from>walk_res/brazoizquierdo(1)_diffuse.png</init_from>
+    </image>
+    <image id="brazoizquierdo(1)-emissive-tex" name="brazoizquierdo(1)-emissive-tex">
+      <init_from>walk_res/brazoizquierdo(1)_emissive.png</init_from>
+    </image>
+    <image id="antebrazoizquierdo(1)-diffuse-tex" name="antebrazoizquierdo(1)-diffuse-tex">
+      <init_from>walk_res/antebrazoizquierdo(1)_diffuse.png</init_from>
+    </image>
+    <image id="antebrazoizquierdo(1)-emissive-tex" name="antebrazoizquierdo(1)-emissive-tex">
+      <init_from>walk_res/antebrazoizquierdo(1)_emissive.png</init_from>
+    </image>
+    <image id="cabeza(1)-diffuse-tex" name="cabeza(1)-diffuse-tex">
+      <init_from>walk_res/cabeza(1)_diffuse.png</init_from>
+    </image>
+    <image id="cabeza(1)-emissive-tex" name="cabeza(1)-emissive-tex">
+      <init_from>walk_res/cabeza(1)_emissive.png</init_from>
+    </image>
+    <image id="musloizquierdo(1)-diffuse-tex" name="musloizquierdo(1)-diffuse-tex">
+      <init_from>walk_res/musloizquierdo(1)_diffuse.png</init_from>
+    </image>
+    <image id="musloizquierdo(1)-emissive-tex" name="musloizquierdo(1)-emissive-tex">
+      <init_from>walk_res/musloizquierdo(1)_emissive.png</init_from>
+    </image>
+    <image id="pantorrilaizquierda(1)-diffuse-tex" name="pantorrilaizquierda(1)-diffuse-tex">
+      <init_from>walk_res/pantorrilaizquierda(1)_diffuse.png</init_from>
+    </image>
+    <image id="pantorrilaizquierda(1)-emissive-tex" name="pantorrilaizquierda(1)-emissive-tex">
+      <init_from>walk_res/pantorrilaizquierda(1)_emissive.png</init_from>
+    </image>
+    <image id="musloderecho(1)-diffuse-tex" name="musloderecho(1)-diffuse-tex">
+      <init_from>walk_res/musloderecho(1)_diffuse.png</init_from>
+    </image>
+    <image id="musloderecho(1)-emissive-tex" name="musloderecho(1)-emissive-tex">
+      <init_from>walk_res/musloderecho(1)_emissive.png</init_from>
+    </image>
+    <image id="pantorrilladerecha(1)-diffuse-tex" name="pantorrilladerecha(1)-diffuse-tex">
+      <init_from>walk_res/pantorrilladerecha(1)_diffuse.png</init_from>
+    </image>
+    <image id="pantorrilladerecha(1)-emissive-tex" name="pantorrilladerecha(1)-emissive-tex">
+      <init_from>walk_res/pantorrilladerecha(1)_emissive.png</init_from>
+    </image>
+  </library_images>
+  <library_effects>
+    <effect id="pecho(1)-Effect">
+      <profile_COMMON>
+        <newparam sid="pecho(1)-diffuse-surface">
+          <surface type="2D">
+            <init_from>pecho(1)-diffuse-tex</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="pecho(1)-emissive-surface">
+          <surface type="2D">
+            <init_from>pecho(1)-emissive-tex</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="pecho(1)-diffuse-sampler">
+          <sampler2D>
+            <source>pecho(1)-diffuse-surface</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <newparam sid="pecho(1)-emissive-sampler">
+          <sampler2D>
+            <source>pecho(1)-emissive-surface</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission>
+              <texture texcoord="pecho(1)-tex-bind" texture="pecho(1)-emissive-sampler"/>
+            </emission>
+            <ambient>
+              <color>1.0 1.0 1.0 1.0</color>
+            </ambient>
+            <diffuse>
+              <texture texcoord="pecho(1)-tex-bind" texture="pecho(1)-diffuse-sampler"/>
+            </diffuse>
+            <specular>
+              <color>0.0 0.0 0.0 1.0</color>
+            </specular>
+            <shininess>
+              <float>5.0</float>
+            </shininess>
+            <reflective>
+              <color>1.0 1.0 1.0 1.0</color>
+            </reflective>
+            <reflectivity>
+              <float>0.2</float>
+            </reflectivity>
+            <transparent>
+              <color>1.0 1.0 1.0 1.0</color>
+            </transparent>
+            <transparency>
+              <float>1.0</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="brazoderecho(1)-Effect">
+      <profile_COMMON>
+        <newparam sid="brazoderecho(1)-diffuse-surface">
+          <surface type="2D">
+            <init_from>brazoderecho(1)-diffuse-tex</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="brazoderecho(1)-emissive-surface">
+          <surface type="2D">
+            <init_from>brazoderecho(1)-emissive-tex</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="brazoderecho(1)-diffuse-sampler">
+          <sampler2D>
+            <source>brazoderecho(1)-diffuse-surface</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <newparam sid="brazoderecho(1)-emissive-sampler">
+          <sampler2D>
+            <source>brazoderecho(1)-emissive-surface</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission>
+              <texture texcoord="brazoderecho(1)-tex-bind" texture="brazoderecho(1)-emissive-sampler"/>
+            </emission>
+            <ambient>
+              <color>1.0 1.0 1.0 1.0</color>
+            </ambient>
+            <diffuse>
+              <texture texcoord="brazoderecho(1)-tex-bind" texture="brazoderecho(1)-diffuse-sampler"/>
+            </diffuse>
+            <specular>
+              <color>0.0 0.0 0.0 1.0</color>
+            </specular>
+            <shininess>
+              <float>5.0</float>
+            </shininess>
+            <reflective>
+              <color>1.0 1.0 1.0 1.0</color>
+            </reflective>
+            <reflectivity>
+              <float>0.2</float>
+            </reflectivity>
+            <transparent>
+              <color>1.0 1.0 1.0 1.0</color>
+            </transparent>
+            <transparency>
+              <float>1.0</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="antebrazoderecho(1)-Effect">
+      <profile_COMMON>
+        <newparam sid="antebrazoderecho(1)-diffuse-surface">
+          <surface type="2D">
+            <init_from>antebrazoderecho(1)-diffuse-tex</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="antebrazoderecho(1)-emissive-surface">
+          <surface type="2D">
+            <init_from>antebrazoderecho(1)-emissive-tex</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="antebrazoderecho(1)-diffuse-sampler">
+          <sampler2D>
+            <source>antebrazoderecho(1)-diffuse-surface</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <newparam sid="antebrazoderecho(1)-emissive-sampler">
+          <sampler2D>
+            <source>antebrazoderecho(1)-emissive-surface</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission>
+              <texture texcoord="antebrazoderecho(1)-tex-bind" texture="antebrazoderecho(1)-emissive-sampler"/>
+            </emission>
+            <ambient>
+              <color>1.0 1.0 1.0 1.0</color>
+            </ambient>
+            <diffuse>
+              <texture texcoord="antebrazoderecho(1)-tex-bind" texture="antebrazoderecho(1)-diffuse-sampler"/>
+            </diffuse>
+            <specular>
+              <color>0.0 0.0 0.0 1.0</color>
+            </specular>
+            <shininess>
+              <float>5.0</float>
+            </shininess>
+            <reflective>
+              <color>1.0 1.0 1.0 1.0</color>
+            </reflective>
+            <reflectivity>
+              <float>0.2</float>
+            </reflectivity>
+            <transparent>
+              <color>1.0 1.0 1.0 1.0</color>
+            </transparent>
+            <transparency>
+              <float>1.0</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="brazoizquierdo(1)-Effect">
+      <profile_COMMON>
+        <newparam sid="brazoizquierdo(1)-diffuse-surface">
+          <surface type="2D">
+            <init_from>brazoizquierdo(1)-diffuse-tex</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="brazoizquierdo(1)-emissive-surface">
+          <surface type="2D">
+            <init_from>brazoizquierdo(1)-emissive-tex</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="brazoizquierdo(1)-diffuse-sampler">
+          <sampler2D>
+            <source>brazoizquierdo(1)-diffuse-surface</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <newparam sid="brazoizquierdo(1)-emissive-sampler">
+          <sampler2D>
+            <source>brazoizquierdo(1)-emissive-surface</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission>
+              <texture texcoord="brazoizquierdo(1)-tex-bind" texture="brazoizquierdo(1)-emissive-sampler"/>
+            </emission>
+            <ambient>
+              <color>1.0 1.0 1.0 1.0</color>
+            </ambient>
+            <diffuse>
+              <texture texcoord="brazoizquierdo(1)-tex-bind" texture="brazoizquierdo(1)-diffuse-sampler"/>
+            </diffuse>
+            <specular>
+              <color>0.0 0.0 0.0 1.0</color>
+            </specular>
+            <shininess>
+              <float>5.0</float>
+            </shininess>
+            <reflective>
+              <color>1.0 1.0 1.0 1.0</color>
+            </reflective>
+            <reflectivity>
+              <float>0.2</float>
+            </reflectivity>
+            <transparent>
+              <color>1.0 1.0 1.0 1.0</color>
+            </transparent>
+            <transparency>
+              <float>1.0</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="antebrazoizquierdo(1)-Effect">
+      <profile_COMMON>
+        <newparam sid="antebrazoizquierdo(1)-diffuse-surface">
+          <surface type="2D">
+            <init_from>antebrazoizquierdo(1)-diffuse-tex</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="antebrazoizquierdo(1)-emissive-surface">
+          <surface type="2D">
+            <init_from>antebrazoizquierdo(1)-emissive-tex</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="antebrazoizquierdo(1)-diffuse-sampler">
+          <sampler2D>
+            <source>antebrazoizquierdo(1)-diffuse-surface</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <newparam sid="antebrazoizquierdo(1)-emissive-sampler">
+          <sampler2D>
+            <source>antebrazoizquierdo(1)-emissive-surface</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission>
+              <texture texcoord="antebrazoizquierdo(1)-tex-bind" texture="antebrazoizquierdo(1)-emissive-sampler"/>
+            </emission>
+            <ambient>
+              <color>1.0 1.0 1.0 1.0</color>
+            </ambient>
+            <diffuse>
+              <texture texcoord="antebrazoizquierdo(1)-tex-bind" texture="antebrazoizquierdo(1)-diffuse-sampler"/>
+            </diffuse>
+            <specular>
+              <color>0.0 0.0 0.0 1.0</color>
+            </specular>
+            <shininess>
+              <float>5.0</float>
+            </shininess>
+            <reflective>
+              <color>1.0 1.0 1.0 1.0</color>
+            </reflective>
+            <reflectivity>
+              <float>0.2</float>
+            </reflectivity>
+            <transparent>
+              <color>1.0 1.0 1.0 1.0</color>
+            </transparent>
+            <transparency>
+              <float>1.0</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="cabeza(1)-Effect">
+      <profile_COMMON>
+        <newparam sid="cabeza(1)-diffuse-surface">
+          <surface type="2D">
+            <init_from>cabeza(1)-diffuse-tex</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="cabeza(1)-emissive-surface">
+          <surface type="2D">
+            <init_from>cabeza(1)-emissive-tex</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="cabeza(1)-diffuse-sampler">
+          <sampler2D>
+            <source>cabeza(1)-diffuse-surface</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <newparam sid="cabeza(1)-emissive-sampler">
+          <sampler2D>
+            <source>cabeza(1)-emissive-surface</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission>
+              <texture texcoord="cabeza(1)-tex-bind" texture="cabeza(1)-emissive-sampler"/>
+            </emission>
+            <ambient>
+              <color>1.0 1.0 1.0 1.0</color>
+            </ambient>
+            <diffuse>
+              <texture texcoord="cabeza(1)-tex-bind" texture="cabeza(1)-diffuse-sampler"/>
+            </diffuse>
+            <specular>
+              <color>0.0 0.0 0.0 1.0</color>
+            </specular>
+            <shininess>
+              <float>5.0</float>
+            </shininess>
+            <reflective>
+              <color>1.0 1.0 1.0 1.0</color>
+            </reflective>
+            <reflectivity>
+              <float>0.2</float>
+            </reflectivity>
+            <transparent>
+              <color>1.0 1.0 1.0 1.0</color>
+            </transparent>
+            <transparency>
+              <float>1.0</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="musloizquierdo(1)-Effect">
+      <profile_COMMON>
+        <newparam sid="musloizquierdo(1)-diffuse-surface">
+          <surface type="2D">
+            <init_from>musloizquierdo(1)-diffuse-tex</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="musloizquierdo(1)-emissive-surface">
+          <surface type="2D">
+            <init_from>musloizquierdo(1)-emissive-tex</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="musloizquierdo(1)-diffuse-sampler">
+          <sampler2D>
+            <source>musloizquierdo(1)-diffuse-surface</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <newparam sid="musloizquierdo(1)-emissive-sampler">
+          <sampler2D>
+            <source>musloizquierdo(1)-emissive-surface</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission>
+              <texture texcoord="musloizquierdo(1)-tex-bind" texture="musloizquierdo(1)-emissive-sampler"/>
+            </emission>
+            <ambient>
+              <color>1.0 1.0 1.0 1.0</color>
+            </ambient>
+            <diffuse>
+              <texture texcoord="musloizquierdo(1)-tex-bind" texture="musloizquierdo(1)-diffuse-sampler"/>
+            </diffuse>
+            <specular>
+              <color>0.0 0.0 0.0 1.0</color>
+            </specular>
+            <shininess>
+              <float>5.0</float>
+            </shininess>
+            <reflective>
+              <color>1.0 1.0 1.0 1.0</color>
+            </reflective>
+            <reflectivity>
+              <float>0.2</float>
+            </reflectivity>
+            <transparent>
+              <color>1.0 1.0 1.0 1.0</color>
+            </transparent>
+            <transparency>
+              <float>1.0</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="pantorrilaizquierda(1)-Effect">
+      <profile_COMMON>
+        <newparam sid="pantorrilaizquierda(1)-diffuse-surface">
+          <surface type="2D">
+            <init_from>pantorrilaizquierda(1)-diffuse-tex</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="pantorrilaizquierda(1)-emissive-surface">
+          <surface type="2D">
+            <init_from>pantorrilaizquierda(1)-emissive-tex</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="pantorrilaizquierda(1)-diffuse-sampler">
+          <sampler2D>
+            <source>pantorrilaizquierda(1)-diffuse-surface</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <newparam sid="pantorrilaizquierda(1)-emissive-sampler">
+          <sampler2D>
+            <source>pantorrilaizquierda(1)-emissive-surface</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission>
+              <texture texcoord="pantorrilaizquierda(1)-tex-bind" texture="pantorrilaizquierda(1)-emissive-sampler"/>
+            </emission>
+            <ambient>
+              <color>1.0 1.0 1.0 1.0</color>
+            </ambient>
+            <diffuse>
+              <texture texcoord="pantorrilaizquierda(1)-tex-bind" texture="pantorrilaizquierda(1)-diffuse-sampler"/>
+            </diffuse>
+            <specular>
+              <color>0.0 0.0 0.0 1.0</color>
+            </specular>
+            <shininess>
+              <float>5.0</float>
+            </shininess>
+            <reflective>
+              <color>1.0 1.0 1.0 1.0</color>
+            </reflective>
+            <reflectivity>
+              <float>0.2</float>
+            </reflectivity>
+            <transparent>
+              <color>1.0 1.0 1.0 1.0</color>
+            </transparent>
+            <transparency>
+              <float>1.0</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="musloderecho(1)-Effect">
+      <profile_COMMON>
+        <newparam sid="musloderecho(1)-diffuse-surface">
+          <surface type="2D">
+            <init_from>musloderecho(1)-diffuse-tex</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="musloderecho(1)-emissive-surface">
+          <surface type="2D">
+            <init_from>musloderecho(1)-emissive-tex</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="musloderecho(1)-diffuse-sampler">
+          <sampler2D>
+            <source>musloderecho(1)-diffuse-surface</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <newparam sid="musloderecho(1)-emissive-sampler">
+          <sampler2D>
+            <source>musloderecho(1)-emissive-surface</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission>
+              <texture texcoord="musloderecho(1)-tex-bind" texture="musloderecho(1)-emissive-sampler"/>
+            </emission>
+            <ambient>
+              <color>1.0 1.0 1.0 1.0</color>
+            </ambient>
+            <diffuse>
+              <texture texcoord="musloderecho(1)-tex-bind" texture="musloderecho(1)-diffuse-sampler"/>
+            </diffuse>
+            <specular>
+              <color>0.0 0.0 0.0 1.0</color>
+            </specular>
+            <shininess>
+              <float>5.0</float>
+            </shininess>
+            <reflective>
+              <color>1.0 1.0 1.0 1.0</color>
+            </reflective>
+            <reflectivity>
+              <float>0.2</float>
+            </reflectivity>
+            <transparent>
+              <color>1.0 1.0 1.0 1.0</color>
+            </transparent>
+            <transparency>
+              <float>1.0</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="pantorrilladerecha(1)-Effect">
+      <profile_COMMON>
+        <newparam sid="pantorrilladerecha(1)-diffuse-surface">
+          <surface type="2D">
+            <init_from>pantorrilladerecha(1)-diffuse-tex</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="pantorrilladerecha(1)-emissive-surface">
+          <surface type="2D">
+            <init_from>pantorrilladerecha(1)-emissive-tex</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="pantorrilladerecha(1)-diffuse-sampler">
+          <sampler2D>
+            <source>pantorrilladerecha(1)-diffuse-surface</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <newparam sid="pantorrilladerecha(1)-emissive-sampler">
+          <sampler2D>
+            <source>pantorrilladerecha(1)-emissive-surface</source>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="phong1">
+          <phong>
+            <emission>
+              <texture texcoord="pantorrilladerecha(1)-tex-bind" texture="pantorrilladerecha(1)-emissive-sampler"/>
+            </emission>
+            <ambient>
+              <color>1.0 1.0 1.0 1.0</color>
+            </ambient>
+            <diffuse>
+              <texture texcoord="pantorrilladerecha(1)-tex-bind" texture="pantorrilladerecha(1)-diffuse-sampler"/>
+            </diffuse>
+            <specular>
+              <color>0.0 0.0 0.0 1.0</color>
+            </specular>
+            <shininess>
+              <float>5.0</float>
+            </shininess>
+            <reflective>
+              <color>1.0 1.0 1.0 1.0</color>
+            </reflective>
+            <reflectivity>
+              <float>0.2</float>
+            </reflectivity>
+            <transparent>
+              <color>1.0 1.0 1.0 1.0</color>
+            </transparent>
+            <transparency>
+              <float>1.0</float>
+            </transparency>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="pecho(1)-Material">
+      <instance_effect url="#pecho(1)-Effect"/>
+    </material>
+    <material id="brazoderecho(1)-Material">
+      <instance_effect url="#brazoderecho(1)-Effect"/>
+    </material>
+    <material id="antebrazoderecho(1)-Material">
+      <instance_effect url="#antebrazoderecho(1)-Effect"/>
+    </material>
+    <material id="brazoizquierdo(1)-Material">
+      <instance_effect url="#brazoizquierdo(1)-Effect"/>
+    </material>
+    <material id="antebrazoizquierdo(1)-Material">
+      <instance_effect url="#antebrazoizquierdo(1)-Effect"/>
+    </material>
+    <material id="cabeza(1)-Material">
+      <instance_effect url="#cabeza(1)-Effect"/>
+    </material>
+    <material id="musloizquierdo(1)-Material">
+      <instance_effect url="#musloizquierdo(1)-Effect"/>
+    </material>
+    <material id="pantorrilaizquierda(1)-Material">
+      <instance_effect url="#pantorrilaizquierda(1)-Effect"/>
+    </material>
+    <material id="musloderecho(1)-Material">
+      <instance_effect url="#musloderecho(1)-Effect"/>
+    </material>
+    <material id="pantorrilladerecha(1)-Material">
+      <instance_effect url="#pantorrilladerecha(1)-Effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="pecho(1)-Geom" name="pecho(1)-Geom">
+      <mesh>
+        <source id="pecho(1)-Pos">
+          <float_array count="228" id="pecho(1)-Pos-array">-3.0 -2.5 1.5 -3.0 2.5 1.5 -3.0 2.5 -2.5 -3.0 -2.5 -2.5 -1.9999999 -1.5 2.5 -1.9999999 2.5 2.5 -1.9999999 2.5 1.5 -1.9999999 -1.5 1.5 -0.99999994 -2.5 2.5 -0.99999994 -1.5 2.5 -0.99999994 -1.5 1.5 -0.99999994 -2.5 1.5 1.0000001 -2.5 1.5 1.0000001 -1.5 1.5 1.0000001 -1.5 2.5 1.0000001 -2.5 2.5 2.0000002 -1.5 1.5 2.0000002 2.5 1.5 2.0000002 2.5 2.5 2.0000002 -1.5 2.5 3.0 -2.5 -2.5 3.0 2.5 -2.5 3.0 2.5 1.5 3.0 -2.5 1.5 -3.0 -2.5 -2.5 3.0 -2.5 -2.5 3.0 -2.5 1.5 -3.0 -2.5 1.5 -0.99999994 -2.5 1.5 1.0000001 -2.5 1.5 1.0000001 -2.5 2.5 -0.99999994 -2.5 2.5 -1.9999999 -1.5 1.5 -0.99999994 -1.5 1.5 -0.99999994 -1.5 2.5 -1.9999999 -1.5 2.5 1.0000001 -1.5 1.5 2.0000002 -1.5 1.5 2.0000002 -1.5 2.5 1.0000001 -1.5 2.5 -3.0 2.5 1.5 3.0 2.5 1.5 3.0 2.5 -2.5 -3.0 2.5 -2.5 -1.9999999 2.5 2.5 2.0000002 2.5 2.5 2.0000002 2.5 1.5 -1.9999999 2.5 1.5 -3.0 2.5 -2.5 3.0 2.5 -2.5 3.0 -2.5 -2.5 -3.0 -2.5 -2.5 2.0000002 -2.5 1.5 3.0 -2.5 1.5 3.0 2.5 1.5 2.0000002 2.5 1.5 -3.0 -1.5 1.5 -1.9999999 -1.5 1.5 -1.9999999 2.5 1.5 -3.0 2.5 1.5 -3.0 -2.5 1.5 -0.99999994 -2.5 1.5 -0.99999994 -1.5 1.5 -3.0 -1.5 1.5 1.0000001 -2.5 1.5 2.0000002 -2.5 1.5 2.0000002 -1.5 1.5 1.0000001 -1.5 1.5 -1.9999999 -1.5 2.5 2.0000002 -1.5 2.5 2.0000002 2.5 2.5 -1.9999999 2.5 2.5 -0.99999994 -2.5 2.5 1.0000001 -2.5 2.5 1.0000001 -1.5 2.5 -0.99999994 -1.5 2.5 </float_array>
+          <technique_common>
+            <accessor count="76" source="#pecho(1)-Pos-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pecho(1)-UV">
+          <float_array count="152" id="pecho(1)-UV-array">0.375 0.1875 0.375 0.5 0.25 0.5 0.25 0.1875 0.53125 0.75 0.53125 1.0 0.5 1.0 0.5 0.75 0.03125 0.9375 0.0625 0.9375 0.0625 1.0 0.03125 1.0 0.03125 1.0 0.0625 1.0 0.0625 0.9375 0.03125 0.9375 0.5 0.75 0.5 1.0 0.53125 1.0 0.53125 0.75 0.25 0.1875 0.25 0.5 0.375 0.5 0.375 0.1875 0.5 0.125 0.5 0.5 0.625 0.5 0.625 0.125 0.5 0.875 0.5 1.0 0.53125 1.0 0.53125 0.875 0.03125 1.0 0.0625 1.0 0.0625 0.9375 0.03125 0.9375 0.03125 1.0 0.0625 1.0 0.0625 0.9375 0.03125 0.9375 0.125 0.625 0.125 1.0 0.0 1.0 0.0 0.625 0.03125 0.6875 0.03125 0.9375 0.0 0.9375 0.0 0.6875 0.15625 0.125 0.15625 0.5 0.0 0.5 0.0 0.125 0.25 1.0 0.28125 1.0 0.28125 0.6875 0.25 0.6875 0.25 0.9375 0.28125 0.9375 0.28125 0.6875 0.25 0.6875 0.34375 0.875 0.34375 1.0 0.375 1.0 0.375 0.875 0.03125 1.0 0.0625 1.0 0.0625 0.9375 0.03125 0.9375 0.5 1.0 0.625 1.0 0.625 0.75 0.5 0.75 0.5 0.875 0.5 1.0 0.53125 1.0 0.53125 0.875 </float_array>
+          <technique_common>
+            <accessor count="76" source="#pecho(1)-UV-array" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pecho(1)-Normal">
+          <float_array count="18" id="pecho(1)-Normal-array">-1.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.0 0.0 0.0 1.0</float_array>
+          <technique_common>
+            <accessor count="6" source="#pecho(1)-Normal-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="pecho(1)-Vertices">
+          <input semantic="POSITION" source="#pecho(1)-Pos"/>
+        </vertices>
+        <polylist count="19" material="pecho(1)-Material">
+          <input offset="0" semantic="VERTEX" source="#pecho(1)-Vertices"/>
+          <input offset="1" semantic="TEXCOORD" set="0" source="#pecho(1)-UV"/>
+          <input offset="2" semantic="NORMAL" source="#pecho(1)-Normal"/>
+          <vcount>4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 </vcount>
+          <p>0 0 0 1 1 0 2 2 0 3 3 0 4 4 0 5 5 0 6 6 0 7 7 0 8 8 0 9 9 0 10 10 0 11 11 0 12 12 1 13 13 1 14 14 1 15 15 1 16 16 1 17 17 1 18 18 1 19 19 1 20 20 1 21 21 1 22 22 1 23 23 1 24 24 2 25 25 2 26 26 2 27 27 2 28 28 2 29 29 2 30 30 2 31 31 2 32 32 2 33 33 2 34 34 2 35 35 2 36 36 2 37 37 2 38 38 2 39 39 2 40 40 3 41 41 3 42 42 3 43 43 3 44 44 3 45 45 3 46 46 3 47 47 3 48 48 4 49 49 4 50 50 4 51 51 4 52 52 5 53 53 5 54 54 5 55 55 5 56 56 5 57 57 5 58 58 5 59 59 5 60 60 5 61 61 5 62 62 5 63 63 5 64 64 5 65 65 5 66 66 5 67 67 5 68 68 5 69 69 5 70 70 5 71 71 5 72 72 5 73 73 5 74 74 5 75 75 5 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="brazoderecho(1)-Geom" name="brazoderecho(1)-Geom">
+      <mesh>
+        <source id="brazoderecho(1)-Pos">
+          <float_array count="72" id="brazoderecho(1)-Pos-array">-1.0 -1.0 1.0 -1.0 1.0 1.0 -1.0 1.0 -1.0 -1.0 -1.0 -1.0 1.0 -1.0 -1.0 1.0 1.0 -1.0 1.0 1.0 1.0 1.0 -1.0 1.0 -1.0 -1.0 -1.0 1.0 -1.0 -1.0 1.0 -1.0 1.0 -1.0 -1.0 1.0 -1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 -1.0 -1.0 1.0 -1.0 -1.0 1.0 -1.0 1.0 1.0 -1.0 1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 1.0 1.0 -1.0 1.0 1.0 1.0 1.0 -1.0 1.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="24" source="#brazoderecho(1)-Pos-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="brazoderecho(1)-UV">
+          <float_array count="48" id="brazoderecho(1)-UV-array">0.5 0.5 0.75 0.5 0.75 1.0 0.5 1.0 0.0 1.0 0.25 1.0 0.25 0.5 0.0 0.5 0.5 1.0 0.75 1.0 0.75 0.5 0.5 0.5 0.0 0.5 0.25 0.5 0.25 1.0 0.0 1.0 0.5 0.5 0.75 0.5 0.75 1.0 0.5 1.0 0.0 1.0 0.25 1.0 0.25 0.5 0.0 0.5 </float_array>
+          <technique_common>
+            <accessor count="24" source="#brazoderecho(1)-UV-array" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="brazoderecho(1)-Normal">
+          <float_array count="18" id="brazoderecho(1)-Normal-array">-1.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.0 0.0 0.0 1.0</float_array>
+          <technique_common>
+            <accessor count="6" source="#brazoderecho(1)-Normal-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="brazoderecho(1)-Vertices">
+          <input semantic="POSITION" source="#brazoderecho(1)-Pos"/>
+        </vertices>
+        <polylist count="6" material="brazoderecho(1)-Material">
+          <input offset="0" semantic="VERTEX" source="#brazoderecho(1)-Vertices"/>
+          <input offset="1" semantic="TEXCOORD" set="0" source="#brazoderecho(1)-UV"/>
+          <input offset="2" semantic="NORMAL" source="#brazoderecho(1)-Normal"/>
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 0 0 1 1 0 2 2 0 3 3 0 4 4 1 5 5 1 6 6 1 7 7 1 8 8 2 9 9 2 10 10 2 11 11 2 12 12 3 13 13 3 14 14 3 15 15 3 16 16 4 17 17 4 18 18 4 19 19 4 20 20 5 21 21 5 22 22 5 23 23 5 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="antebrazoderecho(1)-Geom" name="antebrazoderecho(1)-Geom">
+      <mesh>
+        <source id="antebrazoderecho(1)-Pos">
+          <float_array count="168" id="antebrazoderecho(1)-Pos-array">-2.0 -1.0 1.0 -2.0 1.0 1.0 -2.0 1.0 -1.0 -2.0 -1.0 -1.0 0.0 -1.0 1.0 0.0 0.0 1.0 0.0 0.0 -1.0 0.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 0.0 -1.0 -1.0 0.0 1.0 -1.0 -1.0 1.0 2.0 -1.0 -1.0 2.0 1.0 -1.0 2.0 1.0 1.0 2.0 -1.0 1.0 0.0 -1.0 -1.0 2.0 -1.0 -1.0 2.0 -1.0 1.0 0.0 -1.0 1.0 -2.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 1.0 -2.0 -1.0 1.0 -1.0 0.0 -1.0 0.0 0.0 -1.0 0.0 0.0 1.0 -1.0 0.0 1.0 -2.0 1.0 1.0 2.0 1.0 1.0 2.0 1.0 -1.0 -2.0 1.0 -1.0 0.0 1.0 -1.0 2.0 1.0 -1.0 2.0 -1.0 -1.0 0.0 -1.0 -1.0 -2.0 1.0 -1.0 -1.0 1.0 -1.0 -1.0 -1.0 -1.0 -2.0 -1.0 -1.0 -1.0 1.0 -1.0 0.0 1.0 -1.0 0.0 0.0 -1.0 -1.0 0.0 -1.0 0.0 -1.0 1.0 2.0 -1.0 1.0 2.0 1.0 1.0 0.0 1.0 1.0 -2.0 -1.0 1.0 -1.0 -1.0 1.0 -1.0 1.0 1.0 -2.0 1.0 1.0 -1.0 0.0 1.0 0.0 0.0 1.0 0.0 1.0 1.0 -1.0 1.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="56" source="#antebrazoderecho(1)-Pos-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="antebrazoderecho(1)-UV">
+          <float_array count="112" id="antebrazoderecho(1)-UV-array">0.0 0.75 0.25 0.75 0.25 1.0 0.0 1.0 0.0 0.75 0.125 0.75 0.125 1.0 0.0 1.0 0.0 1.0 0.125 1.0 0.125 0.75 0.0 0.75 0.0 1.0 0.25 1.0 0.25 0.75 0.0 0.75 0.0 1.0 0.25 1.0 0.25 0.75 0.0 0.75 0.0 1.0 0.125 1.0 0.125 0.75 0.0 0.75 0.0 1.0 0.125 1.0 0.125 0.75 0.0 0.75 0.25 0.5 0.25 1.0 0.0 1.0 0.0 0.5 0.0 0.75 0.25 0.75 0.25 1.0 0.0 1.0 0.0 0.75 0.125 0.75 0.125 1.0 0.0 1.0 0.0 0.875 0.125 0.875 0.125 1.0 0.0 1.0 0.0 1.0 0.25 1.0 0.25 0.75 0.0 0.75 0.0 1.0 0.125 1.0 0.125 0.75 0.0 0.75 0.0 1.0 0.125 1.0 0.125 0.875 0.0 0.875 </float_array>
+          <technique_common>
+            <accessor count="56" source="#antebrazoderecho(1)-UV-array" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="antebrazoderecho(1)-Normal">
+          <float_array count="18" id="antebrazoderecho(1)-Normal-array">-1.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.0 0.0 0.0 1.0</float_array>
+          <technique_common>
+            <accessor count="6" source="#antebrazoderecho(1)-Normal-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="antebrazoderecho(1)-Vertices">
+          <input semantic="POSITION" source="#antebrazoderecho(1)-Pos"/>
+        </vertices>
+        <polylist count="14" material="antebrazoderecho(1)-Material">
+          <input offset="0" semantic="VERTEX" source="#antebrazoderecho(1)-Vertices"/>
+          <input offset="1" semantic="TEXCOORD" set="0" source="#antebrazoderecho(1)-UV"/>
+          <input offset="2" semantic="NORMAL" source="#antebrazoderecho(1)-Normal"/>
+          <vcount>4 4 4 4 4 4 4 4 4 4 4 4 4 4 </vcount>
+          <p>0 0 0 1 1 0 2 2 0 3 3 0 4 4 0 5 5 0 6 6 0 7 7 0 8 8 1 9 9 1 10 10 1 11 11 1 12 12 1 13 13 1 14 14 1 15 15 1 16 16 2 17 17 2 18 18 2 19 19 2 20 20 2 21 21 2 22 22 2 23 23 2 24 24 2 25 25 2 26 26 2 27 27 2 28 28 3 29 29 3 30 30 3 31 31 3 32 32 4 33 33 4 34 34 4 35 35 4 36 36 4 37 37 4 38 38 4 39 39 4 40 40 4 41 41 4 42 42 4 43 43 4 44 44 5 45 45 5 46 46 5 47 47 5 48 48 5 49 49 5 50 50 5 51 51 5 52 52 5 53 53 5 54 54 5 55 55 5 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="brazoizquierdo(1)-Geom" name="brazoizquierdo(1)-Geom">
+      <mesh>
+        <source id="brazoizquierdo(1)-Pos">
+          <float_array count="72" id="brazoizquierdo(1)-Pos-array">-1.0 -1.0 1.0 -1.0 1.0 1.0 -1.0 1.0 -1.0 -1.0 -1.0 -1.0 1.0 -1.0 -1.0 1.0 1.0 -1.0 1.0 1.0 1.0 1.0 -1.0 1.0 -1.0 -1.0 -1.0 1.0 -1.0 -1.0 1.0 -1.0 1.0 -1.0 -1.0 1.0 -1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 -1.0 -1.0 1.0 -1.0 -1.0 1.0 -1.0 1.0 1.0 -1.0 1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 1.0 1.0 -1.0 1.0 1.0 1.0 1.0 -1.0 1.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="24" source="#brazoizquierdo(1)-Pos-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="brazoizquierdo(1)-UV">
+          <float_array count="48" id="brazoizquierdo(1)-UV-array">0.0 0.25 0.25 0.25 0.25 0.5 0.0 0.5 0.5 1.0 0.75 1.0 0.75 0.75 0.5 0.75 0.5 1.0 0.75 1.0 0.75 0.75 0.5 0.75 0.0 0.75 0.25 0.75 0.25 1.0 0.0 1.0 0.5 0.75 0.75 0.75 0.75 1.0 0.5 1.0 0.0 1.0 0.25 1.0 0.25 0.75 0.0 0.75 </float_array>
+          <technique_common>
+            <accessor count="24" source="#brazoizquierdo(1)-UV-array" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="brazoizquierdo(1)-Normal">
+          <float_array count="18" id="brazoizquierdo(1)-Normal-array">-1.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.0 0.0 0.0 1.0</float_array>
+          <technique_common>
+            <accessor count="6" source="#brazoizquierdo(1)-Normal-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="brazoizquierdo(1)-Vertices">
+          <input semantic="POSITION" source="#brazoizquierdo(1)-Pos"/>
+        </vertices>
+        <polylist count="6" material="brazoizquierdo(1)-Material">
+          <input offset="0" semantic="VERTEX" source="#brazoizquierdo(1)-Vertices"/>
+          <input offset="1" semantic="TEXCOORD" set="0" source="#brazoizquierdo(1)-UV"/>
+          <input offset="2" semantic="NORMAL" source="#brazoizquierdo(1)-Normal"/>
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 0 0 1 1 0 2 2 0 3 3 0 4 4 1 5 5 1 6 6 1 7 7 1 8 8 2 9 9 2 10 10 2 11 11 2 12 12 3 13 13 3 14 14 3 15 15 3 16 16 4 17 17 4 18 18 4 19 19 4 20 20 5 21 21 5 22 22 5 23 23 5 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="antebrazoizquierdo(1)-Geom" name="antebrazoizquierdo(1)-Geom">
+      <mesh>
+        <source id="antebrazoizquierdo(1)-Pos">
+          <float_array count="168" id="antebrazoizquierdo(1)-Pos-array">-2.0 -1.0 1.0 -2.0 1.0 1.0 -2.0 1.0 -1.0 -2.0 -1.0 -1.0 1.0 -1.0 1.0 1.0 0.0 1.0 1.0 0.0 -1.0 1.0 -1.0 -1.0 0.0 -1.0 -1.0 0.0 0.0 -1.0 0.0 0.0 1.0 0.0 -1.0 1.0 2.0 -1.0 -1.0 2.0 1.0 -1.0 2.0 1.0 1.0 2.0 -1.0 1.0 -2.0 -1.0 -1.0 0.0 -1.0 -1.0 0.0 -1.0 1.0 -2.0 -1.0 1.0 1.0 -1.0 -1.0 2.0 -1.0 -1.0 2.0 -1.0 1.0 1.0 -1.0 1.0 0.0 0.0 -1.0 1.0 0.0 -1.0 1.0 0.0 1.0 0.0 0.0 1.0 -2.0 1.0 1.0 2.0 1.0 1.0 2.0 1.0 -1.0 -2.0 1.0 -1.0 -2.0 1.0 -1.0 0.0 1.0 -1.0 0.0 -1.0 -1.0 -2.0 -1.0 -1.0 1.0 1.0 -1.0 2.0 1.0 -1.0 2.0 -1.0 -1.0 1.0 -1.0 -1.0 0.0 1.0 -1.0 1.0 1.0 -1.0 1.0 0.0 -1.0 0.0 0.0 -1.0 -2.0 -1.0 1.0 0.0 -1.0 1.0 0.0 1.0 1.0 -2.0 1.0 1.0 1.0 -1.0 1.0 2.0 -1.0 1.0 2.0 1.0 1.0 1.0 1.0 1.0 0.0 0.0 1.0 1.0 0.0 1.0 1.0 1.0 1.0 0.0 1.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="56" source="#antebrazoizquierdo(1)-Pos-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="antebrazoizquierdo(1)-UV">
+          <float_array count="112" id="antebrazoizquierdo(1)-UV-array">0.0 0.75 0.25 0.75 0.25 1.0 0.0 1.0 0.0 0.75 0.125 0.75 0.125 1.0 0.0 1.0 0.0 1.0 0.125 1.0 0.125 0.75 0.0 0.75 0.0 1.0 0.25 1.0 0.25 0.75 0.0 0.75 0.0 1.0 0.25 1.0 0.25 0.75 0.0 0.75 0.0 1.0 0.125 1.0 0.125 0.75 0.0 0.75 0.0 1.0 0.125 1.0 0.125 0.75 0.0 0.75 0.25 0.5 0.25 1.0 0.0 1.0 0.0 0.5 0.0 0.75 0.25 0.75 0.25 1.0 0.0 1.0 0.0 0.75 0.125 0.75 0.125 1.0 0.0 1.0 0.0 0.875 0.125 0.875 0.125 1.0 0.0 1.0 0.0 1.0 0.25 1.0 0.25 0.75 0.0 0.75 0.0 1.0 0.125 1.0 0.125 0.75 0.0 0.75 0.0 1.0 0.125 1.0 0.125 0.875 0.0 0.875 </float_array>
+          <technique_common>
+            <accessor count="56" source="#antebrazoizquierdo(1)-UV-array" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="antebrazoizquierdo(1)-Normal">
+          <float_array count="18" id="antebrazoizquierdo(1)-Normal-array">-1.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.0 0.0 0.0 1.0</float_array>
+          <technique_common>
+            <accessor count="6" source="#antebrazoizquierdo(1)-Normal-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="antebrazoizquierdo(1)-Vertices">
+          <input semantic="POSITION" source="#antebrazoizquierdo(1)-Pos"/>
+        </vertices>
+        <polylist count="14" material="antebrazoizquierdo(1)-Material">
+          <input offset="0" semantic="VERTEX" source="#antebrazoizquierdo(1)-Vertices"/>
+          <input offset="1" semantic="TEXCOORD" set="0" source="#antebrazoizquierdo(1)-UV"/>
+          <input offset="2" semantic="NORMAL" source="#antebrazoizquierdo(1)-Normal"/>
+          <vcount>4 4 4 4 4 4 4 4 4 4 4 4 4 4 </vcount>
+          <p>0 0 0 1 1 0 2 2 0 3 3 0 4 4 0 5 5 0 6 6 0 7 7 0 8 8 1 9 9 1 10 10 1 11 11 1 12 12 1 13 13 1 14 14 1 15 15 1 16 16 2 17 17 2 18 18 2 19 19 2 20 20 2 21 21 2 22 22 2 23 23 2 24 24 2 25 25 2 26 26 2 27 27 2 28 28 3 29 29 3 30 30 3 31 31 3 32 32 4 33 33 4 34 34 4 35 35 4 36 36 4 37 37 4 38 38 4 39 39 4 40 40 4 41 41 4 42 42 4 43 43 4 44 44 5 45 45 5 46 46 5 47 47 5 48 48 5 49 49 5 50 50 5 51 51 5 52 52 5 53 53 5 54 54 5 55 55 5 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="cabeza(1)-Geom" name="cabeza(1)-Geom">
+      <mesh>
+        <source id="cabeza(1)-Pos">
+          <float_array count="1320" id="cabeza(1)-Pos-array">-8.0 0.5 0.0 -8.0 3.5 0.0 -8.0 3.5 -1.0 -8.0 0.5 -1.0 -8.0 0.5 1.0 -8.0 2.5 1.0 -8.0 2.5 0.0 -8.0 0.5 0.0 -7.0 -0.5 1.0 -7.0 0.5 1.0 -7.0 0.5 -1.0 -7.0 -0.5 -1.0 -3.0 -1.5 -1.0 -3.0 2.5 -1.0 -3.0 2.5 -3.0 -3.0 -1.5 -3.0 -3.0 -2.5 2.0 -3.0 -0.5 2.0 -3.0 -0.5 -1.0 -3.0 -2.5 -1.0 -3.0 1.5 2.0 -3.0 3.5 2.0 -3.0 3.5 -1.0 -3.0 1.5 -1.0 -3.0 -0.5 3.0 -3.0 1.5 3.0 -3.0 1.5 1.0 -3.0 -0.5 1.0 -3.0 -2.5 -1.0 -3.0 -1.5 -1.0 -3.0 -1.5 -2.0 -3.0 -2.5 -2.0 -3.0 2.5 -1.0 -3.0 3.5 -1.0 -3.0 3.5 -2.0 -3.0 2.5 -2.0 -3.0 -1.5 3.0 -3.0 -0.5 3.0 -3.0 -0.5 2.0 -3.0 -1.5 2.0 -3.0 1.5 3.0 -3.0 2.5 3.0 -3.0 2.5 2.0 -3.0 1.5 2.0 -2.0 -3.5 1.0 -2.0 -2.5 1.0 -2.0 -2.5 -1.0 -2.0 -3.5 -1.0 -2.0 -2.5 -2.0 -2.0 -1.5 -2.0 -2.0 -1.5 -3.0 -2.0 -2.5 -3.0 -2.0 2.5 -2.0 -2.0 3.5 -2.0 -2.0 3.5 -3.0 -2.0 2.5 -3.0 -2.0 -2.5 3.0 -2.0 -1.5 3.0 -2.0 -1.5 2.0 -2.0 -2.5 2.0 -2.0 2.5 3.0 -2.0 3.5 3.0 -2.0 3.5 2.0 -2.0 2.5 2.0 1.0 -1.5 3.0 1.0 -0.5 3.0 1.0 -0.5 2.0 1.0 -1.5 2.0 2.0 -0.5 3.0 2.0 0.5 3.0 2.0 0.5 2.0 2.0 -0.5 2.0 6.0 1.5 1.0 6.0 2.5 1.0 6.0 2.5 -1.0 6.0 1.5 -1.0 7.0 2.5 0.0 7.0 3.5 0.0 7.0 3.5 -1.0 7.0 2.5 -1.0 -7.0 2.5 -1.0 -7.0 3.5 -1.0 -7.0 3.5 0.0 -7.0 2.5 0.0 -6.0 1.5 -1.0 -6.0 2.5 -1.0 -6.0 2.5 1.0 -6.0 1.5 1.0 -2.0 -0.5 2.0 -2.0 0.5 2.0 -2.0 0.5 3.0 -2.0 -0.5 3.0 -1.0 -1.5 2.0 -1.0 -0.5 2.0 -1.0 -0.5 3.0 -1.0 -1.5 3.0 2.0 -3.5 -1.0 2.0 -2.5 -1.0 2.0 -2.5 1.0 2.0 -3.5 1.0 2.0 -2.5 -3.0 2.0 -1.5 -3.0 2.0 -1.5 -2.0 2.0 -2.5 -2.0 2.0 2.5 -3.0 2.0 3.5 -3.0 2.0 3.5 -2.0 2.0 2.5 -2.0 2.0 -2.5 2.0 2.0 -1.5 2.0 2.0 -1.5 3.0 2.0 -2.5 3.0 2.0 2.5 2.0 2.0 3.5 2.0 2.0 3.5 3.0 2.0 2.5 3.0 3.0 -1.5 -3.0 3.0 2.5 -3.0 3.0 2.5 -1.0 3.0 -1.5 -1.0 3.0 -2.5 -1.0 3.0 -0.5 -1.0 3.0 -0.5 2.0 3.0 -2.5 2.0 3.0 1.5 -1.0 3.0 3.5 -1.0 3.0 3.5 2.0 3.0 1.5 2.0 3.0 -0.5 1.0 3.0 1.5 1.0 3.0 1.5 3.0 3.0 -0.5 3.0 3.0 -2.5 -2.0 3.0 -1.5 -2.0 3.0 -1.5 -1.0 3.0 -2.5 -1.0 3.0 2.5 -2.0 3.0 3.5 -2.0 3.0 3.5 -1.0 3.0 2.5 -1.0 3.0 -1.5 2.0 3.0 -0.5 2.0 3.0 -0.5 3.0 3.0 -1.5 3.0 3.0 1.5 2.0 3.0 2.5 2.0 3.0 2.5 3.0 3.0 1.5 3.0 7.0 -0.5 -1.0 7.0 0.5 -1.0 7.0 0.5 1.0 7.0 -0.5 1.0 8.0 0.5 -1.0 8.0 3.5 -1.0 8.0 3.5 0.0 8.0 0.5 0.0 8.0 0.5 0.0 8.0 2.5 0.0 8.0 2.5 1.0 8.0 0.5 1.0 -2.0 -3.5 -1.0 2.0 -3.5 -1.0 2.0 -3.5 1.0 -2.0 -3.5 1.0 -2.0 -2.5 -3.0 2.0 -2.5 -3.0 2.0 -2.5 -1.0 -2.0 -2.5 -1.0 -3.0 -2.5 1.0 3.0 -2.5 1.0 3.0 -2.5 2.0 -3.0 -2.5 2.0 -2.0 -2.5 2.0 2.0 -2.5 2.0 2.0 -2.5 3.0 -2.0 -2.5 3.0 -3.0 -2.5 -2.0 -2.0 -2.5 -2.0 -2.0 -2.5 1.0 -3.0 -2.5 1.0 2.0 -2.5 -2.0 3.0 -2.5 -2.0 3.0 -2.5 1.0 2.0 -2.5 1.0 -3.0 -1.5 -3.0 -2.0 -1.5 -3.0 -2.0 -1.5 -2.0 -3.0 -1.5 -2.0 2.0 -1.5 -3.0 3.0 -1.5 -3.0 3.0 -1.5 -2.0 2.0 -1.5 -2.0 -3.0 -1.5 2.0 -2.0 -1.5 2.0 -2.0 -1.5 3.0 -3.0 -1.5 3.0 2.0 -1.5 2.0 3.0 -1.5 2.0 3.0 -1.5 3.0 2.0 -1.5 3.0 -7.0 -0.5 -1.0 -3.0 -0.5 -1.0 -3.0 -0.5 1.0 -7.0 -0.5 1.0 3.0 -0.5 -1.0 7.0 -0.5 -1.0 7.0 -0.5 1.0 3.0 -0.5 1.0 -2.0 0.5 2.0 2.0 0.5 2.0 2.0 0.5 3.0 -2.0 0.5 3.0 -8.0 0.5 -1.0 -7.0 0.5 -1.0 -7.0 0.5 1.0 -8.0 0.5 1.0 7.0 0.5 -1.0 8.0 0.5 -1.0 8.0 0.5 1.0 7.0 0.5 1.0 -1.0 -1.5 3.0 1.0 -1.5 3.0 1.0 -1.5 2.0 -1.0 -1.5 2.0 -2.0 -0.5 3.0 -1.0 -0.5 3.0 -1.0 -0.5 2.0 -2.0 -0.5 2.0 1.0 -0.5 3.0 2.0 -0.5 3.0 2.0 -0.5 2.0 1.0 -0.5 2.0 -6.0 1.5 1.0 -3.0 1.5 1.0 -3.0 1.5 -1.0 -6.0 1.5 -1.0 3.0 1.5 1.0 6.0 1.5 1.0 6.0 1.5 -1.0 3.0 1.5 -1.0 -7.0 2.5 1.0 -6.0 2.5 1.0 -6.0 2.5 -1.0 -7.0 2.5 -1.0 6.0 2.5 1.0 7.0 2.5 1.0 7.0 2.5 -1.0 6.0 2.5 -1.0 -3.0 2.5 -2.0 -2.0 2.5 -2.0 -2.0 2.5 -3.0 -3.0 2.5 -3.0 2.0 2.5 -2.0 3.0 2.5 -2.0 3.0 2.5 -3.0 2.0 2.5 -3.0 -8.0 2.5 1.0 -7.0 2.5 1.0 -7.0 2.5 0.0 -8.0 2.5 0.0 7.0 2.5 1.0 8.0 2.5 1.0 8.0 2.5 0.0 7.0 2.5 0.0 -3.0 2.5 3.0 -2.0 2.5 3.0 -2.0 2.5 2.0 -3.0 2.5 2.0 2.0 2.5 3.0 3.0 2.5 3.0 3.0 2.5 2.0 2.0 2.5 2.0 -2.0 3.5 3.0 2.0 3.5 3.0 2.0 3.5 -3.0 -2.0 3.5 -3.0 -3.0 3.5 2.0 -2.0 3.5 2.0 -2.0 3.5 -2.0 -3.0 3.5 -2.0 2.0 3.5 2.0 3.0 3.5 2.0 3.0 3.5 -2.0 2.0 3.5 -2.0 -8.0 3.5 0.0 -7.0 3.5 0.0 -7.0 3.5 -1.0 -8.0 3.5 -1.0 7.0 3.5 0.0 8.0 3.5 0.0 8.0 3.5 -1.0 7.0 3.5 -1.0 -2.0 3.5 -3.0 2.0 3.5 -3.0 2.0 -2.5 -3.0 -2.0 -2.5 -3.0 -3.0 2.5 -3.0 -2.0 2.5 -3.0 -2.0 -1.5 -3.0 -3.0 -1.5 -3.0 2.0 2.5 -3.0 3.0 2.5 -3.0 3.0 -1.5 -3.0 2.0 -1.5 -3.0 -3.0 -1.5 -2.0 -2.0 -1.5 -2.0 -2.0 -2.5 -2.0 -3.0 -2.5 -2.0 2.0 -1.5 -2.0 3.0 -1.5 -2.0 3.0 -2.5 -2.0 2.0 -2.5 -2.0 -3.0 3.5 -2.0 -2.0 3.5 -2.0 -2.0 2.5 -2.0 -3.0 2.5 -2.0 2.0 3.5 -2.0 3.0 3.5 -2.0 3.0 2.5 -2.0 2.0 2.5 -2.0 -7.0 1.5 -1.0 -3.0 1.5 -1.0 -3.0 -0.5 -1.0 -7.0 -0.5 -1.0 3.0 1.5 -1.0 7.0 1.5 -1.0 7.0 -0.5 -1.0 3.0 -0.5 -1.0 -2.0 -2.5 -1.0 2.0 -2.5 -1.0 2.0 -3.5 -1.0 -2.0 -3.5 -1.0 -8.0 3.5 -1.0 -7.0 3.5 -1.0 -7.0 0.5 -1.0 -8.0 0.5 -1.0 7.0 3.5 -1.0 8.0 3.5 -1.0 8.0 0.5 -1.0 7.0 0.5 -1.0 -7.0 2.5 -1.0 -6.0 2.5 -1.0 -6.0 1.5 -1.0 -7.0 1.5 -1.0 6.0 2.5 -1.0 7.0 2.5 -1.0 7.0 1.5 -1.0 6.0 1.5 -1.0 -8.0 2.5 0.0 -7.0 2.5 0.0 -7.0 3.5 0.0 -8.0 3.5 0.0 7.0 2.5 0.0 8.0 2.5 0.0 8.0 3.5 0.0 7.0 3.5 0.0 -7.0 -0.5 1.0 -3.0 -0.5 1.0 -3.0 1.5 1.0 -7.0 1.5 1.0 3.0 -0.5 1.0 7.0 -0.5 1.0 7.0 1.5 1.0 3.0 1.5 1.0 -2.0 -3.5 1.0 2.0 -3.5 1.0 2.0 -2.5 1.0 -2.0 -2.5 1.0 -8.0 0.5 1.0 -7.0 0.5 1.0 -7.0 2.5 1.0 -8.0 2.5 1.0 7.0 0.5 1.0 8.0 0.5 1.0 8.0 2.5 1.0 7.0 2.5 1.0 -7.0 1.5 1.0 -6.0 1.5 1.0 -6.0 2.5 1.0 -7.0 2.5 1.0 6.0 1.5 1.0 7.0 1.5 1.0 7.0 2.5 1.0 6.0 2.5 1.0 -1.0 -1.5 2.0 1.0 -1.5 2.0 1.0 0.5 2.0 -1.0 0.5 2.0 -3.0 -2.5 2.0 -2.0 -2.5 2.0 -2.0 -1.5 2.0 -3.0 -1.5 2.0 2.0 -2.5 2.0 3.0 -2.5 2.0 3.0 -1.5 2.0 2.0 -1.5 2.0 -2.0 -0.5 2.0 -1.0 -0.5 2.0 -1.0 0.5 2.0 -2.0 0.5 2.0 1.0 -0.5 2.0 2.0 -0.5 2.0 2.0 0.5 2.0 1.0 0.5 2.0 -3.0 2.5 2.0 -2.0 2.5 2.0 -2.0 3.5 2.0 -3.0 3.5 2.0 2.0 2.5 2.0 3.0 2.5 2.0 3.0 3.5 2.0 2.0 3.5 2.0 -3.0 0.5 3.0 3.0 0.5 3.0 3.0 2.5 3.0 -3.0 2.5 3.0 -2.0 -2.5 3.0 2.0 -2.5 3.0 2.0 -1.5 3.0 -2.0 -1.5 3.0 -2.0 2.5 3.0 2.0 2.5 3.0 2.0 3.5 3.0 -2.0 3.5 3.0 -3.0 -1.5 3.0 -1.0 -1.5 3.0 -1.0 -0.5 3.0 -3.0 -0.5 3.0 1.0 -1.5 3.0 3.0 -1.5 3.0 3.0 -0.5 3.0 1.0 -0.5 3.0 -3.0 -0.5 3.0 -2.0 -0.5 3.0 -2.0 0.5 3.0 -3.0 0.5 3.0 2.0 -0.5 3.0 3.0 -0.5 3.0 3.0 0.5 3.0 2.0 0.5 3.0 </float_array>
+          <technique_common>
+            <accessor count="440" source="#cabeza(1)-Pos-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cabeza(1)-UV">
+          <float_array count="880" id="cabeza(1)-UV-array">0.015625 0.78125 0.015625 0.875 0.0 0.875 0.0 0.78125 0.125 0.9375 0.125 1.0 0.109375 1.0 0.109375 0.9375 0.109375 0.9375 0.125 0.9375 0.125 1.0 0.109375 1.0 0.140625 0.71875 0.140625 0.84375 0.109375 0.84375 0.109375 0.71875 0.109375 0.75 0.140625 0.75 0.140625 0.84375 0.109375 0.84375 0.109375 0.75 0.140625 0.75 0.140625 0.84375 0.109375 0.84375 0.171875 0.9375 0.203125 0.9375 0.203125 1.0 0.171875 1.0 0.171875 0.96875 0.1875 0.96875 0.1875 1.0 0.171875 1.0 0.171875 0.96875 0.1875 0.96875 0.1875 1.0 0.171875 1.0 0.0 0.96875 0.015625 0.96875 0.015625 1.0 0.0 1.0 0.171875 0.96875 0.1875 0.96875 0.1875 1.0 0.171875 1.0 0.046875 0.78125 0.0625 0.78125 0.0625 0.84375 0.046875 0.84375 0.171875 0.96875 0.1875 0.96875 0.1875 1.0 0.171875 1.0 0.171875 0.96875 0.1875 0.96875 0.1875 1.0 0.171875 1.0 0.0 0.96875 0.015625 0.96875 0.015625 1.0 0.0 1.0 0.171875 0.96875 0.1875 0.96875 0.1875 1.0 0.171875 1.0 0.0 0.96875 0.015625 0.96875 0.015625 1.0 0.0 1.0 0.0 0.96875 0.015625 0.96875 0.015625 1.0 0.0 1.0 0.109375 0.9375 0.125 0.9375 0.125 1.0 0.109375 1.0 0.109375 0.96875 0.125 0.96875 0.125 1.0 0.109375 1.0 0.046875 0.96875 0.0625 0.96875 0.0625 0.9375 0.046875 0.9375 0.109375 1.0 0.125 1.0 0.125 0.9375 0.109375 0.9375 0.0 1.0 0.015625 1.0 0.015625 0.96875 0.0 0.96875 0.0 1.0 0.015625 1.0 0.015625 0.96875 0.0 0.96875 0.046875 0.84375 0.0625 0.84375 0.0625 0.78125 0.046875 0.78125 0.109375 0.84375 0.125 0.84375 0.125 0.8125 0.109375 0.8125 0.109375 0.84375 0.125 0.84375 0.125 0.8125 0.109375 0.8125 0.0 1.0 0.015625 1.0 0.015625 0.96875 0.0 0.96875 0.109375 0.84375 0.125 0.84375 0.125 0.8125 0.109375 0.8125 0.109375 0.71875 0.109375 0.84375 0.140625 0.84375 0.140625 0.71875 0.109375 0.84375 0.140625 0.84375 0.140625 0.75 0.109375 0.75 0.109375 0.84375 0.140625 0.84375 0.140625 0.75 0.109375 0.75 0.171875 1.0 0.203125 1.0 0.203125 0.9375 0.171875 0.9375 0.171875 1.0 0.1875 1.0 0.1875 0.96875 0.171875 0.96875 0.171875 1.0 0.1875 1.0 0.1875 0.96875 0.171875 0.96875 0.0 1.0 0.015625 1.0 0.015625 0.96875 0.0 0.96875 0.171875 1.0 0.1875 1.0 0.1875 0.96875 0.171875 0.96875 0.109375 1.0 0.125 1.0 0.125 0.9375 0.109375 0.9375 0.390625 0.90625 0.390625 1.0 0.40625 1.0 0.40625 0.90625 0.109375 0.9375 0.109375 1.0 0.125 1.0 0.125 0.9375 0.046875 0.71875 0.046875 0.84375 0.078125 0.84375 0.078125 0.71875 0.046875 0.53125 0.046875 0.65625 0.078125 0.65625 0.078125 0.53125 0.203125 0.65625 0.203125 0.84375 0.21875 0.84375 0.21875 0.65625 0.28125 0.875 0.28125 1.0 0.296875 1.0 0.296875 0.875 0.109375 0.84375 0.125 0.84375 0.125 0.75 0.109375 0.75 0.109375 0.84375 0.125 0.84375 0.125 0.75 0.109375 0.75 0.109375 0.84375 0.125 0.84375 0.125 0.8125 0.109375 0.8125 0.109375 0.84375 0.125 0.84375 0.125 0.8125 0.109375 0.8125 0.0 1.0 0.015625 1.0 0.015625 0.96875 0.0 0.96875 0.0 1.0 0.015625 1.0 0.015625 0.96875 0.0 0.96875 0.328125 0.875 0.328125 1.0 0.359375 1.0 0.359375 0.875 0.390625 0.875 0.390625 1.0 0.421875 1.0 0.421875 0.875 0.28125 0.875 0.28125 1.0 0.296875 1.0 0.296875 0.875 0.109375 1.0 0.125 1.0 0.125 0.9375 0.109375 0.9375 0.109375 1.0 0.125 1.0 0.125 0.9375 0.109375 0.9375 0.015625 0.9375 0.015625 1.0 0.0 1.0 0.0 0.9375 0.0 0.96875 0.015625 0.96875 0.015625 1.0 0.0 1.0 0.0 0.96875 0.015625 0.96875 0.015625 1.0 0.0 1.0 0.078125 0.90625 0.078125 1.0 0.046875 1.0 0.046875 0.90625 0.140625 0.90625 0.140625 1.0 0.109375 1.0 0.109375 0.90625 0.0 0.8125 0.015625 0.8125 0.015625 0.875 0.0 0.875 0.0 0.8125 0.015625 0.8125 0.015625 0.875 0.0 0.875 0.0 0.6875 0.015625 0.6875 0.015625 0.71875 0.0 0.71875 0.109375 0.8125 0.125 0.8125 0.125 0.84375 0.109375 0.84375 0.109375 0.96875 0.125 0.96875 0.125 1.0 0.109375 1.0 0.109375 0.96875 0.125 0.96875 0.125 1.0 0.109375 1.0 0.109375 0.8125 0.125 0.8125 0.125 0.84375 0.109375 0.84375 0.109375 0.8125 0.125 0.8125 0.125 0.84375 0.109375 0.84375 0.109375 0.65625 0.171875 0.65625 0.171875 0.84375 0.109375 0.84375 0.109375 0.71875 0.125 0.71875 0.125 0.84375 0.109375 0.84375 0.109375 0.71875 0.125 0.71875 0.125 0.84375 0.109375 0.84375 0.109375 0.96875 0.125 0.96875 0.125 1.0 0.109375 1.0 0.109375 0.96875 0.125 0.96875 0.125 1.0 0.109375 1.0 0.109375 0.65625 0.171875 0.65625 0.171875 0.84375 0.109375 0.84375 0.0 0.59375 0.015625 0.59375 0.015625 0.71875 0.0 0.71875 0.0 0.59375 0.015625 0.59375 0.015625 0.71875 0.0 0.71875 0.0 0.6875 0.015625 0.6875 0.015625 0.71875 0.0 0.71875 0.0 0.6875 0.015625 0.6875 0.015625 0.71875 0.0 0.71875 0.0 0.6875 0.015625 0.6875 0.015625 0.71875 0.0 0.71875 0.0 0.6875 0.015625 0.6875 0.015625 0.71875 0.0 0.71875 0.359375 0.875 0.359375 1.0 0.328125 1.0 0.328125 0.875 0.421875 0.875 0.421875 1.0 0.390625 1.0 0.390625 0.875 0.296875 0.5 0.296875 0.625 0.28125 0.625 0.28125 0.5 0.0 0.78125 0.015625 0.78125 0.015625 0.875 0.0 0.875 0.0 0.78125 0.015625 0.78125 0.015625 0.875 0.0 0.875 0.109375 0.96875 0.125 0.96875 0.125 1.0 0.109375 1.0 0.109375 0.96875 0.125 0.96875 0.125 1.0 0.109375 1.0 0.109375 1.0 0.125 1.0 0.125 0.96875 0.109375 0.96875 0.109375 1.0 0.125 1.0 0.125 0.96875 0.109375 0.96875 0.328125 0.875 0.328125 1.0 0.359375 1.0 0.359375 0.875 0.390625 0.875 0.390625 1.0 0.421875 1.0 0.421875 0.875 0.28125 0.6875 0.28125 0.8125 0.296875 0.8125 0.296875 0.6875 0.109375 1.0 0.125 1.0 0.125 0.9375 0.109375 0.9375 0.109375 1.0 0.125 1.0 0.125 0.9375 0.109375 0.9375 0.109375 1.0 0.125 1.0 0.125 0.96875 0.109375 0.96875 0.109375 1.0 0.125 1.0 0.125 0.96875 0.109375 0.96875 0.109375 0.59375 0.140625 0.59375 0.140625 0.53125 0.109375 0.53125 0.171875 1.0 0.1875 1.0 0.1875 0.96875 0.171875 0.96875 0.171875 1.0 0.1875 1.0 0.1875 0.96875 0.171875 0.96875 0.0 0.53125 0.015625 0.53125 0.015625 0.5 0.0 0.5 0.234375 1.0 0.25 1.0 0.25 0.96875 0.234375 0.96875 0.171875 1.0 0.1875 1.0 0.1875 0.96875 0.171875 0.96875 0.171875 1.0 0.1875 1.0 0.1875 0.96875 0.171875 0.96875 0.328125 0.625 0.328125 0.8125 0.359375 0.8125 0.359375 0.625 0.28125 0.875 0.28125 1.0 0.296875 1.0 0.296875 0.875 0.453125 0.875 0.453125 1.0 0.46875 1.0 0.46875 0.875 0.0 0.9375 0.0 1.0 0.015625 1.0 0.015625 0.9375 0.0 0.9375 0.0 1.0 0.015625 1.0 0.015625 0.9375 0.0 1.0 0.015625 1.0 0.015625 0.96875 0.0 0.96875 0.0 1.0 0.015625 1.0 0.015625 0.96875 0.0 0.96875 </float_array>
+          <technique_common>
+            <accessor count="440" source="#cabeza(1)-UV-array" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cabeza(1)-Normal">
+          <float_array count="18" id="cabeza(1)-Normal-array">-1.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.0 0.0 0.0 1.0</float_array>
+          <technique_common>
+            <accessor count="6" source="#cabeza(1)-Normal-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="cabeza(1)-Vertices">
+          <input semantic="POSITION" source="#cabeza(1)-Pos"/>
+        </vertices>
+        <polylist count="110" material="cabeza(1)-Material">
+          <input offset="0" semantic="VERTEX" source="#cabeza(1)-Vertices"/>
+          <input offset="1" semantic="TEXCOORD" set="0" source="#cabeza(1)-UV"/>
+          <input offset="2" semantic="NORMAL" source="#cabeza(1)-Normal"/>
+          <vcount>4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 </vcount>
+          <p>0 0 0 1 1 0 2 2 0 3 3 0 4 4 0 5 5 0 6 6 0 7 7 0 8 8 0 9 9 0 10 10 0 11 11 0 12 12 0 13 13 0 14 14 0 15 15 0 16 16 0 17 17 0 18 18 0 19 19 0 20 20 0 21 21 0 22 22 0 23 23 0 24 24 0 25 25 0 26 26 0 27 27 0 28 28 0 29 29 0 30 30 0 31 31 0 32 32 0 33 33 0 34 34 0 35 35 0 36 36 0 37 37 0 38 38 0 39 39 0 40 40 0 41 41 0 42 42 0 43 43 0 44 44 0 45 45 0 46 46 0 47 47 0 48 48 0 49 49 0 50 50 0 51 51 0 52 52 0 53 53 0 54 54 0 55 55 0 56 56 0 57 57 0 58 58 0 59 59 0 60 60 0 61 61 0 62 62 0 63 63 0 64 64 0 65 65 0 66 66 0 67 67 0 68 68 0 69 69 0 70 70 0 71 71 0 72 72 0 73 73 0 74 74 0 75 75 0 76 76 0 77 77 0 78 78 0 79 79 0 80 80 1 81 81 1 82 82 1 83 83 1 84 84 1 85 85 1 86 86 1 87 87 1 88 88 1 89 89 1 90 90 1 91 91 1 92 92 1 93 93 1 94 94 1 95 95 1 96 96 1 97 97 1 98 98 1 99 99 1 100 100 1 101 101 1 102 102 1 103 103 1 104 104 1 105 105 1 106 106 1 107 107 1 108 108 1 109 109 1 110 110 1 111 111 1 112 112 1 113 113 1 114 114 1 115 115 1 116 116 1 117 117 1 118 118 1 119 119 1 120 120 1 121 121 1 122 122 1 123 123 1 124 124 1 125 125 1 126 126 1 127 127 1 128 128 1 129 129 1 130 130 1 131 131 1 132 132 1 133 133 1 134 134 1 135 135 1 136 136 1 137 137 1 138 138 1 139 139 1 140 140 1 141 141 1 142 142 1 143 143 1 144 144 1 145 145 1 146 146 1 147 147 1 148 148 1 149 149 1 150 150 1 151 151 1 152 152 1 153 153 1 154 154 1 155 155 1 156 156 1 157 157 1 158 158 1 159 159 1 160 160 2 161 161 2 162 162 2 163 163 2 164 164 2 165 165 2 166 166 2 167 167 2 168 168 2 169 169 2 170 170 2 171 171 2 172 172 2 173 173 2 174 174 2 175 175 2 176 176 2 177 177 2 178 178 2 179 179 2 180 180 2 181 181 2 182 182 2 183 183 2 184 184 2 185 185 2 186 186 2 187 187 2 188 188 2 189 189 2 190 190 2 191 191 2 192 192 2 193 193 2 194 194 2 195 195 2 196 196 2 197 197 2 198 198 2 199 199 2 200 200 2 201 201 2 202 202 2 203 203 2 204 204 2 205 205 2 206 206 2 207 207 2 208 208 2 209 209 2 210 210 2 211 211 2 212 212 2 213 213 2 214 214 2 215 215 2 216 216 2 217 217 2 218 218 2 219 219 2 220 220 3 221 221 3 222 222 3 223 223 3 224 224 3 225 225 3 226 226 3 227 227 3 228 228 3 229 229 3 230 230 3 231 231 3 232 232 3 233 233 3 234 234 3 235 235 3 236 236 3 237 237 3 238 238 3 239 239 3 240 240 3 241 241 3 242 242 3 243 243 3 244 244 3 245 245 3 246 246 3 247 247 3 248 248 3 249 249 3 250 250 3 251 251 3 252 252 3 253 253 3 254 254 3 255 255 3 256 256 3 257 257 3 258 258 3 259 259 3 260 260 3 261 261 3 262 262 3 263 263 3 264 264 3 265 265 3 266 266 3 267 267 3 268 268 3 269 269 3 270 270 3 271 271 3 272 272 3 273 273 3 274 274 3 275 275 3 276 276 3 277 277 3 278 278 3 279 279 3 280 280 3 281 281 3 282 282 3 283 283 3 284 284 3 285 285 3 286 286 3 287 287 3 288 288 3 289 289 3 290 290 3 291 291 3 292 292 4 293 293 4 294 294 4 295 295 4 296 296 4 297 297 4 298 298 4 299 299 4 300 300 4 301 301 4 302 302 4 303 303 4 304 304 4 305 305 4 306 306 4 307 307 4 308 308 4 309 309 4 310 310 4 311 311 4 312 312 4 313 313 4 314 314 4 315 315 4 316 316 4 317 317 4 318 318 4 319 319 4 320 320 4 321 321 4 322 322 4 323 323 4 324 324 4 325 325 4 326 326 4 327 327 4 328 328 4 329 329 4 330 330 4 331 331 4 332 332 4 333 333 4 334 334 4 335 335 4 336 336 4 337 337 4 338 338 4 339 339 4 340 340 4 341 341 4 342 342 4 343 343 4 344 344 4 345 345 4 346 346 4 347 347 4 348 348 5 349 349 5 350 350 5 351 351 5 352 352 5 353 353 5 354 354 5 355 355 5 356 356 5 357 357 5 358 358 5 359 359 5 360 360 5 361 361 5 362 362 5 363 363 5 364 364 5 365 365 5 366 366 5 367 367 5 368 368 5 369 369 5 370 370 5 371 371 5 372 372 5 373 373 5 374 374 5 375 375 5 376 376 5 377 377 5 378 378 5 379 379 5 380 380 5 381 381 5 382 382 5 383 383 5 384 384 5 385 385 5 386 386 5 387 387 5 388 388 5 389 389 5 390 390 5 391 391 5 392 392 5 393 393 5 394 394 5 395 395 5 396 396 5 397 397 5 398 398 5 399 399 5 400 400 5 401 401 5 402 402 5 403 403 5 404 404 5 405 405 5 406 406 5 407 407 5 408 408 5 409 409 5 410 410 5 411 411 5 412 412 5 413 413 5 414 414 5 415 415 5 416 416 5 417 417 5 418 418 5 419 419 5 420 420 5 421 421 5 422 422 5 423 423 5 424 424 5 425 425 5 426 426 5 427 427 5 428 428 5 429 429 5 430 430 5 431 431 5 432 432 5 433 433 5 434 434 5 435 435 5 436 436 5 437 437 5 438 438 5 439 439 5 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="musloizquierdo(1)-Geom" name="musloizquierdo(1)-Geom">
+      <mesh>
+        <source id="musloizquierdo(1)-Pos">
+          <float_array count="72" id="musloizquierdo(1)-Pos-array">-1.0 -1.0 1.0 -1.0 1.0 1.0 -1.0 1.0 -1.0 -1.0 -1.0 -1.0 1.0 -1.0 -1.0 1.0 1.0 -1.0 1.0 1.0 1.0 1.0 -1.0 1.0 -1.0 -1.0 -1.0 1.0 -1.0 -1.0 1.0 -1.0 1.0 -1.0 -1.0 1.0 -1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 -1.0 -1.0 1.0 -1.0 -1.0 1.0 -1.0 1.0 1.0 -1.0 1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 1.0 1.0 -1.0 1.0 1.0 1.0 1.0 -1.0 1.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="24" source="#musloizquierdo(1)-Pos-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="musloizquierdo(1)-UV">
+          <float_array count="48" id="musloizquierdo(1)-UV-array">0.0 0.5 0.5 0.5 0.5 1.0 0.0 1.0 0.0 1.0 0.5 1.0 0.5 0.5 0.0 0.5 0.0 1.0 0.5 1.0 0.5 0.5 0.0 0.5 0.0 0.5 0.5 0.5 0.5 1.0 0.0 1.0 0.0 0.5 0.5 0.5 0.5 1.0 0.0 1.0 0.0 1.0 0.5 1.0 0.5 0.5 0.0 0.5 </float_array>
+          <technique_common>
+            <accessor count="24" source="#musloizquierdo(1)-UV-array" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="musloizquierdo(1)-Normal">
+          <float_array count="18" id="musloizquierdo(1)-Normal-array">-1.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.0 0.0 0.0 1.0</float_array>
+          <technique_common>
+            <accessor count="6" source="#musloizquierdo(1)-Normal-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="musloizquierdo(1)-Vertices">
+          <input semantic="POSITION" source="#musloizquierdo(1)-Pos"/>
+        </vertices>
+        <polylist count="6" material="musloizquierdo(1)-Material">
+          <input offset="0" semantic="VERTEX" source="#musloizquierdo(1)-Vertices"/>
+          <input offset="1" semantic="TEXCOORD" set="0" source="#musloizquierdo(1)-UV"/>
+          <input offset="2" semantic="NORMAL" source="#musloizquierdo(1)-Normal"/>
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 0 0 1 1 0 2 2 0 3 3 0 4 4 1 5 5 1 6 6 1 7 7 1 8 8 2 9 9 2 10 10 2 11 11 2 12 12 3 13 13 3 14 14 3 15 15 3 16 16 4 17 17 4 18 18 4 19 19 4 20 20 5 21 21 5 22 22 5 23 23 5 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="pantorrilaizquierda(1)-Geom" name="pantorrilaizquierda(1)-Geom">
+      <mesh>
+        <source id="pantorrilaizquierda(1)-Pos">
+          <float_array count="72" id="pantorrilaizquierda(1)-Pos-array">-1.0 -1.0 1.0 -1.0 1.0 1.0 -1.0 1.0 -1.0 -1.0 -1.0 -1.0 1.0 -1.0 -1.0 1.0 1.0 -1.0 1.0 1.0 1.0 1.0 -1.0 1.0 -1.0 -1.0 -1.0 1.0 -1.0 -1.0 1.0 -1.0 1.0 -1.0 -1.0 1.0 -1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 -1.0 -1.0 1.0 -1.0 -1.0 1.0 -1.0 1.0 1.0 -1.0 1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 1.0 1.0 -1.0 1.0 1.0 1.0 1.0 -1.0 1.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="24" source="#pantorrilaizquierda(1)-Pos-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pantorrilaizquierda(1)-UV">
+          <float_array count="48" id="pantorrilaizquierda(1)-UV-array">0.0 0.5 0.5 0.5 0.5 1.0 0.0 1.0 0.0 1.0 0.5 1.0 0.5 0.5 0.0 0.5 0.0 1.0 0.5 1.0 0.5 0.5 0.0 0.5 0.0 0.5 0.5 0.5 0.5 1.0 0.0 1.0 0.0 0.5 0.5 0.5 0.5 1.0 0.0 1.0 0.0 1.0 0.5 1.0 0.5 0.5 0.0 0.5 </float_array>
+          <technique_common>
+            <accessor count="24" source="#pantorrilaizquierda(1)-UV-array" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pantorrilaizquierda(1)-Normal">
+          <float_array count="18" id="pantorrilaizquierda(1)-Normal-array">-1.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.0 0.0 0.0 1.0</float_array>
+          <technique_common>
+            <accessor count="6" source="#pantorrilaizquierda(1)-Normal-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="pantorrilaizquierda(1)-Vertices">
+          <input semantic="POSITION" source="#pantorrilaizquierda(1)-Pos"/>
+        </vertices>
+        <polylist count="6" material="pantorrilaizquierda(1)-Material">
+          <input offset="0" semantic="VERTEX" source="#pantorrilaizquierda(1)-Vertices"/>
+          <input offset="1" semantic="TEXCOORD" set="0" source="#pantorrilaizquierda(1)-UV"/>
+          <input offset="2" semantic="NORMAL" source="#pantorrilaizquierda(1)-Normal"/>
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 0 0 1 1 0 2 2 0 3 3 0 4 4 1 5 5 1 6 6 1 7 7 1 8 8 2 9 9 2 10 10 2 11 11 2 12 12 3 13 13 3 14 14 3 15 15 3 16 16 4 17 17 4 18 18 4 19 19 4 20 20 5 21 21 5 22 22 5 23 23 5 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="musloderecho(1)-Geom" name="musloderecho(1)-Geom">
+      <mesh>
+        <source id="musloderecho(1)-Pos">
+          <float_array count="72" id="musloderecho(1)-Pos-array">-1.0 -1.0 1.0 -1.0 1.0 1.0 -1.0 1.0 -1.0 -1.0 -1.0 -1.0 1.0 -1.0 -1.0 1.0 1.0 -1.0 1.0 1.0 1.0 1.0 -1.0 1.0 -1.0 -1.0 -1.0 1.0 -1.0 -1.0 1.0 -1.0 1.0 -1.0 -1.0 1.0 -1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 -1.0 -1.0 1.0 -1.0 -1.0 1.0 -1.0 1.0 1.0 -1.0 1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 1.0 1.0 -1.0 1.0 1.0 1.0 1.0 -1.0 1.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="24" source="#musloderecho(1)-Pos-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="musloderecho(1)-UV">
+          <float_array count="48" id="musloderecho(1)-UV-array">0.0 0.5 0.5 0.5 0.5 1.0 0.0 1.0 0.0 1.0 0.5 1.0 0.5 0.5 0.0 0.5 0.0 1.0 0.5 1.0 0.5 0.5 0.0 0.5 0.0 0.5 0.5 0.5 0.5 1.0 0.0 1.0 0.0 0.5 0.5 0.5 0.5 1.0 0.0 1.0 0.0 1.0 0.5 1.0 0.5 0.5 0.0 0.5 </float_array>
+          <technique_common>
+            <accessor count="24" source="#musloderecho(1)-UV-array" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="musloderecho(1)-Normal">
+          <float_array count="18" id="musloderecho(1)-Normal-array">-1.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.0 0.0 0.0 1.0</float_array>
+          <technique_common>
+            <accessor count="6" source="#musloderecho(1)-Normal-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="musloderecho(1)-Vertices">
+          <input semantic="POSITION" source="#musloderecho(1)-Pos"/>
+        </vertices>
+        <polylist count="6" material="musloderecho(1)-Material">
+          <input offset="0" semantic="VERTEX" source="#musloderecho(1)-Vertices"/>
+          <input offset="1" semantic="TEXCOORD" set="0" source="#musloderecho(1)-UV"/>
+          <input offset="2" semantic="NORMAL" source="#musloderecho(1)-Normal"/>
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 0 0 1 1 0 2 2 0 3 3 0 4 4 1 5 5 1 6 6 1 7 7 1 8 8 2 9 9 2 10 10 2 11 11 2 12 12 3 13 13 3 14 14 3 15 15 3 16 16 4 17 17 4 18 18 4 19 19 4 20 20 5 21 21 5 22 22 5 23 23 5 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="pantorrilladerecha(1)-Geom" name="pantorrilladerecha(1)-Geom">
+      <mesh>
+        <source id="pantorrilladerecha(1)-Pos">
+          <float_array count="72" id="pantorrilladerecha(1)-Pos-array">-1.0 -1.0 1.0 -1.0 1.0 1.0 -1.0 1.0 -1.0 -1.0 -1.0 -1.0 1.0 -1.0 -1.0 1.0 1.0 -1.0 1.0 1.0 1.0 1.0 -1.0 1.0 -1.0 -1.0 -1.0 1.0 -1.0 -1.0 1.0 -1.0 1.0 -1.0 -1.0 1.0 -1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 -1.0 -1.0 1.0 -1.0 -1.0 1.0 -1.0 1.0 1.0 -1.0 1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 1.0 1.0 -1.0 1.0 1.0 1.0 1.0 -1.0 1.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="24" source="#pantorrilladerecha(1)-Pos-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pantorrilladerecha(1)-UV">
+          <float_array count="48" id="pantorrilladerecha(1)-UV-array">0.0 0.5 0.5 0.5 0.5 1.0 0.0 1.0 0.0 1.0 0.5 1.0 0.5 0.5 0.0 0.5 0.0 1.0 0.5 1.0 0.5 0.5 0.0 0.5 0.0 0.5 0.5 0.5 0.5 1.0 0.0 1.0 0.0 0.5 0.5 0.5 0.5 1.0 0.0 1.0 0.0 1.0 0.5 1.0 0.5 0.5 0.0 0.5 </float_array>
+          <technique_common>
+            <accessor count="24" source="#pantorrilladerecha(1)-UV-array" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pantorrilladerecha(1)-Normal">
+          <float_array count="18" id="pantorrilladerecha(1)-Normal-array">-1.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 -1.0 0.0 0.0 1.0</float_array>
+          <technique_common>
+            <accessor count="6" source="#pantorrilladerecha(1)-Normal-array" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="pantorrilladerecha(1)-Vertices">
+          <input semantic="POSITION" source="#pantorrilladerecha(1)-Pos"/>
+        </vertices>
+        <polylist count="6" material="pantorrilladerecha(1)-Material">
+          <input offset="0" semantic="VERTEX" source="#pantorrilladerecha(1)-Vertices"/>
+          <input offset="1" semantic="TEXCOORD" set="0" source="#pantorrilladerecha(1)-UV"/>
+          <input offset="2" semantic="NORMAL" source="#pantorrilladerecha(1)-Normal"/>
+          <vcount>4 4 4 4 4 4 </vcount>
+          <p>0 0 0 1 1 0 2 2 0 3 3 0 4 4 1 5 5 1 6 6 1 7 7 1 8 8 2 9 9 2 10 10 2 11 11 2 12 12 3 13 13 3 14 14 3 15 15 3 16 16 4 17 17 4 18 18 4 19 19 4 20 20 5 21 21 5 22 22 5 23 23 5 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_animations>
+    <animation id="cuerpo entero-global-anim" name="cuerpo entero-global-anim">
+      <animation>
+        <source id="cuerpo entero-global-anim-inSource-TIME">
+          <float_array count="25" id="cuerpo entero-global-anim-inSource-TIME-array">0.0 0.041666668 0.083333336 0.125 0.16666667 0.20833333 0.25 0.29166666 0.33333334 0.375 0.41666666 0.45833334 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#cuerpo entero-global-anim-inSource-TIME-array">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cuerpo entero-global-anim-interpolation">
+          <Name_array count="25" id="cuerpo entero-global-anim-interpolation-array">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR </Name_array>
+          <technique_common>
+            <accessor count="25" source="#cuerpo entero-global-anim-interpolation-array">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cuerpo entero-global-anim-outSource-global">
+          <float_array count="400" id="cuerpo entero-global-anim-outSource-global-array">1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 17.344145 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 17.344145 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 17.344145 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 17.344145 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 17.344145 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 17.344145 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 17.344145 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 17.344145 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 17.344145 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 17.344145 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 17.344145 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 17.344145 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 17.344145 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 17.344145 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 17.344145 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 17.344145 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 17.344145 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 17.344145 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 17.344145 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 17.344145 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 17.344145 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 17.344145 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 17.344145 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 17.344145 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 17.344145 0.0 0.0 0.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#cuerpo entero-global-anim-outSource-global-array" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="cuerpo entero-global-anim-globalSampler">
+          <input semantic="INPUT" source="#cuerpo entero-global-anim-inSource-TIME"/>
+          <input semantic="OUTPUT" source="#cuerpo entero-global-anim-outSource-global"/>
+          <input semantic="INTERPOLATION" source="#cuerpo entero-global-anim-interpolation"/>
+        </sampler>
+        <channel source="#cuerpo entero-global-anim-globalSampler" target="cuerpo entero-global/matrix"/>
+      </animation>
+    </animation>
+    <animation id="cuerpo entero-local-anim" name="cuerpo entero-local-anim">
+      <animation>
+        <source id="cuerpo entero-local-anim-inSource-TIME">
+          <float_array count="25" id="cuerpo entero-local-anim-inSource-TIME-array">0.0 0.041666668 0.083333336 0.125 0.16666667 0.20833333 0.25 0.29166666 0.33333334 0.375 0.41666666 0.45833334 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#cuerpo entero-local-anim-inSource-TIME-array">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cuerpo entero-local-anim-interpolation">
+          <Name_array count="25" id="cuerpo entero-local-anim-interpolation-array">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR </Name_array>
+          <technique_common>
+            <accessor count="25" source="#cuerpo entero-local-anim-interpolation-array">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cuerpo entero-local-anim-outSource-local">
+          <float_array count="400" id="cuerpo entero-local-anim-outSource-local-array">1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#cuerpo entero-local-anim-outSource-local-array" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="cuerpo entero-local-anim-localSampler">
+          <input semantic="INPUT" source="#cuerpo entero-local-anim-inSource-TIME"/>
+          <input semantic="OUTPUT" source="#cuerpo entero-local-anim-outSource-local"/>
+          <input semantic="INTERPOLATION" source="#cuerpo entero-local-anim-interpolation"/>
+        </sampler>
+        <channel source="#cuerpo entero-local-anim-localSampler" target="cuerpo entero-local/matrix"/>
+      </animation>
+    </animation>
+    <animation id="pecho-global-anim" name="pecho-global-anim">
+      <animation>
+        <source id="pecho-global-anim-inSource-TIME">
+          <float_array count="33" id="pecho-global-anim-inSource-TIME-array">0.0 0.041666668 0.083333336 0.125 0.16666667 0.20833333 0.25 0.29166666 0.33333334 0.375 0.41666666 0.45833334 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1.0 1.0416666 1.0833334 1.125 1.1666666 1.2083334 1.25 1.2916666 1.3333334 </float_array>
+          <technique_common>
+            <accessor count="33" source="#pecho-global-anim-inSource-TIME-array">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pecho-global-anim-interpolation">
+          <Name_array count="33" id="pecho-global-anim-interpolation-array">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR </Name_array>
+          <technique_common>
+            <accessor count="33" source="#pecho-global-anim-interpolation-array">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pecho-global-anim-outSource-global">
+          <float_array count="528" id="pecho-global-anim-outSource-global-array">0.9975148 0.0 0.0704599 0.0 0.0 1.0000001 0.0 4.0 -0.0704599 0.0 0.9975148 0.0 0.0 0.0 0.0 1.0 0.9987891 0.0 0.04919858 0.0 0.0 1.0 0.0 4.0 -0.04919858 0.0 0.9987891 0.0 0.0 0.0 0.0 1.0 0.99961036 0.0 0.027914958 0.0 0.0 1.0000001 0.0 4.0 -0.027914958 0.0 0.99961036 0.0 0.0 0.0 0.0 1.0 0.99997807 0.0 0.006618661 0.0 0.0 1.0 0.0 4.0 -0.006618661 0.0 0.99997807 0.0 0.0 0.0 0.0 1.0 0.99989223 0.0 -0.014680629 0.0 0.0 1.0 0.0 4.0 0.014680629 0.0 0.99989223 0.0 0.0 0.0 0.0 1.0 0.9993528 0.0 -0.035973273 0.0 0.0 1.0000001 0.0 4.0 0.035973273 0.0 0.9993528 0.0 0.0 0.0 0.0 1.0 0.99836 0.0 -0.057249587 0.0 0.0 1.0000001 0.0 4.0 0.057249587 0.0 0.99836 0.0 0.0 0.0 0.0 1.0 0.99691415 0.0 -0.07849992 0.0 0.0 1.0 0.0 4.0 0.07849992 0.0 0.99691415 0.0 0.0 0.0 0.0 1.0 0.9950161 0.0 -0.099714644 0.0 0.0 1.0 0.0 4.0 0.099714644 0.0 0.9950161 0.0 0.0 0.0 0.0 1.0 0.99266666 0.0 -0.120884135 0.0 0.0 1.0 0.0 4.0 0.120884135 0.0 0.99266666 0.0 0.0 0.0 0.0 1.0 0.9952781 0.0 -0.0970651 0.0 0.0 1.0000001 0.0 4.0 0.0970651 0.0 0.9952781 0.0 0.0 0.0 0.0 1.0 0.997318 0.0 -0.073190294 0.0 0.0 1.0 0.0 4.0 0.073190294 0.0 0.997318 0.0 0.0 0.0 0.0 1.0 0.99878544 0.0 -0.049273487 0.0 0.0 1.0000001 0.0 4.0 0.049273487 0.0 0.99878544 0.0 0.0 0.0 0.0 1.0 0.99967927 0.0 -0.025328383 0.0 0.0 1.0000001 0.0 4.0 0.025328383 0.0 0.99967927 0.0 0.0 0.0 0.0 1.0 0.99999905 0.0 -0.001368742 0.0 0.0 1.0 0.0 4.0 0.001368742 0.0 0.99999905 0.0 0.0 0.0 0.0 1.0 0.99974483 0.0 0.022591693 0.0 0.0 1.0 0.0 4.0 -0.022591693 0.0 0.99974483 0.0 0.0 0.0 0.0 1.0 0.9989166 0.0 0.046539165 0.0 0.0 1.0000001 0.0 4.0 -0.046539165 0.0 0.9989166 0.0 0.0 0.0 0.0 1.0 0.99751467 0.0 0.07045989 0.0 0.0 1.0 0.0 4.0 -0.07045989 0.0 0.99751467 0.0 0.0 0.0 0.0 1.0 0.9975148 0.0 0.0704599 0.0 0.0 1.0000001 0.0 4.0 -0.0704599 0.0 0.9975148 0.0 0.0 0.0 0.0 1.0 0.9975148 0.0 0.0704599 0.0 0.0 1.0000001 0.0 4.0 -0.0704599 0.0 0.9975148 0.0 0.0 0.0 0.0 1.0 0.9975148 0.0 0.0704599 0.0 0.0 1.0000001 0.0 4.0 -0.0704599 0.0 0.9975148 0.0 0.0 0.0 0.0 1.0 0.9975148 0.0 0.0704599 0.0 0.0 1.0000001 0.0 4.0 -0.0704599 0.0 0.9975148 0.0 0.0 0.0 0.0 1.0 0.9975148 0.0 0.0704599 0.0 0.0 1.0000001 0.0 4.0 -0.0704599 0.0 0.9975148 0.0 0.0 0.0 0.0 1.0 0.9975148 0.0 0.0704599 0.0 0.0 1.0000001 0.0 4.0 -0.0704599 0.0 0.9975148 0.0 0.0 0.0 0.0 1.0 0.9975148 0.0 0.0704599 0.0 0.0 1.0000001 0.0 4.0 -0.0704599 0.0 0.9975148 0.0 0.0 0.0 0.0 1.0 0.9975148 0.0 0.0704599 0.0 0.0 1.0000001 0.0 4.0 -0.0704599 0.0 0.9975148 0.0 0.0 0.0 0.0 1.0 0.9975148 0.0 0.0704599 0.0 0.0 1.0000001 0.0 4.0 -0.0704599 0.0 0.9975148 0.0 0.0 0.0 0.0 1.0 0.9975148 0.0 0.0704599 0.0 0.0 1.0000001 0.0 4.0 -0.0704599 0.0 0.9975148 0.0 0.0 0.0 0.0 1.0 0.9975148 0.0 0.0704599 0.0 0.0 1.0000001 0.0 4.0 -0.0704599 0.0 0.9975148 0.0 0.0 0.0 0.0 1.0 0.9975148 0.0 0.0704599 0.0 0.0 1.0000001 0.0 4.0 -0.0704599 0.0 0.9975148 0.0 0.0 0.0 0.0 1.0 0.9975148 0.0 0.0704599 0.0 0.0 1.0000001 0.0 4.0 -0.0704599 0.0 0.9975148 0.0 0.0 0.0 0.0 1.0 0.9975148 0.0 0.0704599 0.0 0.0 1.0000001 0.0 4.0 -0.0704599 0.0 0.9975148 0.0 0.0 0.0 0.0 1.0 0.9975148 0.0 0.0704599 0.0 0.0 1.0000001 0.0 4.0 -0.0704599 0.0 0.9975148 0.0 0.0 0.0 0.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="33" source="#pecho-global-anim-outSource-global-array" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="pecho-global-anim-globalSampler">
+          <input semantic="INPUT" source="#pecho-global-anim-inSource-TIME"/>
+          <input semantic="OUTPUT" source="#pecho-global-anim-outSource-global"/>
+          <input semantic="INTERPOLATION" source="#pecho-global-anim-interpolation"/>
+        </sampler>
+        <channel source="#pecho-global-anim-globalSampler" target="pecho-global/matrix"/>
+      </animation>
+    </animation>
+    <animation id="pecho-local-anim" name="pecho-local-anim">
+      <animation>
+        <source id="pecho-local-anim-inSource-TIME">
+          <float_array count="33" id="pecho-local-anim-inSource-TIME-array">0.0 0.041666668 0.083333336 0.125 0.16666667 0.20833333 0.25 0.29166666 0.33333334 0.375 0.41666666 0.45833334 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1.0 1.0416666 1.0833334 1.125 1.1666666 1.2083334 1.25 1.2916666 1.3333334 </float_array>
+          <technique_common>
+            <accessor count="33" source="#pecho-local-anim-inSource-TIME-array">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pecho-local-anim-interpolation">
+          <Name_array count="33" id="pecho-local-anim-interpolation-array">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR </Name_array>
+          <technique_common>
+            <accessor count="33" source="#pecho-local-anim-interpolation-array">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pecho-local-anim-outSource-local">
+          <float_array count="528" id="pecho-local-anim-outSource-local-array">1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="33" source="#pecho-local-anim-outSource-local-array" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="pecho-local-anim-localSampler">
+          <input semantic="INPUT" source="#pecho-local-anim-inSource-TIME"/>
+          <input semantic="OUTPUT" source="#pecho-local-anim-outSource-local"/>
+          <input semantic="INTERPOLATION" source="#pecho-local-anim-interpolation"/>
+        </sampler>
+        <channel source="#pecho-local-anim-localSampler" target="pecho-local/matrix"/>
+      </animation>
+    </animation>
+    <animation id="brazo derecho-global-anim" name="brazo derecho-global-anim">
+      <animation>
+        <source id="brazo derecho-global-anim-inSource-TIME">
+          <float_array count="33" id="brazo derecho-global-anim-inSource-TIME-array">0.0 0.041666668 0.083333336 0.125 0.16666667 0.20833333 0.25 0.29166666 0.33333334 0.375 0.41666666 0.45833334 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1.0 1.0416666 1.0833334 1.125 1.1666666 1.2083334 1.25 1.2916666 1.3333334 </float_array>
+          <technique_common>
+            <accessor count="33" source="#brazo derecho-global-anim-inSource-TIME-array">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="brazo derecho-global-anim-interpolation">
+          <Name_array count="33" id="brazo derecho-global-anim-interpolation-array">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR </Name_array>
+          <technique_common>
+            <accessor count="33" source="#brazo derecho-global-anim-interpolation-array">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="brazo derecho-global-anim-outSource-global">
+          <float_array count="528" id="brazo derecho-global-anim-outSource-global-array">0.36328226 -0.88476247 0.291927 -4.0 0.6896767 0.46604228 0.5542118 3.0 -0.62639606 -5.9604645E-8 0.77950495 0.0 0.0 0.0 0.0 1.0 0.42146626 -0.88476247 0.19890085 -4.0 0.80013674 0.46604222 0.37760538 3.0 -0.4267873 -5.9604645E-8 0.90435207 0.0 0.0 0.0 0.0 1.0 0.4562884 -0.88476247 0.09484958 -4.0 0.86624485 0.4660424 0.1800682 3.0 -0.20352149 -7.4505806E-8 0.9790706 0.0 0.0 0.0 0.0 1.0 0.46581793 -0.88476247 -0.01445933 -4.0 0.88433653 0.46604228 -0.027450291 3.0 0.031025644 -7.636845E-8 0.99951863 0.0 0.0 0.0 0.0 1.0 0.4495271 -0.8847625 -0.12296676 -4.0 0.85340905 0.4660423 -0.23344727 3.0 0.26385307 -8.940697E-8 0.96456295 0.0 0.0 0.0 0.0 1.0 0.40831882 -0.8847626 -0.2246581 -4.0 0.7751768 0.4660424 -0.42650416 3.0 0.48205504 -5.9604645E-8 0.8761412 0.0 0.0 0.0 0.0 1.0 0.34447715 -0.88476247 -0.31389645 -4.0 0.6539759 0.46604234 -0.5959196 3.0 0.6735363 -2.9802322E-8 0.7391542 0.0 0.0 0.0 0.0 1.0 0.26154098 -0.88476264 -0.38573545 -4.0 0.49652508 0.4660424 -0.732303 3.0 0.82768327 -5.9604645E-8 0.5611959 0.0 0.0 0.0 0.0 1.0 0.16410738 -0.8847624 -0.43619287 -4.0 0.31155142 0.46604234 -0.82809436 3.0 0.9359511 -5.9604645E-8 0.35212994 0.0 0.0 0.0 0.0 1.0 0.05757737 -0.88476247 -0.46247193 -4.0 0.10930842 0.46604234 -0.87798417 3.0 0.9923389 -2.9802322E-8 0.12354553 0.0 0.0 0.0 0.0 1.0 0.17690092 -0.8847625 -0.431163 -4.0 0.33583948 0.46604234 -0.81854546 3.0 0.92515844 -8.940697E-8 0.37958145 0.0 0.0 0.0 0.0 1.0 0.28382963 -0.8847625 -0.36964333 -4.0 0.5388391 0.46604234 -0.70175284 3.0 0.793154 -5.9604645E-8 0.6090212 0.0 0.0 0.0 0.0 1.0 0.37087092 -0.8847625 -0.2822237 -4.0 0.70408344 0.46604234 -0.5357902 3.0 0.60557526 -2.9802322E-8 0.7957881 0.0 0.0 0.0 0.0 1.0 0.43192616 -0.8847626 -0.17502938 -4.0 0.8199944 0.46604237 -0.33228606 3.0 0.3755653 -7.4505806E-8 0.9267961 0.0 0.0 0.0 0.0 1.0 0.4627173 -0.88476247 -0.055571094 -4.0 0.8784501 0.46604234 -0.10549932 3.0 0.119240314 -6.7055225E-8 0.99286544 0.0 0.0 0.0 0.0 1.0 0.46108702 -0.8847625 0.06778094 -4.0 0.875355 0.46604237 0.12867956 3.0 -0.14543962 -8.940697E-8 0.98936725 0.0 0.0 0.0 0.0 1.0 0.42714927 -0.8847624 0.18638375 -4.0 0.8109256 0.46604228 0.35384214 3.0 -0.39992896 -5.9604645E-8 0.91654617 0.0 0.0 0.0 0.0 1.0 0.36328226 -0.88476247 0.29192704 -4.0 0.6896767 0.46604228 0.55421185 3.0 -0.6263962 -5.9604645E-8 0.7795049 0.0 0.0 0.0 0.0 1.0 0.36328226 -0.88476247 0.291927 -4.0 0.6896767 0.46604228 0.5542118 3.0 -0.62639606 -5.9604645E-8 0.77950495 0.0 0.0 0.0 0.0 1.0 0.36328226 -0.88476247 0.291927 -4.0 0.6896767 0.46604228 0.5542118 3.0 -0.62639606 -5.9604645E-8 0.77950495 0.0 0.0 0.0 0.0 1.0 0.36328226 -0.88476247 0.291927 -4.0 0.6896767 0.46604228 0.5542118 3.0 -0.62639606 -5.9604645E-8 0.77950495 0.0 0.0 0.0 0.0 1.0 0.36328226 -0.88476247 0.291927 -4.0 0.6896767 0.46604228 0.5542118 3.0 -0.62639606 -5.9604645E-8 0.77950495 0.0 0.0 0.0 0.0 1.0 0.36328226 -0.88476247 0.291927 -4.0 0.6896767 0.46604228 0.5542118 3.0 -0.62639606 -5.9604645E-8 0.77950495 0.0 0.0 0.0 0.0 1.0 0.36328226 -0.88476247 0.291927 -4.0 0.6896767 0.46604228 0.5542118 3.0 -0.62639606 -5.9604645E-8 0.77950495 0.0 0.0 0.0 0.0 1.0 0.36328226 -0.88476247 0.291927 -4.0 0.6896767 0.46604228 0.5542118 3.0 -0.62639606 -5.9604645E-8 0.77950495 0.0 0.0 0.0 0.0 1.0 0.36328226 -0.88476247 0.291927 -4.0 0.6896767 0.46604228 0.5542118 3.0 -0.62639606 -5.9604645E-8 0.77950495 0.0 0.0 0.0 0.0 1.0 0.36328226 -0.88476247 0.291927 -4.0 0.6896767 0.46604228 0.5542118 3.0 -0.62639606 -5.9604645E-8 0.77950495 0.0 0.0 0.0 0.0 1.0 0.36328226 -0.88476247 0.291927 -4.0 0.6896767 0.46604228 0.5542118 3.0 -0.62639606 -5.9604645E-8 0.77950495 0.0 0.0 0.0 0.0 1.0 0.36328226 -0.88476247 0.291927 -4.0 0.6896767 0.46604228 0.5542118 3.0 -0.62639606 -5.9604645E-8 0.77950495 0.0 0.0 0.0 0.0 1.0 0.36328226 -0.88476247 0.291927 -4.0 0.6896767 0.46604228 0.5542118 3.0 -0.62639606 -5.9604645E-8 0.77950495 0.0 0.0 0.0 0.0 1.0 0.36328226 -0.88476247 0.291927 -4.0 0.6896767 0.46604228 0.5542118 3.0 -0.62639606 -5.9604645E-8 0.77950495 0.0 0.0 0.0 0.0 1.0 0.36328226 -0.88476247 0.291927 -4.0 0.6896767 0.46604228 0.5542118 3.0 -0.62639606 -5.9604645E-8 0.77950495 0.0 0.0 0.0 0.0 1.0 0.36328226 -0.88476247 0.291927 -4.0 0.6896767 0.46604228 0.5542118 3.0 -0.62639606 -5.9604645E-8 0.77950495 0.0 0.0 0.0 0.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="33" source="#brazo derecho-global-anim-outSource-global-array" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="brazo derecho-global-anim-globalSampler">
+          <input semantic="INPUT" source="#brazo derecho-global-anim-inSource-TIME"/>
+          <input semantic="OUTPUT" source="#brazo derecho-global-anim-outSource-global"/>
+          <input semantic="INTERPOLATION" source="#brazo derecho-global-anim-interpolation"/>
+        </sampler>
+        <channel source="#brazo derecho-global-anim-globalSampler" target="brazo derecho-global/matrix"/>
+      </animation>
+    </animation>
+    <animation id="brazo derecho-local-anim" name="brazo derecho-local-anim">
+      <animation>
+        <source id="brazo derecho-local-anim-inSource-TIME">
+          <float_array count="33" id="brazo derecho-local-anim-inSource-TIME-array">0.0 0.041666668 0.083333336 0.125 0.16666667 0.20833333 0.25 0.29166666 0.33333334 0.375 0.41666666 0.45833334 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1.0 1.0416666 1.0833334 1.125 1.1666666 1.2083334 1.25 1.2916666 1.3333334 </float_array>
+          <technique_common>
+            <accessor count="33" source="#brazo derecho-local-anim-inSource-TIME-array">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="brazo derecho-local-anim-interpolation">
+          <Name_array count="33" id="brazo derecho-local-anim-interpolation-array">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR </Name_array>
+          <technique_common>
+            <accessor count="33" source="#brazo derecho-local-anim-interpolation-array">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="brazo derecho-local-anim-outSource-local">
+          <float_array count="528" id="brazo derecho-local-anim-outSource-local-array">1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="33" source="#brazo derecho-local-anim-outSource-local-array" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="brazo derecho-local-anim-localSampler">
+          <input semantic="INPUT" source="#brazo derecho-local-anim-inSource-TIME"/>
+          <input semantic="OUTPUT" source="#brazo derecho-local-anim-outSource-local"/>
+          <input semantic="INTERPOLATION" source="#brazo derecho-local-anim-interpolation"/>
+        </sampler>
+        <channel source="#brazo derecho-local-anim-localSampler" target="brazo derecho-local/matrix"/>
+      </animation>
+    </animation>
+    <animation id="antebrazo derecho-global-anim" name="antebrazo derecho-global-anim">
+      <animation>
+        <source id="antebrazo derecho-global-anim-inSource-TIME">
+          <float_array count="25" id="antebrazo derecho-global-anim-inSource-TIME-array">0.0 0.041666668 0.083333336 0.125 0.16666667 0.20833333 0.25 0.29166666 0.33333334 0.375 0.41666666 0.45833334 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#antebrazo derecho-global-anim-inSource-TIME-array">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="antebrazo derecho-global-anim-interpolation">
+          <Name_array count="25" id="antebrazo derecho-global-anim-interpolation-array">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR </Name_array>
+          <technique_common>
+            <accessor count="25" source="#antebrazo derecho-global-anim-interpolation-array">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="antebrazo derecho-global-anim-outSource-global">
+          <float_array count="400" id="antebrazo derecho-global-anim-outSource-global-array">0.42482504 -0.16369838 0.8903521 -1.0 0.039974336 0.98594785 0.16220096 0.0 -0.90439266 -0.033315793 0.42539904 0.0 0.0 0.0 0.0 1.0 0.36133656 -0.16369838 0.9179538 -1.0 0.02850037 0.98594785 0.16460505 0.0 -0.932 -0.0333158 0.36092445 0.0 0.0 0.0 0.0 1.0 0.2960686 -0.16369833 0.94103456 -1.0 0.016886085 0.9859476 0.16619852 0.0 -0.9550173 -0.033315785 0.29467243 0.0 0.0 0.0 0.0 1.0 0.22934285 -0.16369838 0.9594816 -1.0 0.0051886216 0.98594785 0.16697358 0.0 -0.97333205 -0.033315793 0.22696939 0.0 0.0 0.0 0.0 1.0 0.16148746 -0.16369836 0.9732034 -1.0 -0.0065343827 0.98594785 0.16692632 0.0 -0.98685324 -0.033315793 0.15814853 0.0 0.0 0.0 0.0 1.0 0.0928368 -0.16369835 0.98213243 -1.0 -0.018225223 0.9859477 0.16605702 0.0 -0.9955145 -0.033315785 0.08854884 0.0 0.0 0.0 0.0 1.0 0.023729235 -0.16369835 0.98622507 -1.0 -0.02982629 0.98594785 0.16436997 0.0 -0.9992735 -0.0333158 0.018513232 0.0 0.0 0.0 0.0 1.0 -0.0454956 -0.16369833 0.9854608 -1.0 -0.04128049 0.9859477 0.16187343 0.0 -0.9981113 -0.033315778 -0.051613778 0.0 0.0 0.0 0.0 1.0 -0.11449611 -0.16369835 0.9798436 -1.0 -0.052531403 0.9859477 0.15857977 0.0 -0.99203384 -0.033315793 -0.121486425 0.0 0.0 0.0 0.0 1.0 -0.18293267 -0.16369833 0.969401 -1.0 -0.063523576 0.98594767 0.15450513 0.0 -0.981071 -0.033315785 -0.19076079 0.0 0.0 0.0 0.0 1.0 -0.105894804 -0.16369835 0.9808106 -1.0 -0.051138036 0.9859477 0.15903457 0.0 -0.9930616 -0.033315778 -0.11277795 0.0 0.0 0.0 0.0 1.0 -0.02819702 -0.16369836 0.9861075 -1.0 -0.038433805 0.98594785 0.16257286 0.0 -0.9988634 -0.0333158 -0.034092277 0.0 0.0 0.0 0.0 1.0 0.049676627 -0.16369835 0.985259 -1.0 -0.025490023 0.9859477 0.16509801 0.0 -0.9984401 -0.033315785 0.044805855 0.0 0.0 0.0 0.0 1.0 0.12724054 -0.16369836 0.97827035 -1.0 -0.012387425 0.98594785 0.16659425 0.0 -0.99179465 -0.033315793 0.12342477 0.0 0.0 0.0 0.0 1.0 0.20401168 -0.16369838 0.9651852 -1.0 7.924065E-4 0.9859479 0.16705231 0.0 -0.9789683 -0.033315793 0.20127457 0.0 0.0 0.0 0.0 1.0 0.27951124 -0.16369839 0.946085 -1.0 0.013967276 0.98594797 0.16646928 0.0 -0.96004105 -0.033315793 0.27786985 0.0 0.0 0.0 0.0 1.0 0.35326886 -0.16369835 0.92108846 -1.0 0.0270551 0.9859477 0.16484874 0.0 -0.9351305 -0.033315785 0.3527335 0.0 0.0 0.0 0.0 1.0 0.42482504 -0.16369838 0.8903521 -1.0 0.039974336 0.98594785 0.16220096 0.0 -0.90439266 -0.033315793 0.42539904 0.0 0.0 0.0 0.0 1.0 0.42482504 -0.16369838 0.8903521 -1.0 0.039974336 0.98594785 0.16220096 0.0 -0.90439266 -0.033315793 0.42539904 0.0 0.0 0.0 0.0 1.0 0.42482504 -0.16369838 0.8903521 -1.0 0.039974336 0.98594785 0.16220096 0.0 -0.90439266 -0.033315793 0.42539904 0.0 0.0 0.0 0.0 1.0 0.42482504 -0.16369838 0.8903521 -1.0 0.039974336 0.98594785 0.16220096 0.0 -0.90439266 -0.033315793 0.42539904 0.0 0.0 0.0 0.0 1.0 0.42482504 -0.16369838 0.8903521 -1.0 0.039974336 0.98594785 0.16220096 0.0 -0.90439266 -0.033315793 0.42539904 0.0 0.0 0.0 0.0 1.0 0.42482504 -0.16369838 0.8903521 -1.0 0.039974336 0.98594785 0.16220096 0.0 -0.90439266 -0.033315793 0.42539904 0.0 0.0 0.0 0.0 1.0 0.42482504 -0.16369838 0.8903521 -1.0 0.039974336 0.98594785 0.16220096 0.0 -0.90439266 -0.033315793 0.42539904 0.0 0.0 0.0 0.0 1.0 0.42482504 -0.16369838 0.8903521 -1.0 0.039974336 0.98594785 0.16220096 0.0 -0.90439266 -0.033315793 0.42539904 0.0 0.0 0.0 0.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#antebrazo derecho-global-anim-outSource-global-array" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="antebrazo derecho-global-anim-globalSampler">
+          <input semantic="INPUT" source="#antebrazo derecho-global-anim-inSource-TIME"/>
+          <input semantic="OUTPUT" source="#antebrazo derecho-global-anim-outSource-global"/>
+          <input semantic="INTERPOLATION" source="#antebrazo derecho-global-anim-interpolation"/>
+        </sampler>
+        <channel source="#antebrazo derecho-global-anim-globalSampler" target="antebrazo derecho-global/matrix"/>
+      </animation>
+    </animation>
+    <animation id="antebrazo derecho-local-anim" name="antebrazo derecho-local-anim">
+      <animation>
+        <source id="antebrazo derecho-local-anim-inSource-TIME">
+          <float_array count="25" id="antebrazo derecho-local-anim-inSource-TIME-array">0.0 0.041666668 0.083333336 0.125 0.16666667 0.20833333 0.25 0.29166666 0.33333334 0.375 0.41666666 0.45833334 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#antebrazo derecho-local-anim-inSource-TIME-array">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="antebrazo derecho-local-anim-interpolation">
+          <Name_array count="25" id="antebrazo derecho-local-anim-interpolation-array">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR </Name_array>
+          <technique_common>
+            <accessor count="25" source="#antebrazo derecho-local-anim-interpolation-array">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="antebrazo derecho-local-anim-outSource-local">
+          <float_array count="400" id="antebrazo derecho-local-anim-outSource-local-array">1.0 0.0 0.0 -2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#antebrazo derecho-local-anim-outSource-local-array" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="antebrazo derecho-local-anim-localSampler">
+          <input semantic="INPUT" source="#antebrazo derecho-local-anim-inSource-TIME"/>
+          <input semantic="OUTPUT" source="#antebrazo derecho-local-anim-outSource-local"/>
+          <input semantic="INTERPOLATION" source="#antebrazo derecho-local-anim-interpolation"/>
+        </sampler>
+        <channel source="#antebrazo derecho-local-anim-localSampler" target="antebrazo derecho-local/matrix"/>
+      </animation>
+    </animation>
+    <animation id="brazo izquierdo-global-anim" name="brazo izquierdo-global-anim">
+      <animation>
+        <source id="brazo izquierdo-global-anim-inSource-TIME">
+          <float_array count="33" id="brazo izquierdo-global-anim-inSource-TIME-array">0.0 0.041666668 0.083333336 0.125 0.16666667 0.20833333 0.25 0.29166666 0.33333334 0.375 0.41666666 0.45833334 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1.0 1.0416666 1.0833334 1.125 1.1666666 1.2083334 1.25 1.2916666 1.3333334 </float_array>
+          <technique_common>
+            <accessor count="33" source="#brazo izquierdo-global-anim-inSource-TIME-array">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="brazo izquierdo-global-anim-interpolation">
+          <Name_array count="33" id="brazo izquierdo-global-anim-interpolation-array">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR </Name_array>
+          <technique_common>
+            <accessor count="33" source="#brazo izquierdo-global-anim-interpolation-array">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="brazo izquierdo-global-anim-outSource-global">
+          <float_array count="528" id="brazo izquierdo-global-anim-outSource-global-array">0.22540128 0.88076603 0.41646805 4.0 -0.41922703 0.47355193 -0.774595 3.0 -0.87945616 0.0 0.47598013 0.0 0.0 0.0 0.0 1.0 0.29881325 0.8807659 0.36737177 4.0 -0.55576706 0.4735519 -0.6832801 3.0 -0.77577937 2.9802322E-8 0.6310042 0.0 0.0 0.0 0.0 1.0 0.3618321 0.88076603 0.30549783 4.0 -0.67297673 0.4735519 -0.5681998 3.0 -0.6451201 0.0 0.76408124 0.0 0.0 0.0 0.0 1.0 0.41226602 0.88076603 0.23299825 4.0 -0.7667794 0.47355196 -0.43335676 3.0 -0.49202263 1.4901161E-8 0.8705825 0.0 0.0 0.0 0.0 1.0 0.44836074 0.880766 0.1523946 4.0 -0.83391243 0.473552 -0.28344095 3.0 -0.32181185 4.4703484E-8 0.9468037 0.0 0.0 0.0 0.0 1.0 0.46886078 0.8807659 0.066490486 4.0 -0.87204075 0.4735519 -0.12366663 3.0 -0.14040804 1.4901161E-8 0.9900937 0.0 0.0 0.0 0.0 1.0 0.47305328 0.880766 -0.021726193 4.0 -0.8798385 0.47355193 0.040408857 3.0 0.045879222 1.8626451E-9 0.998947 0.0 0.0 0.0 0.0 1.0 0.46079233 0.8807658 -0.109187216 4.0 -0.8570341 0.4735519 0.2030789 3.0 0.2305708 -2.9802322E-8 0.9730555 0.0 0.0 0.0 0.0 1.0 0.4325044 0.8807659 -0.19285053 4.0 -0.80442107 0.47355187 0.3586855 3.0 0.40724272 0.0 0.91331995 0.0 0.0 0.0 0.0 1.0 0.38917345 0.880766 -0.26980639 4.0 -0.7238292 0.47355193 0.50181675 3.0 0.5697504 -2.9802322E-8 0.8218179 0.0 0.0 0.0 0.0 1.0 0.43688846 0.8807659 -0.18270165 4.0 -0.812575 0.47355193 0.33980942 3.0 0.38581127 -4.4703484E-8 0.92257774 0.0 0.0 0.0 0.0 1.0 0.46538642 0.88076586 -0.08756064 4.0 -0.86557883 0.4735519 0.16285527 3.0 0.18490188 7.4505806E-9 0.982757 0.0 0.0 0.0 0.0 1.0 0.47341388 0.8807659 0.011431895 4.0 -0.88050926 0.47355187 -0.021262325 3.0 -0.024140727 -1.0244548E-8 0.9997086 0.0 0.0 0.0 0.0 1.0 0.46061775 0.88076603 0.109921545 4.0 -0.8567095 0.47355196 -0.20444465 3.0 -0.23212144 7.4505806E-9 0.97268695 0.0 0.0 0.0 0.0 1.0 0.4275605 0.8807659 0.20357615 4.0 -0.7952262 0.47355175 -0.37863424 3.0 -0.429892 -2.9802322E-8 0.9028803 0.0 0.0 0.0 0.0 1.0 0.37569696 0.88076603 0.28827626 4.0 -0.6987642 0.4735519 -0.5361692 3.0 -0.6087533 0.0 0.7933597 0.0 0.0 0.0 0.0 1.0 0.3073078 0.880766 0.36029625 4.0 -0.57156605 0.47355196 -0.6701201 3.0 -0.7608379 5.9604645E-8 0.6489421 0.0 0.0 0.0 0.0 1.0 0.22540128 0.88076603 0.41646805 4.0 -0.41922703 0.47355193 -0.774595 3.0 -0.87945616 0.0 0.47598013 0.0 0.0 0.0 0.0 1.0 0.22540128 0.88076603 0.41646805 4.0 -0.41922703 0.47355193 -0.774595 3.0 -0.87945616 0.0 0.47598013 0.0 0.0 0.0 0.0 1.0 0.22540128 0.88076603 0.41646805 4.0 -0.41922703 0.47355193 -0.774595 3.0 -0.87945616 0.0 0.47598013 0.0 0.0 0.0 0.0 1.0 0.22540128 0.88076603 0.41646805 4.0 -0.41922703 0.47355193 -0.774595 3.0 -0.87945616 0.0 0.47598013 0.0 0.0 0.0 0.0 1.0 0.22540128 0.88076603 0.41646805 4.0 -0.41922703 0.47355193 -0.774595 3.0 -0.87945616 0.0 0.47598013 0.0 0.0 0.0 0.0 1.0 0.22540128 0.88076603 0.41646805 4.0 -0.41922703 0.47355193 -0.774595 3.0 -0.87945616 0.0 0.47598013 0.0 0.0 0.0 0.0 1.0 0.22540128 0.88076603 0.41646805 4.0 -0.41922703 0.47355193 -0.774595 3.0 -0.87945616 0.0 0.47598013 0.0 0.0 0.0 0.0 1.0 0.22540128 0.88076603 0.41646805 4.0 -0.41922703 0.47355193 -0.774595 3.0 -0.87945616 0.0 0.47598013 0.0 0.0 0.0 0.0 1.0 0.22540128 0.88076603 0.41646805 4.0 -0.41922703 0.47355193 -0.774595 3.0 -0.87945616 0.0 0.47598013 0.0 0.0 0.0 0.0 1.0 0.22540128 0.88076603 0.41646805 4.0 -0.41922703 0.47355193 -0.774595 3.0 -0.87945616 0.0 0.47598013 0.0 0.0 0.0 0.0 1.0 0.22540128 0.88076603 0.41646805 4.0 -0.41922703 0.47355193 -0.774595 3.0 -0.87945616 0.0 0.47598013 0.0 0.0 0.0 0.0 1.0 0.22540128 0.88076603 0.41646805 4.0 -0.41922703 0.47355193 -0.774595 3.0 -0.87945616 0.0 0.47598013 0.0 0.0 0.0 0.0 1.0 0.22540128 0.88076603 0.41646805 4.0 -0.41922703 0.47355193 -0.774595 3.0 -0.87945616 0.0 0.47598013 0.0 0.0 0.0 0.0 1.0 0.22540128 0.88076603 0.41646805 4.0 -0.41922703 0.47355193 -0.774595 3.0 -0.87945616 0.0 0.47598013 0.0 0.0 0.0 0.0 1.0 0.22540128 0.88076603 0.41646805 4.0 -0.41922703 0.47355193 -0.774595 3.0 -0.87945616 0.0 0.47598013 0.0 0.0 0.0 0.0 1.0 0.22540128 0.88076603 0.41646805 4.0 -0.41922703 0.47355193 -0.774595 3.0 -0.87945616 0.0 0.47598013 0.0 0.0 0.0 0.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="33" source="#brazo izquierdo-global-anim-outSource-global-array" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="brazo izquierdo-global-anim-globalSampler">
+          <input semantic="INPUT" source="#brazo izquierdo-global-anim-inSource-TIME"/>
+          <input semantic="OUTPUT" source="#brazo izquierdo-global-anim-outSource-global"/>
+          <input semantic="INTERPOLATION" source="#brazo izquierdo-global-anim-interpolation"/>
+        </sampler>
+        <channel source="#brazo izquierdo-global-anim-globalSampler" target="brazo izquierdo-global/matrix"/>
+      </animation>
+    </animation>
+    <animation id="brazo izquierdo-local-anim" name="brazo izquierdo-local-anim">
+      <animation>
+        <source id="brazo izquierdo-local-anim-inSource-TIME">
+          <float_array count="33" id="brazo izquierdo-local-anim-inSource-TIME-array">0.0 0.041666668 0.083333336 0.125 0.16666667 0.20833333 0.25 0.29166666 0.33333334 0.375 0.41666666 0.45833334 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1.0 1.0416666 1.0833334 1.125 1.1666666 1.2083334 1.25 1.2916666 1.3333334 </float_array>
+          <technique_common>
+            <accessor count="33" source="#brazo izquierdo-local-anim-inSource-TIME-array">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="brazo izquierdo-local-anim-interpolation">
+          <Name_array count="33" id="brazo izquierdo-local-anim-interpolation-array">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR </Name_array>
+          <technique_common>
+            <accessor count="33" source="#brazo izquierdo-local-anim-interpolation-array">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="brazo izquierdo-local-anim-outSource-local">
+          <float_array count="528" id="brazo izquierdo-local-anim-outSource-local-array">1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="33" source="#brazo izquierdo-local-anim-outSource-local-array" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="brazo izquierdo-local-anim-localSampler">
+          <input semantic="INPUT" source="#brazo izquierdo-local-anim-inSource-TIME"/>
+          <input semantic="OUTPUT" source="#brazo izquierdo-local-anim-outSource-local"/>
+          <input semantic="INTERPOLATION" source="#brazo izquierdo-local-anim-interpolation"/>
+        </sampler>
+        <channel source="#brazo izquierdo-local-anim-localSampler" target="brazo izquierdo-local/matrix"/>
+      </animation>
+    </animation>
+    <animation id="antebrazo izquierdo-global-anim" name="antebrazo izquierdo-global-anim">
+      <animation>
+        <source id="antebrazo izquierdo-global-anim-inSource-TIME">
+          <float_array count="25" id="antebrazo izquierdo-global-anim-inSource-TIME-array">0.0 0.041666668 0.083333336 0.125 0.16666667 0.20833333 0.25 0.29166666 0.33333334 0.375 0.41666666 0.45833334 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#antebrazo izquierdo-global-anim-inSource-TIME-array">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="antebrazo izquierdo-global-anim-interpolation">
+          <Name_array count="25" id="antebrazo izquierdo-global-anim-interpolation-array">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR </Name_array>
+          <technique_common>
+            <accessor count="25" source="#antebrazo izquierdo-global-anim-interpolation-array">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="antebrazo izquierdo-global-anim-outSource-global">
+          <float_array count="400" id="antebrazo izquierdo-global-anim-outSource-global-array">0.31811762 0.0 -0.9480513 1.0 0.0 1.0 0.0 0.0 0.9480513 0.0 0.31811762 0.0 0.0 0.0 0.0 1.0 0.33063367 0.00534712 -0.9437443 1.0 -0.019971326 0.99979985 -0.0013320809 0.0 0.9435481 0.01928825 0.33067426 0.0 0.0 0.0 0.0 1.0 0.34298202 0.010947923 -0.93927824 1.0 -0.039915174 0.9991988 -0.0029288847 0.0 0.9384936 0.03849601 0.3431442 0.0 0.0 0.0 0.0 1.0 0.35515553 0.016799172 -0.9346564 1.0 -0.059820056 0.9981978 -0.0047894903 0.0 0.93289137 0.057612207 0.3555203 0.0 0.0 0.0 0.0 1.0 0.3671474 0.022897508 -0.929881 1.0 -0.07967447 0.996797 -0.0069128275 0.0 0.9267442 0.076625794 0.36779577 0.0 0.0 0.0 0.0 1.0 0.37895024 0.029239386 -0.924955 1.0 -0.099466965 0.99499744 -0.0092976615 0.0 0.920056 0.095525816 0.37996286 0.0 0.0 0.0 0.0 1.0 0.3905577 0.035821162 -0.9198814 1.0 -0.119186096 0.99280024 -0.011942625 0.0 0.91283053 0.11430134 0.39201516 0.0 0.0 0.0 0.0 1.0 0.40196288 0.042639017 -0.9146626 1.0 -0.13882047 0.99020624 -0.01484618 0.0 0.9050716 0.13294151 0.40394533 0.0 0.0 0.0 0.0 1.0 0.4131592 0.049689047 -0.9093022 1.0 -0.15835881 0.9872174 -0.01800666 0.0 0.89678425 0.15143561 0.41574663 0.0 0.0 0.0 0.0 1.0 0.4241402 0.056967165 -0.90380305 1.0 -0.17778979 0.98383534 -0.021422245 0.0 0.887973 0.16977298 0.4274123 0.0 0.0 0.0 0.0 1.0 0.41177124 0.04879523 -0.9099798 1.0 -0.15592214 0.9876125 -0.017597608 0.0 0.89784884 0.14913219 0.4142787 0.0 0.0 0.0 0.0 1.0 0.39913106 0.040912654 -0.91598094 1.0 -0.13392048 0.9908921 -0.014096141 0.0 0.90706134 0.12829478 0.40097475 0.0 0.0 0.0 0.0 1.0 0.38622817 0.03332511 -0.92180103 1.0 -0.111800715 0.9936706 -0.010920364 0.0 0.91560274 0.10727577 0.38750938 0.0 0.0 0.0 0.0 1.0 0.37307292 0.02603823 -0.9274368 1.0 -0.08957918 0.99594724 -0.008072641 0.0 0.92346776 0.0860907 0.37389332 0.0 0.0 0.0 0.0 1.0 0.3596742 0.019057285 -0.9328834 1.0 -0.06727199 0.99771917 -0.005555019 0.0 0.93064976 0.06475492 0.36013588 0.0 0.0 0.0 0.0 1.0 0.34604207 0.012387386 -0.9381373 1.0 -0.0448955 0.9989861 -0.0033693444 0.0 0.9371443 0.043284073 0.34624735 0.0 0.0 0.0 0.0 1.0 0.33218652 0.0060334103 -0.9431945 1.0 -0.022466037 0.99974656 -0.0015172204 0.0 0.9429462 0.02169384 0.33223784 0.0 0.0 0.0 0.0 1.0 0.31811762 0.0 -0.9480513 1.0 0.0 1.0 0.0 0.0 0.9480513 0.0 0.31811762 0.0 0.0 0.0 0.0 1.0 0.31811762 0.0 -0.9480513 1.0 0.0 1.0 0.0 0.0 0.9480513 0.0 0.31811762 0.0 0.0 0.0 0.0 1.0 0.31811762 0.0 -0.9480513 1.0 0.0 1.0 0.0 0.0 0.9480513 0.0 0.31811762 0.0 0.0 0.0 0.0 1.0 0.31811762 0.0 -0.9480513 1.0 0.0 1.0 0.0 0.0 0.9480513 0.0 0.31811762 0.0 0.0 0.0 0.0 1.0 0.31811762 0.0 -0.9480513 1.0 0.0 1.0 0.0 0.0 0.9480513 0.0 0.31811762 0.0 0.0 0.0 0.0 1.0 0.31811762 0.0 -0.9480513 1.0 0.0 1.0 0.0 0.0 0.9480513 0.0 0.31811762 0.0 0.0 0.0 0.0 1.0 0.31811762 0.0 -0.9480513 1.0 0.0 1.0 0.0 0.0 0.9480513 0.0 0.31811762 0.0 0.0 0.0 0.0 1.0 0.31811762 0.0 -0.9480513 1.0 0.0 1.0 0.0 0.0 0.9480513 0.0 0.31811762 0.0 0.0 0.0 0.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#antebrazo izquierdo-global-anim-outSource-global-array" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="antebrazo izquierdo-global-anim-globalSampler">
+          <input semantic="INPUT" source="#antebrazo izquierdo-global-anim-inSource-TIME"/>
+          <input semantic="OUTPUT" source="#antebrazo izquierdo-global-anim-outSource-global"/>
+          <input semantic="INTERPOLATION" source="#antebrazo izquierdo-global-anim-interpolation"/>
+        </sampler>
+        <channel source="#antebrazo izquierdo-global-anim-globalSampler" target="antebrazo izquierdo-global/matrix"/>
+      </animation>
+    </animation>
+    <animation id="antebrazo izquierdo-local-anim" name="antebrazo izquierdo-local-anim">
+      <animation>
+        <source id="antebrazo izquierdo-local-anim-inSource-TIME">
+          <float_array count="25" id="antebrazo izquierdo-local-anim-inSource-TIME-array">0.0 0.041666668 0.083333336 0.125 0.16666667 0.20833333 0.25 0.29166666 0.33333334 0.375 0.41666666 0.45833334 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#antebrazo izquierdo-local-anim-inSource-TIME-array">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="antebrazo izquierdo-local-anim-interpolation">
+          <Name_array count="25" id="antebrazo izquierdo-local-anim-interpolation-array">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR </Name_array>
+          <technique_common>
+            <accessor count="25" source="#antebrazo izquierdo-local-anim-interpolation-array">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="antebrazo izquierdo-local-anim-outSource-local">
+          <float_array count="400" id="antebrazo izquierdo-local-anim-outSource-local-array">1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#antebrazo izquierdo-local-anim-outSource-local-array" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="antebrazo izquierdo-local-anim-localSampler">
+          <input semantic="INPUT" source="#antebrazo izquierdo-local-anim-inSource-TIME"/>
+          <input semantic="OUTPUT" source="#antebrazo izquierdo-local-anim-outSource-local"/>
+          <input semantic="INTERPOLATION" source="#antebrazo izquierdo-local-anim-interpolation"/>
+        </sampler>
+        <channel source="#antebrazo izquierdo-local-anim-localSampler" target="antebrazo izquierdo-local/matrix"/>
+      </animation>
+    </animation>
+    <animation id="cabeza-global-anim" name="cabeza-global-anim">
+      <animation>
+        <source id="cabeza-global-anim-inSource-TIME">
+          <float_array count="25" id="cabeza-global-anim-inSource-TIME-array">0.0 0.041666668 0.083333336 0.125 0.16666667 0.20833333 0.25 0.29166666 0.33333334 0.375 0.41666666 0.45833334 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#cabeza-global-anim-inSource-TIME-array">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cabeza-global-anim-interpolation">
+          <Name_array count="25" id="cabeza-global-anim-interpolation-array">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR </Name_array>
+          <technique_common>
+            <accessor count="25" source="#cabeza-global-anim-interpolation-array">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cabeza-global-anim-outSource-global">
+          <float_array count="400" id="cabeza-global-anim-outSource-global-array">0.99716127 -0.0013384447 0.07528215 0.0 0.0 0.9998419 0.017776236 5.0 -0.07529404 -0.017725777 0.99700373 0.0 0.0 0.0 0.0 1.0 0.9987947 -0.001073616 0.04907533 0.0 0.001548675 0.9999525 -0.009643205 5.0 -0.049062636 0.009707582 0.9987487 0.0 0.0 0.0 0.0 1.0 0.9997381 -0.0015291895 0.022837238 0.0 0.0023757105 0.9993093 -0.037086584 5.0 -0.022764752 0.037131123 0.99905115 0.0 0.0 0.0 0.0 1.0 0.99999064 -0.0027045084 -0.0033942312 0.0 0.002479913 0.9979138 -0.064514264 5.0 0.003561629 0.064505234 0.9979111 0.0 0.0 0.0 0.0 1.0 0.9995518 -0.0045978758 -0.029581212 0.0 0.0018611312 0.9957677 -0.09188668 5.0 0.0298785 0.091790445 0.99533 0.0 0.0 0.0 0.0 1.0 0.99842244 -0.0072065573 -0.055685874 0.0 5.202608E-4 0.99287456 -0.11916427 5.0 0.056147847 0.1189473 0.99131185 0.0 0.0 0.0 0.0 1.0 0.9966011 -0.0065882714 -0.08211471 0.0 -7.886044E-4 0.9959882 -0.089481704 5.0 0.08237481 0.08924232 0.9925977 0.0 0.0 0.0 0.0 1.0 0.99408793 -0.0051793903 -0.10845636 0.0 -0.0013119482 0.998216 -0.059695367 5.0 0.108572036 0.059484717 0.9923074 0.0 0.0 0.0 0.0 1.0 0.9908863 -0.0029821394 -0.13466905 0.0 -0.0010489409 0.99955386 -0.02985237 5.0 0.13469799 0.02972156 0.99044096 0.0 0.0 0.0 0.0 1.0 0.9870014 0.0 -0.16071129 0.0 0.0 1.0 0.0 5.0 0.16071129 0.0 0.9870014 0.0 0.0 0.0 0.0 1.0 0.9908863 -0.002982139 -0.13466905 0.0 -0.0010489409 0.99955386 -0.029852366 5.0 0.13469799 0.029721556 0.99044096 0.0 0.0 0.0 0.0 1.0 0.99408793 -0.00517939 -0.108456366 0.0 -0.0013119482 0.998216 -0.05969536 5.0 0.10857204 0.05948471 0.9923074 0.0 0.0 0.0 0.0 1.0 0.9966011 -0.0065882714 -0.08211471 0.0 -7.886044E-4 0.9959882 -0.089481704 5.0 0.08237481 0.08924232 0.9925977 0.0 0.0 0.0 0.0 1.0 0.99842244 -0.0072065573 -0.055685874 0.0 5.202608E-4 0.99287456 -0.11916427 5.0 0.056147847 0.1189473 0.99131185 0.0 0.0 0.0 0.0 1.0 0.9997264 -0.004057348 -0.023040695 0.0 0.002083576 0.99637455 -0.08505092 5.0 0.02330224 0.08497963 0.99611026 0.0 0.0 0.0 0.0 1.0 0.9999507 -0.0020269626 0.009718302 0.0 0.0025181994 0.9987054 -0.05080486 5.0 -0.009602741 0.050826833 0.9986613 0.0 0.0 0.0 0.0 1.0 0.99909514 -0.0011199793 0.042517256 0.0 0.0018231518 0.9998622 -0.01650335 5.0 -0.042492915 0.016565932 0.9989595 0.0 0.0 0.0 0.0 1.0 0.9971615 -0.001338445 0.075282164 0.0 0.0 0.99984217 0.01777624 5.0 -0.075294055 -0.01772578 0.997004 0.0 0.0 0.0 0.0 1.0 0.99716127 -0.0013384447 0.07528215 0.0 0.0 0.9998419 0.017776236 5.0 -0.07529404 -0.017725777 0.99700373 0.0 0.0 0.0 0.0 1.0 0.99716127 -0.0013384447 0.07528215 0.0 0.0 0.9998419 0.017776236 5.0 -0.07529404 -0.017725777 0.99700373 0.0 0.0 0.0 0.0 1.0 0.99716127 -0.0013384447 0.07528215 0.0 0.0 0.9998419 0.017776236 5.0 -0.07529404 -0.017725777 0.99700373 0.0 0.0 0.0 0.0 1.0 0.99716127 -0.0013384447 0.07528215 0.0 0.0 0.9998419 0.017776236 5.0 -0.07529404 -0.017725777 0.99700373 0.0 0.0 0.0 0.0 1.0 0.99716127 -0.0013384447 0.07528215 0.0 0.0 0.9998419 0.017776236 5.0 -0.07529404 -0.017725777 0.99700373 0.0 0.0 0.0 0.0 1.0 0.99716127 -0.0013384447 0.07528215 0.0 0.0 0.9998419 0.017776236 5.0 -0.07529404 -0.017725777 0.99700373 0.0 0.0 0.0 0.0 1.0 0.99716127 -0.0013384447 0.07528215 0.0 0.0 0.9998419 0.017776236 5.0 -0.07529404 -0.017725777 0.99700373 0.0 0.0 0.0 0.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#cabeza-global-anim-outSource-global-array" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="cabeza-global-anim-globalSampler">
+          <input semantic="INPUT" source="#cabeza-global-anim-inSource-TIME"/>
+          <input semantic="OUTPUT" source="#cabeza-global-anim-outSource-global"/>
+          <input semantic="INTERPOLATION" source="#cabeza-global-anim-interpolation"/>
+        </sampler>
+        <channel source="#cabeza-global-anim-globalSampler" target="cabeza-global/matrix"/>
+      </animation>
+    </animation>
+    <animation id="cabeza-local-anim" name="cabeza-local-anim">
+      <animation>
+        <source id="cabeza-local-anim-inSource-TIME">
+          <float_array count="25" id="cabeza-local-anim-inSource-TIME-array">0.0 0.041666668 0.083333336 0.125 0.16666667 0.20833333 0.25 0.29166666 0.33333334 0.375 0.41666666 0.45833334 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#cabeza-local-anim-inSource-TIME-array">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cabeza-local-anim-interpolation">
+          <Name_array count="25" id="cabeza-local-anim-interpolation-array">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR </Name_array>
+          <technique_common>
+            <accessor count="25" source="#cabeza-local-anim-interpolation-array">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="cabeza-local-anim-outSource-local">
+          <float_array count="400" id="cabeza-local-anim-outSource-local-array">1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#cabeza-local-anim-outSource-local-array" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="cabeza-local-anim-localSampler">
+          <input semantic="INPUT" source="#cabeza-local-anim-inSource-TIME"/>
+          <input semantic="OUTPUT" source="#cabeza-local-anim-outSource-local"/>
+          <input semantic="INTERPOLATION" source="#cabeza-local-anim-interpolation"/>
+        </sampler>
+        <channel source="#cabeza-local-anim-localSampler" target="cabeza-local/matrix"/>
+      </animation>
+    </animation>
+    <animation id="muslo izquierdo-global-anim" name="muslo izquierdo-global-anim">
+      <animation>
+        <source id="muslo izquierdo-global-anim-inSource-TIME">
+          <float_array count="25" id="muslo izquierdo-global-anim-inSource-TIME-array">0.0 0.041666668 0.083333336 0.125 0.16666667 0.20833333 0.25 0.29166666 0.33333334 0.375 0.41666666 0.45833334 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#muslo izquierdo-global-anim-inSource-TIME-array">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="muslo izquierdo-global-anim-interpolation">
+          <Name_array count="25" id="muslo izquierdo-global-anim-interpolation-array">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR </Name_array>
+          <technique_common>
+            <accessor count="25" source="#muslo izquierdo-global-anim-interpolation-array">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="muslo izquierdo-global-anim-outSource-global">
+          <float_array count="400" id="muslo izquierdo-global-anim-outSource-global-array">1.0 0.0 0.0 2.0 0.0 0.74871624 0.6628907 0.0 0.0 -0.6628907 0.74871624 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 0.8543557 0.5196888 0.0 0.0 -0.5196888 0.8543557 0.0 0.0 0.0 0.0 1.0 1.0000001 0.0 0.0 2.0 0.0 0.93294084 0.36003003 0.0 0.0 -0.36003003 0.93294084 0.0 0.0 0.0 0.0 1.0 1.0000002 0.0 0.0 2.0 0.0 0.98198295 0.18897052 0.0 0.0 -0.18897052 0.98198295 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 0.9999289 0.011926946 0.0 0.0 -0.011926946 0.9999289 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 0.98621076 -0.16549446 0.0 0.0 0.16549446 0.98621076 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 0.9412627 -0.33767506 0.0 0.0 0.33767506 0.9412627 0.0 0.0 0.0 0.0 1.0 1.0000001 0.0 0.0 2.0 0.0 0.8665083 -0.49916294 0.0 0.0 0.49916294 0.8665083 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 0.7643145 -0.64484376 0.0 0.0 0.64484376 0.7643145 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 0.63791764 -0.77010465 0.0 0.0 0.77010465 0.63791764 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 0.7784866 -0.6276613 0.0 0.0 0.6276613 0.7784866 0.0 0.0 0.0 0.0 1.0 1.0000001 0.0 0.0 2.0 0.0 0.88787746 -0.4600803 0.0 0.0 0.4600803 0.88787746 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 0.9617088 -0.27407315 0.0 0.0 0.27407315 0.9617088 0.0 0.0 0.0 0.0 1.0 1.0000001 0.0 0.0 2.0 0.0 0.9970243 -0.07708946 0.0 0.0 0.07708946 0.9970243 0.0 0.0 0.0 0.0 1.0 1.0000002 0.0 0.0 2.0 0.0 0.99240917 0.122981645 0.0 0.0 -0.122981645 0.99240917 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 0.948048 0.31812724 0.0 0.0 -0.31812724 0.948048 0.0 0.0 0.0 0.0 1.0 1.0000001 0.0 0.0 2.0 0.0 0.86571807 0.5005321 0.0 0.0 -0.5005321 0.86571807 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 0.74871624 0.6628907 0.0 0.0 -0.6628907 0.74871624 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 0.74871624 0.6628907 0.0 0.0 -0.6628907 0.74871624 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 0.74871624 0.6628907 0.0 0.0 -0.6628907 0.74871624 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 0.74871624 0.6628907 0.0 0.0 -0.6628907 0.74871624 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 0.74871624 0.6628907 0.0 0.0 -0.6628907 0.74871624 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 0.74871624 0.6628907 0.0 0.0 -0.6628907 0.74871624 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 0.74871624 0.6628907 0.0 0.0 -0.6628907 0.74871624 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 2.0 0.0 0.74871624 0.6628907 0.0 0.0 -0.6628907 0.74871624 0.0 0.0 0.0 0.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#muslo izquierdo-global-anim-outSource-global-array" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="muslo izquierdo-global-anim-globalSampler">
+          <input semantic="INPUT" source="#muslo izquierdo-global-anim-inSource-TIME"/>
+          <input semantic="OUTPUT" source="#muslo izquierdo-global-anim-outSource-global"/>
+          <input semantic="INTERPOLATION" source="#muslo izquierdo-global-anim-interpolation"/>
+        </sampler>
+        <channel source="#muslo izquierdo-global-anim-globalSampler" target="muslo izquierdo-global/matrix"/>
+      </animation>
+    </animation>
+    <animation id="muslo izquierdo-local-anim" name="muslo izquierdo-local-anim">
+      <animation>
+        <source id="muslo izquierdo-local-anim-inSource-TIME">
+          <float_array count="25" id="muslo izquierdo-local-anim-inSource-TIME-array">0.0 0.041666668 0.083333336 0.125 0.16666667 0.20833333 0.25 0.29166666 0.33333334 0.375 0.41666666 0.45833334 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#muslo izquierdo-local-anim-inSource-TIME-array">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="muslo izquierdo-local-anim-interpolation">
+          <Name_array count="25" id="muslo izquierdo-local-anim-interpolation-array">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR </Name_array>
+          <technique_common>
+            <accessor count="25" source="#muslo izquierdo-local-anim-interpolation-array">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="muslo izquierdo-local-anim-outSource-local">
+          <float_array count="400" id="muslo izquierdo-local-anim-outSource-local-array">1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#muslo izquierdo-local-anim-outSource-local-array" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="muslo izquierdo-local-anim-localSampler">
+          <input semantic="INPUT" source="#muslo izquierdo-local-anim-inSource-TIME"/>
+          <input semantic="OUTPUT" source="#muslo izquierdo-local-anim-outSource-local"/>
+          <input semantic="INTERPOLATION" source="#muslo izquierdo-local-anim-interpolation"/>
+        </sampler>
+        <channel source="#muslo izquierdo-local-anim-localSampler" target="muslo izquierdo-local/matrix"/>
+      </animation>
+    </animation>
+    <animation id="pantorrila izquierda-global-anim" name="pantorrila izquierda-global-anim">
+      <animation>
+        <source id="pantorrila izquierda-global-anim-inSource-TIME">
+          <float_array count="25" id="pantorrila izquierda-global-anim-inSource-TIME-array">0.0 0.041666668 0.083333336 0.125 0.16666667 0.20833333 0.25 0.29166666 0.33333334 0.375 0.41666666 0.45833334 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#pantorrila izquierda-global-anim-inSource-TIME-array">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pantorrila izquierda-global-anim-interpolation">
+          <Name_array count="25" id="pantorrila izquierda-global-anim-interpolation-array">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR </Name_array>
+          <technique_common>
+            <accessor count="25" source="#pantorrila izquierda-global-anim-interpolation-array">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pantorrila izquierda-global-anim-outSource-global">
+          <float_array count="400" id="pantorrila izquierda-global-anim-outSource-global-array">1.0 0.0 0.0 0.0 0.0 0.9930283 -0.11787612 -2.0 0.0 0.11787612 0.9930283 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.98032093 -0.19741061 -2.0 0.0 0.19741061 0.98032093 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.9612539 -0.27566445 -2.0 0.0 0.27566445 0.9612539 0.0 0.0 0.0 0.0 1.0 1.0000001 0.0 0.0 0.0 0.0 0.9359512 -0.35213003 -2.0 0.0 0.35213003 0.9359512 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.9045766 -0.42631122 -2.0 0.0 0.42631122 0.9045766 0.0 0.0 0.0 0.0 1.0 1.0000001 0.0 0.0 0.0 0.0 0.86733395 -0.49772692 -2.0 0.0 0.49772692 0.86733395 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.82446456 -0.5659136 -2.0 0.0 0.5659136 0.82446456 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.77624685 -0.63042915 -2.0 0.0 0.63042915 0.77624685 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.72299325 -0.690855 -2.0 0.0 0.690855 0.72299325 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.66504955 -0.7467992 -2.0 0.0 0.7467992 0.66504955 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.7299139 -0.6835392 -2.0 0.0 0.6835392 0.7299139 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.78878605 -0.61466783 -2.0 0.0 0.61466783 0.78878605 0.0 0.0 0.0 0.0 1.0 1.0000001 0.0 0.0 0.0 0.0 0.8411831 -0.5407506 -2.0 0.0 0.5407506 0.8411831 0.0 0.0 0.0 0.0 1.0 1.0000001 0.0 0.0 0.0 0.0 0.8866746 -0.46239412 -2.0 0.0 0.46239412 0.8866746 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.9248871 -0.38024187 -2.0 0.0 0.38024187 0.9248871 0.0 0.0 0.0 0.0 1.0 1.0000001 0.0 0.0 0.0 0.0 0.9555073 -0.2949681 -2.0 0.0 0.2949681 0.9555073 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.9782832 -0.20727286 -2.0 0.0 0.20727286 0.9782832 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.9930283 -0.11787612 -2.0 0.0 0.11787612 0.9930283 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.9930283 -0.11787612 -2.0 0.0 0.11787612 0.9930283 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.9930283 -0.11787612 -2.0 0.0 0.11787612 0.9930283 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.9930283 -0.11787612 -2.0 0.0 0.11787612 0.9930283 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.9930283 -0.11787612 -2.0 0.0 0.11787612 0.9930283 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.9930283 -0.11787612 -2.0 0.0 0.11787612 0.9930283 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.9930283 -0.11787612 -2.0 0.0 0.11787612 0.9930283 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.9930283 -0.11787612 -2.0 0.0 0.11787612 0.9930283 0.0 0.0 0.0 0.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#pantorrila izquierda-global-anim-outSource-global-array" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="pantorrila izquierda-global-anim-globalSampler">
+          <input semantic="INPUT" source="#pantorrila izquierda-global-anim-inSource-TIME"/>
+          <input semantic="OUTPUT" source="#pantorrila izquierda-global-anim-outSource-global"/>
+          <input semantic="INTERPOLATION" source="#pantorrila izquierda-global-anim-interpolation"/>
+        </sampler>
+        <channel source="#pantorrila izquierda-global-anim-globalSampler" target="pantorrila izquierda-global/matrix"/>
+      </animation>
+    </animation>
+    <animation id="pantorrila izquierda-local-anim" name="pantorrila izquierda-local-anim">
+      <animation>
+        <source id="pantorrila izquierda-local-anim-inSource-TIME">
+          <float_array count="25" id="pantorrila izquierda-local-anim-inSource-TIME-array">0.0 0.041666668 0.083333336 0.125 0.16666667 0.20833333 0.25 0.29166666 0.33333334 0.375 0.41666666 0.45833334 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#pantorrila izquierda-local-anim-inSource-TIME-array">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pantorrila izquierda-local-anim-interpolation">
+          <Name_array count="25" id="pantorrila izquierda-local-anim-interpolation-array">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR </Name_array>
+          <technique_common>
+            <accessor count="25" source="#pantorrila izquierda-local-anim-interpolation-array">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pantorrila izquierda-local-anim-outSource-local">
+          <float_array count="400" id="pantorrila izquierda-local-anim-outSource-local-array">1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#pantorrila izquierda-local-anim-outSource-local-array" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="pantorrila izquierda-local-anim-localSampler">
+          <input semantic="INPUT" source="#pantorrila izquierda-local-anim-inSource-TIME"/>
+          <input semantic="OUTPUT" source="#pantorrila izquierda-local-anim-outSource-local"/>
+          <input semantic="INTERPOLATION" source="#pantorrila izquierda-local-anim-interpolation"/>
+        </sampler>
+        <channel source="#pantorrila izquierda-local-anim-localSampler" target="pantorrila izquierda-local/matrix"/>
+      </animation>
+    </animation>
+    <animation id="muslo derecho-global-anim" name="muslo derecho-global-anim">
+      <animation>
+        <source id="muslo derecho-global-anim-inSource-TIME">
+          <float_array count="25" id="muslo derecho-global-anim-inSource-TIME-array">0.0 0.041666668 0.083333336 0.125 0.16666667 0.20833333 0.25 0.29166666 0.33333334 0.375 0.41666666 0.45833334 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#muslo derecho-global-anim-inSource-TIME-array">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="muslo derecho-global-anim-interpolation">
+          <Name_array count="25" id="muslo derecho-global-anim-interpolation-array">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR </Name_array>
+          <technique_common>
+            <accessor count="25" source="#muslo derecho-global-anim-interpolation-array">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="muslo derecho-global-anim-outSource-global">
+          <float_array count="400" id="muslo derecho-global-anim-outSource-global-array">1.0 0.0 0.0 -2.0 0.0 0.8631581 -0.50493383 0.0 0.0 0.50493383 0.8631581 0.0 0.0 0.0 0.0 1.0 1.0000001 0.0 0.0 -2.0 0.0 0.94142354 -0.3372267 0.0 0.0 0.3372267 0.94142354 0.0 0.0 0.0 0.0 1.0 1.0000001 0.0 0.0 -2.0 0.0 0.9874441 -0.1579692 0.0 0.0 0.1579692 0.9874441 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 0.99964356 0.026698982 0.0 0.0 -0.026698982 0.99964356 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 0.97760403 0.21045268 0.0 0.0 -0.21045268 0.97760403 0.0 0.0 0.0 0.0 1.0 1.0000001 0.0 0.0 -2.0 0.0 0.9220806 0.38699815 0.0 0.0 -0.38699815 0.9220806 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 0.83497465 0.5502883 0.0 0.0 -0.5502883 0.83497465 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 0.71927 0.69473064 0.0 0.0 -0.69473064 0.71927 0.0 0.0 0.0 0.0 1.0 0.9999999 0.0 0.0 -2.0 0.0 0.57892954 0.8153775 0.0 0.0 -0.8153775 0.57892954 0.0 0.0 0.0 0.0 1.0 1.0000001 0.0 0.0 -2.0 0.0 0.41876015 0.908097 0.0 0.0 -0.908097 0.41876015 0.0 0.0 0.0 0.0 1.0 1.0000001 0.0 0.0 -2.0 0.0 0.59766245 0.80174804 0.0 0.0 -0.80174804 0.59766245 0.0 0.0 0.0 0.0 1.0 1.0000001 0.0 0.0 -2.0 0.0 0.7506763 0.66067034 0.0 0.0 -0.66067034 0.7506763 0.0 0.0 0.0 0.0 1.0 1.0000001 0.0 0.0 -2.0 0.0 0.87117374 0.49097505 0.0 0.0 -0.49097505 0.87117374 0.0 0.0 0.0 0.0 1.0 1.0000001 0.0 0.0 -2.0 0.0 0.9539354 0.3000126 0.0 0.0 -0.3000126 0.9539354 0.0 0.0 0.0 0.0 1.0 1.0000001 0.0 0.0 -2.0 0.0 0.9953762 0.09605476 0.0 0.0 -0.09605476 0.9953762 0.0 0.0 0.0 0.0 1.0 1.0000001 0.0 0.0 -2.0 0.0 0.9937011 -0.11206382 0.0 0.0 0.11206382 0.9937011 0.0 0.0 0.0 0.0 1.0 0.99999994 0.0 0.0 -2.0 0.0 0.94898266 -0.3153282 0.0 0.0 0.3153282 0.94898266 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 0.8631581 -0.50493383 0.0 0.0 0.50493383 0.8631581 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 0.8631581 -0.50493383 0.0 0.0 0.50493383 0.8631581 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 0.8631581 -0.50493383 0.0 0.0 0.50493383 0.8631581 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 0.8631581 -0.50493383 0.0 0.0 0.50493383 0.8631581 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 0.8631581 -0.50493383 0.0 0.0 0.50493383 0.8631581 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 0.8631581 -0.50493383 0.0 0.0 0.50493383 0.8631581 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 0.8631581 -0.50493383 0.0 0.0 0.50493383 0.8631581 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 -2.0 0.0 0.8631581 -0.50493383 0.0 0.0 0.50493383 0.8631581 0.0 0.0 0.0 0.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#muslo derecho-global-anim-outSource-global-array" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="muslo derecho-global-anim-globalSampler">
+          <input semantic="INPUT" source="#muslo derecho-global-anim-inSource-TIME"/>
+          <input semantic="OUTPUT" source="#muslo derecho-global-anim-outSource-global"/>
+          <input semantic="INTERPOLATION" source="#muslo derecho-global-anim-interpolation"/>
+        </sampler>
+        <channel source="#muslo derecho-global-anim-globalSampler" target="muslo derecho-global/matrix"/>
+      </animation>
+    </animation>
+    <animation id="muslo derecho-local-anim" name="muslo derecho-local-anim">
+      <animation>
+        <source id="muslo derecho-local-anim-inSource-TIME">
+          <float_array count="25" id="muslo derecho-local-anim-inSource-TIME-array">0.0 0.041666668 0.083333336 0.125 0.16666667 0.20833333 0.25 0.29166666 0.33333334 0.375 0.41666666 0.45833334 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#muslo derecho-local-anim-inSource-TIME-array">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="muslo derecho-local-anim-interpolation">
+          <Name_array count="25" id="muslo derecho-local-anim-interpolation-array">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR </Name_array>
+          <technique_common>
+            <accessor count="25" source="#muslo derecho-local-anim-interpolation-array">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="muslo derecho-local-anim-outSource-local">
+          <float_array count="400" id="muslo derecho-local-anim-outSource-local-array">1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#muslo derecho-local-anim-outSource-local-array" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="muslo derecho-local-anim-localSampler">
+          <input semantic="INPUT" source="#muslo derecho-local-anim-inSource-TIME"/>
+          <input semantic="OUTPUT" source="#muslo derecho-local-anim-outSource-local"/>
+          <input semantic="INTERPOLATION" source="#muslo derecho-local-anim-interpolation"/>
+        </sampler>
+        <channel source="#muslo derecho-local-anim-localSampler" target="muslo derecho-local/matrix"/>
+      </animation>
+    </animation>
+    <animation id="pantorrilla derecha-global-anim" name="pantorrilla derecha-global-anim">
+      <animation>
+        <source id="pantorrilla derecha-global-anim-inSource-TIME">
+          <float_array count="25" id="pantorrilla derecha-global-anim-inSource-TIME-array">0.0 0.041666668 0.083333336 0.125 0.16666667 0.20833333 0.25 0.29166666 0.33333334 0.375 0.41666666 0.45833334 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#pantorrilla derecha-global-anim-inSource-TIME-array">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pantorrilla derecha-global-anim-interpolation">
+          <Name_array count="25" id="pantorrilla derecha-global-anim-interpolation-array">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR </Name_array>
+          <technique_common>
+            <accessor count="25" source="#pantorrilla derecha-global-anim-interpolation-array">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pantorrilla derecha-global-anim-outSource-global">
+          <float_array count="400" id="pantorrilla derecha-global-anim-outSource-global-array">1.0 0.0 0.0 0.0 0.0 0.7944163 -0.6073736 -2.0 0.0 0.6073736 0.7944163 0.0 0.0 0.0 0.0 1.0 1.0000002 0.0 0.0 0.0 0.0 0.8010726 -0.59856755 -2.0 0.0 0.59856755 0.8010726 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.80763096 -0.58968836 -2.0 0.0 0.58968836 0.80763096 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.81409097 -0.58073735 -2.0 0.0 0.58073735 0.81409097 0.0 0.0 0.0 0.0 1.0 1.0000002 0.0 0.0 0.0 0.0 0.82045203 -0.5717157 -2.0 0.0 0.5717157 0.82045203 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.8267128 -0.5626242 -2.0 0.0 0.5626242 0.8267128 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.83287287 -0.55346423 -2.0 0.0 0.55346423 0.83287287 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.8389316 -0.5442369 -2.0 0.0 0.5442369 0.8389316 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.8448881 -0.53494316 -2.0 0.0 0.53494316 0.8448881 0.0 0.0 0.0 0.0 1.0 1.0000001 0.0 0.0 0.0 0.0 0.8507416 -0.52558434 -2.0 0.0 0.52558434 0.8507416 0.0 0.0 0.0 0.0 1.0 0.99999994 0.0 0.0 0.0 0.0 0.84414905 -0.53610843 -2.0 0.0 0.53610843 0.84414905 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.83742654 -0.54655 -2.0 0.0 0.54655 0.83742654 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.83057475 -0.55690724 -2.0 0.0 0.55690724 0.83057475 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.8235948 -0.5671786 -2.0 0.0 0.5671786 0.8235948 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.816488 -0.5773624 -2.0 0.0 0.5773624 0.816488 0.0 0.0 0.0 0.0 1.0 1.0000001 0.0 0.0 0.0 0.0 0.80925524 -0.5874573 -2.0 0.0 0.5874573 0.80925524 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.8018976 -0.5974615 -2.0 0.0 0.5974615 0.8018976 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.7944163 -0.6073736 -2.0 0.0 0.6073736 0.7944163 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.7944163 -0.6073736 -2.0 0.0 0.6073736 0.7944163 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.7944163 -0.6073736 -2.0 0.0 0.6073736 0.7944163 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.7944163 -0.6073736 -2.0 0.0 0.6073736 0.7944163 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.7944163 -0.6073736 -2.0 0.0 0.6073736 0.7944163 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.7944163 -0.6073736 -2.0 0.0 0.6073736 0.7944163 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.7944163 -0.6073736 -2.0 0.0 0.6073736 0.7944163 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 0.7944163 -0.6073736 -2.0 0.0 0.6073736 0.7944163 0.0 0.0 0.0 0.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#pantorrilla derecha-global-anim-outSource-global-array" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="pantorrilla derecha-global-anim-globalSampler">
+          <input semantic="INPUT" source="#pantorrilla derecha-global-anim-inSource-TIME"/>
+          <input semantic="OUTPUT" source="#pantorrilla derecha-global-anim-outSource-global"/>
+          <input semantic="INTERPOLATION" source="#pantorrilla derecha-global-anim-interpolation"/>
+        </sampler>
+        <channel source="#pantorrilla derecha-global-anim-globalSampler" target="pantorrilla derecha-global/matrix"/>
+      </animation>
+    </animation>
+    <animation id="pantorrilla derecha-local-anim" name="pantorrilla derecha-local-anim">
+      <animation>
+        <source id="pantorrilla derecha-local-anim-inSource-TIME">
+          <float_array count="25" id="pantorrilla derecha-local-anim-inSource-TIME-array">0.0 0.041666668 0.083333336 0.125 0.16666667 0.20833333 0.25 0.29166666 0.33333334 0.375 0.41666666 0.45833334 0.5 0.5416667 0.5833333 0.625 0.6666667 0.7083333 0.75 0.7916667 0.8333333 0.875 0.9166667 0.9583333 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#pantorrilla derecha-local-anim-inSource-TIME-array">
+              <param name="TIME" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pantorrilla derecha-local-anim-interpolation">
+          <Name_array count="25" id="pantorrilla derecha-local-anim-interpolation-array">LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR LINEAR </Name_array>
+          <technique_common>
+            <accessor count="25" source="#pantorrilla derecha-local-anim-interpolation-array">
+              <param type="name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="pantorrilla derecha-local-anim-outSource-local">
+          <float_array count="400" id="pantorrilla derecha-local-anim-outSource-local-array">1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 </float_array>
+          <technique_common>
+            <accessor count="25" source="#pantorrilla derecha-local-anim-outSource-local-array" stride="16">
+              <param type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <sampler id="pantorrilla derecha-local-anim-localSampler">
+          <input semantic="INPUT" source="#pantorrilla derecha-local-anim-inSource-TIME"/>
+          <input semantic="OUTPUT" source="#pantorrilla derecha-local-anim-outSource-local"/>
+          <input semantic="INTERPOLATION" source="#pantorrilla derecha-local-anim-interpolation"/>
+        </sampler>
+        <channel source="#pantorrilla derecha-local-anim-localSampler" target="pantorrilla derecha-local/matrix"/>
+      </animation>
+    </animation>
+  </library_animations>
+  <library_visual_scenes>
+    <visual_scene id="DefaultScene">
+      <node id="Root-global" name="Root-global" sid="Root-global">
+        <matrix sid="matrix">1.0 0.0 -8.742278E-8 0.0 0.0 1.0 0.0 0.0 -8.742278E-8 0.0 -1.0 0.0 0.0 0.0 0.0 1.0 </matrix>
+        <node id="cuerpo entero-global" name="cuerpo entero-global" sid="cuerpo entero-global">
+          <matrix sid="matrix">1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 17.344145 0.0 0.0 0.0 1.0 </matrix>
+        </node>
+        <node id="pecho-global" name="pecho-global" sid="pecho-global">
+          <matrix sid="matrix">0.9975148 0.0 0.0704599 0.0 0.0 1.0000001 0.0 4.0 -0.0704599 0.0 0.9975148 0.0 0.0 0.0 0.0 1.0 </matrix>
+          <node id="pecho-local" name="pecho-local" sid="pecho-local">
+            <matrix sid="matrix">1.0 0.0 0.0 0.0 0.0 1.0 0.0 2.5 0.0 0.0 1.0 0.49999997 0.0 0.0 0.0 1.0 </matrix>
+            <instance_geometry url="#pecho(1)-Geom">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="pecho(1)-Material" target="#pecho(1)-Material">
+                    <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="pecho(1)-tex-bind"/>
+                  </instance_material>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+          </node>
+          <node id="brazo derecho-global" name="brazo derecho-global" sid="brazo derecho-global">
+            <matrix sid="matrix">0.36328226 -0.88476247 0.291927 -4.0 0.6896767 0.46604228 0.5542118 3.0 -0.62639606 -5.9604645E-8 0.77950495 0.0 0.0 0.0 0.0 1.0 </matrix>
+            <node id="brazo derecho-local" name="brazo derecho-local" sid="brazo derecho-local">
+              <matrix sid="matrix">1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 </matrix>
+              <instance_geometry url="#brazoderecho(1)-Geom">
+                <bind_material>
+                  <technique_common>
+                    <instance_material symbol="brazoderecho(1)-Material" target="#brazoderecho(1)-Material">
+                      <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="brazoderecho(1)-tex-bind"/>
+                    </instance_material>
+                  </technique_common>
+                </bind_material>
+              </instance_geometry>
+            </node>
+            <node id="antebrazo derecho-global" name="antebrazo derecho-global" sid="antebrazo derecho-global">
+              <matrix sid="matrix">0.42482504 -0.16369838 0.8903521 -1.0 0.039974336 0.98594785 0.16220096 0.0 -0.90439266 -0.033315793 0.42539904 0.0 0.0 0.0 0.0 1.0 </matrix>
+              <node id="antebrazo derecho-local" name="antebrazo derecho-local" sid="antebrazo derecho-local">
+                <matrix sid="matrix">1.0 0.0 0.0 -2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 </matrix>
+                <instance_geometry url="#antebrazoderecho(1)-Geom">
+                  <bind_material>
+                    <technique_common>
+                      <instance_material symbol="antebrazoderecho(1)-Material" target="#antebrazoderecho(1)-Material">
+                        <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="antebrazoderecho(1)-tex-bind"/>
+                      </instance_material>
+                    </technique_common>
+                  </bind_material>
+                </instance_geometry>
+              </node>
+            </node>
+          </node>
+          <node id="brazo izquierdo-global" name="brazo izquierdo-global" sid="brazo izquierdo-global">
+            <matrix sid="matrix">0.22540128 0.88076603 0.41646805 4.0 -0.41922703 0.47355193 -0.774595 3.0 -0.87945616 0.0 0.47598013 0.0 0.0 0.0 0.0 1.0 </matrix>
+            <node id="brazo izquierdo-local" name="brazo izquierdo-local" sid="brazo izquierdo-local">
+              <matrix sid="matrix">1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 </matrix>
+              <instance_geometry url="#brazoizquierdo(1)-Geom">
+                <bind_material>
+                  <technique_common>
+                    <instance_material symbol="brazoizquierdo(1)-Material" target="#brazoizquierdo(1)-Material">
+                      <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="brazoizquierdo(1)-tex-bind"/>
+                    </instance_material>
+                  </technique_common>
+                </bind_material>
+              </instance_geometry>
+            </node>
+            <node id="antebrazo izquierdo-global" name="antebrazo izquierdo-global" sid="antebrazo izquierdo-global">
+              <matrix sid="matrix">0.31811762 0.0 -0.9480513 1.0 0.0 1.0 0.0 0.0 0.9480513 0.0 0.31811762 0.0 0.0 0.0 0.0 1.0 </matrix>
+              <node id="antebrazo izquierdo-local" name="antebrazo izquierdo-local" sid="antebrazo izquierdo-local">
+                <matrix sid="matrix">1.0 0.0 0.0 2.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 </matrix>
+                <instance_geometry url="#antebrazoizquierdo(1)-Geom">
+                  <bind_material>
+                    <technique_common>
+                      <instance_material symbol="antebrazoizquierdo(1)-Material" target="#antebrazoizquierdo(1)-Material">
+                        <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="antebrazoizquierdo(1)-tex-bind"/>
+                      </instance_material>
+                    </technique_common>
+                  </bind_material>
+                </instance_geometry>
+              </node>
+            </node>
+          </node>
+          <node id="cabeza-global" name="cabeza-global" sid="cabeza-global">
+            <matrix sid="matrix">0.9971615 -0.001338445 0.075282164 0.0 0.0 0.99984217 0.01777624 5.0 -0.075294055 -0.01772578 0.997004 0.0 0.0 0.0 0.0 1.0 </matrix>
+            <node id="cabeza-local" name="cabeza-local" sid="cabeza-local">
+              <matrix sid="matrix">1.0 0.0 0.0 0.0 0.0 1.0 0.0 3.5 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 </matrix>
+              <instance_geometry url="#cabeza(1)-Geom">
+                <bind_material>
+                  <technique_common>
+                    <instance_material symbol="cabeza(1)-Material" target="#cabeza(1)-Material">
+                      <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="cabeza(1)-tex-bind"/>
+                    </instance_material>
+                  </technique_common>
+                </bind_material>
+              </instance_geometry>
+            </node>
+          </node>
+          <node id="muslo izquierdo-global" name="muslo izquierdo-global" sid="muslo izquierdo-global">
+            <matrix sid="matrix">1.0 0.0 0.0 2.0 0.0 0.74871624 0.6628907 0.0 0.0 -0.6628907 0.74871624 0.0 0.0 0.0 0.0 1.0 </matrix>
+            <node id="muslo izquierdo-local" name="muslo izquierdo-local" sid="muslo izquierdo-local">
+              <matrix sid="matrix">1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 </matrix>
+              <instance_geometry url="#musloizquierdo(1)-Geom">
+                <bind_material>
+                  <technique_common>
+                    <instance_material symbol="musloizquierdo(1)-Material" target="#musloizquierdo(1)-Material">
+                      <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="musloizquierdo(1)-tex-bind"/>
+                    </instance_material>
+                  </technique_common>
+                </bind_material>
+              </instance_geometry>
+            </node>
+            <node id="pantorrila izquierda-global" name="pantorrila izquierda-global" sid="pantorrila izquierda-global">
+              <matrix sid="matrix">1.0 0.0 0.0 0.0 0.0 0.9930283 -0.11787612 -2.0 0.0 0.11787612 0.9930283 0.0 0.0 0.0 0.0 1.0 </matrix>
+              <node id="pantorrila izquierda-local" name="pantorrila izquierda-local" sid="pantorrila izquierda-local">
+                <matrix sid="matrix">1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 </matrix>
+                <instance_geometry url="#pantorrilaizquierda(1)-Geom">
+                  <bind_material>
+                    <technique_common>
+                      <instance_material symbol="pantorrilaizquierda(1)-Material" target="#pantorrilaizquierda(1)-Material">
+                        <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="pantorrilaizquierda(1)-tex-bind"/>
+                      </instance_material>
+                    </technique_common>
+                  </bind_material>
+                </instance_geometry>
+              </node>
+            </node>
+          </node>
+          <node id="muslo derecho-global" name="muslo derecho-global" sid="muslo derecho-global">
+            <matrix sid="matrix">1.0 0.0 0.0 -2.0 0.0 0.8631581 -0.50493383 0.0 0.0 0.50493383 0.8631581 0.0 0.0 0.0 0.0 1.0 </matrix>
+            <node id="muslo derecho-local" name="muslo derecho-local" sid="muslo derecho-local">
+              <matrix sid="matrix">1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 </matrix>
+              <instance_geometry url="#musloderecho(1)-Geom">
+                <bind_material>
+                  <technique_common>
+                    <instance_material symbol="musloderecho(1)-Material" target="#musloderecho(1)-Material">
+                      <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="musloderecho(1)-tex-bind"/>
+                    </instance_material>
+                  </technique_common>
+                </bind_material>
+              </instance_geometry>
+            </node>
+            <node id="pantorrilla derecha-global" name="pantorrilla derecha-global" sid="pantorrilla derecha-global">
+              <matrix sid="matrix">1.0 0.0 0.0 0.0 0.0 0.7944163 -0.6073736 -2.0 0.0 0.6073736 0.7944163 0.0 0.0 0.0 0.0 1.0 </matrix>
+              <node id="pantorrilla derecha-local" name="pantorrilla derecha-local" sid="pantorrilla derecha-local">
+                <matrix sid="matrix">1.0 0.0 0.0 0.0 0.0 1.0 0.0 -1.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 </matrix>
+                <instance_geometry url="#pantorrilladerecha(1)-Geom">
+                  <bind_material>
+                    <technique_common>
+                      <instance_material symbol="pantorrilladerecha(1)-Material" target="#pantorrilladerecha(1)-Material">
+                        <bind_vertex_input input_semantic="TEXCOORD" input_set="0" semantic="pantorrilladerecha(1)-tex-bind"/>
+                      </instance_material>
+                    </technique_common>
+                  </bind_material>
+                </instance_geometry>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#DefaultScene"/>
+  </scene>
+</COLLADA>
