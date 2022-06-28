@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : emptyBullet
+public class Bullet : HitBox
 {
 
-    
+    public float speed;
     public GameObject  objbullet;
     public ParticleSystem Explosion;
 
@@ -13,8 +13,7 @@ public class Bullet : emptyBullet
 
     public float timer;
     public float maxTimer;
-    private string nameTag1 = "Wall";
-    private string nameTag2 = "Player";
+    public string[] nametags;
     private void Start()
     {
         timer = maxTimer;
@@ -34,15 +33,15 @@ public class Bullet : emptyBullet
 
     private void OnCollisionEnter(Collision objeto)
     {
-        if(objeto.gameObject.tag == nameTag1 && once || objeto.gameObject.tag == nameTag2)
-        {
-            var em = Explosion.emission;
-            var dur = Explosion.duration;
-            em.enabled = true;
-            once= false;
-            Exploto();
-            em.enabled = false;
-        }
+        //if(objeto.gameObject.CompareTag("platano"))
+        //{
+        //    var em = Explosion.emission;
+        //    var dur = Explosion.duration;
+        //    em.enabled = true;
+        //    once= false;
+        //    Exploto();
+        //    em.enabled = false;
+        //}
     }
 
     private void Exploto()

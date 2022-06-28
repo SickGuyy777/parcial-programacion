@@ -28,8 +28,6 @@ public class Player_comp : empty
     public GameObject scoreText;
     public static int score;
 
-    public int pinchosDamage; 
-
     private void Start()
     {
         _movement = new Movement_comp(speed, forceJump, rb, transform, anim, isjump, pies);
@@ -72,10 +70,14 @@ public class Player_comp : empty
 
     }
 
-    public void DamageUI(float value)
+    public void Recivedmg()
     {
-        currentHealth -= value;
-        healthBar.fillAmount -= 0.10f;
         Instantiate(sonidodolor);
+
+        if (currentHealth <= 0)
+        {
+            SceneManager.LoadScene("Perdiste");
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
 }

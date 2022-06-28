@@ -11,10 +11,10 @@ public abstract class empty :MonoBehaviour
     public float currentHealth;
     public Image healthBar;
     public AudioSource sonidodolor;
-
+    public float damage;
     public float timer;
     public float maxTimer;
-    public float curarse = 2;
+
 
     public bool isDead = false;
 
@@ -24,18 +24,10 @@ public abstract class empty :MonoBehaviour
         timer = maxTimer;
     }
 
-    public virtual void DamageForPlayer(float dmg)
+    public virtual void DamageForPlayer()
     {
-        currentHealth -= dmg;
+        currentHealth -= damage;
         healthBar.fillAmount -= 0.10f;
-        Instantiate(sonidodolor);
-
-        if (currentHealth <= 0)
-        {
-            SceneManager.LoadScene("Perdiste");
-            Cursor.lockState = CursorLockMode.None;
-        }
-
     }
 
     public virtual bool Curacion(float curarse)

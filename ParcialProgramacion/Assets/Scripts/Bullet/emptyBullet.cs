@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class emptyBullet : MonoBehaviour
 {
-    public float speed;
+
     private int damage = 2;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.GetComponent<empty>() != null)
         {
-            other.gameObject.GetComponent<empty>().DamageForPlayer(damage);
+            other.gameObject.GetComponent<empty>().DamageForPlayer();
         }
 
         Destroy(this.gameObject);
