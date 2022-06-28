@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.59993523, g: 0.6269482, b: 0.613127, a: 1}
+  m_IndirectSpecularColor: {r: 0.5999358, g: 0.62694937, b: 0.61312795, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14500,6 +14500,7 @@ MonoBehaviour:
   sonido_muerte: {fileID: 137951217926593015, guid: 4c691bbe355bd9c4fb68f7b2c7657e06, type: 3}
   player: {fileID: 825643331}
   speedRot: 3
+  sonidorevivedmg: {fileID: 0}
 --- !u!136 &822144884
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -14583,7 +14584,6 @@ MonoBehaviour:
   timer: 0
   maxTimer: 0
   isDead: 0
-  fuerzadetrampolin: 10
   speed: 3
   forceJump: 4
   rb: {fileID: 825643335}
@@ -14592,7 +14592,6 @@ MonoBehaviour:
   velx: 0
   camera: {fileID: 970877799}
   anim: {fileID: 825643336}
-  sonidotrampolin: {fileID: 4800036971956377060, guid: 3c267ae305b7ab9448fa4063eec3a29e, type: 3}
   isjump: 0
   pies: {fileID: 5200941682902840484, guid: 163b5955d67185e4ead7274f24e26021, type: 3}
   sonidoespada: {fileID: 0}
@@ -16801,6 +16800,7 @@ MonoBehaviour:
   sonido_muerte: {fileID: 137951217926593015, guid: 4c691bbe355bd9c4fb68f7b2c7657e06, type: 3}
   player: {fileID: 825643331}
   speedRot: 3
+  sonidorevivedmg: {fileID: 0}
 --- !u!136 &993042752
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -24776,6 +24776,7 @@ MonoBehaviour:
   sonido_muerte: {fileID: 137951217926593015, guid: 4c691bbe355bd9c4fb68f7b2c7657e06, type: 3}
   player: {fileID: 825643331}
   speedRot: 3
+  sonidorevivedmg: {fileID: 0}
 --- !u!136 &1573538023
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -26467,6 +26468,7 @@ MonoBehaviour:
   sonido_muerte: {fileID: 137951217926593015, guid: 4c691bbe355bd9c4fb68f7b2c7657e06, type: 3}
   player: {fileID: 825643331}
   speedRot: 3
+  sonidorevivedmg: {fileID: 0}
 --- !u!136 &1765460575
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -34888,6 +34890,7 @@ MonoBehaviour:
   sonido_muerte: {fileID: 137951217926593015, guid: 4c691bbe355bd9c4fb68f7b2c7657e06, type: 3}
   player: {fileID: 825643331}
   speedRot: 3
+  sonidorevivedmg: {fileID: 0}
 --- !u!136 &1982857350
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -36459,6 +36462,7 @@ MonoBehaviour:
   sonido_muerte: {fileID: 137951217926593015, guid: 4c691bbe355bd9c4fb68f7b2c7657e06, type: 3}
   player: {fileID: 825643331}
   speedRot: 3
+  sonidorevivedmg: {fileID: 0}
 --- !u!136 &2136915061
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -36664,6 +36668,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1206488111, guid: 5c1b082a63c3cf24f865855db0fd634a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.17
+      objectReference: {fileID: 0}
     - target: {fileID: 2387576411848476549, guid: 5c1b082a63c3cf24f865855db0fd634a, type: 3}
       propertyPath: m_Name
       value: trampolin_vox
