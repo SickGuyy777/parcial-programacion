@@ -36,7 +36,6 @@ public abstract class empty :MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
         }
 
-        //lo copie y pegue en Player_comp
     }
 
     public virtual bool Curacion(float curarse)
