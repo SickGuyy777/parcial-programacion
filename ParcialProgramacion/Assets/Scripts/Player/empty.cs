@@ -10,7 +10,7 @@ public abstract class empty :MonoBehaviour
     public float basehealth = 10;
     public float currentHealth;
     public Image healthBar;
-    public GameObject sonidodolor;
+    public AudioSource sonidodolor;
 
     public float timer;
     public float maxTimer;

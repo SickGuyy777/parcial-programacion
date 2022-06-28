@@ -9,11 +9,15 @@ public class EventManager : MonoBehaviour
     public static event CollisionAction OnCollision;
     // Start is called before the first frame update
     
-    void OnCollisionEnter(Collision other) 
+    void OnTriggerEnter(Collider mytrigger)
     {
-        if (OnCollision != null)
+        if(mytrigger.gameObject.name == "player")
         {
-            OnCollision();
+            if (OnCollision != null)
+            {
+                OnCollision();
+            }
+
         }
     }
 }
