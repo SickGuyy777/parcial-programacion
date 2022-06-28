@@ -11,7 +11,7 @@ public class emptyBullet : MonoBehaviour
     {
         if (other.gameObject.GetComponent<empty>() != null)
         {
-            other.gameObject.GetComponent<empty>().DamageForPlayer();
+            other.gameObject.GetComponent<empty>().DamageForPlayer(damage);
         }
 
         Destroy(this.gameObject);

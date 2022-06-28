@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ver_Y_Seguir_Jugador : empty_Enemy
+public class Ver_Y_Seguir_Jugador : empty
 {
     public Transform jugador;
     public float movespeed;
@@ -17,18 +17,20 @@ public class Ver_Y_Seguir_Jugador : empty_Enemy
     public GameObject bloqueodenivel;
     public GameObject sonido_muerte;
     public GameObject player;
-
+    public float speedRot;
+    public AudioSource sonidorevivedmg;
 
     void Update()
     {
 
         detectoalgo = Physics.CheckSphere(transform.position, detector, layerdeljugador);
         enemigodetectado = Physics.CheckSphere(transform.position, persecucion, layerdeljugador);
-        if (detectoalgo == true && player.CompareTag("Player"))
+        if (detectoalgo == true && player.CompareTag("Player") && currentHealth>0)
         {
-           
-            transform.LookAt(jugador);
 
+            var dir = jugador.position - transform.position;
+            var lerpDir = Vector3.Lerp(transform.forward, dir, Time.deltaTime * speedRot);
+            transform.forward = lerpDir;
             if (detectoalgo == true && enemigodetectado == true)
             {
                 
@@ -53,21 +55,27 @@ public class Ver_Y_Seguir_Jugador : empty_Enemy
                 animaciones.SetBool("corro", false);
             }
         }
+        else
+        {
+            Dead();
+        }
 
         if(enemigos_derrotados==MaxEnemigos_derrotados)
         {
             Destroy(bloqueodenivel);
         }
-        Dead();
     }
 
     public void Dead()
     {
         if(currentHealth <= 0)
         {
-            animaciones.SetBool("Muerto", true);
-            Instantiate(sonido_muerte);
-            enemigos_derrotados++;
+                speedRot = 0;
+
+                animaciones.SetBool("Muerto", true);
+                
+                enemigos_derrotados++;
+
         }
     }
 

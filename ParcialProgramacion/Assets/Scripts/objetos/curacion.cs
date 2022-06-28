@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class curacion : MonoBehaviour
 {
-    public int potenciaDeCuracion;
-    private void OnTriggerEnter(Collider other)
+    public int potenciadecuracion;
+    public void OnTriggerEnter(Collider collision)
     {
-        
-        if (other.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
-            empty hithealth = other.GetComponent<empty>(); // cambiar las partes donde dice empty en este renglon y y ver que hay en el scrpt de player de herencia para ver como lo cura y pasarlo a la composicion del player original 
-            if(hithealth !=null)
+
+            empty hithealth = collision.GetComponent<empty>();
+            if (hithealth != null)
             {
-               if(hithealth.Curacion(potenciaDeCuracion) == true)
-               {
+
+                if (hithealth.restaurarsalud(potenciadecuracion) == true)
+                {
                     Destroy(this.gameObject);
-               }
+                }
             }
-            
         }
     }
 }

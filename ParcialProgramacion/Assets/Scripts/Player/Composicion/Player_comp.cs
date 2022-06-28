@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Player_comp : empty
 {
     //composicion hecha por Lautaro Romero
-    public int fuerzadetrampolin;
+
     public float speed;
     public float forceJump;
     public Rigidbody rb;
@@ -18,7 +18,7 @@ public class Player_comp : empty
     public Animator anim;
     public Movement_comp _movement;
     public Controles_comp _control;
-    public GameObject sonidotrampolin;
+
     public bool isjump;
     public AudioSource pies;
 
@@ -57,17 +57,6 @@ public class Player_comp : empty
     private void OnTriggerEnter(Collider other)
     {
         other.GetComponent<Boton>()?.Touch();
-    }
-
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.CompareTag("Trampolin"))
-        {
-            rb.velocity = Vector2.up * fuerzadetrampolin;
-            Instantiate(sonidotrampolin);
-        }
-
-
     }
 
     public void Recivedmg()

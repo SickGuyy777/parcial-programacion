@@ -4,8 +4,5 @@ using UnityEngine;
 
 public class empty_Enemy : empty
 {
-    public override void DamageForPlayer()
-    {
-        base.DamageForPlayer();
-    }
+
 }

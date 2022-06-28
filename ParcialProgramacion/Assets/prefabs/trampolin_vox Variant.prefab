@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1206488110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1206488111}
+  - component: {fileID: 1206488112}
+  m_Layer: 0
+  m_Name: boxcol
+  m_TagString: Trampolin
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1206488111
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206488110}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3056168109907172671}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1206488112
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206488110}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.110338, y: 0.43381244, z: 2.7752213}
+  m_Center: {x: -1.9610109, y: 2.3649971, z: -2.061586}
+--- !u!1001 &3306497311828982484
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: a43e40a239878f94fbadf5a2d07b6820, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a43e40a239878f94fbadf5a2d07b6820, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.51197
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a43e40a239878f94fbadf5a2d07b6820, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.51197
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a43e40a239878f94fbadf5a2d07b6820, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.51197
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a43e40a239878f94fbadf5a2d07b6820, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -102.9
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a43e40a239878f94fbadf5a2d07b6820, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a43e40a239878f94fbadf5a2d07b6820, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.1600008
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a43e40a239878f94fbadf5a2d07b6820, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a43e40a239878f94fbadf5a2d07b6820, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a43e40a239878f94fbadf5a2d07b6820, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a43e40a239878f94fbadf5a2d07b6820, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a43e40a239878f94fbadf5a2d07b6820, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a43e40a239878f94fbadf5a2d07b6820, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a43e40a239878f94fbadf5a2d07b6820, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a43e40a239878f94fbadf5a2d07b6820, type: 3}
+      propertyPath: m_Name
+      value: trampolin_vox
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a43e40a239878f94fbadf5a2d07b6820, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a43e40a239878f94fbadf5a2d07b6820, type: 3}
+      propertyPath: m_TagString
+      value: Trampolin
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a43e40a239878f94fbadf5a2d07b6820, type: 3}
+--- !u!1 &2387576411848476549 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a43e40a239878f94fbadf5a2d07b6820, type: 3}
+  m_PrefabInstance: {fileID: 3306497311828982484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3056168109907172671 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a43e40a239878f94fbadf5a2d07b6820, type: 3}
+  m_PrefabInstance: {fileID: 3306497311828982484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1111212113321216405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2387576411848476549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b263cd0f8fb3a847979136e01888cd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuerzadetrampolin: 10
+  sonidotrampolin: {fileID: 4800036971956377060, guid: 3c267ae305b7ab9448fa4063eec3a29e, type: 3}

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5059298230476745666}
   - component: {fileID: 1583151668880740994}
+  - component: {fileID: -3467846279871065862}
   m_Layer: 6
   m_Name: objetocurativo
   m_TagString: Untagged
@@ -44,7 +45,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059ba37cb66f986458c9de5e06c7e2a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  potenciaDeCuracion: 2
+  potenciadecuracion: 2
+--- !u!65 &-3467846279871065862
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5364165372894294360}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.11557636, y: 0.20847449, z: 0.50122446}
+  m_Center: {x: 0.0011078207, y: 0.031194475, z: 0.022183439}
 --- !u!1001 &1384679874715274144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -136,4 +150,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059ba37cb66f986458c9de5e06c7e2a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  potenciaDeCuracion: 2
+  potenciadecuracion: 0

@@ -5,13 +5,15 @@ using UnityEngine;
 public class HitBox : MonoBehaviour
 {
 
-    public empty emptyscrpt;
+    public float damage;
     //codigo base creado por Lautaro Romero y modificado por Nahuel Stagno, Benja Tevez
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<empty>() != null)
-        {
-            emptyscrpt.DamageForPlayer();
-        }
+            empty hithalth = other.GetComponent<empty>();
+            if(hithalth!=null)
+            {
+                hithalth.DamageForPlayer(damage);
+            }
+        
     }
 }
