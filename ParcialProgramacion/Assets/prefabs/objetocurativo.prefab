@@ -45,7 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 059ba37cb66f986458c9de5e06c7e2a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  potenciadecuracion: 2
+  potenciadecuracion: 5
+  sonidoposion: {fileID: 6103524289445108761, guid: 37754f7fd64a17c4cadd651b7d617259, type: 3}
 --- !u!65 &-3467846279871065862
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -151,3 +152,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   potenciadecuracion: 0
+  sonidoposion: {fileID: 0}

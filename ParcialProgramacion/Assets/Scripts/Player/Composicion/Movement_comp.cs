@@ -11,11 +11,11 @@ public class Movement_comp
     public Transform _transform;
     private Animator _anim;
     private bool isjump;
-    public AudioSource pies;
+
 
    
 
-    public Movement_comp(float speed, float fj, Rigidbody rb, Transform t, Animator anim, bool estoySaltando, AudioSource sonidoPies)
+    public Movement_comp(float speed, float fj, Rigidbody rb, Transform t, Animator anim, bool estoySaltando)
     {
         _speed = speed;
         _forceJump = fj;
@@ -23,7 +23,7 @@ public class Movement_comp
         _transform = t;
         _anim = anim;
         isjump = estoySaltando;
-        pies = sonidoPies;
+ 
     }
 
     public void Move(float vertical, float horizontal)
@@ -57,10 +57,7 @@ public class Movement_comp
         _anim.SetBool("salto", false);
     }
 
-    public void SonidoPies()
-    {
-        pies.Play();
-    }
+
 
     public bool True()
     {

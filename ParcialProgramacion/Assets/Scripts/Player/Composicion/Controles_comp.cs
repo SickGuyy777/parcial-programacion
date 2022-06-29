@@ -13,9 +13,7 @@ public class Controles_comp
     public float limitrotatr;
     public float rotateXcam;
 
-    public AudioSource sonidoespada;
-
-    public Controles_comp(Movement_comp m, int salto, float vel, float velx, Transform camera, Animator anim, AudioSource sonidopies )
+    public Controles_comp(Movement_comp m, int salto, float vel, float velx, Transform camera, Animator anim )
     {
         _movement = m;
         _salto = salto;

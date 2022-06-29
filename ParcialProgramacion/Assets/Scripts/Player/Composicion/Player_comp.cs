@@ -20,18 +20,16 @@ public class Player_comp : empty
     public Controles_comp _control;
 
     public bool isjump;
-
-    public AudioSource pies;
-    public AudioSource sonidoespada;
-
+    public AudioClip jump;
+    public AudioClip pies;
     [Space]
     public GameObject scoreText;
     public static int score;
 
     private void Start()
     {
-        _movement = new Movement_comp(speed, forceJump, rb, transform, anim, isjump, pies);
-        _control = new Controles_comp(_movement, salto, vel,velx, camera,anim, sonidoespada);
+        _movement = new Movement_comp(speed, forceJump, rb, transform, anim, isjump);
+        _control = new Controles_comp(_movement, salto, vel,velx, camera,anim);
         
     }
 
@@ -69,10 +67,13 @@ public class Player_comp : empty
         }
     }
 
-    public void sounds()
+    public void soundjump()
     {
-
+        AudioSource.PlayClipAtPoint(jump, transform.position);
     }
 
-
+    public void soundpies()
+    {
+        AudioSource.PlayClipAtPoint(pies, transform.position);
+    }
 }

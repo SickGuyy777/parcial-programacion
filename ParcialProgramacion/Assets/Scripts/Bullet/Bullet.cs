@@ -13,7 +13,7 @@ public class Bullet : HitBox
 
     public float timer;
     public float maxTimer;
-    public string[] nametags;
+    public string[] nametags; //a futuro
     private void Start()
     {
         timer = maxTimer;
@@ -33,15 +33,15 @@ public class Bullet : HitBox
 
     private void OnCollisionEnter(Collision objeto)
     {
-        //if(objeto.gameObject.CompareTag("platano"))
-        //{
-        //    var em = Explosion.emission;
-        //    var dur = Explosion.duration;
-        //    em.enabled = true;
-        //    once= false;
-        //    Exploto();
-        //    em.enabled = false;
-        //}
+        if (objeto.gameObject.CompareTag("Wall") && objeto.gameObject.CompareTag("Player"))
+        {
+            var em = Explosion.emission;
+            var dur = Explosion.duration;
+            em.enabled = true;
+            once = false;
+            Exploto();
+            em.enabled = false;
+        }
     }
 
     private void Exploto()
