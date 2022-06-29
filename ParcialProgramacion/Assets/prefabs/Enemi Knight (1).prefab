@@ -79,10 +79,10 @@ MonoBehaviour:
   basehealth: 4
   currentHealth: 0
   healthBar: {fileID: 0}
-  sonidodolor: {fileID: 0}
   timer: 0
   maxTimer: 0
   isDead: 0
+  sonidodolor: {fileID: 0}
   jugador: {fileID: 0}
   movespeed: 1.5
   detector: 3.69
@@ -99,6 +99,7 @@ MonoBehaviour:
   sonido_muerte: {fileID: 137951217926593015, guid: 4c691bbe355bd9c4fb68f7b2c7657e06, type: 3}
   player: {fileID: 0}
   speedRot: 3
+  sonidorevivedmg: {fileID: 0}
 --- !u!1001 &1264112455139410683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -130,6 +131,14 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.055853818
       objectReference: {fileID: 0}
+    - target: {fileID: 942418064, guid: 9e7886e38f0c82942a9c84e9a4e1849c, type: 3}
+      propertyPath: sonidoDolor
+      value: 
+      objectReference: {fileID: 7036148378600076235, guid: 36cfb9258ed27d14d870958e9669939c, type: 3}
+    - target: {fileID: 942418064, guid: 9e7886e38f0c82942a9c84e9a4e1849c, type: 3}
+      propertyPath: sonidoEspada
+      value: 
+      objectReference: {fileID: 8196463048153412428, guid: 66491c27a19e16b4a87ecf4a819530e0, type: 3}
     - target: {fileID: 1293280186, guid: 9e7886e38f0c82942a9c84e9a4e1849c, type: 3}
       propertyPath: isDead
       value: 0

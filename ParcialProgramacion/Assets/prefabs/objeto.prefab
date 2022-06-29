@@ -49,7 +49,7 @@ MonoBehaviour:
   sonidoEspada: {fileID: 0}
   sonidoDolor: {fileID: 7036148378600076235, guid: 36cfb9258ed27d14d870958e9669939c, type: 3}
   damage: 2
-  speed: 15
+  speed: 10
   objbullet: {fileID: 7705363704120006538}
   Explosion: {fileID: 8199542935267704264, guid: 2af73d8f17f2db741ba91ae631bbf743, type: 3}
   once: 1

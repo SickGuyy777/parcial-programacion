@@ -33,8 +33,9 @@ public class Bullet : HitBox
 
     private void OnCollisionEnter(Collision objeto)
     {
-        if (objeto.gameObject.CompareTag("Wall") && objeto.gameObject.CompareTag("Player"))
+        if (objeto.gameObject.CompareTag("Wall") || objeto.gameObject.CompareTag("Player"))
         {
+
             var em = Explosion.emission;
             var dur = Explosion.duration;
             em.enabled = true;

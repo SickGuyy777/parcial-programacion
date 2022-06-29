@@ -13,9 +13,10 @@ public class HitBox : MonoBehaviour
             empty hithalth = other.GetComponent<empty>();
             if(hithalth!=null)
             {
+
+                hithalth.DamageForPlayer(damage);
                 Instantiate(sonidoEspada);
                 Instantiate(sonidoDolor);
-                hithalth.DamageForPlayer(damage);               
             }
         
     }
