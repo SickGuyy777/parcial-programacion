@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8307746995434141177}
   - component: {fileID: 384813462117528912}
+  - component: {fileID: 606103582339500248}
   m_Layer: 6
   m_Name: efecto de boton
   m_TagString: Untagged
@@ -46,6 +47,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sonido: {fileID: 6836546261559060456}
   buttom: {fileID: 0}
+--- !u!114 &606103582339500248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5834678369091316049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5713d315433d5804881423847326915d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoDeVida: 0.6
 --- !u!1 &6182523980790811204
 GameObject:
   m_ObjectHideFlags: 0

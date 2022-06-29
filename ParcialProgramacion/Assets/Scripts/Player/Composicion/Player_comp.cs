@@ -20,8 +20,8 @@ public class Player_comp : empty
     public Controles_comp _control;
 
     public bool isjump;
-    public AudioSource pies;
 
+    public AudioSource pies;
     public AudioSource sonidoespada;
 
     [Space]
@@ -60,8 +60,7 @@ public class Player_comp : empty
     }
 
     public void Recivedmg()
-    {
-        Instantiate(sonidodolor);
+    {       
 
         if (currentHealth <= 0)
         {
@@ -69,4 +68,11 @@ public class Player_comp : empty
             Cursor.lockState = CursorLockMode.None;
         }
     }
+
+    public void sounds()
+    {
+
+    }
+
+
 }

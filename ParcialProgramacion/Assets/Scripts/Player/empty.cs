@@ -9,11 +9,13 @@ public class empty :MonoBehaviour
     //Codigo de empty creado por Benja Tevez, Lautaro Romero y Nahuel Stagno
     public float basehealth = 10;
     public float currentHealth;
-    public Image healthBar;
-    public AudioSource sonidodolor;
+    public Image healthBar;   
     public float timer;
     public float maxTimer;
     public bool isDead = false;
+
+
+    public GameObject sonidodolor;
 
     public virtual void Awake()
     {

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2970856860713496608}
   - component: {fileID: 4911243857005723735}
+  - component: {fileID: -6471073858839981223}
   m_Layer: 6
   m_Name: sonidomuerteenemy
   m_TagString: Untagged
@@ -127,3 +128,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-6471073858839981223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137951217926593015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5713d315433d5804881423847326915d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoDeVida: 3

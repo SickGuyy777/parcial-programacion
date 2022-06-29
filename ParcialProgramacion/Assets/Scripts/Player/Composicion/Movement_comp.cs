@@ -13,6 +13,8 @@ public class Movement_comp
     private bool isjump;
     public AudioSource pies;
 
+   
+
     public Movement_comp(float speed, float fj, Rigidbody rb, Transform t, Animator anim, bool estoySaltando, AudioSource sonidoPies)
     {
         _speed = speed;
@@ -38,6 +40,7 @@ public class Movement_comp
     {
         if (isjump)
         {
+            
             _rb.AddForce(Vector3.up * _forceJump, ForceMode.Impulse);
             _anim.SetBool("salto", true);
         }

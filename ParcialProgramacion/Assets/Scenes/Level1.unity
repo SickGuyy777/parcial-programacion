@@ -662,6 +662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoEspada: {fileID: 0}
   damage: 1
 --- !u!1 &48105069
 GameObject:
@@ -1189,6 +1190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoEspada: {fileID: 0}
   damage: 1
 --- !u!1 &117091592
 GameObject:
@@ -1791,6 +1793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoEspada: {fileID: 0}
   damage: 1
 --- !u!1001 &182782199
 PrefabInstance:
@@ -2456,6 +2459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoEspada: {fileID: 0}
   damage: 1
 --- !u!65 &197309594
 BoxCollider:
@@ -3429,6 +3433,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2136915063}
     m_Modifications:
+    - target: {fileID: 942418064, guid: 9e7886e38f0c82942a9c84e9a4e1849c, type: 3}
+      propertyPath: sonidoEspada
+      value: 
+      objectReference: {fileID: 8196463048153412428, guid: 66491c27a19e16b4a87ecf4a819530e0, type: 3}
     - target: {fileID: 1293280186, guid: 9e7886e38f0c82942a9c84e9a4e1849c, type: 3}
       propertyPath: isDead
       value: 0
@@ -4084,6 +4092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14aeb6dd774225b428cab644187e334c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8841276650890323244, guid: 03a3f12a9961a1e43b8d83fa7dc8ef2c, type: 3}
 --- !u!95 &328306500
 Animator:
   serializedVersion: 3
@@ -5474,6 +5483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14aeb6dd774225b428cab644187e334c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8841276650890323244, guid: 03a3f12a9961a1e43b8d83fa7dc8ef2c, type: 3}
 --- !u!95 &479439623
 Animator:
   serializedVersion: 3
@@ -5947,6 +5957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoEspada: {fileID: 0}
   damage: 1
 --- !u!1001 &537736665
 PrefabInstance:
@@ -6305,6 +6316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoEspada: {fileID: 0}
   damage: 1
 --- !u!1001 &547036880
 PrefabInstance:
@@ -11557,6 +11569,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 993042754}
     m_Modifications:
+    - target: {fileID: 942418064, guid: 9e7886e38f0c82942a9c84e9a4e1849c, type: 3}
+      propertyPath: sonidoEspada
+      value: 
+      objectReference: {fileID: 8196463048153412428, guid: 66491c27a19e16b4a87ecf4a819530e0, type: 3}
     - target: {fileID: 1293280186, guid: 9e7886e38f0c82942a9c84e9a4e1849c, type: 3}
       propertyPath: isDead
       value: 0
@@ -11964,6 +11980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoEspada: {fileID: 0}
   damage: 1
 --- !u!1 &601992050
 GameObject:
@@ -12940,6 +12957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoEspada: {fileID: 0}
   damage: 1
 --- !u!82 &671240810 stripped
 AudioSource:
@@ -13080,6 +13098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14aeb6dd774225b428cab644187e334c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8841276650890323244, guid: 03a3f12a9961a1e43b8d83fa7dc8ef2c, type: 3}
 --- !u!95 &702277296
 Animator:
   serializedVersion: 3
@@ -13236,6 +13255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoEspada: {fileID: 0}
   damage: 1
 --- !u!1001 &719144518
 PrefabInstance:
@@ -13472,6 +13492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14aeb6dd774225b428cab644187e334c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8841276650890323244, guid: 03a3f12a9961a1e43b8d83fa7dc8ef2c, type: 3}
 --- !u!95 &725092254
 Animator:
   serializedVersion: 3
@@ -13635,6 +13656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoEspada: {fileID: 0}
   damage: 1
 --- !u!1 &754164241
 GameObject:
@@ -14268,6 +14290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoEspada: {fileID: 0}
   damage: 1
 --- !u!1001 &796641796
 PrefabInstance:
@@ -15410,6 +15433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14aeb6dd774225b428cab644187e334c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8841276650890323244, guid: 03a3f12a9961a1e43b8d83fa7dc8ef2c, type: 3}
 --- !u!65 &901025744
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16010,6 +16034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoEspada: {fileID: 0}
   damage: 1
 --- !u!65 &945755743
 BoxCollider:
@@ -17766,6 +17791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoEspada: {fileID: 0}
   damage: 1
 --- !u!1001 &1064207403
 PrefabInstance:
@@ -18264,6 +18290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoEspada: {fileID: 0}
   damage: 1
 --- !u!1001 &1109089155
 PrefabInstance:
@@ -19426,6 +19453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14aeb6dd774225b428cab644187e334c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8841276650890323244, guid: 03a3f12a9961a1e43b8d83fa7dc8ef2c, type: 3}
 --- !u!95 &1191780922
 Animator:
   serializedVersion: 3
@@ -19901,7 +19929,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6621047111321693700, guid: 49e6402196bcbfb4583490a5c7c1ca54, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.69
+      value: 10.86
       objectReference: {fileID: 0}
     - target: {fileID: 6621047111321693700, guid: 49e6402196bcbfb4583490a5c7c1ca54, type: 3}
       propertyPath: m_LocalPosition.y
@@ -19909,7 +19937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6621047111321693700, guid: 49e6402196bcbfb4583490a5c7c1ca54, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.09
+      value: 2.76
       objectReference: {fileID: 0}
     - target: {fileID: 6621047111321693700, guid: 49e6402196bcbfb4583490a5c7c1ca54, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20825,6 +20853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoEspada: {fileID: 4065100923733670453, guid: 36dbba239617d7642a71c84541519a50, type: 3}
   damage: 2
 --- !u!1 &1297813650 stripped
 GameObject:
@@ -21741,6 +21770,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1982857347}
     m_Modifications:
+    - target: {fileID: 942418064, guid: 9e7886e38f0c82942a9c84e9a4e1849c, type: 3}
+      propertyPath: sonidoEspada
+      value: 
+      objectReference: {fileID: 8196463048153412428, guid: 66491c27a19e16b4a87ecf4a819530e0, type: 3}
     - target: {fileID: 1293280186, guid: 9e7886e38f0c82942a9c84e9a4e1849c, type: 3}
       propertyPath: isDead
       value: 0
@@ -22417,6 +22450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoEspada: {fileID: 0}
   damage: 1
 --- !u!1001 &1452222359
 PrefabInstance:
@@ -23061,6 +23095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14aeb6dd774225b428cab644187e334c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8841276650890323244, guid: 03a3f12a9961a1e43b8d83fa7dc8ef2c, type: 3}
 --- !u!95 &1504455573
 Animator:
   serializedVersion: 3
@@ -23504,6 +23539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoEspada: {fileID: 0}
   damage: 1
 --- !u!1001 &1520657367
 PrefabInstance:
@@ -23512,6 +23548,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1573538025}
     m_Modifications:
+    - target: {fileID: 942418064, guid: 9e7886e38f0c82942a9c84e9a4e1849c, type: 3}
+      propertyPath: sonidoEspada
+      value: 
+      objectReference: {fileID: 8196463048153412428, guid: 66491c27a19e16b4a87ecf4a819530e0, type: 3}
     - target: {fileID: 1293280186, guid: 9e7886e38f0c82942a9c84e9a4e1849c, type: 3}
       propertyPath: isDead
       value: 0
@@ -23890,6 +23930,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1765460577}
     m_Modifications:
+    - target: {fileID: 942418064, guid: 9e7886e38f0c82942a9c84e9a4e1849c, type: 3}
+      propertyPath: sonidoEspada
+      value: 
+      objectReference: {fileID: 8196463048153412428, guid: 66491c27a19e16b4a87ecf4a819530e0, type: 3}
     - target: {fileID: 1293280186, guid: 9e7886e38f0c82942a9c84e9a4e1849c, type: 3}
       propertyPath: isDead
       value: 0
@@ -25840,6 +25884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoEspada: {fileID: 0}
   damage: 1
 --- !u!1001 &1697141024
 PrefabInstance:
@@ -26871,6 +26916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoEspada: {fileID: 0}
   damage: 1
 --- !u!1001 &1788745011
 PrefabInstance:
@@ -27113,6 +27159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoEspada: {fileID: 0}
   damage: 1
 --- !u!65 &1795665549
 BoxCollider:
@@ -27299,6 +27346,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 822144886}
     m_Modifications:
+    - target: {fileID: 942418064, guid: 9e7886e38f0c82942a9c84e9a4e1849c, type: 3}
+      propertyPath: sonidoEspada
+      value: 
+      objectReference: {fileID: 8196463048153412428, guid: 66491c27a19e16b4a87ecf4a819530e0, type: 3}
     - target: {fileID: 1293280186, guid: 9e7886e38f0c82942a9c84e9a4e1849c, type: 3}
       propertyPath: isDead
       value: 0
@@ -29277,6 +29328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14aeb6dd774225b428cab644187e334c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8841276650890323244, guid: 03a3f12a9961a1e43b8d83fa7dc8ef2c, type: 3}
 --- !u!95 &1943085106
 Animator:
   serializedVersion: 3
@@ -29331,6 +29383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoEspada: {fileID: 0}
   damage: 1
 --- !u!1001 &1954440138
 PrefabInstance:
@@ -35624,6 +35677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14aeb6dd774225b428cab644187e334c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonidoMoneda: {fileID: 8841276650890323244, guid: 03a3f12a9961a1e43b8d83fa7dc8ef2c, type: 3}
 --- !u!95 &2042614821
 Animator:
   serializedVersion: 3

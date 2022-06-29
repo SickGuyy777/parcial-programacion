@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7259826690179749206}
   - component: {fileID: 9118945195877326305}
+  - component: {fileID: 7204762229231281334}
   m_Layer: 6
   m_Name: SonidogolpeEnemy
   m_TagString: Untagged
@@ -127,3 +128,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7204762229231281334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4065100923733670453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5713d315433d5804881423847326915d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoDeVida: 1.5
