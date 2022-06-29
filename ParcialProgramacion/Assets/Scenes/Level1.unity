@@ -36609,7 +36609,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1583151668880740994, guid: d55766111b376c348a694f9772daa3bf, type: 3}
       propertyPath: potenciadecuracion
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5059298230476745666, guid: d55766111b376c348a694f9772daa3bf, type: 3}
       propertyPath: m_RootOrder
