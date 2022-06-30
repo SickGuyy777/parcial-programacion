@@ -18,7 +18,6 @@ public class Player_comp : empty
     public Animator anim;
     public Movement_comp _movement;
     public Controles_comp _control;
-
     public bool isjump;
     public AudioClip jump;
     public AudioClip pies;
@@ -30,7 +29,6 @@ public class Player_comp : empty
     {
         _movement = new Movement_comp(speed, forceJump, rb, transform, anim, isjump);
         _control = new Controles_comp(_movement, salto, vel,velx, camera,anim);
-        
     }
 
     private void Update()
