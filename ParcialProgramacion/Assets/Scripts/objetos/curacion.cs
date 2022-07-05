@@ -6,6 +6,7 @@ public class curacion : MonoBehaviour
 {
     public int potenciadecuracion;
     public GameObject sonidoposion;
+    public GameObject efecto;
     public void OnTriggerEnter(Collider collision)
     {
         if (collision.CompareTag("Player"))
@@ -15,6 +16,7 @@ public class curacion : MonoBehaviour
             if (hithealth != null)
             {
                 Instantiate(sonidoposion);
+                Instantiate(efecto, transform.position, transform.rotation);
                 if (hithealth.restaurarsalud(potenciadecuracion) == true)
                 {
                     Destroy(this.gameObject);
