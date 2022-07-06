@@ -41,6 +41,7 @@ public class Player_comp : empty
         {
             timer -= 1 * Time.deltaTime;
             anim.SetBool("Muerto", true);
+            
             if(timer<=0)
             {
                 SceneManager.LoadScene("Perdiste");

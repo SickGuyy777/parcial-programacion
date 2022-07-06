@@ -13015,7 +13015,7 @@ MonoBehaviour:
   currentHealth: 0
   healthBar: {fileID: 399016714}
   timer: 0
-  maxTimer: 0
+  maxTimer: 10
   isDead: 0
   sonidodolor: {fileID: 7036148378600076235, guid: 36cfb9258ed27d14d870958e9669939c, type: 3}
   speed: 3
