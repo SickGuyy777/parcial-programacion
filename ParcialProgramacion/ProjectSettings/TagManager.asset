@@ -9,6 +9,7 @@ TagManager:
   - Curacion
   - Wall
   - Pinchos
+  - Check
   layers:
   - Default
   - TransparentFX

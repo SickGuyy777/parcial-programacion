@@ -44,10 +44,9 @@ public class Controles_comp
                 animacion.SetBool("TocoPiso", true);
             }
 
-            if(Input.GetKeyDown(KeyCode.E))
+            if(Input.GetKeyDown(KeyCode.Mouse0))
             {
                _movement.attack();
-               
             }
             else
             {

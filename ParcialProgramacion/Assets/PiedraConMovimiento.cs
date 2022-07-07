@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PiedraConMovimiento : MonoBehaviour
+public class PiedraConMovimiento : HitBox
 {
     //trabajo echo por nahuel
     public GameObject PiedraMovimiento;
@@ -48,15 +48,6 @@ public class PiedraConMovimiento : MonoBehaviour
                 MoverHacia = endPoint.position;
                 timer = maxTimer;
             }        
-        }
-    }
-
-    //tabajo echo por nahuel y lautaro
-    public void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.tag == player)
-        {
-            SceneManager.LoadScene("Perdiste");
         }
     }
 }
