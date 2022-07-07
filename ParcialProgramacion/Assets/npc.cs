@@ -14,12 +14,14 @@ public class npc : MonoBehaviour
     public GameObject player;
     public float speedRot;
     public GameObject exclamacion;
-    public bool quest=false;
-    public bool haveobjets = false;
+    public bool quest, nextext=false;
+
+
 
     public void Start()
     {
-
+       
+        quest = false;
     }
 
     void Update()
@@ -31,15 +33,26 @@ public class npc : MonoBehaviour
             var dir = jugador.position - transform.position;
             var lerpDir = Vector3.Lerp(transform.forward, dir, Time.deltaTime * speedRot);
             transform.forward = lerpDir;
-            exclamacion.SetActive(true);
-            UIanimator.SetBool("see", true);
+            if(quest==false)
+            {
+                exclamacion.SetActive(true);
+                UIanimator.SetBool("see", true);
+                
+                
+            }
+            else
+            {
+                
+                exclamacion.SetActive(false);
+                UIanimator.SetBool("see", false);
+            }
 
         }
         else
         {
+            
             exclamacion.SetActive(false);
             UIanimator.SetBool("see", false);
-
         }
     }
 

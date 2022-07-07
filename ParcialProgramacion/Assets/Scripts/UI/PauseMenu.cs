@@ -7,8 +7,10 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenu;
     public static bool isPaused;
     public npc npc;
-    public GameObject text1, text2, text3, text4;
-    private int pass=0;
+    public GameObject text1;
+    public GameObject text2;
+    public GameObject text3;
+    public GameObject text4;
     private void Start()
     {
         pauseMenu.SetActive(false);
@@ -33,8 +35,6 @@ public class PauseMenu : MonoBehaviour
                 PauseGame();
             }
         }
-
-        NPCchat();
 
     }
 
@@ -65,49 +65,40 @@ public class PauseMenu : MonoBehaviour
 
     public void NPCchat()
     {
-        
-        if (pass==0)
-        {
-            text1.SetActive(true);
-        }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            pass++;
-            if(pass==1)
+        if(npc.UIanimator.GetBool("see"))
+            if(Input.GetKeyDown(KeyCode.E) && npc.quest==false)
             {
-                text2.SetActive(true);
-                text1.SetActive(false);
-            }
-
-            if (Input.GetKeyDown(KeyCode.R))//por si dice que no
-            {
-                Debug.Log("dijo que no");
-                pass++;
-                if(pass==2)
+                text1.gameObject.SetActive(false);
+                text2.gameObject.SetActive(true);
+                if (Input.GetKeyDown(KeyCode.R) && npc.quest ==false)//por si dice que no
                 {
-                    text3.SetActive(true);
-                    text2.SetActive(false);
-                }
+                    Debug.Log("dijo que no");
+                    
 
+                    text3.gameObject.SetActive(true);
+                    text2.gameObject.SetActive(false);
                     if (Input.GetKeyDown(KeyCode.E))
                     {
+                     
+                    }
+                }
+
+                if (Input.GetKeyDown(KeyCode.Q) && npc.quest == false)// por si dice que si
+                {
+                    Debug.Log("dijo que si");
+                    text4.SetActive(true);
+                    npc.quest = true;
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        //npc.UIanimator.SetBool("see", false);
                         
                     }
-            }
-            else
-            if (Input.GetKeyDown(KeyCode.Q))// por si dice que si
-            {
-                Debug.Log("dijo que si");
-                text4.SetActive(true);
-                
-               if (Input.GetKeyDown(KeyCode.E))
-               {
-                npc.UIanimator.SetBool("see", false);
-                npc.quest = true;
-               }
 
+                }
             }
-        }
+
+
+        
         
 
     }
