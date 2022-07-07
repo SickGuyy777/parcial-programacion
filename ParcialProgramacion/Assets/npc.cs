@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public class npc : MonoBehaviour
 {
@@ -14,14 +14,12 @@ public class npc : MonoBehaviour
     public GameObject player;
     public float speedRot;
     public GameObject exclamacion;
-    public bool questacept=false;
-    public GameObject text1, text2, text3, text4;
+    public bool quest=false;
+    public bool haveobjets = false;
+
     public void Start()
     {
-        text1.SetActive(false);
-        text2.SetActive(false);
-        text3.SetActive(false);
-        text4.SetActive(false);
+
     }
 
     void Update()
@@ -33,46 +31,15 @@ public class npc : MonoBehaviour
             var dir = jugador.position - transform.position;
             var lerpDir = Vector3.Lerp(transform.forward, dir, Time.deltaTime * speedRot);
             transform.forward = lerpDir;
-            if (questacept == false)
-            {
-                exclamacion.SetActive(true);
-                UIanimator.SetBool("see", true);
-                text1.SetActive(true);
-                if(Input.GetKeyDown(KeyCode.E))
-                {
-                    text2.SetActive(true);
-                    text1.SetActive(false);
-                    
-                    if(Input.GetKeyDown(KeyCode.R))
-                    {
-                        text2.SetActive(false);
-                        text3.SetActive(true);
-                        
-                        if(Input.GetKeyDown(KeyCode.E))
-                        {
-                            UIanimator.SetBool("see", false);
-                        } 
-                    }
-                    else
-                    if(Input.GetKeyDown(KeyCode.Q))
-                    {
-                        text4.SetActive(true);
-                        exclamacion.SetActive(false);
-                        if(Input.GetKeyDown(KeyCode.E))
-                        {
-                            UIanimator.SetBool("see", false);
-                            questacept = true;
-                        }
-                        
-                    }
-                }
-            }
+            exclamacion.SetActive(true);
+            UIanimator.SetBool("see", true);
 
         }
         else
         {
             exclamacion.SetActive(false);
             UIanimator.SetBool("see", false);
+
         }
     }
 

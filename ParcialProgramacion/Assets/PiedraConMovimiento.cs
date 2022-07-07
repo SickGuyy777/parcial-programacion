@@ -15,7 +15,6 @@ public class PiedraConMovimiento : HitBox
     public float maxTimer;
 
     public float velocidad;
-    private string player = "Player";
     private Vector3 MoverHacia;
     
     //donde se posiciona en un principio el objeto 
