@@ -145,6 +145,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 9d8312509dcd748458da1726c73bca9e, type: 2}
     m_RemovedComponents:
     - {fileID: 1264112456758038146, guid: ea40a1c8d47d096468a1667984127877, type: 3}
+    - {fileID: 1264112456758038145, guid: ea40a1c8d47d096468a1667984127877, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ea40a1c8d47d096468a1667984127877, type: 3}
 --- !u!1 &8622049950188587728 stripped
 GameObject:
@@ -180,9 +181,15 @@ MonoBehaviour:
     m_Bits: 8
   detectoalgo: 0
   animaciones: {fileID: 5587541143881879196}
+  UIanimator: {fileID: 0}
   player: {fileID: 0}
   speedRot: 3
   exclamacion: {fileID: 0}
+  quest: 0
+  text1: {fileID: 0}
+  text2: {fileID: 0}
+  text3: {fileID: 0}
+  text4: {fileID: 0}
 --- !u!1001 &8112546275680760804
 PrefabInstance:
   m_ObjectHideFlags: 0

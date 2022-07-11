@@ -8,7 +8,7 @@ public class Player_comp : empty
 {
     //composicion hecha por Lautaro Romero
         
-    private float CheckPositionX, CheckPositionY, CheckPositionZ;
+
     public float speed;
     public float forceJump;
     public Rigidbody rb;
@@ -82,12 +82,12 @@ public class Player_comp : empty
 
     }
 
-    public void ReloadChecks(float x, float y, float z)
-    {
-        PlayerPrefs.SetFloat("CheckPositionX", x);
-        PlayerPrefs.SetFloat("CheckPositionY", y);
-        PlayerPrefs.SetFloat("CheckPositionZ", z);
-    }
+    //public void ReloadChecks(float x, float y, float z)
+    //{
+    //    PlayerPrefs.SetFloat("CheckPositionX", x);
+    //    PlayerPrefs.SetFloat("CheckPositionY", y);
+    //    PlayerPrefs.SetFloat("CheckPositionZ", z);
+    //}
 
     public void soundjump()
     {

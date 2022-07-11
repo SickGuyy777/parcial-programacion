@@ -14,13 +14,19 @@ public class npc : MonoBehaviour
     public GameObject player;
     public float speedRot;
     public GameObject exclamacion;
-    public bool quest, nextext=false;
+    public bool quest;
+    public GameObject[] textUI;
+
 
 
 
     public void Start()
     {
-       
+        
+        for (int i = 0; i < textUI.Length; i++)
+        {
+            textUI[i].SetActive(false);
+        }
         quest = false;
     }
 
@@ -33,34 +39,62 @@ public class npc : MonoBehaviour
             var dir = jugador.position - transform.position;
             var lerpDir = Vector3.Lerp(transform.forward, dir, Time.deltaTime * speedRot);
             transform.forward = lerpDir;
-            if(quest==false)
-            {
-                exclamacion.SetActive(true);
-                UIanimator.SetBool("see", true);
-                
-                
-            }
-            else
-            {
-                
-                exclamacion.SetActive(false);
-                UIanimator.SetBool("see", false);
-            }
 
         }
-        else
-        {
-            
-            exclamacion.SetActive(false);
-            UIanimator.SetBool("see", false);
-        }
+
+
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("entro detecto al player");
+            var dir = jugador.position - transform.position;
+            var lerpDir = Vector3.Lerp(transform.forward, dir, Time.deltaTime * speedRot);
+            transform.forward = lerpDir;
+            if (quest == false)
+            {
+                Debug.Log("la quest sigue siendo falsa");
+                textUI[0].SetActive(true);
+                exclamacion.SetActive(true);
+                UIanimator.SetBool("see", true);
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    Debug.Log("presione la e");
+                    textUI[0].SetActive(false);
+                    textUI[1].SetActive(true);
+                }
+            }
+        }
 
+    }
     public void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, detector);
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+
+            if (quest == false)
+            {
+                for (int i = 0; i < textUI.Length; i++)
+                {
+                    textUI[i].SetActive(false);
+                }
+                exclamacion.SetActive(false);
+                UIanimator.SetBool("see", false);
+     
+            }
+            else
+            {
+
+            }
+        }
     }
 
 }
