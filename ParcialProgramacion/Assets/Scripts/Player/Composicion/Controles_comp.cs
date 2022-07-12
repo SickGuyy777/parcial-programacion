@@ -12,8 +12,11 @@ public class Controles_comp
     public float sensitivecam;
     public float limitrotatr;
     public float rotateXcam;
+    public npc mecanic;
+    public GameObject glasses;
+    public Magical_Galsses glass;
 
-    public Controles_comp(Movement_comp m, int salto, float vel, float velx, Transform camera, Animator anim )
+    public Controles_comp(Movement_comp m, int salto, float vel, float velx, Transform camera, Animator anim, npc mecanica, GameObject gafas, Magical_Galsses Glass)
     {
         _movement = m;
         _salto = salto;
@@ -22,6 +25,9 @@ public class Controles_comp
         rotateXcam = velx;
         Camera = camera;
         animacion = anim;
+        mecanic = mecanica;
+        glasses = gafas;
+        glass = Glass;
     }
 
     public void ArtificialUpdate()
@@ -53,7 +59,7 @@ public class Controles_comp
               animacion.SetBool("Ataco", false);
             }
 
-
+        MagicGlasses();
 
         rotateXcam += -Input.GetAxis("Mouse Y");
         rotateXcam = Mathf.Clamp(rotateXcam, -limitrotatr, limitrotatr);
@@ -61,5 +67,15 @@ public class Controles_comp
         Camera.localEulerAngles = new Vector3(rotateXcam, Camera.localEulerAngles.y, Camera.localEulerAngles.z);
         _movement._transform.Rotate(0, Input.GetAxis("Mouse X") * sensitivecam, 0);
     
+    }
+
+    public void MagicGlasses()
+    {
+
+        if (mecanic.gift == true)
+        {
+            glasses.SetActive(true);
+            glass.magic();
+        }
     }
 }

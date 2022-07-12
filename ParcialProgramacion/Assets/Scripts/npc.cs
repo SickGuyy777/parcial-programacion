@@ -15,8 +15,8 @@ public class npc : MonoBehaviour
     public GameObject player;
     public float speedRot;
     public GameObject exclamacion, model;
-    private bool quest, next, No, Yes, Out, complete;// estos los hice privados porque no son necesarios verlos en el inspector
-    public bool Hweapon=false;// este lo necesitaba publico porque lo llamo en el scrpt de swordQuest
+    private bool quest, next, No, Yes, Out, complete,final;// estos los hice privados porque no son necesarios verlos en el inspector
+    public bool Hweapon, gift=false;// este lo necesitaba publico porque lo llamo en el scrpt de swordQuest
     public GameObject[] textUI;
     private float cooldown;
     public float maxtime;
@@ -25,8 +25,7 @@ public class npc : MonoBehaviour
 
 
     public void Start()
-    {
-        
+    {   
         for (int i = 0; i < textUI.Length; i++)
         {
             textUI[i].SetActive(false);
@@ -37,16 +36,13 @@ public class npc : MonoBehaviour
 
     void Update()
     {
-
         detectoalgo = Physics.CheckSphere(transform.position, detector, layerdeljugador);
         if (detectoalgo == true && player.CompareTag("Player"))
         {
             var dir = jugador.position - transform.position;
             var lerpDir = Vector3.Lerp(transform.forward, dir, Time.deltaTime * speedRot);
             transform.forward = lerpDir;
-
         }
-        
         Mision();
         CoolDownQuest();
     }
@@ -75,7 +71,6 @@ public class npc : MonoBehaviour
                 textUI[4].SetActive(false);
                 Out = true;
                 Yes = false;
-
             }
 
             if (Input.GetKey(KeyCode.Q)&& Yes==true)//por si dice que si
@@ -88,16 +83,12 @@ public class npc : MonoBehaviour
                 Out = true;
                 No = false;
             }
-
-
         }
 
         if (Input.GetKey(KeyCode.E) && Out == true)// con esto al terminar la conversacion el cartel de la quest se desactiva y crea un cooldown
         {
-
             if (No == true && Out == true)
             {
-
                 exclamacion.SetActive(false);
                 UIanimator.SetBool("see", false);
                 quest = true;
@@ -105,46 +96,38 @@ public class npc : MonoBehaviour
 
             if (Yes == true && Out == true)
             {
-
-
                 quest = true;
                 next = false;
                 exclamacion.SetActive(false);
                 UIanimator.SetBool("see", false);
-                
-
-
             }
-
-
-        }
-        
-        if (Input.GetKey(KeyCode.E) && Hweapon == true )
-        {
-            UIanimator.SetBool("see", true);
-            textUI[0].SetActive(false);
-            textUI[1].SetActive(false);
-            textUI[2].SetActive(false);
-            textUI[3].SetActive(false);
-            textUI[4].SetActive(false);
-            textUI[5].SetActive(true);
-            
-            complete = true;
-
         }
 
-        if (Input.GetKey(KeyCode.F) && complete ==true)
+        if (final==false)
         {
-
-
-
+            if (Input.GetKey(KeyCode.E) && Hweapon == true)
+            {
+                UIanimator.SetBool("see", true);
+                textUI[0].SetActive(false);
+                textUI[1].SetActive(false);
+                textUI[2].SetActive(false);
+                textUI[3].SetActive(false);
+                textUI[4].SetActive(false);
+                textUI[5].SetActive(true);
+                complete = true;
+            }
+            if (Input.GetKey(KeyCode.F) && complete == true)
+            {
+                gift = true;
+                final = true;
                 model.SetActive(false);
                 UIanimator.SetBool("see", false);
+                
 
-
+            }
         }
-
     }
+
 
 
 
@@ -170,16 +153,12 @@ public class npc : MonoBehaviour
             {
                 quest = true;
                 cooldown = maxtime;
-
             }
         }
-
-
     }
 
     private void OnTriggerEnter(Collider other) // inicia desde aca
     {
-
             if (other.CompareTag("Player") && quest == false)// ni bien entre el npc inicia llamandolo
             {
                 textUI[0].SetActive(true);
@@ -190,7 +169,6 @@ public class npc : MonoBehaviour
                 textUI[5].SetActive(false);
                 exclamacion.SetActive(true);
                 UIanimator.SetBool("see", true);
-
                 next = true;// una vez que next sea true inicia las preguntas del update
             }
 
@@ -205,23 +183,14 @@ public class npc : MonoBehaviour
                     textUI[3].SetActive(false);
                     textUI[4].SetActive(true);
                     textUI[5].SetActive(false);
-
-
                 }
-
             }
-
-
-
-
-
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-
             if (quest == false)
             {
                 for (int i = 0; i < textUI.Length; i++)
@@ -230,11 +199,7 @@ public class npc : MonoBehaviour
                 }
                 exclamacion.SetActive(false);
                 UIanimator.SetBool("see", false);
-
             }
-
-
-
         }
     }
 
@@ -243,7 +208,4 @@ public class npc : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, detector);
     }
-
-  
-
 }

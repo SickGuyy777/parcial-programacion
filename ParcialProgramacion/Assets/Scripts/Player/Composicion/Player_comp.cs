@@ -24,17 +24,20 @@ public class Player_comp : empty
     public AudioClip jump;
     public AudioClip pies;
     public int oportunidades;
-   
     [Space]
     public GameObject scoreText;
+    public npc mecanic;
+    public GameObject glasses;
+    public Magical_Galsses glass;
+
     public static int score;
 
 
     private void Start()
     {
         _movement = new Movement_comp(speed, forceJump, rb, transform, anim, isjump);
-        _control = new Controles_comp(_movement, salto, vel,velx, camera,anim);
-
+        _control = new Controles_comp(_movement, salto, vel,velx, camera,anim, mecanic, glasses,glass);
+        
     }
 
 
@@ -43,7 +46,7 @@ public class Player_comp : empty
         _control.ArtificialUpdate();
         scoreText.GetComponent<Text>().text = "" + score;
         Recivedmg();
-
+       
 
     }
 
@@ -101,6 +104,7 @@ public class Player_comp : empty
     {
         AudioSource.PlayClipAtPoint(pies, transform.position);
     }
+
 
 
 }
