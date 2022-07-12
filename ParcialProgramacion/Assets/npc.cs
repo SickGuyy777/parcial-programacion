@@ -14,10 +14,11 @@ public class npc : MonoBehaviour
     public Animator UIanimator;
     public GameObject player;
     public float speedRot;
-    public GameObject exclamacion;
-    public bool quest,next,No,Yes,Out;
+    public GameObject exclamacion, model;
+    private bool quest, next, No, Yes, Out, complete;// estos los hice privados porque no son necesarios verlos en el inspector
+    public bool Hweapon=false;// este lo necesitaba publico porque lo llamo en el scrpt de swordQuest
     public GameObject[] textUI;
-    public float cooldown;
+    private float cooldown;
     public float maxtime;
  
     // en cada rama de la conversacion se ve que desactivo todos los carteles exepto uno, con eso logro que en el caso de que te hayas negado o aceptado la quest los textos no se sobrepongan cuando estan activados
@@ -88,30 +89,64 @@ public class npc : MonoBehaviour
                 No = false;
             }
 
-            if (Input.GetKey(KeyCode.E) && Out == true)// con esto al terminar la conversacion el cartel de la quest se desactiva y crea un cooldown
-            {
-                if(No==true && Out==true)
-                {
-                   
-                    exclamacion.SetActive(false);
-                    UIanimator.SetBool("see", false);
-                    quest = true;
-                }
 
-                if(Yes==true && Out==true)
-                {
-                   
-                    exclamacion.SetActive(false);
-                    UIanimator.SetBool("see", false);
-
-
-                }
-
-            }
         }
 
+        if (Input.GetKey(KeyCode.E) && Out == true)// con esto al terminar la conversacion el cartel de la quest se desactiva y crea un cooldown
+        {
+
+            if (No == true && Out == true)
+            {
+
+                exclamacion.SetActive(false);
+                UIanimator.SetBool("see", false);
+                quest = true;
+            }
+
+            if (Yes == true && Out == true)
+            {
+
+
+                quest = true;
+                next = false;
+                exclamacion.SetActive(false);
+                UIanimator.SetBool("see", false);
+                
+
+
+            }
+
+
+        }
+        
+        if (Input.GetKey(KeyCode.E) && Hweapon == true )
+        {
+            UIanimator.SetBool("see", true);
+            textUI[0].SetActive(false);
+            textUI[1].SetActive(false);
+            textUI[2].SetActive(false);
+            textUI[3].SetActive(false);
+            textUI[4].SetActive(false);
+            textUI[5].SetActive(true);
+            
+            complete = true;
+
+        }
+
+        if (Input.GetKey(KeyCode.F) && complete ==true)
+        {
+
+
+
+                model.SetActive(false);
+                UIanimator.SetBool("see", false);
+
+
+        }
 
     }
+
+
 
     public void CoolDownQuest()// un cooldow de corto tiempo para cuando el jugador acepte o niegeue la quest
     {
@@ -144,28 +179,41 @@ public class npc : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) // inicia desde aca
     {
-        if (other.CompareTag("Player") && quest == false)// ni bien entre el npc inicia llamandolo
-        { 
-            textUI[0].SetActive(true);
-            textUI[1].SetActive(false);
-            textUI[2].SetActive(false);
-            textUI[3].SetActive(false);
-            textUI[4].SetActive(false);
-            exclamacion.SetActive(true);
-            UIanimator.SetBool("see", true);
 
-           next = true;// una vez que next sea true inicia las preguntas del update
-        }
-        else
-        if(other.CompareTag("Player") && quest == true && Yes== true)
-        {
-            UIanimator.SetBool("see", true);
-            textUI[0].SetActive(false);
-            textUI[1].SetActive(false);
-            textUI[2].SetActive(false);
-            textUI[3].SetActive(false);
-            textUI[4].SetActive(true);
-        }
+            if (other.CompareTag("Player") && quest == false)// ni bien entre el npc inicia llamandolo
+            {
+                textUI[0].SetActive(true);
+                textUI[1].SetActive(false);
+                textUI[2].SetActive(false);
+                textUI[3].SetActive(false);
+                textUI[4].SetActive(false);
+                textUI[5].SetActive(false);
+                exclamacion.SetActive(true);
+                UIanimator.SetBool("see", true);
+
+                next = true;// una vez que next sea true inicia las preguntas del update
+            }
+
+            if (other.CompareTag("Player") && quest == true)
+            {
+                if (Hweapon == true || Hweapon == false)
+                {
+                    UIanimator.SetBool("see", true);
+                    textUI[0].SetActive(false);
+                    textUI[1].SetActive(false);
+                    textUI[2].SetActive(false);
+                    textUI[3].SetActive(false);
+                    textUI[4].SetActive(true);
+                    textUI[5].SetActive(false);
+
+
+                }
+
+            }
+
+
+
+
 
     }
 
@@ -184,6 +232,8 @@ public class npc : MonoBehaviour
                 UIanimator.SetBool("see", false);
 
             }
+
+
 
         }
     }

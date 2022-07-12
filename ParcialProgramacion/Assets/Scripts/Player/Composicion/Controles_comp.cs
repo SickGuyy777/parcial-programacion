@@ -53,6 +53,8 @@ public class Controles_comp
               animacion.SetBool("Ataco", false);
             }
 
+
+
         rotateXcam += -Input.GetAxis("Mouse Y");
         rotateXcam = Mathf.Clamp(rotateXcam, -limitrotatr, limitrotatr);
        

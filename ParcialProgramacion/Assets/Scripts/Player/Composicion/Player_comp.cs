@@ -24,6 +24,7 @@ public class Player_comp : empty
     public AudioClip jump;
     public AudioClip pies;
     public int oportunidades;
+   
     [Space]
     public GameObject scoreText;
     public static int score;
@@ -42,6 +43,8 @@ public class Player_comp : empty
         _control.ArtificialUpdate();
         scoreText.GetComponent<Text>().text = "" + score;
         Recivedmg();
+
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -98,4 +101,6 @@ public class Player_comp : empty
     {
         AudioSource.PlayClipAtPoint(pies, transform.position);
     }
+
+
 }
