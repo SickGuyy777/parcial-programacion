@@ -14,8 +14,8 @@ public class npc : MonoBehaviour
     public Animator UIanimator;
     public GameObject player;
     public float speedRot;
-    public GameObject exclamacion, model;
-    private bool quest, next, No, Yes, Out, complete,final;// estos los hice privados porque no son necesarios verlos en el inspector
+    public GameObject exclamacion, model,global,particle;
+    private bool quest, next, No, Yes, Out, complete,final,bye;// estos los hice privados porque no son necesarios verlos en el inspector
     public bool Hweapon, gift=false;// este lo necesitaba publico porque lo llamo en el scrpt de swordQuest
     public GameObject[] textUI;
     private float cooldown;
@@ -121,7 +121,12 @@ public class npc : MonoBehaviour
                 gift = true;
                 final = true;
                 model.SetActive(false);
+                Instantiate(particle);
+                
                 UIanimator.SetBool("see", false);
+                bye = true;
+
+
                 
 
             }
@@ -153,6 +158,16 @@ public class npc : MonoBehaviour
             {
                 quest = true;
                 cooldown = maxtime;
+            }
+        }
+
+        if(bye==true)
+        {
+            cooldown -= 2 * Time.deltaTime;
+            if (cooldown <= 0)
+            {
+                global.SetActive(false);
+
             }
         }
     }

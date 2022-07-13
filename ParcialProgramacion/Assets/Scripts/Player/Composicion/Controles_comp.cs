@@ -13,10 +13,12 @@ public class Controles_comp
     public float limitrotatr;
     public float rotateXcam;
     public npc mecanic;
-    public GameObject glasses;
+    public GameObject glasses, UIexpGlasses;
     public Magical_Galsses glass;
+    private bool pass, Out;
+    public bool explanation;
 
-    public Controles_comp(Movement_comp m, int salto, float vel, float velx, Transform camera, Animator anim, npc mecanica, GameObject gafas, Magical_Galsses Glass)
+    public Controles_comp(Movement_comp m, int salto, float vel, float velx, Transform camera, Animator anim, npc mecanica, GameObject gafas, Magical_Galsses Glass,GameObject UIglasses, bool exp)
     {
         _movement = m;
         _salto = salto;
@@ -28,6 +30,8 @@ public class Controles_comp
         mecanic = mecanica;
         glasses = gafas;
         glass = Glass;
+        UIexpGlasses = UIglasses;
+        explanation = exp;
     }
 
     public void ArtificialUpdate()
@@ -74,8 +78,30 @@ public class Controles_comp
 
         if (mecanic.gift == true)
         {
-            glasses.SetActive(true);
-            glass.magic();
+
+            if (explanation==true)
+            {
+                UIexpGlasses.SetActive(true);
+                Out = true;
+            }
+
+            
+
+
+            if (Input.GetKey(KeyCode.E) && Out == true)
+            {
+                UIexpGlasses.SetActive(false);
+                explanation = false;
+                pass = true;
+                
+            }
+
+            if(mecanic.gift==true && explanation==false && pass==true)
+            {
+                glasses.SetActive(true);
+                glass.magic();
+            }
+
         }
     }
 }

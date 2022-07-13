@@ -185,11 +185,13 @@ MonoBehaviour:
   player: {fileID: 0}
   speedRot: 3
   exclamacion: {fileID: 0}
-  quest: 0
-  text1: {fileID: 0}
-  text2: {fileID: 0}
-  text3: {fileID: 0}
-  text4: {fileID: 0}
+  model: {fileID: 0}
+  global: {fileID: 0}
+  particle: {fileID: 0}
+  Hweapon: 0
+  gift: 0
+  textUI: []
+  maxtime: 0
 --- !u!1001 &8112546275680760804
 PrefabInstance:
   m_ObjectHideFlags: 0

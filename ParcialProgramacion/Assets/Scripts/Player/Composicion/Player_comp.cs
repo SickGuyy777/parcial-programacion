@@ -20,15 +20,16 @@ public class Player_comp : empty
     public Animator efectcanvasdead;
     public Movement_comp _movement;
     public Controles_comp _control;
-    public bool isjump;
+    public bool isjump, expe;
     public AudioClip jump;
     public AudioClip pies;
     public int oportunidades;
     [Space]
     public GameObject scoreText;
     public npc mecanic;
-    public GameObject glasses;
+    public GameObject glasses, UIglasses;
     public Magical_Galsses glass;
+    
 
     public static int score;
 
@@ -36,7 +37,7 @@ public class Player_comp : empty
     private void Start()
     {
         _movement = new Movement_comp(speed, forceJump, rb, transform, anim, isjump);
-        _control = new Controles_comp(_movement, salto, vel,velx, camera,anim, mecanic, glasses,glass);
+        _control = new Controles_comp(_movement, salto, vel,velx, camera,anim, mecanic, glasses,glass,UIglasses,expe);
         
     }
 
