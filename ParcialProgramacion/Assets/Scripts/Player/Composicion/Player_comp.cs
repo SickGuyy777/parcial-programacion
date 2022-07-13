@@ -64,14 +64,13 @@ public class Player_comp : empty
             oportunidades -= 1;
             timer -= 1 * Time.deltaTime;
             anim.SetBool("Muerto", true);
-            efectcanvasdead.SetBool("dead", true);
+            //efectcanvasdead.SetBool("dead", true);
             if (PlayerPrefs.GetFloat("CheckPositionX") != 0 && oportunidades > -1)
             {
                 currentHealth = basehealth;
                 timer = maxTimer;
-                transform.position = (new Vector3(PlayerPrefs.GetFloat("CheckPositionX"), PlayerPrefs.GetFloat("CheckPositionY"), PlayerPrefs.GetFloat("CheckPositionZ")));
                 anim.SetBool("Muerto", false);
-                efectcanvasdead.SetBool("dead", false);
+                //efectcanvasdead.SetBool("dead", false);
                 
             }
 

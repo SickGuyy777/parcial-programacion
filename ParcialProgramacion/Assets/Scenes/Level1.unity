@@ -5482,14 +5482,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 874715326, guid: 49e6402196bcbfb4583490a5c7c1ca54, type: 3}
-      propertyPath: glass
-      value: 
-      objectReference: {fileID: 1006616907}
-    - target: {fileID: 874715326, guid: 49e6402196bcbfb4583490a5c7c1ca54, type: 3}
-      propertyPath: glasses
-      value: 
-      objectReference: {fileID: 1006616905}
-    - target: {fileID: 874715326, guid: 49e6402196bcbfb4583490a5c7c1ca54, type: 3}
       propertyPath: mecanic
       value: 
       objectReference: {fileID: 237339246}
@@ -5509,10 +5501,6 @@ PrefabInstance:
       propertyPath: efectcanvasdead
       value: 
       objectReference: {fileID: 1350483516}
-    - target: {fileID: 412253657678362073, guid: 49e6402196bcbfb4583490a5c7c1ca54, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5812317428738487486, guid: 49e6402196bcbfb4583490a5c7c1ca54, type: 3}
       propertyPath: m_Name
       value: player
@@ -5560,14 +5548,6 @@ PrefabInstance:
     - target: {fileID: 6621047111321693700, guid: 49e6402196bcbfb4583490a5c7c1ca54, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7255062312019628810, guid: 49e6402196bcbfb4583490a5c7c1ca54, type: 3}
-      propertyPath: FisicPlane.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7255062312019628810, guid: 49e6402196bcbfb4583490a5c7c1ca54, type: 3}
-      propertyPath: AstralPlane.Array.size
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7255062312019628810, guid: 49e6402196bcbfb4583490a5c7c1ca54, type: 3}
       propertyPath: FisicPlane.Array.data[0]
@@ -16141,22 +16121,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.3, y: 1.87, z: 0.3}
   m_Center: {x: -1.35, y: 2.89, z: -0.58}
---- !u!1 &1006616905 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 412253657678362073, guid: 49e6402196bcbfb4583490a5c7c1ca54, type: 3}
-  m_PrefabInstance: {fileID: 437751041}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1006616907 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7255062312019628810, guid: 49e6402196bcbfb4583490a5c7c1ca54, type: 3}
-  m_PrefabInstance: {fileID: 437751041}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006616905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ff05161f885d02499e97312029533fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1009722453
 GameObject:
   m_ObjectHideFlags: 0
@@ -17153,8 +17117,8 @@ GameObject:
   - component: {fileID: 1086625475}
   - component: {fileID: 1086625476}
   m_Layer: 0
-  m_Name: start
-  m_TagString: Untagged
+  m_Name: start/end
+  m_TagString: Checkpoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20199,8 +20163,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.162682, y: 6.12, z: 1.5170783}
-  m_Center: {x: -1.828001, y: 5.21, z: -2.34447}
+  m_Size: {x: 2.162682, y: 6.1199994, z: 2.089003}
+  m_Center: {x: -1.828001, y: 5.2099996, z: -2.0585077}
 --- !u!1001 &1411740496
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20735,8 +20699,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1477813197}
   m_Layer: 0
-  m_Name: checkcontroller
-  m_TagString: Untagged
+  m_Name: Checkpoints
+  m_TagString: Checkpoints
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31231,6 +31195,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 873647608}
     - target: {fileID: 7775931655814848811, guid: bf40a1553be50e846aac5da87479556d, type: 3}
+      propertyPath: global
+      value: 
+      objectReference: {fileID: 237339245}
+    - target: {fileID: 7775931655814848811, guid: bf40a1553be50e846aac5da87479556d, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 874715324}
@@ -31250,6 +31218,10 @@ PrefabInstance:
       propertyPath: detector
       value: 2.35
       objectReference: {fileID: 0}
+    - target: {fileID: 7775931655814848811, guid: bf40a1553be50e846aac5da87479556d, type: 3}
+      propertyPath: particle
+      value: 
+      objectReference: {fileID: 273570002902121830, guid: e2eb2fa2f45860d4ba491b927a4c7c81, type: 3}
     - target: {fileID: 7775931655814848811, guid: bf40a1553be50e846aac5da87479556d, type: 3}
       propertyPath: UIanimator
       value: 
@@ -32509,9 +32481,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1477813197}
     m_Modifications:
+    - target: {fileID: 4805120892494219603, guid: c6a4afea512d9bf449b7806afae27cd1, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4982545257942192226, guid: c6a4afea512d9bf449b7806afae27cd1, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4982545257942192226, guid: c6a4afea512d9bf449b7806afae27cd1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -32555,7 +32531,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5651558142283336408, guid: c6a4afea512d9bf449b7806afae27cd1, type: 3}
       propertyPath: m_Name
-      value: checks
+      value: Checkpoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 5651558142283336408, guid: c6a4afea512d9bf449b7806afae27cd1, type: 3}
+      propertyPath: m_TagString
+      value: Checkpoints
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6a4afea512d9bf449b7806afae27cd1, type: 3}

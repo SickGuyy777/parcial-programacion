@@ -8,7 +8,7 @@ public class SwordQuest : MonoBehaviour
     public Animator UIplayer;
     public GameObject text,model;
     public bool activechat;
-    public Player_comp p;
+
     public void Update()
     {
         iconplayerUI();
@@ -18,7 +18,7 @@ public class SwordQuest : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             Hsword.Hweapon = true;
-            p.expe = true;
+
             activechat = true;
             Destroy(model);
             UIplayer.SetBool("tengo", true);
