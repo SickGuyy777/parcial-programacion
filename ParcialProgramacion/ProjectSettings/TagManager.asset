@@ -10,6 +10,7 @@ TagManager:
   - Wall
   - Pinchos
   - Checkpoints
+  - PointSpawn
   layers:
   - Default
   - TransparentFX
