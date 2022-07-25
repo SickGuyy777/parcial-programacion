@@ -37,6 +37,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
+        Cursor.visible = true;
     }
 
     public void ResumeGame()
@@ -44,18 +45,18 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
+        Cursor.visible = false;
     }
 
     public void GoToMainMenu()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
+        Cursor.visible = true;
     }
 
     public void QuitGame()
     {
         Application.Quit();
     }
-
-
 }

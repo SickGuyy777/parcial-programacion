@@ -1,78 +1,32 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(InputController))]
 public class CameraMovement : MonoBehaviour
 {
-    public GameObject character;
-    public GameObject cameraCenter;
-    public float yOffset = 1f;
-    public float sensitivity = 3f;
-    public Camera cam;
+    [SerializeField] float _mouseSensitivity = 0f;
+    [SerializeField] Transform _cameraAnchor = null;
+    InputController _inputController = null;
 
-    public float scrollSensitivity = 5f;
-    public float scrollDampening = 6f;
-
-    public float zoomMin = 3.5f;
-    public float zoomMax = 15f;
-    public float zoomDefault = 10f;
-    public float zoomDistance;
-
-    public float collisionSensitivity = 4.5f;
-
-    private RaycastHit _camHit;
-    private Vector3 _camDist;
-
-    private void Start()
+    private void Awake()
     {
-        _camDist = cam.transform.localPosition;
-        zoomDistance = zoomDefault;
-        _camDist.z = zoomDistance;
-
+        _inputController = GetComponent<InputController>();
         Cursor.visible = false;
     }
 
     private void Update()
     {
-        cameraCenter.transform.position = new Vector3(character.transform.position.x, character.transform.position.y + yOffset, character.transform.position.z);
+        MouseCamera();
+    }
 
-        var rotation = Quaternion.Euler(cameraCenter.transform.rotation.eulerAngles.x - Input.GetAxis("Mouse Y") * sensitivity / 2,
-            cameraCenter.transform.rotation.eulerAngles.y + Input.GetAxis("Mouse X") * sensitivity,
-            cameraCenter.transform.rotation.eulerAngles.z);
-        cameraCenter.transform.rotation = rotation;
+    void MouseCamera()
+    {
+        Vector2 input = _inputController.MouseInput();
 
-        if (Input.GetAxis("Mouse ScrollWheel") != 0f)
-        {
-            var scrollAmount = Input.GetAxis("Mouse ScrollWheel") * scrollSensitivity;
-            scrollAmount *= zoomDistance * 0.3f;
-            zoomDistance += -scrollAmount;
-            zoomDistance = Mathf.Clamp(zoomDistance, zoomMin, zoomMax);
-        }
+        transform.Rotate(Vector3.up * input.x * _mouseSensitivity * Time.deltaTime);
 
-        if (_camDist.z != -zoomDistance)
-        {
-            _camDist.z = Mathf.Lerp(_camDist.z, -zoomDistance, Time.deltaTime * scrollDampening);
-        }
+        Vector3 angle = _cameraAnchor.eulerAngles;
+        angle.x -= input.y * _mouseSensitivity * Time.deltaTime;
 
-        cam.transform.localPosition = _camDist;
-
-        GameObject obj = new GameObject();
-        obj.transform.SetParent(cam.transform.parent);
-        obj.transform.localPosition = new Vector3(cam.transform.localPosition.x, cam.transform.localPosition.y, cam.transform.localPosition.z - collisionSensitivity);
-
-        if (Physics.Linecast(cameraCenter.transform.position, obj.transform.position, out _camHit))
-        {
-            cam.transform.position = _camHit.point;
-
-            var localPosition = new Vector3(cam.transform.localPosition.x, cam.transform.localPosition.y, cam.transform.localPosition.z + collisionSensitivity);
-            cam.transform.localPosition = localPosition;
-        }
-
-        Destroy(obj);
-
-        if (cam.transform.localPosition.z > -1f)
-        {
-            cam.transform.localPosition = new Vector3(cam.transform.localPosition.x, cam.transform.localPosition.y, -1f);
-        }
+        _cameraAnchor.eulerAngles = angle;
     }
 }
