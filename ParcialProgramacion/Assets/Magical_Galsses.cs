@@ -12,7 +12,7 @@ public class Magical_Galsses : MonoBehaviour
 
     public void magic()
     {
-        if (Input.GetKey(KeyCode.E) && fisic == true)
+        if (Input.GetKey(KeyCode.E))
         {
             fisic = false;
             if (fisic == false)
@@ -25,7 +25,7 @@ public class Magical_Galsses : MonoBehaviour
 
         }
         else
-        if(Input.GetKey(KeyCode.E) && fisic == false)
+        if(Input.GetKey(KeyCode.R))
         {
             fisic = true;
             if (fisic == false)

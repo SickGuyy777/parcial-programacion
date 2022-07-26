@@ -18,6 +18,7 @@ public class npc : MonoBehaviour
     private bool quest, next, No, Yes, Out, complete,final,bye;// estos los hice privados porque no son necesarios verlos en el inspector
     public bool Hweapon, gift=false;// este lo necesitaba publico porque lo llamo en el scrpt de swordQuest
     public GameObject[] textUI;
+    public GameObject voz;
     private float cooldown;
     public float maxtime;
  
@@ -53,6 +54,7 @@ public class npc : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.E) && Out==false)// aca entra el segundo cartel en el que le pide que busque su espada
             {
+                
                 textUI[0].SetActive(false);
                 textUI[1].SetActive(true);
                 textUI[2].SetActive(false);
@@ -64,6 +66,7 @@ public class npc : MonoBehaviour
 
             if (Input.GetKey(KeyCode.R) && No == true)//por si dice que no
             {
+
                 textUI[0].SetActive(false);
                 textUI[1].SetActive(false);
                 textUI[2].SetActive(true);
@@ -176,6 +179,7 @@ public class npc : MonoBehaviour
     {
             if (other.CompareTag("Player") && quest == false)// ni bien entre el npc inicia llamandolo
             {
+                
                 textUI[0].SetActive(true);
                 textUI[1].SetActive(false);
                 textUI[2].SetActive(false);
@@ -185,6 +189,7 @@ public class npc : MonoBehaviour
                 exclamacion.SetActive(true);
                 UIanimator.SetBool("see", true);
                 next = true;// una vez que next sea true inicia las preguntas del update
+                Instantiate(voz);
             }
 
             if (other.CompareTag("Player") && quest == true)
