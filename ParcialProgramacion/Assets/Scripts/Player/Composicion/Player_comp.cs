@@ -12,10 +12,7 @@ public class Player_comp : empty
     public float speed;
     public float forceJump;
     public Rigidbody rb;
-    public int salto;
-    public float vel;
-    public float velx;
-    public new Transform camera; 
+    public int salto; 
     public Animator anim;
     public Animator efectcanvasdead;
     public Movement_comp _movement;
@@ -23,7 +20,6 @@ public class Player_comp : empty
     public bool isjump, expe;
     public AudioClip jump;
     public AudioClip pies;
-    public int oportunidades;
     [Space]
     public GameObject scoreText;
     public npc mecanic;
@@ -37,7 +33,7 @@ public class Player_comp : empty
     private void Start()
     {
         _movement = new Movement_comp(speed, forceJump, rb, transform, anim, isjump);
-        _control = new Controles_comp(_movement, salto, vel,velx, camera,anim, mecanic, glasses,glass,UIglasses,expe);
+        _control = new Controles_comp(_movement, salto,anim, mecanic, glasses,glass,UIglasses,expe);
         
     }
 
@@ -61,39 +57,24 @@ public class Player_comp : empty
     {       
         if(currentHealth<=0)
         {
-            oportunidades -= 1;
+            forceJump = 0;
+            speed = 0;
             timer -= 1 * Time.deltaTime;
             anim.SetBool("Muerto", true);
             //efectcanvasdead.SetBool("dead", true);
-            if (PlayerPrefs.GetFloat("CheckPositionX") != 0 && oportunidades > -1)
+            if (timer<=0)
             {
-                currentHealth = basehealth;
-                timer = maxTimer;
-                anim.SetBool("Muerto", false);
-                //efectcanvasdead.SetBool("dead", false);
-                
+                SceneManager.LoadScene("Perdiste");
+                //Cursor.lockState = CursorLockMode.None;
+
             }
 
-            if (oportunidades <= 0 && currentHealth==0)
-            {
-                timer -= 1 * Time.deltaTime;
-                anim.SetBool("Muerto", true);
-                if (timer <= 0)
-                {
-                    SceneManager.LoadScene("Perdiste");
-                    Cursor.lockState = CursorLockMode.None;
-                }
-            }
+
         }
 
     }
 
-    //public void ReloadChecks(float x, float y, float z)
-    //{
-    //    PlayerPrefs.SetFloat("CheckPositionX", x);
-    //    PlayerPrefs.SetFloat("CheckPositionY", y);
-    //    PlayerPrefs.SetFloat("CheckPositionZ", z);
-    //}
+
 
     public void soundjump()
     {
