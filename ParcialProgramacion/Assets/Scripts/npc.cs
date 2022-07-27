@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class npc : MonoBehaviour
 {
-    //codigo creado por Lautaro Romero
+    //codigo creado por Lautaro Romero TPFINAL
     public Transform jugador;
     public float detector;
     public LayerMask layerdeljugador;

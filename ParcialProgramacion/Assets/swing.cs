@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class swing : MonoBehaviour
 {
-    // codigo crado por Lautaro Romero
+    // codigo crado por Lautaro Romero TPFINAL
     float timer=0f;
     float speed=1f;
     int phase=0;
