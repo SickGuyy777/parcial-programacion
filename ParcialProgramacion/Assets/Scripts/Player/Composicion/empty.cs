@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class empty :MonoBehaviour   
 {
-    //Codigo de empty creado por Benja Tevez, Lautaro Romero y Nahuel Stagno
+    //Codigo de empty creado por Benja Tevez, Lautaro Romero y Nahuel Stagno TPFINAL
     public float basehealth = 10;
     public float currentHealth;
     public Image healthBar;   

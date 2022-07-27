@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Player_comp : empty
 {
-    //composicion hecha por Lautaro Romero
+    //composicion hecha por Lautaro Romero TPFINAL
         
 
     public float speed;
