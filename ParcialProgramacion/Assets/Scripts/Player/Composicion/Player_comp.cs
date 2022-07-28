@@ -57,15 +57,14 @@ public class Player_comp : empty
     {       
         if(currentHealth<=0)
         {
-            forceJump = 0;
-            speed = 0;
+
             timer -= 1 * Time.deltaTime;
             anim.SetBool("Muerto", true);
-            //efectcanvasdead.SetBool("dead", true);
+            efectcanvasdead.SetBool("dead", true);
             if (timer<=0)
             {
                 SceneManager.LoadScene("Perdiste");
-                //Cursor.lockState = CursorLockMode.None;
+                
 
             }
 

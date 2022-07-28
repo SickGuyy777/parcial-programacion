@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7971224684929464211}
   - component: {fileID: 5464242684025245060}
+  - component: {fileID: 5331097639951920012}
   m_Layer: 0
   m_Name: bala
   m_TagString: Untagged
@@ -45,6 +46,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5331097639951920012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7971224684929464210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sonidoEspada: {fileID: 0}
+  sonidoDolor: {fileID: 0}
+  damage: 3
 --- !u!1001 &4611982061246505147
 PrefabInstance:
   m_ObjectHideFlags: 0

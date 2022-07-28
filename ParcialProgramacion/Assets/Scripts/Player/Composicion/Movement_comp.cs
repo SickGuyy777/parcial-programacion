@@ -12,7 +12,6 @@ public class Movement_comp
     private Animator _anim;
     private bool isjump;
 
-
    
 
     public Movement_comp(float speed, float fj, Rigidbody rb, Transform t, Animator anim, bool estoySaltando)
@@ -28,12 +27,16 @@ public class Movement_comp
 
     public void Move(float vertical, float horizontal)
     {
-        var dir = _transform.forward * vertical;
-        dir += _transform.right * horizontal;
 
-        _transform.position += dir * _speed * Time.deltaTime;
-        _anim.SetFloat("Y", vertical);
-        _anim.SetFloat("X", horizontal);
+            var dir = _transform.forward * vertical;
+            dir += _transform.right * horizontal;
+
+            _transform.position += dir * _speed * Time.deltaTime;
+            _anim.SetFloat("Y", vertical);
+            _anim.SetFloat("X", horizontal);
+       
+
+
     }
 
     public void Jump()

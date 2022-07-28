@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BombEnemy : MonoBehaviour
 {
-    public Transform jugador;
+    public Transform jugador; //codigo creado por benja teves y lautaro romero
     public float timer;
     public float maxTimer;
     public float movespeed;
@@ -15,10 +15,10 @@ public class BombEnemy : MonoBehaviour
     public float speedRot;
     public AudioSource sonidorevivedmg;
     public bool setTimer;
-    public GameObject model, smokeefect;
+    public GameObject model, smokeefect, thisobjet;
     public float mindistance;
     private float _Distancia;
-    //public ParticleSystem explosionAnimPrefab;
+
 
     private void Start()
     {
@@ -39,6 +39,11 @@ public class BombEnemy : MonoBehaviour
             {
                 model.SetActive(false);
                 Instantiate(explosion, transform.position, transform.rotation);
+
+                if(timer<=-0.5)
+                {
+                    thisobjet.SetActive(false);//esto desactiva el controlador del objeto entero
+                }
             }
 
             if (timer <= 1 && timer > 0 || _Distancia< mindistance)
