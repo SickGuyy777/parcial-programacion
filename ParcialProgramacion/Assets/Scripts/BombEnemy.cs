@@ -2,117 +2,96 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BombEnemy : empty
+public class BombEnemy : MonoBehaviour
 {
     public Transform jugador;
+    public float timer;
+    public float maxTimer;
     public float movespeed;
-    public float detector;
-    public float persecucion;
-    public LayerMask layerdeljugador;
-    public bool detectoalgo;
+    public bool folowing;
     public bool enemigodetectado;
     public Animator animaciones;
-    public int enemigos_derrotados = 0;
-    public int MaxEnemigos_derrotados;
-    public GameObject bloqueodenivel;
-    public GameObject sonido_muerte;
-    public GameObject player;
+    public GameObject explosion;
     public float speedRot;
     public AudioSource sonidorevivedmg;
     public bool setTimer;
-    public ParticleSystem explosionAnimPrefab;
+    public GameObject model, smokeefect;
+    public float mindistance;
+    private float _Distancia;
+    //public ParticleSystem explosionAnimPrefab;
 
     private void Start()
     {
         timer = maxTimer;
         setTimer = false;
+        folowing = false;
+        smokeefect.SetActive(false);
+        
     }
 
     void Update()
     {
-        detectoalgo = Physics.CheckSphere(transform.position, detector, layerdeljugador);
-        enemigodetectado = Physics.CheckSphere(transform.position, persecucion, layerdeljugador);
-        if (enemigodetectado == true && player.CompareTag("Player") && currentHealth > 0)
+        if(setTimer==true)
+        {
+            timer -=  Time.deltaTime;
+
+            if (timer <= 0 && timer>-0.01)
+            {
+                model.SetActive(false);
+                Instantiate(explosion, transform.position, transform.rotation);
+            }
+
+            if (timer <= 1 && timer > 0 || _Distancia< mindistance)
+            {
+                smokeefect.SetActive(false);
+                animaciones.SetBool("explotion", true);
+                folowing = false;
+                
+            }
+        }
+
+        Follow();
+
+
+    }
+
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            folowing = true;
+        }
+    }
+
+
+
+    public void Follow()
+    {
+        if(folowing==true)
         {
             var dir = jugador.position - transform.position;
             var lerpDir = Vector3.Lerp(transform.forward, dir, Time.deltaTime * speedRot);
             transform.forward = lerpDir;
+            setTimer = true;
+            smokeefect.SetActive(true);
+            _Distancia = Vector3.Distance(jugador.position, transform.position);
+            animaciones.SetBool("corro", true);
 
-            if (detectoalgo == true && enemigodetectado == true)
+            if (_Distancia > mindistance)
             {
-                setTimer = true;
-                var _Distancia = Vector3.Distance(jugador.position, transform.position);
-                animaciones.SetBool("corro", true);
+                transform.position = Vector3.MoveTowards(transform.position, new Vector3(jugador.position.x, transform.position.y, jugador.position.z), movespeed * Time.deltaTime);
 
-                if (_Distancia > 0.79)
-                {
-                    transform.position = Vector3.MoveTowards(transform.position, new Vector3(jugador.position.x, transform.position.y, jugador.position.z), movespeed * Time.deltaTime);
-
-                }
-                else
-                {
-                    animaciones.SetBool("ataco", true);
-                }
             }
-            else
-            {
-                animaciones.SetBool("corro", false);
-                setTimer = true;
-            }
-        }
-        else
-        {
-            Dead();
+            
+
+
         }
 
-        if (enemigos_derrotados == MaxEnemigos_derrotados)
-        {
-            Destroy(bloqueodenivel);
-        }
 
-        if (setTimer == true)
-        {
-            BombFunction();
-        }
+
     }
 
-    public void Dead()
-    {
-        if (currentHealth <= 0)
-        {
-            speedRot = 0;
-            animaciones.SetBool("Muerto", true);
-            enemigos_derrotados++;
-        }
-    }
 
-    public void OnDrawGizmos()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, detector);
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, persecucion);
-    }
-
-    public void BombFunction()
-    {
-
-        if (timer > 0)
-        {
-            timer -= 1 * Time.deltaTime;
-        }
-
-        if (timer < 0)
-        {
-            timer = 0;
-        }
-
-        if (timer == 0)
-        {
-            Instantiate(explosionAnimPrefab, transform.position, transform.rotation);
-
-            Destroy(this.gameObject);
-        }
-
-    }
 }

@@ -1,3 +1,0 @@
-
--Cuando los pinchos te matan, se activa la animacion de muerte pero el juego no va a la pantalla de muerte. Mientras que con los bullets si (mismo codigo)
--
