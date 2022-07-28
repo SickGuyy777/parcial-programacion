@@ -31341,6 +31341,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf40a1553be50e846aac5da87479556d, type: 3}
+--- !u!114 &2009454103 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7775931655814848811, guid: bf40a1553be50e846aac5da87479556d, type: 3}
+  m_PrefabInstance: {fileID: 2009454102}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237339245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f523476d3841d742ae0ae04b50cd39a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2027840818
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32485,7 +32496,7 @@ PrefabInstance:
     - target: {fileID: 836829953520981818, guid: e43e03aae0d005140869cfc74fa666cc, type: 3}
       propertyPath: mecanic
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2009454103}
     - target: {fileID: 836829953520981818, guid: e43e03aae0d005140869cfc74fa666cc, type: 3}
       propertyPath: UIglasses
       value: 

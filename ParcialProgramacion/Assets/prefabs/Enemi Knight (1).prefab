@@ -83,7 +83,7 @@ MonoBehaviour:
   maxTimer: 0
   isDead: 0
   sonidodolor: {fileID: 0}
-  jugador: {fileID: 0}
+  jugador: {fileID: 5800543050917863808, guid: e43e03aae0d005140869cfc74fa666cc, type: 3}
   movespeed: 1.5
   detector: 3.69
   persecucion: 2.34
