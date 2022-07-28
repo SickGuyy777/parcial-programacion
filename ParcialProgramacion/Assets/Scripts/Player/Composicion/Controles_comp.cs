@@ -48,6 +48,7 @@ public class Controles_comp
 
             if(Input.GetKeyDown(KeyCode.Mouse0))
             {
+               
                _movement.attack();
             }
             else

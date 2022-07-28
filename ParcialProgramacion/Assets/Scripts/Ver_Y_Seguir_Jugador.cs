@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ver_Y_Seguir_Jugador : empty
 {
-    public Transform jugador;
+    public Transform jugador; //codigo creado por Lautaro Romero, Benjamin Teves TP Final
     public float movespeed;
     public float detector;
     public float persecucion;
