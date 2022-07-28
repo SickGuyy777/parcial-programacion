@@ -26,7 +26,6 @@ public class BombEnemy : MonoBehaviour
         setTimer = false;
         folowing = false;
         smokeefect.SetActive(false);
-        
     }
 
     void Update()
@@ -56,11 +55,7 @@ public class BombEnemy : MonoBehaviour
         }
 
         Follow();
-
-
     }
-
-
 
     private void OnTriggerEnter(Collider other)
     {
@@ -69,8 +64,6 @@ public class BombEnemy : MonoBehaviour
             folowing = true;
         }
     }
-
-
 
     public void Follow()
     {
@@ -89,14 +82,6 @@ public class BombEnemy : MonoBehaviour
                 transform.position = Vector3.MoveTowards(transform.position, new Vector3(jugador.position.x, transform.position.y, jugador.position.z), movespeed * Time.deltaTime);
 
             }
-            
-
-
         }
-
-
-
     }
-
-
 }
