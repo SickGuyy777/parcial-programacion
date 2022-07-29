@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class desactive_objets : MonoBehaviour
 {
-    public GameObject[] GmObj_act_des;
+    public GameObject[] GmObj_act_des; // creado por Lautaro Romero TPFINAL
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))

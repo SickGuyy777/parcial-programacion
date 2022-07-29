@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Explosion : HitBox
 {
-    public Rigidbody rb;
+    public Rigidbody rb;    //Creado por Benjamin tevez y Modificado por Lautaro Romero TPFINAL
     public float radiusDamage;
     public float durationExplosion;
 

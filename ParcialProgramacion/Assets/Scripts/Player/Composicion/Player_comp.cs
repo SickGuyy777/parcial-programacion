@@ -60,6 +60,7 @@ public class Player_comp : empty
 
             timer -= 1 * Time.deltaTime;
             anim.SetBool("Muerto", true);
+            speed = 0;
             efectcanvasdead.SetBool("dead", true);
             if (timer<=0)
             {

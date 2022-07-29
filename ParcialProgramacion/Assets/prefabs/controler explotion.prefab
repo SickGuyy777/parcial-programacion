@@ -79,7 +79,7 @@ MonoBehaviour:
   sonidoDolor: {fileID: 7036148378600076235, guid: 36cfb9258ed27d14d870958e9669939c, type: 3}
   damage: 5
   rb: {fileID: 4758698119886818883}
-  radiusDamage: 5
+  radiusDamage: 3
   durationExplosion: 0.001
 --- !u!1001 &23775265372606176
 PrefabInstance:
