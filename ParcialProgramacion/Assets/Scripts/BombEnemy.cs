@@ -13,12 +13,10 @@ public class BombEnemy : MonoBehaviour
     public Animator animaciones;
     public GameObject explosion;
     public float speedRot;
-    public AudioSource sonidorevivedmg;
     public bool setTimer;
     public GameObject model, smokeefect, thisobjet;
     public float mindistance;
     private float _Distancia;
-
 
     private void Start()
     {
@@ -32,7 +30,7 @@ public class BombEnemy : MonoBehaviour
     {
         if(setTimer==true)
         {
-            timer -=  Time.deltaTime;
+            timer -= 1* Time.deltaTime;
 
             if (timer <= 0 && timer>-0.01)
             {

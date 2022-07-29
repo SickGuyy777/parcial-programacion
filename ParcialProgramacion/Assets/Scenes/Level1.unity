@@ -20042,6 +20042,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7922635572163924244, guid: 7625caa228b96994ca49ad3e0ba847d1, type: 3}
+      propertyPath: thisobjet
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7922635572163924245, guid: 7625caa228b96994ca49ad3e0ba847d1, type: 3}
       propertyPath: m_Name
       value: controler enemy (2)
@@ -21306,6 +21310,11 @@ MonoBehaviour:
   sonidoEspada: {fileID: 0}
   sonidoDolor: {fileID: 0}
   damage: 1
+--- !u!1 &1525057273 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7922635572163924245, guid: 7625caa228b96994ca49ad3e0ba847d1, type: 3}
+  m_PrefabInstance: {fileID: 7922635572996217815}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1541528835
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32523,7 +32532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5800543050917863808, guid: e43e03aae0d005140869cfc74fa666cc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.91
+      value: 6.83
       objectReference: {fileID: 0}
     - target: {fileID: 5800543050917863808, guid: e43e03aae0d005140869cfc74fa666cc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -32531,7 +32540,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5800543050917863808, guid: e43e03aae0d005140869cfc74fa666cc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.18
+      value: 4.16
       objectReference: {fileID: 0}
     - target: {fileID: 5800543050917863808, guid: e43e03aae0d005140869cfc74fa666cc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -32715,6 +32724,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7922635572163924240, guid: 7625caa228b96994ca49ad3e0ba847d1, type: 3}
+      propertyPath: m_Radius
+      value: 3.864506
+      objectReference: {fileID: 0}
+    - target: {fileID: 7922635572163924240, guid: 7625caa228b96994ca49ad3e0ba847d1, type: 3}
+      propertyPath: m_Center.x
+      value: -0.29450616
+      objectReference: {fileID: 0}
+    - target: {fileID: 7922635572163924240, guid: 7625caa228b96994ca49ad3e0ba847d1, type: 3}
+      propertyPath: m_Center.y
+      value: -1.2262174
+      objectReference: {fileID: 0}
     - target: {fileID: 7922635572163924241, guid: 7625caa228b96994ca49ad3e0ba847d1, type: 3}
       propertyPath: m_RootOrder
       value: 64
@@ -32763,6 +32784,10 @@ PrefabInstance:
       propertyPath: jugador
       value: 
       objectReference: {fileID: 3229649830210058812}
+    - target: {fileID: 7922635572163924244, guid: 7625caa228b96994ca49ad3e0ba847d1, type: 3}
+      propertyPath: thisobjet
+      value: 
+      objectReference: {fileID: 1525057273}
     - target: {fileID: 7922635572163924245, guid: 7625caa228b96994ca49ad3e0ba847d1, type: 3}
       propertyPath: m_Name
       value: controler enemy

@@ -4869,18 +4869,17 @@ MonoBehaviour:
   jugador: {fileID: 5800543050917863808, guid: e43e03aae0d005140869cfc74fa666cc, type: 3}
   timer: 0
   maxTimer: 5
-  movespeed: 1
+  movespeed: 1.1
   folowing: 0
   enemigodetectado: 0
   animaciones: {fileID: 7922635571827566492}
-  explosion: {fileID: 3882896460248928563, guid: 383a54879d61de740a3c638140e41bed, type: 3}
+  explosion: {fileID: 5529707348272232879, guid: 4c1aab80d482ea740a6d88603b9c8f2c, type: 3}
   speedRot: 3
-  sonidorevivedmg: {fileID: 0}
   setTimer: 0
   model: {fileID: 7004138392925651889}
   smokeefect: {fileID: 7922635571374827513}
-  thisobjet: {fileID: 0}
-  mindistance: 0
+  thisobjet: {fileID: 7922635572163924245}
+  mindistance: 0.79
 --- !u!135 &7922635572163924240
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4892,8 +4891,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4.465347
-  m_Center: {x: 0, y: -1.2262176, z: 0}
+  m_Radius: 4.0445776
+  m_Center: {x: 0, y: -1.2262175, z: 0.4207697}
 --- !u!1001 &7922635571834355424
 PrefabInstance:
   m_ObjectHideFlags: 0

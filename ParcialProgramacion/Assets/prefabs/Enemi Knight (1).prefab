@@ -97,7 +97,7 @@ MonoBehaviour:
   MaxEnemigos_derrotados: 1
   bloqueodenivel: {fileID: 0}
   sonido_muerte: {fileID: 137951217926593015, guid: 4c691bbe355bd9c4fb68f7b2c7657e06, type: 3}
-  player: {fileID: 0}
+  player: {fileID: 6572013548290030394, guid: e43e03aae0d005140869cfc74fa666cc, type: 3}
   speedRot: 3
   sonidorevivedmg: {fileID: 0}
 --- !u!1001 &1264112455139410683
