@@ -45,12 +45,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 066807afd9eb57841b5dd85aede52089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoEspada: {fileID: 0}
+  sonidoEspada: {fileID: 8099832608101155915, guid: 2495f07ea9f9fc7448a0555b683a13a0, type: 3}
   sonidoDolor: {fileID: 7036148378600076235, guid: 36cfb9258ed27d14d870958e9669939c, type: 3}
   damage: 5
   rb: {fileID: 218655900712371610}
   radiusDamage: 3
   durationExplosion: 0.001
+  sonidoexplosion: {fileID: 7804810470910533992, guid: e6ffbf483049cf2408e2e6c3000cb2b7, type: 3}
 --- !u!54 &218655900712371610
 Rigidbody:
   m_ObjectHideFlags: 0

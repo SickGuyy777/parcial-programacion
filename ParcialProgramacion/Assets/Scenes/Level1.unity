@@ -1597,7 +1597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoEspada: {fileID: 0}
+  sonidoEspada: {fileID: 7426501205539873663, guid: 487067d8564d51a438ef07890b2c840e, type: 3}
   sonidoDolor: {fileID: 7036148378600076235, guid: 36cfb9258ed27d14d870958e9669939c, type: 3}
   damage: 1
 --- !u!4 &119856297 stripped
@@ -1876,7 +1876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be6017e8faa26ee41be8355cc87328d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fillBar: {fileID: 0}
+  fillBar: {fileID: 399016714}
   health: 0
 --- !u!114 &141022524
 MonoBehaviour:
@@ -7153,8 +7153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoEspada: {fileID: 0}
-  sonidoDolor: {fileID: 0}
+  sonidoEspada: {fileID: 7426501205539873663, guid: 487067d8564d51a438ef07890b2c840e, type: 3}
+  sonidoDolor: {fileID: 7036148378600076235, guid: 36cfb9258ed27d14d870958e9669939c, type: 3}
   damage: 1
 --- !u!1001 &547036880
 PrefabInstance:
@@ -12620,7 +12620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoEspada: {fileID: 0}
+  sonidoEspada: {fileID: 7426501205539873663, guid: 487067d8564d51a438ef07890b2c840e, type: 3}
   sonidoDolor: {fileID: 7036148378600076235, guid: 36cfb9258ed27d14d870958e9669939c, type: 3}
   damage: 1
 --- !u!1 &600783842
@@ -13731,7 +13731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoEspada: {fileID: 0}
+  sonidoEspada: {fileID: 7426501205539873663, guid: 487067d8564d51a438ef07890b2c840e, type: 3}
   sonidoDolor: {fileID: 7036148378600076235, guid: 36cfb9258ed27d14d870958e9669939c, type: 3}
   damage: 1
 --- !u!1 &680253412
@@ -13946,7 +13946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoEspada: {fileID: 0}
+  sonidoEspada: {fileID: 7426501205539873663, guid: 487067d8564d51a438ef07890b2c840e, type: 3}
   sonidoDolor: {fileID: 7036148378600076235, guid: 36cfb9258ed27d14d870958e9669939c, type: 3}
   damage: 1
 --- !u!1001 &719144518
@@ -14322,7 +14322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoEspada: {fileID: 0}
+  sonidoEspada: {fileID: 7426501205539873663, guid: 487067d8564d51a438ef07890b2c840e, type: 3}
   sonidoDolor: {fileID: 7036148378600076235, guid: 36cfb9258ed27d14d870958e9669939c, type: 3}
   damage: 1
 --- !u!1 &772800802
@@ -14775,7 +14775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoEspada: {fileID: 0}
+  sonidoEspada: {fileID: 7426501205539873663, guid: 487067d8564d51a438ef07890b2c840e, type: 3}
   sonidoDolor: {fileID: 7036148378600076235, guid: 36cfb9258ed27d14d870958e9669939c, type: 3}
   damage: 1
 --- !u!1001 &797978628
@@ -17344,8 +17344,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoEspada: {fileID: 0}
-  sonidoDolor: {fileID: 0}
+  sonidoEspada: {fileID: 7426501205539873663, guid: 487067d8564d51a438ef07890b2c840e, type: 3}
+  sonidoDolor: {fileID: 7036148378600076235, guid: 36cfb9258ed27d14d870958e9669939c, type: 3}
   damage: 1
 --- !u!1001 &1064207403
 PrefabInstance:
@@ -17923,7 +17923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoEspada: {fileID: 0}
+  sonidoEspada: {fileID: 7426501205539873663, guid: 487067d8564d51a438ef07890b2c840e, type: 3}
   sonidoDolor: {fileID: 7036148378600076235, guid: 36cfb9258ed27d14d870958e9669939c, type: 3}
   damage: 1
 --- !u!1001 &1109089155
@@ -21222,8 +21222,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoEspada: {fileID: 0}
-  sonidoDolor: {fileID: 0}
+  sonidoEspada: {fileID: 7426501205539873663, guid: 487067d8564d51a438ef07890b2c840e, type: 3}
+  sonidoDolor: {fileID: 7036148378600076235, guid: 36cfb9258ed27d14d870958e9669939c, type: 3}
   damage: 1
 --- !u!1001 &1425659704
 PrefabInstance:
@@ -22175,8 +22175,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoEspada: {fileID: 0}
-  sonidoDolor: {fileID: 0}
+  sonidoEspada: {fileID: 7426501205539873663, guid: 487067d8564d51a438ef07890b2c840e, type: 3}
+  sonidoDolor: {fileID: 7036148378600076235, guid: 36cfb9258ed27d14d870958e9669939c, type: 3}
   damage: 1
 --- !u!1 &1525057273 stripped
 GameObject:
@@ -23847,7 +23847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoEspada: {fileID: 0}
+  sonidoEspada: {fileID: 7426501205539873663, guid: 487067d8564d51a438ef07890b2c840e, type: 3}
   sonidoDolor: {fileID: 7036148378600076235, guid: 36cfb9258ed27d14d870958e9669939c, type: 3}
   damage: 1
 --- !u!1 &1701141035
@@ -24903,7 +24903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoEspada: {fileID: 0}
+  sonidoEspada: {fileID: 7426501205539873663, guid: 487067d8564d51a438ef07890b2c840e, type: 3}
   sonidoDolor: {fileID: 7036148378600076235, guid: 36cfb9258ed27d14d870958e9669939c, type: 3}
   damage: 1
 --- !u!1001 &1788745011
@@ -26717,7 +26717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4227807422e59d489187b8724306965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoEspada: {fileID: 0}
+  sonidoEspada: {fileID: 7426501205539873663, guid: 487067d8564d51a438ef07890b2c840e, type: 3}
   sonidoDolor: {fileID: 7036148378600076235, guid: 36cfb9258ed27d14d870958e9669939c, type: 3}
   damage: 1
 --- !u!1001 &1954440138

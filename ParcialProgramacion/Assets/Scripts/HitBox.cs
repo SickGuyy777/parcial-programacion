@@ -18,6 +18,6 @@ public class HitBox : MonoBehaviour
                 Instantiate(sonidoEspada);
                 Instantiate(sonidoDolor);
             }
-        
+
     }
 }
