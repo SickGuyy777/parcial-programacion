@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class soundMG : MonoBehaviour
 {
-    public GameObject sound;
+    public AudioSource sound;
     
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
         {
-            sound.SetActive(true);
+            sound.Play();
         }
     }
 
@@ -18,7 +18,7 @@ public class soundMG : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            sound.SetActive(false);
+            sound.Pause();
         }
     }
 }

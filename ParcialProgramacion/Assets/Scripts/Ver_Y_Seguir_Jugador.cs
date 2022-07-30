@@ -18,7 +18,7 @@ public class Ver_Y_Seguir_Jugador : empty
     public GameObject sonido_muerte;
     public GameObject player;
     public float speedRot;
-    public AudioSource sonidorevivedmg;
+
 
     void Update()
     {

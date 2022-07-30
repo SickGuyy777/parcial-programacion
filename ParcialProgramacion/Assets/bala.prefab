@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sonidoEspada: {fileID: 0}
-  sonidoDolor: {fileID: 0}
+  sonidoDolor: {fileID: 7036148378600076235, guid: 36cfb9258ed27d14d870958e9669939c, type: 3}
   damage: 3
 --- !u!1001 &4611982061246505147
 PrefabInstance:

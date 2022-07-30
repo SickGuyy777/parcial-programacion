@@ -4,19 +4,21 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class empty :MonoBehaviour   
+public class empty : MonoBehaviour
 {
     //Codigo de empty creado por Benja Tevez, Lautaro Romero y Nahuel Stagno TPFINAL
     public float basehealth = 10;
     public float currentHealth;
-    public Image healthBar;   
+    public Image healthBar;
     public float timer;
     public float maxTimer;
     public bool isDead = false;
 
 
-    public GameObject sonidodolor;
+    public empty ()
+    {
 
+    }
     public virtual void Awake()
     {
         currentHealth = basehealth;
@@ -30,9 +32,10 @@ public class empty :MonoBehaviour
         healthBar.fillAmount -= damage / currentHealth;
     }
 
+
     public bool restaurarsalud(int healingamount)
     {
-        if (healingamount > 0 || currentHealth <= 0 || currentHealth == basehealth)
+        if (healingamount > 0 || currentHealth < 10 || currentHealth == basehealth)
         {
 
             currentHealth += healingamount;
@@ -50,5 +53,4 @@ public class empty :MonoBehaviour
         }
 
     }
-
 }

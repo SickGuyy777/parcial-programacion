@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Explosion : HitBox
 {
-    public Rigidbody rb;    //Creado por Benjamin tevez y Modificado por Lautaro Romero TPFINAL
+    public Rigidbody rb;    //Creado por Benjamin teves y Modificado por Lautaro Romero TPFINAL
     public float radiusDamage;
     public float durationExplosion;
-
+    public GameObject sonidoexplosion;
 
     float _timer;
-
+    
 
     private void Update()
     {
@@ -18,6 +18,7 @@ public class Explosion : HitBox
 
         if (_timer >= durationExplosion)
         {
+            sonidoexplosion.SetActive(true);
             Collider[] colliders = Physics.OverlapSphere(transform.position, radiusDamage);
 
             for (int i = 0; i < colliders.Length; i++)

@@ -24,6 +24,7 @@ public class BombEnemy : MonoBehaviour
         setTimer = false;
         folowing = false;
         smokeefect.SetActive(false);
+        sonidomecha.SetActive(false);
     }
 
     void Update()
@@ -32,11 +33,11 @@ public class BombEnemy : MonoBehaviour
         {
             timer -= 1* Time.deltaTime;
 
-            if (timer <= 0 && timer>-0.01)
+            if (timer <= 0 && timer>-0.01)//cuando explote la bomba
             {
                 model.SetActive(false);
                 Instantiate(explosion, transform.position, transform.rotation);
-                Instantiate(sonidomecha, transform.position, transform.rotation);
+                
                 if (timer<=-0.5)
                 {
                     thisobjet.SetActive(false);//esto desactiva el controlador del objeto entero
@@ -45,10 +46,11 @@ public class BombEnemy : MonoBehaviour
 
             if (timer <= 1 && timer > 0 || _Distancia< mindistance)
             {
+                
                 smokeefect.SetActive(false);
                 animaciones.SetBool("explotion", true);
                 folowing = false;
-                
+                sonidomecha.SetActive(false);
             }
         }
 
@@ -60,7 +62,7 @@ public class BombEnemy : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             folowing = true;
-            Instantiate(sonidomecha, transform.position, transform.rotation);
+
         }
     }
 
@@ -68,6 +70,7 @@ public class BombEnemy : MonoBehaviour
     {
         if(folowing==true)
         {
+            sonidomecha.SetActive(true);
             var dir = jugador.position - transform.position;
             var lerpDir = Vector3.Lerp(transform.forward, dir, Time.deltaTime * speedRot);
             transform.forward = lerpDir;
