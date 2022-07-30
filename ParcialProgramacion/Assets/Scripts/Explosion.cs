@@ -18,7 +18,7 @@ public class Explosion : HitBox
 
         if (_timer >= durationExplosion)
         {
-            sonidoexplosion.SetActive(true);
+            Instantiate(sonidoexplosion);
             Collider[] colliders = Physics.OverlapSphere(transform.position, radiusDamage);
 
             for (int i = 0; i < colliders.Length; i++)
