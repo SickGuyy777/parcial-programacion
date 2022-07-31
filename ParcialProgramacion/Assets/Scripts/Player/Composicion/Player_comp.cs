@@ -4,15 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Player_comp : empty
+public class Player_comp : empty, IScoreCoins_Ui
 {
     //composicion hecha por Lautaro Romero TPFINAL
-        
+
 
     public float speed;
     public float forceJump;
     public Rigidbody rb;
-    public int salto; 
+    public int salto;
     public Animator anim;
     public Animator efectcanvasdead;
     public Movement_comp _movement;
@@ -20,12 +20,13 @@ public class Player_comp : empty
     public bool isjump, expe;
     public AudioClip jump;
     public AudioClip pies;
+    public AudioClip amagueespada;
     [Space]
     public GameObject scoreText;
     public npc mecanic;
     public GameObject glasses, UIglasses;
     public Magical_Galsses glass;
-    
+
 
     public static int score;
 
@@ -33,17 +34,17 @@ public class Player_comp : empty
     private void Start()
     {
         _movement = new Movement_comp(speed, forceJump, rb, transform, anim, isjump);
-        _control = new Controles_comp(_movement, salto,anim, mecanic, glasses,glass,UIglasses,expe);
-        
+        _control = new Controles_comp(_movement, salto, anim, mecanic, glasses, glass, UIglasses, expe);
+
     }
 
 
     private void Update()
     {
         _control.ArtificialUpdate();
-        scoreText.GetComponent<Text>().text = "" + score;
+        UIscorecoins();
         Recivedmg();
-       
+
 
     }
 
@@ -52,20 +53,20 @@ public class Player_comp : empty
         other.GetComponent<Boton>()?.Touch();
     }
 
-    
+
     public void Recivedmg()
-    {       
-        if(currentHealth<=0)
+    {
+        if (currentHealth <= 0)
         {
 
             timer -= 1 * Time.deltaTime;
             anim.SetBool("Muerto", true);
             speed = 0;
             efectcanvasdead.SetBool("dead", true);
-            if (timer<=0)
+            if (timer <= 0)
             {
                 SceneManager.LoadScene("Perdiste");
-                
+
 
             }
 
@@ -74,7 +75,10 @@ public class Player_comp : empty
 
     }
 
-
+    public void UIscorecoins()
+    {
+        scoreText.GetComponent<Text>().text = "" + score;
+    }
 
     public void soundjump()
     {
@@ -87,5 +91,8 @@ public class Player_comp : empty
     }
 
 
-
+    public void Amagueespada()
+    {
+        AudioSource.PlayClipAtPoint(amagueespada, transform.position);
+    }
 }
