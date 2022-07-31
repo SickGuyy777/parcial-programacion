@@ -26,7 +26,9 @@ public class Player_comp : empty, IScoreCoins_Ui
     public npc mecanic;
     public GameObject glasses, UIglasses;
     public Magical_Galsses glass;
+    public float LvlTimer = 0;
 
+    public Text textoTimer;
 
     public static int score;
 
@@ -44,7 +46,7 @@ public class Player_comp : empty, IScoreCoins_Ui
         _control.ArtificialUpdate();
         UIscorecoins();
         Recivedmg();
-
+        TimerLevel();
 
     }
 
@@ -94,5 +96,17 @@ public class Player_comp : empty, IScoreCoins_Ui
     public void Amagueespada()
     {
         AudioSource.PlayClipAtPoint(amagueespada, transform.position);
+    }
+
+    public void TimerLevel()
+    {
+        LvlTimer -= Time.deltaTime;
+
+        textoTimer.text = "" + LvlTimer.ToString("f0");
+
+        if (LvlTimer <= 0)
+        {
+            SceneManager.LoadScene("Perdiste");
+        }
     }
 }

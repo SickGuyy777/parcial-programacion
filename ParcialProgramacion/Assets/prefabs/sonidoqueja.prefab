@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8116322784266296762}
   - component: {fileID: 4334935579933904660}
   - component: {fileID: 7449851865083034308}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: sonidoqueja
   m_TagString: Untagged
   m_Icon: {fileID: 0}

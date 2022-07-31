@@ -30,7 +30,6 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 2424543833566150316}
-  - {fileID: 8244221180855121657}
   - {fileID: 2325491697123686493}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -61,54 +60,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce0b3e949e34fe54d85cab3ced92cdc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Timer: {fileID: 7111464560796008866}
+  Timer: {fileID: 0}
   reloj: {fileID: 2494520696943646030}
+  cam: {fileID: 0}
+  sound: {fileID: 0}
   bonusTimer: 10
---- !u!1 &3878775553091671302
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8244221180855121657}
-  - component: {fileID: 7111464560796008866}
-  m_Layer: 3
-  m_Name: Timer script
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8244221180855121657
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3878775553091671302}
-  m_LocalRotation: {x: 0.58124113, y: -0.5812417, z: 0.4026892, w: 0.40268883}
-  m_LocalPosition: {x: 7.6771474, y: -20.419477, z: -20.726255}
-  m_LocalScale: {x: 1.1860663, y: 1.1860663, z: 1.1860663}
-  m_Children: []
-  m_Father: {fileID: 3014458427219890164}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7111464560796008866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3878775553091671302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9225d9ccb421e84eb380a74d08511fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timer: 60
-  textoTimer: {fileID: 7665765307520202351}
 --- !u!1 &6596005667898445334
 GameObject:
   m_ObjectHideFlags: 0
@@ -139,7 +95,7 @@ RectTransform:
   m_LocalScale: {x: 5.1577315, y: 5.1577315, z: 5.1577315}
   m_Children: []
   m_Father: {fileID: 3014458427219890164}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}

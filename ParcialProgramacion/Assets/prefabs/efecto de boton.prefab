@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8307746995434141177}
   - component: {fileID: 384813462117528912}
   - component: {fileID: 606103582339500248}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: efecto de boton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,8 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45d4a4b57372daa42a4eb8bcbf267f89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonido: {fileID: 6836546261559060456}
+  audioSource: {fileID: 0}
   buttom: {fileID: 0}
+  sound: {fileID: 0}
 --- !u!114 &606103582339500248
 MonoBehaviour:
   m_ObjectHideFlags: 0

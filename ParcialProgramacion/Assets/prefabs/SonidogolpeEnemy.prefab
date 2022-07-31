@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7259826690179749206}
   - component: {fileID: 9118945195877326305}
   - component: {fileID: 7204762229231281334}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: SonidogolpeEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9165830346234248625}
   - component: {fileID: 9119072146241578167}
   - component: {fileID: 3936786689529823730}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Ghost explosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 496206065010487644}
   - component: {fileID: 8479165153860380853}
   - component: {fileID: 8184690421585829606}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: derrota
   m_TagString: Untagged
   m_Icon: {fileID: 0}

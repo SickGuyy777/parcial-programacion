@@ -18,7 +18,7 @@ public class npc : MonoBehaviour
     private bool quest, next, No, Yes, Out, complete,final,bye;// estos los hice privados porque no son necesarios verlos en el inspector
     public bool Hweapon, gift=false;// este lo necesitaba publico porque lo llamo en el scrpt de swordQuest
     public GameObject[] textUI;
-    public GameObject voz;
+
     private float cooldown;
     public float maxtime;
  
@@ -189,7 +189,7 @@ public class npc : MonoBehaviour
                 exclamacion.SetActive(true);
                 UIanimator.SetBool("see", true);
                 next = true;// una vez que next sea true inicia las preguntas del update
-                Instantiate(voz);
+                
             }
 
             if (other.CompareTag("Player") && quest == true)

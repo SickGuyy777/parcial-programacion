@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2970856860713496608}
   - component: {fileID: 4911243857005723735}
   - component: {fileID: -6471073858839981223}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: sonidomuerteenemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}

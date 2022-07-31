@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Destruccion : MonoBehaviour
 {
-    public Timer Timer; // Hecho por Nahuel Stagno TPFINAL
+    public Player_comp Timer; // Hecho por Nahuel Stagno TPFINAL
     public GameObject reloj;
     public AudioSource cam;
     public AudioClip sound;
@@ -14,7 +14,7 @@ public class Destruccion : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Timer.timer += bonusTimer;
+            Timer.LvlTimer += bonusTimer;
 
             reloj.SetActive(false);
             cam.PlayOneShot(sound);

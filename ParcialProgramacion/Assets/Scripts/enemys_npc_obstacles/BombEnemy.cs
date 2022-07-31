@@ -86,4 +86,6 @@ public class BombEnemy : MonoBehaviour
             }
         }
     }
+
+
 }

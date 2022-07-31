@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5881241201804250488}
   - component: {fileID: 5012643331034172649}
   - component: {fileID: 4286558021325453778}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: victorysound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
