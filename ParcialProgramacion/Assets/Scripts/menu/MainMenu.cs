@@ -12,7 +12,7 @@ public class MainMenu : MonoBehaviour
 
     public void ResetGame()
     {
-        Player_comp.score = 0;
+
         SceneManager.LoadScene("Level1");
     }
 

@@ -28,4 +28,7 @@ public class Plataformas_Moviles : MonoBehaviour
             }
         }
     }
+
+
 }
+

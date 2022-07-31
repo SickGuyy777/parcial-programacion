@@ -9,7 +9,8 @@ public class Coin : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        var player = other.gameObject.GetComponent<IScoreCoins_Ui>();
+        if (player!=null)
         {
             Player_comp.score += 1;
             Destroy(this.gameObject);
