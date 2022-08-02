@@ -25,9 +25,9 @@ public class Player_comp : empty, IScoreCoins_Ui
     public GameObject scoreText;
     public npc mecanic;
     public GameObject glasses, UIglasses;
-    public Magical_Galsses glass;
+    //public Magical_Galsses glass;
     public float LvlTimer = 0;
-
+    public AudioSource Asc;
     public Text textoTimer;
 
     public static int score;
@@ -36,7 +36,7 @@ public class Player_comp : empty, IScoreCoins_Ui
     private void Start()
     {
         _movement = new Movement_comp(speed, forceJump, rb, transform, anim, isjump);
-        _control = new Controles_comp(_movement, salto, anim, mecanic, glasses, glass, UIglasses, expe);
+        _control = new Controles_comp(_movement, salto, anim, mecanic, glasses, UIglasses, expe);
 
     }
 
@@ -84,18 +84,18 @@ public class Player_comp : empty, IScoreCoins_Ui
 
     public void soundjump()
     {
-        AudioSource.PlayClipAtPoint(jump, transform.position);
+        Asc.PlayOneShot(jump);
     }
 
     public void soundpies()
     {
-        AudioSource.PlayClipAtPoint(pies, transform.position);
+        Asc.PlayOneShot(pies);
     }
 
 
     public void Amagueespada()
     {
-        AudioSource.PlayClipAtPoint(amagueespada, transform.position);
+        Asc.PlayOneShot(amagueespada);
     }
 
     public void TimerLevel()

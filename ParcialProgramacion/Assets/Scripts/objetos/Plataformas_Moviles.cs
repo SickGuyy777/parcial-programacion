@@ -4,31 +4,50 @@ using UnityEngine;
 
 public class Plataformas_Moviles : MonoBehaviour
 {
-    public Rigidbody RbPLatform;
+
     public Transform [] positionsPlatforms;
     public float platformSpeed;
 
     private int _actualPosition=0;
-    private int _nextPosition=1;
+    public bool movetothenext = true;
+
+
+
+
     void Update()
     {
         _Movment(); 
     }
-    void _Movment()
+    public void _Movment()
     {
-        RbPLatform.MovePosition(Vector3.MoveTowards(RbPLatform.position, positionsPlatforms[_nextPosition].position, platformSpeed * Time.deltaTime));
 
-        if(Vector3.Distance(RbPLatform.position, positionsPlatforms[_nextPosition].position) <=0 )
+        if(Vector3.Distance(transform.position,positionsPlatforms[_actualPosition].transform.position) < 0.1f)
         {
-            _actualPosition = _nextPosition;
-            _nextPosition++;
-            if(_nextPosition > positionsPlatforms.Length - 1)
+            _actualPosition++;
+            if(_actualPosition>= positionsPlatforms.Length)
             {
-                _nextPosition = 0;
+                _actualPosition = 0;
             }
+
+            
+        }
+        transform.position = Vector3.MoveTowards(transform.position, positionsPlatforms[_actualPosition].transform.position, platformSpeed * Time.deltaTime);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.transform.SetParent(transform);
         }
     }
 
-
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.transform.SetParent(null);
+        }
+    }
 }
 
