@@ -68,11 +68,8 @@ public class Player_comp : empty, IScoreCoins_Ui
             if (timer <= 0)
             {
                 SceneManager.LoadScene("Perdiste");
-
-
+                Cursor.visible = true;
             }
-
-
         }
 
     }
@@ -107,6 +104,7 @@ public class Player_comp : empty, IScoreCoins_Ui
         if (LvlTimer <= 0)
         {
             SceneManager.LoadScene("Perdiste");
+            Cursor.visible = true;
         }
     }
 }

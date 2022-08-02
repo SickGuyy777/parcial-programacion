@@ -9,8 +9,6 @@ public class HealthBar : MonoBehaviour
     public Image fillBar;
     public int health;
 
-
-
     public void LoseHealth (int value)
     {
         health -= value;
