@@ -4712,7 +4712,7 @@ PrefabInstance:
     - target: {fileID: 4144206263031245989, guid: b263d0365b8846e4e9dd7910cff28541, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 224876099}
     - target: {fileID: 4144206263031245989, guid: b263d0365b8846e4e9dd7910cff28541, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -5675,7 +5675,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 697173743889641476, guid: 799063ba505472641b5febe9d271c37b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.56
+      value: -4.09
       objectReference: {fileID: 0}
     - target: {fileID: 697173743889641476, guid: 799063ba505472641b5febe9d271c37b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9447,11 +9447,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dd7e956b2e215d4aba8356af5dc618e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RbPLatform: {fileID: 407428825}
   positionsPlatforms:
   - {fileID: 1754208345}
   - {fileID: 57024880}
   platformSpeed: 1
+  movetothenext: 1
 --- !u!1 &2009600064
 GameObject:
   m_ObjectHideFlags: 0
