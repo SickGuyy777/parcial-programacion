@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcc90fc8d7936f54598bfa6bd4ebf977, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoEspada: {fileID: 0}
+  sonidoEspada: {fileID: 8099832608101155915, guid: 2495f07ea9f9fc7448a0555b683a13a0, type: 3}
   sonidoDolor: {fileID: 7036148378600076235, guid: 36cfb9258ed27d14d870958e9669939c, type: 3}
   damage: 2
   speed: 10

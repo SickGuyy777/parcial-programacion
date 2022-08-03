@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5999358, g: 0.62694937, b: 0.61312795, a: 1}
+  m_IndirectSpecularColor: {r: 0.59993523, g: 0.6269482, b: 0.613127, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -33270,7 +33270,7 @@ PrefabInstance:
       objectReference: {fileID: 2009454103}
     - target: {fileID: 836829953520981818, guid: e43e03aae0d005140869cfc74fa666cc, type: 3}
       propertyPath: LvlTimer
-      value: 60
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 836829953520981818, guid: e43e03aae0d005140869cfc74fa666cc, type: 3}
       propertyPath: UIglasses
@@ -33298,6 +33298,10 @@ PrefabInstance:
       objectReference: {fileID: 1350483516}
     - target: {fileID: 836829953520981828, guid: e43e03aae0d005140869cfc74fa666cc, type: 3}
       propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 836829954084115807, guid: e43e03aae0d005140869cfc74fa666cc, type: 3}
+      propertyPath: Loop
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 836829954084115807, guid: e43e03aae0d005140869cfc74fa666cc, type: 3}

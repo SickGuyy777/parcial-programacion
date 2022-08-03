@@ -31,9 +31,17 @@ public class Bullet : HitBox
         }
     }
 
-    private void OnCollisionEnter(Collision objeto)
+
+    private void Exploto()
     {
-        if (objeto.gameObject.CompareTag("Wall") || objeto.gameObject.CompareTag("Player"))
+        Destroy(objbullet);
+        Instantiate(Explosion, transform.position, transform.rotation);
+        
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Wall") || other.gameObject.CompareTag("Player"))
         {
 
             var em = Explosion.emission;
@@ -43,12 +51,5 @@ public class Bullet : HitBox
             Exploto();
             em.enabled = false;
         }
-    }
-
-    private void Exploto()
-    {
-        Destroy(objbullet);
-        Instantiate(Explosion, transform.position, transform.rotation);
-        
     }
 }
