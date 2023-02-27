@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player_Feet : MonoBehaviour
 {
     //Logica de salto hecha por Lautaro Romero
-    new public Player_comp player;
+    public Player_comp player;
     private void OnTriggerStay(Collider other)
     {
         player._movement.True();

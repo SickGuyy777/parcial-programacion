@@ -45,7 +45,7 @@ public class Bullet : HitBox
         {
 
             var em = Explosion.emission;
-            var dur = Explosion.duration;
+            //var dur = Explosion.duration;
             em.enabled = true;
             once = false;
             Exploto();
