@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PiedraConMovimiento : HitBox
 {
-    //trabajo echo por nahuel
+    //trabajo echo por Agustin
     public GameObject PiedraMovimiento;
 
     public Transform startPoint;

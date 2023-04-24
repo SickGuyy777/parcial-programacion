@@ -1647,7 +1647,6 @@ MonoBehaviour:
   timer: 0
   maxTimer: 5
   isDead: 0
-  sonidodolor: {fileID: 7036148378600076235, guid: 36cfb9258ed27d14d870958e9669939c, type: 3}
   speed: 3
   forceJump: 4
   rb: {fileID: 836829953520981828}
@@ -1658,11 +1657,14 @@ MonoBehaviour:
   expe: 1
   jump: {fileID: 8300000, guid: a4ef1a7c386acba459a15f00b2d6ed46, type: 3}
   pies: {fileID: 8300000, guid: a48009e8969a1514cae77ae9a3723962, type: 3}
+  amagueespada: {fileID: 0}
   scoreText: {fileID: 0}
   mecanic: {fileID: 0}
   glasses: {fileID: 1019391233205959261}
   UIglasses: {fileID: 0}
-  glass: {fileID: 8012515973311782030}
+  LvlTimer: 0
+  Asc: {fileID: 0}
+  textoTimer: {fileID: 0}
 --- !u!114 &836829953421072965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1975,17 +1977,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87c0f3da6056fa7408ec2d71ad643eb8, type: 3}
---- !u!114 &8012515973311782030 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9150728596534642148, guid: 87c0f3da6056fa7408ec2d71ad643eb8, type: 3}
-  m_PrefabInstance: {fileID: 1283464313936320874}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019391233205959261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ff05161f885d02499e97312029533fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &391331858191950055 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1486625200245291405, guid: 87c0f3da6056fa7408ec2d71ad643eb8, type: 3}
@@ -2110,4 +2101,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sonidoEspada: {fileID: 4065100923733670453, guid: 36dbba239617d7642a71c84541519a50, type: 3}
   sonidoDolor: {fileID: 7036148378600076235, guid: 36cfb9258ed27d14d870958e9669939c, type: 3}
-  damage: 2
+  damage: 1

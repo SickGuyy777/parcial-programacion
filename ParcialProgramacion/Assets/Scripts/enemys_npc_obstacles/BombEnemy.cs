@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BombEnemy : MonoBehaviour
 {
-    public Transform jugador; //codigo creado por benja teves y lautaro romero TPFINAL
+    public Transform jugador; //codigo creado por Agustín Ludovico TPFINAL
     public float timer;
     public float maxTimer;
     public float movespeed;
